@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_restricted_caller_access">
+    <sys_restricted_caller_access action="INSERT_OR_UPDATE">
+        <operation>read</operation>
+        <source>0c66472a0a0a0b82017c1f3df66a3fe7</source>
+        <source_scope display_value="Global">global</source_scope>
+        <source_table>sys_security_acl</source_table>
+        <source_type>11</source_type>
+        <status>2</status>
+        <sys_class_name>sys_restricted_caller_access</sys_class_name>
+        <sys_created_by>C12P1</sys_created_by>
+        <sys_created_on>2019-10-01 19:24:56</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>2b2ab9e4db1c08d0a618bc32ba96198b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>2c9bb9a3db8cbf40d3e954f9489619dd</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sys_restricted_caller_access_2b2ab9e4db1c08d0a618bc32ba96198b</sys_update_name>
+        <sys_updated_by>C12P1</sys_updated_by>
+        <sys_updated_on>2019-10-01 19:24:56</sys_updated_on>
+        <target name="x_unugr_certificat_certificate_task" target_table="sys_db_object">e9626b721b577b408591524d0d4bcbc0</target>
+        <target_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</target_scope>
+        <target_table>sys_db_object</target_table>
+        <target_type>1</target_type>
+    </sys_restricted_caller_access>
+</record_update>
