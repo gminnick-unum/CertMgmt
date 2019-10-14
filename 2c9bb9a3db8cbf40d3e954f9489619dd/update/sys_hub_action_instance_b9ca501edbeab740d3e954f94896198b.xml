@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_action_instance">
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
+        <action_type_parent/>
+        <comment>Create Task for installation on Target Devices</comment>
+        <compiled_snapshot>3f9b1ff1531003003bf1d9109ec58775</compiled_snapshot>
+        <display_text/>
+        <flow display_value="SC - Certificate Request">fd7191abdb71bf044ff2c55305961945</flow>
+        <order>2.3.2.1</order>
+        <parent_ui_id>7fb50344-59fe-44cc-901b-79d63d65cdeb</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-07-11 23:07:36</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b9ca501edbeab740d3e954f94896198b</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sys_hub_action_instance_b9ca501edbeab740d3e954f94896198b</sys_update_name>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-10-14 10:06:51</sys_updated_on>
+        <ui_id>1e6b0d4a-79c0-48b1-a2d1-78a693701828</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b9ca501edbeab740d3e954f94896198b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b9ca501edbeab740d3e954f94896198b</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-07-11 23:07:36</sys_created_on>
+        <sys_id>39ca501edbeab740d3e954f948961991</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-07-11 23:07:36</sys_updated_on>
+        <value>x_unugr_certificat_certificate_task</value>
+        <variable display_value="">e73a6335531003003bf1d9109ec5875c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b9ca501edbeab740d3e954f94896198b</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-07-11 23:07:36</sys_created_on>
+        <sys_id>75ca501edbeab740d3e954f948961991</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-07-11 23:07:36</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">ff3a6335531003003bf1d9109ec58777</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=b9ca501edbeab740d3e954f94896198b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>field_values</field>
+        <id>b9ca501edbeab740d3e954f94896198b</id>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-07-11 23:07:36</sys_created_on>
+        <sys_id>f1ca501edbeab740d3e954f948961991</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-10-02 00:04:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value>certificate_request={{Created_1.current}}^assignment_group={{7fb50344-59fe-44cc-901b-79d63d65cdeb.item.u_internal_assignment_group}}^state=1^u_task_activity=installation^short_description=Install Internal Certificate on {{7fb50344-59fe-44cc-901b-79d63d65cdeb.item.u_target_device}}^description=Internal Certificate needs installed on {{7fb50344-59fe-44cc-901b-79d63d65cdeb.item.u_target_device}}.  See Request for Details.</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>task_table</field>
+        <id>b9ca501edbeab740d3e954f94896198b</id>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-07-11 23:07:36</sys_created_on>
+        <sys_id>31ca501edbeab740d3e954f948961991</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-07-11 23:07:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>wait</field>
+        <id>b9ca501edbeab740d3e954f94896198b</id>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-07-11 23:07:36</sys_created_on>
+        <sys_id>7dca501edbeab740d3e954f948961990</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-07-11 23:07:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value/>
+    </sys_element_mapping>
+</record_update>

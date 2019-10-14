@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_action_instance">
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type>
+        <action_type_parent/>
+        <comment>All Tasks Completed - Set Request Closed Complete</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="SC - Certificate Request">2fe9cf96dbad73004ff2c5530596198d</flow>
+        <order>1.3.10</order>
+        <parent_ui_id>3e36f613-1e1c-4e3e-9128-b51a2edaa15e</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-06-13 18:58:40</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d245d785db0e77844ff2c55305961902</sys_id>
+        <sys_mod_count>230</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sys_hub_action_instance_d245d785db0e77844ff2c55305961902</sys_update_name>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-10-14 10:06:57</sys_updated_on>
+        <ui_id>4301d8fb-2c4b-475c-8fdc-687b6822cf3a</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d245d785db0e77844ff2c55305961902"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d245d785db0e77844ff2c55305961902</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-06-13 19:24:29</sys_created_on>
+        <sys_id>2c3b9fcddb4e77844ff2c55305961953</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-06-13 19:24:29</sys_updated_on>
+        <value>x_unugr_certificat_certificate_request</value>
+        <variable display_value="">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d245d785db0e77844ff2c55305961902</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-06-13 19:24:29</sys_created_on>
+        <sys_id>683b9fcddb4e77844ff2c55305961953</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-06-13 19:24:29</sys_updated_on>
+        <value>state=3^work_notes=All tasks completed - Request Closed</value>
+        <variable display_value="">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d245d785db0e77844ff2c55305961902</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-06-13 19:24:09</sys_created_on>
+        <sys_id>ab1b5bcddb4e77844ff2c553059619b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-06-13 19:24:09</sys_updated_on>
+        <value>x_unugr_certificat_certificate_request</value>
+        <variable display_value="">1fd27c8cc3c632002841b63b12d3aeb9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d245d785db0e77844ff2c55305961902</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-06-13 19:24:09</sys_created_on>
+        <sys_id>e71b5bcddb4e77844ff2c553059619b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-06-13 19:24:09</sys_updated_on>
+        <value>state=3^work_notes=All tasks completed - Request Closed</value>
+        <variable display_value="">e7d270ccc3c632002841b63b12d3ae8b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=d245d785db0e77844ff2c55305961902"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>d245d785db0e77844ff2c55305961902</id>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-06-13 19:24:09</sys_created_on>
+        <sys_id>a31b5bcddb4e77844ff2c553059619b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-06-13 19:24:09</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>d245d785db0e77844ff2c55305961902</id>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-06-13 19:24:29</sys_created_on>
+        <sys_id>243b9fcddb4e77844ff2c55305961953</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-06-13 19:24:29</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>d245d785db0e77844ff2c55305961902</id>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-06-13 19:24:09</sys_created_on>
+        <sys_id>ef1b5bcddb4e77844ff2c553059619b6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-06-13 19:24:09</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>d245d785db0e77844ff2c55305961902</id>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-06-13 19:24:29</sys_created_on>
+        <sys_id>603b9fcddb4e77844ff2c55305961953</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-06-13 19:24:29</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>d245d785db0e77844ff2c55305961902</id>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-06-13 19:24:09</sys_created_on>
+        <sys_id>671b5bcddb4e77844ff2c553059619b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-06-13 19:24:09</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>d245d785db0e77844ff2c55305961902</id>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-06-13 19:24:29</sys_created_on>
+        <sys_id>e43b9fcddb4e77844ff2c55305961953</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-06-13 19:24:29</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+</record_update>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_action_instance">
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Task">3f9b1ff1531003003bf1d9109ec58775</action_type>
+        <action_type_parent/>
+        <comment>Create Task to fulfill certificate request</comment>
+        <compiled_snapshot>2b3a6335531003003bf1d9109ec58759</compiled_snapshot>
+        <display_text/>
+        <flow display_value="SC - Certificate Request">2fe9cf96dbad73004ff2c5530596198d</flow>
+        <order>1.3.2</order>
+        <parent_ui_id>3e36f613-1e1c-4e3e-9128-b51a2edaa15e</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-05-28 14:53:44</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>12c34408dbf53b80d3e954f948961945</sys_id>
+        <sys_mod_count>276</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sys_hub_action_instance_12c34408dbf53b80d3e954f948961945</sys_update_name>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-10-14 10:06:55</sys_updated_on>
+        <ui_id>e41aed32-afad-40f6-ab07-36335a44c7d5</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=12c34408dbf53b80d3e954f948961945"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>12c34408dbf53b80d3e954f948961945</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-05-28 14:53:44</sys_created_on>
+        <sys_id>16c34408dbf53b80d3e954f94896194b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-05-28 14:53:44</sys_updated_on>
+        <value>x_unugr_certificat_certificate_task</value>
+        <variable display_value="">957cdff1531003003bf1d9109ec58753</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>12c34408dbf53b80d3e954f948961945</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-06-08 17:31:46</sys_created_on>
+        <sys_id>247111abdb71bf044ff2c553059619cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-06-08 17:31:46</sys_updated_on>
+        <value>x_unugr_certificat_certificate_task</value>
+        <variable display_value="">e73a6335531003003bf1d9109ec5875c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>12c34408dbf53b80d3e954f948961945</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-06-08 17:31:46</sys_created_on>
+        <sys_id>607111abdb71bf044ff2c553059619cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-06-08 17:31:46</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">ff3a6335531003003bf1d9109ec58777</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>12c34408dbf53b80d3e954f948961945</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-05-28 16:33:38</sys_created_on>
+        <sys_id>b1aa1c80db7d3b80d3e954f948961972</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-05-28 16:33:38</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">e17cdff1531003003bf1d9109ec58770</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=12c34408dbf53b80d3e954f948961945"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>field_values</field>
+        <id>12c34408dbf53b80d3e954f948961945</id>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-06-08 17:31:46</sys_created_on>
+        <sys_id>ec7111abdb71bf044ff2c553059619cb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-06-10 12:52:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value>assignment_group={"display":"Certificate Management","value":"4d7b042f4f48174cbcc0dbb5f110c752"}^certificate_request={{Created_1.current}}^short_description=Certificate Fulfillment Request {{Created_1.current.u_certificate_request_type}}^state=1</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>field_values</field>
+        <id>12c34408dbf53b80d3e954f948961945</id>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-05-28 14:53:44</sys_created_on>
+        <sys_id>92c34408dbf53b80d3e954f94896194b</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-10-02 00:03:41</sys_updated_on>
+        <table>var__m_sys_hub_action_input_3f9b1ff1531003003bf1d9109ec58775</table>
+        <value>assignment_group={"display":"Certificate Management","value":"4d7b042f4f48174cbcc0dbb5f110c752"}^certificate_request={{Created_1.current}}^short_description=Certificate Fulfillment Request  for External Certificate^state=1^u_task_activity=generate_certificate^description=Certificate Fulfillment Request  for External Certificate</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>task_table</field>
+        <id>12c34408dbf53b80d3e954f948961945</id>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-06-08 17:31:46</sys_created_on>
+        <sys_id>2c7111abdb71bf044ff2c553059619cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-06-08 17:31:46</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>task_table</field>
+        <id>12c34408dbf53b80d3e954f948961945</id>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-05-28 14:53:44</sys_created_on>
+        <sys_id>dac34408dbf53b80d3e954f94896194a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-05-28 14:53:44</sys_updated_on>
+        <table>var__m_sys_hub_action_input_3f9b1ff1531003003bf1d9109ec58775</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>wait</field>
+        <id>12c34408dbf53b80d3e954f948961945</id>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-06-08 17:31:46</sys_created_on>
+        <sys_id>687111abdb71bf044ff2c553059619cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-06-08 17:31:46</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>wait</field>
+        <id>12c34408dbf53b80d3e954f948961945</id>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-05-28 16:33:38</sys_created_on>
+        <sys_id>b9aa1c80db7d3b80d3e954f948961971</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-05-28 16:33:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_3f9b1ff1531003003bf1d9109ec58775</table>
+        <value/>
+    </sys_element_mapping>
+</record_update>

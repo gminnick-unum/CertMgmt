@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_flow_logic">
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">b84f8c44db793b80d3e954f9489619d9</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="SC - Certificate Request">fd7191abdb71bf044ff2c55305961945</flow>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1.3.8</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>3e36f613-1e1c-4e3e-9128-b51a2edaa15e</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-06-08 17:31:51</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c67191abdb71bf044ff2c553059619bf</sys_id>
+        <sys_mod_count>52</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sys_hub_flow_logic_c67191abdb71bf044ff2c553059619bf</sys_update_name>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-10-14 10:06:50</sys_updated_on>
+        <ui_id>21c94aa4-967f-418a-b5a6-457ca35ef2aa</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=c67191abdb71bf044ff2c553059619bf"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>c67191abdb71bf044ff2c553059619bf</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-06-08 17:31:51</sys_created_on>
+        <sys_id>8a7191abdb71bf044ff2c553059619c2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-07-11 23:07:37</sys_updated_on>
+        <value>Needs help installing External Certificate</value>
+        <variable display_value="">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>c67191abdb71bf044ff2c553059619bf</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-06-08 17:31:51</sys_created_on>
+        <sys_id>c67191abdb71bf044ff2c553059619c2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-07-11 23:07:37</sys_updated_on>
+        <value>{{Created_1.current.u_installation_help}}=true</value>
+        <variable display_value="">9a5f5105c32632002841b63b12d3ae46</variable>
+    </sys_variable_value>
+</record_update>
