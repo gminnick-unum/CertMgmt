@@ -4,18 +4,18 @@
         <action_inputs/>
         <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
         <action_type_parent/>
-        <comment>Create a Task for CNAME Generation and assign to Network Operations</comment>
+        <comment>Create a Task for CNAME Generation and assign to HCL Network Data</comment>
         <compiled_snapshot>2b3a6335531003003bf1d9109ec58759</compiled_snapshot>
         <display_text/>
         <flow display_value="SC - Certificate Request">fd7191abdb71bf044ff2c55305961945</flow>
-        <order>1.3.5.1</order>
+        <order>2.3.5.1</order>
         <parent_ui_id>4a4e0527-539d-4ab0-a645-1f0c2cb0be85</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>CHF03</sys_created_by>
         <sys_created_on>2019-06-13 19:24:36</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>523b9301db8e77844ff2c55305961908</sys_id>
-        <sys_mod_count>92</sys_mod_count>
+        <sys_mod_count>112</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
         <sys_policy/>
@@ -23,7 +23,7 @@
         <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
         <sys_update_name>sys_hub_action_instance_523b9301db8e77844ff2c55305961908</sys_update_name>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2019-10-14 10:06:49</sys_updated_on>
+        <sys_updated_on>2019-10-16 18:01:20</sys_updated_on>
         <ui_id>9f3f36af-4da8-41cf-886a-7e04390bdcad</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=523b9301db8e77844ff2c55305961908"/>
@@ -76,11 +76,11 @@
         <sys_created_by>CHF03</sys_created_by>
         <sys_created_on>2019-06-13 19:24:36</sys_created_on>
         <sys_id>d63b9301db8e77844ff2c5530596190d</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2019-10-02 00:04:04</sys_updated_on>
+        <sys_updated_on>2019-10-16 18:01:15</sys_updated_on>
         <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
-        <value>state=1^state=1^assignment_group={"display":"Network Operations","value":"1e4aef580f0d0e006d5c0f8ce1050e30"}^short_description=Generate CNAME for External Certificate Order Validation^description=Generate CNAME for External Certificate Order Validation^certificate_request={{Created_1.current}}^u_task_activity=cname</value>
+        <value>state=1^state=1^assignment_group={"display":"HCL Network Data","value":"7b63c5ac4f3dc748bcc0dbb5f110c764"}^short_description=Generate CNAME for External Certificate Order Validation^description=Generate CNAME for External Certificate Order Validation^certificate_request={{Created_1.current}}^u_task_activity=cname</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>task_table</field>
