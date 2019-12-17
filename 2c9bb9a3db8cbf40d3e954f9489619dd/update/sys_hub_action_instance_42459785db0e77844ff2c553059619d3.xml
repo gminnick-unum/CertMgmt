@@ -15,15 +15,15 @@
         <sys_created_on>2019-06-13 18:58:39</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>42459785db0e77844ff2c553059619d3</sys_id>
-        <sys_mod_count>288</sys_mod_count>
+        <sys_mod_count>290</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
         <sys_update_name>sys_hub_action_instance_42459785db0e77844ff2c553059619d3</sys_update_name>
-        <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2019-10-16 18:01:30</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2019-10-17 13:32:14</sys_updated_on>
         <ui_id>1204f309-64f3-46d8-9d5b-13834ef1ae86</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=42459785db0e77844ff2c553059619d3"/>
@@ -88,18 +88,6 @@
         <field>field_values</field>
         <id>42459785db0e77844ff2c553059619d3</id>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2019-06-13 19:24:28</sys_created_on>
-        <sys_id>d83b9fcddb4e77844ff2c55305961927</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2019-06-13 19:24:28</sys_updated_on>
-        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
-        <value>assigned_to={{Created_1.current.opened_by}}^certificate_request={{Created_1.current}}^state=1^short_description={{Created_1.current.u_certificate_request_type}}Install On {{Created_1.current.u_install_on}}^description=Self Installation of {{Created_1.current.u_certificate_request_type}} on {{Created_1.current.u_install_on}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>field_values</field>
-        <id>42459785db0e77844ff2c553059619d3</id>
-        <sys_created_by>CHF03</sys_created_by>
         <sys_created_on>2019-06-13 18:58:39</sys_created_on>
         <sys_id>c2459785db0e77844ff2c553059619d9</sys_id>
         <sys_mod_count>4</sys_mod_count>
@@ -109,16 +97,16 @@
         <value>assigned_to={{Created_1.current.opened_by}}^certificate_request={{Created_1.current}}^state=1^short_description=Self Installation of  External Certificate ^description=Self Installation of  External Certificate^u_task_activity=installation</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>task_table</field>
+        <field>field_values</field>
         <id>42459785db0e77844ff2c553059619d3</id>
         <sys_created_by>CHF03</sys_created_by>
         <sys_created_on>2019-06-13 19:24:28</sys_created_on>
-        <sys_id>183b9fcddb4e77844ff2c55305961927</sys_id>
+        <sys_id>d83b9fcddb4e77844ff2c55305961927</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
         <sys_updated_on>2019-06-13 19:24:28</sys_updated_on>
         <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
-        <value/>
+        <value>assigned_to={{Created_1.current.opened_by}}^certificate_request={{Created_1.current}}^state=1^short_description={{Created_1.current.u_certificate_request_type}}Install On {{Created_1.current.u_install_on}}^description=Self Installation of {{Created_1.current.u_certificate_request_type}} on {{Created_1.current.u_install_on}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>task_table</field>
@@ -133,11 +121,11 @@
         <value/>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>wait</field>
+        <field>task_table</field>
         <id>42459785db0e77844ff2c553059619d3</id>
         <sys_created_by>CHF03</sys_created_by>
         <sys_created_on>2019-06-13 19:24:28</sys_created_on>
-        <sys_id>543b9fcddb4e77844ff2c55305961927</sys_id>
+        <sys_id>183b9fcddb4e77844ff2c55305961927</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
         <sys_updated_on>2019-06-13 19:24:28</sys_updated_on>
@@ -154,6 +142,18 @@
         <sys_updated_by>CHF03</sys_updated_by>
         <sys_updated_on>2019-06-13 18:58:39</sys_updated_on>
         <table>var__m_sys_hub_action_input_3f9b1ff1531003003bf1d9109ec58775</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>wait</field>
+        <id>42459785db0e77844ff2c553059619d3</id>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-06-13 19:24:28</sys_created_on>
+        <sys_id>543b9fcddb4e77844ff2c55305961927</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-06-13 19:24:28</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
         <value/>
     </sys_element_mapping>
 </record_update>
