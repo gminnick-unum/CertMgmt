@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_unugr_certificat_digital_certificate</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Set Notify Flag</name>
+        <order>500</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	if(current.operation() == 'insert' || (current.operation() == 'update' && previous.u_notify_of_expiration != current.u_notify_of_expiration)){
+		var setNotify = false;
+		var notifyList = current.u_notify_of_expiration.toString();
+		if(notifyList) {
+			setNotify = true;
+		}
+		
+		if(setNotify){
+			current.u_expiration_notification = true;
+		}else{
+			current.u_expiration_notification = false;
+		}
+		current.update();
+	}
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2020-01-03 17:11:29</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>3aeb9db2db4e08d4d3e954f948961932</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Set Notify Flag</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sys_script_3aeb9db2db4e08d4d3e954f948961932</sys_update_name>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2020-01-03 21:16:20</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+</record_update>
