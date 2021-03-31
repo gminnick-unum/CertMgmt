@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_unugr_certificat.AjaxCertClientJSON</api_name>
+        <caller_access>1</caller_access>
+        <client_callable>true</client_callable>
+        <description>Functions to retireve and parse cert selection options</description>
+        <name>AjaxCertClientJSON</name>
+        <script><![CDATA[var AjaxCertClientJSON = Class.create();
+AjaxCertClientJSON.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+	getRequestTypeEnvironments:function(){
+		try{
+			var optionName = this.getParameter('sysparm_optionName');
+			var queryStringBase = 'category.option_value=environments^option_value=|REQUESTTYPE|';
+			var queryString = queryStringBase.replace('|REQUESTTYPE|',optionName);
+			var environmentRecord = new GlideRecord('x_unugr_certificat_certmgmt_options');
+			environmentRecord.addEncodedQuery(queryString);
+			environmentRecord.query();
+			
+			if(environmentRecord.getRowCount() != 0){
+				while(environmentRecord.next()){
+					var jsonData = environmentRecord.info_json;
+
+					var parsedData = JSON.parse(jsonData);
+					var returnData = JSON.stringify(parsedData);
+					gs.info(returnData);
+					return returnData;	
+				}
+			}		
+		}
+		catch(e){
+			gs.info('Error occured in getRequestTypeEnvironments: ' + e);
+		}		
+			
+	},
+	checkAttachmentCNAMETask:function(){
+		try{
+			var attachmentFound = 0;
+			var tableName = this.getParameter('sysparm_tableName');
+			var taskSysId = this.getParameter('sysparm_taskSysId');
+			
+			var queryStringBase = 'table_name=|TABLENAME|^table_sys_id=|TABLESYSID|';
+			var queryString = queryStringBase.replace('|TABLESYSID|', taskSysId);
+			queryString = queryString.replace('|TABLENAME|', tableName);
+			gs.info(queryString);
+			
+			var attachmentRecord = new GlideRecord('sys_attachment');
+			attachmentRecord.addEncodedQuery(queryString);
+			attachmentRecord.query();
+		
+			if(attachmentRecord.getRowCount() != 0){
+				attachmentFound = attachmentRecord.getRowCount();
+			}
+			
+			return attachmentFound;
+			
+		}
+		catch(e){
+			gs.info('Error occured in checkAttachmentCNAMETask: ' + e);
+		}				
+	},
+    type: 'AjaxCertClientJSON'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-06-25 20:14:19</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>5bf8d949dbdafbc0d3e954f9489619d9</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>AjaxCertClientJSON</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sys_script_include_5bf8d949dbdafbc0d3e954f9489619d9</sys_update_name>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 17:39:39</sys_updated_on>
+    </sys_script_include>
+</record_update>

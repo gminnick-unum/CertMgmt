@@ -1,0 +1,2127 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="wf_workflow_version">
+    <wf_workflow_version action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <activity_stages>{"activities":{},"subflows":[],"stages":{},"ends":["e49636641b5be010e314c955624bcb10"]}</activity_stages>
+        <after_business_rules>false</after_business_rules>
+        <checked_out/>
+        <checked_out_by/>
+        <column_renderer display_value="Workflow-driven">a56213111b030100adca1e094f0713ac</column_renderer>
+        <condition/>
+        <condition_type/>
+        <description>Load and process qualualys Scan Report</description>
+        <expected_sequences>ec96fe241b5be010e314c955624bcb88,a896fe241b5be010e314c955624bcb86,e896fe241b5be010e314c955624bcb87,a096fe241b5be010e314c955624bcb83,209636641b5be010e314c955624bcb14,a496fe241b5be010e314c955624bcb85,689636641b5be010e314c955624bcb0f,249636641b5be010e314c955624bcb12</expected_sequences>
+        <expected_time>1970-01-01 14:00:00</expected_time>
+        <expected_time_type/>
+        <full_sequences>ec96fe241b5be010e314c955624bcb88,a896fe241b5be010e314c955624bcb86,e896fe241b5be010e314c955624bcb87,a096fe241b5be010e314c955624bcb83,e89636641b5be010e314c955624bcb0e,209636641b5be010e314c955624bcb14,249636641b5be010e314c955624bcb12,a496fe241b5be010e314c955624bcb85,649636641b5be010e314c955624bcb11,689636641b5be010e314c955624bcb0f,e49636641b5be010e314c955624bcb10</full_sequences>
+        <journal/>
+        <max_activity_count>100</max_activity_count>
+        <name>wf_CertificateScanSync</name>
+        <not_cacheable>false</not_cacheable>
+        <on_cancel><![CDATA[// This script executes if the workflow is cancelled.// The global variable context_sys_id contains the sys_id of the cancelled workflow context.]]></on_cancel>
+        <order>101</order>
+        <pin_type>set_by_activity</pin_type>
+        <published>true</published>
+        <relative_duration display_value="2 business days by 4pm">3bf802c20a0a0b52008e2859cd8abcf2</relative_duration>
+        <requires_ert>true</requires_ert>
+        <run_multiple>false</run_multiple>
+        <schedule/>
+        <stage_field/>
+        <stage_order>computed</stage_order>
+        <start display_value="Begin">ec96fe241b5be010e314c955624bcb88</start>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-03-31 19:19:26</sys_created_on>
+        <sys_id>2496fe241b5be010e314c955624bcb80</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 19:19:38</sys_updated_on>
+        <table>x_unugr_certificat_qualys_scan_reports</table>
+        <timezone/>
+        <validated>false</validated>
+        <workflow display_value="wf_CertificateScanSync">f44b753adbb43f80d3e954f94896195e</workflow>
+    </wf_workflow_version>
+    <wf_workflow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <description>Load and process qualualys Scan Report</description>
+        <name>wf_CertificateScanSync</name>
+        <preview/>
+        <sys_class_name>wf_workflow</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-04-17 19:36:14</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>f44b753adbb43f80d3e954f94896195e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>wf_CertificateScanSync</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>wf_workflow_f44b753adbb43f80d3e954f94896195e</sys_update_name>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-06-05 12:48:40</sys_updated_on>
+        <table>x_unugr_certificat_qualys_scan_reports</table>
+        <template>false</template>
+        <vars/>
+    </wf_workflow>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Begin">c7a5e32c0a0a0b3a002377c24ed8ea76</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>1</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Begin</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
+        <sys_id>ec96fe241b5be010e314c955624bcb88</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="14 Hours">2496fe241b5be010e314c955624bcb80</workflow_version>
+        <x>20</x>
+        <y>20</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=ec96fe241b5be010e314c955624bcb88"/>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Begin">ec96fe241b5be010e314c955624bcb88</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
+        <sys_id>249636641b5be010e314c955624bcb0e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="If">98f621ca0a0a0b5900f7c291f5e45a0e</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>10</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>check counter value</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
+        <sys_id>249636641b5be010e314c955624bcb12</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="14 Hours">2496fe241b5be010e314c955624bcb80</workflow_version>
+        <x>1143</x>
+        <y>73</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=249636641b5be010e314c955624bcb12"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>249636641b5be010e314c955624bcb12</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
+        <sys_id>209636641b5be010e314c955624bcb13</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <value>answer = checkCounter();&#13;
+&#13;
+function checkCounter() {&#13;
+	&#13;
+	var check = 'no';&#13;
+	workflow.scratchpad.counter++; &#13;
+	if (workflow.scratchpad.counter &lt; workflow.scratchpad.totalFiles) {&#13;
+		check = 'yes';&#13;
+	}&#13;
+&#13;
+	return check;	&#13;
+}</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>249636641b5be010e314c955624bcb12</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
+        <sys_id>6c9636641b5be010e314c955624bcb12</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>249636641b5be010e314c955624bcb12</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
+        <sys_id>a89636641b5be010e314c955624bcb12</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <value/>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>249636641b5be010e314c955624bcb12</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
+        <sys_id>a89636641b5be010e314c955624bcb12</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <value/>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>249636641b5be010e314c955624bcb12</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
+        <sys_id>6c9636641b5be010e314c955624bcb12</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>249636641b5be010e314c955624bcb12</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
+        <sys_id>209636641b5be010e314c955624bcb13</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <value>answer = checkCounter();&#13;
+&#13;
+function checkCounter() {&#13;
+	&#13;
+	var check = 'no';&#13;
+	workflow.scratchpad.counter++; &#13;
+	if (workflow.scratchpad.counter &lt; workflow.scratchpad.totalFiles) {&#13;
+		check = 'yes';&#13;
+	}&#13;
+&#13;
+	return check;	&#13;
+}</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="check counter value">249636641b5be010e314c955624bcb12</activity>
+        <condition>activity.result == 'no'</condition>
+        <condition_default display_value="No">c1eff6430a0a0b59000f955abe842c94</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>No</name>
+        <order>200</order>
+        <short_description/>
+        <skip_during_generate>true</skip_during_generate>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
+        <sys_id>e49636641b5be010e314c955624bcb13</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="check counter value">249636641b5be010e314c955624bcb12</activity>
+        <condition>activity.result == 'yes'</condition>
+        <condition_default display_value="Yes">c1ef63200a0a0b59005ef89bae78feb7</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Yes</name>
+        <order>100</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
+        <sys_id>689636641b5be010e314c955624bcb13</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="cm_processScanReport">f27b4dcbdb968c104ff2c5530596191c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>15</databus_lookup_id>
+        <height/>
+        <input>{"fileInputFullPath":"${workflow.scratchpad.currentfileFullPath}","userName":"${workflow.scratchpad.certScanUserName}","userDomain":"${workflow.scratchpad.certScanUserDomain}","userPass":"${workflow.scratchpad.certScanUserPassword}"}</input>
+        <is_parent>false</is_parent>
+        <name>cm_processScanReport</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
+        <sys_id>a496fe241b5be010e314c955624bcb85</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="14 Hours">2496fe241b5be010e314c955624bcb80</workflow_version>
+        <x>657</x>
+        <y>699</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=a496fe241b5be010e314c955624bcb85"/>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="cm_processScanReport">a496fe241b5be010e314c955624bcb85</activity>
+        <condition/>
+        <condition_default display_value="Failure">e960114bdb5a8c104ff2c553059619a5</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>true</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Failure</name>
+        <order>200</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
+        <sys_id>6096fe241b5be010e314c955624bcb86</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="cm_processScanReport">a496fe241b5be010e314c955624bcb85</activity>
+        <condition>activityOutput.result == "success"</condition>
+        <condition_default display_value="Success">3a9ccd83dbd68c104ff2c55305961994</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Success</name>
+        <order>100</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
+        <sys_id>e096fe241b5be010e314c955624bcb86</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="cm_splitTenableScan">aae849c7db568c104ff2c553059619ad</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>14</databus_lookup_id>
+        <height/>
+        <input>{"fileInputPath":"${workflow.scratchpad.currentTenableInputFilePath}","fileName":"${workflow.scratchpad.currentTenableInputFile}","batchSize":"${workflow.scratchpad.currentBatchSize}","userName":"${workflow.scratchpad.certScanUserName}","userPass":"${workflow.scratchpad.certScanUserPassword}","userDomain":"${workflow.scratchpad.certScanUserDomain}"}</input>
+        <is_parent>false</is_parent>
+        <name>cm_splitTenableScan</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
+        <sys_id>e896fe241b5be010e314c955624bcb87</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="14 Hours">2496fe241b5be010e314c955624bcb80</workflow_version>
+        <x>181</x>
+        <y>323</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=e896fe241b5be010e314c955624bcb87"/>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="cm_splitTenableScan">e896fe241b5be010e314c955624bcb87</activity>
+        <condition/>
+        <condition_default display_value="Failure">a84b0d4bdb968c104ff2c5530596197f</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>true</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Failure</name>
+        <order>200</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
+        <sys_id>a496fe241b5be010e314c955624bcb88</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="cm_splitTenableScan">e896fe241b5be010e314c955624bcb87</activity>
+        <condition>activityOutput.result == "success"</condition>
+        <condition_default display_value="Success">0d6a8d83db968c104ff2c5530596192e</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Success</name>
+        <order>100</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
+        <sys_id>2896fe241b5be010e314c955624bcb88</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>2</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>End</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
+        <sys_id>e49636641b5be010e314c955624bcb10</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="14 Hours">2496fe241b5be010e314c955624bcb80</workflow_version>
+        <x>1416</x>
+        <y>742</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=e49636641b5be010e314c955624bcb10"/>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>3</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Initialize Workflow vars and log</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
+        <sys_id>a896fe241b5be010e314c955624bcb86</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="14 Hours">2496fe241b5be010e314c955624bcb80</workflow_version>
+        <x>60</x>
+        <y>148</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=a896fe241b5be010e314c955624bcb86"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a896fe241b5be010e314c955624bcb86</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
+        <sys_id>2c96fe241b5be010e314c955624bcb86</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <value>var currentDateTime = new GlideDateTime();&#13;
+workflow.scratchpad.fileCounter = 0;&#13;
+workflow.scratchpad.totalFiles = 0;&#13;
+workflow.scratchpad.errorsOccured = false;&#13;
+workflow.scratchpad.errorMessages = '';&#13;
+&#13;
+var scanLogRecord = new GlideRecord('x_unugr_certificat_certificate_scan_log');&#13;
+scanLogRecord.initialize();&#13;
+scanLogRecord.u_scan_started = currentDateTime;&#13;
+scanLogRecord.u_status = 'Processing';&#13;
+&#13;
+var logSysID = scanLogRecord.insert();&#13;
+&#13;
+workflow.scratchpad.currentLogRecord = logSysID;&#13;
+workflow.scratchpad.currentTenableInputFile = current.u_report_name;&#13;
+workflow.scratchpad.currentTenableInputFilePath = current.u_report_path; &#13;
+workflow.scratchpad.currentBatchSize = gs.getProperty('x_unugr_certificat.importscan.batchSize');&#13;
+&#13;
+//Get the credentials&#13;
+var certscanCredRecord = new GlideRecord('discovery_credentials');&#13;
+&#13;
+certscanCredRecord.addQuery('name','PROD Certificate Management');&#13;
+certscanCredRecord.query();&#13;
+if(certscanCredRecord.next()){&#13;
+	workflow.scratchpad.certScanUserDomain = ((certscanCredRecord.user_name).split('\\'))[0];&#13;
+	workflow.scratchpad.certScanUserName = ((certscanCredRecord.user_name).split('\\'))[1];&#13;
+	workflow.scratchpad.certScanUserPassword = certscanCredRecord.password;&#13;
+}&#13;
+&#13;
+&#13;
+&#13;
+&#13;
+</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a896fe241b5be010e314c955624bcb86</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
+        <sys_id>2c96fe241b5be010e314c955624bcb86</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <value>var currentDateTime = new GlideDateTime();&#13;
+workflow.scratchpad.fileCounter = 0;&#13;
+workflow.scratchpad.totalFiles = 0;&#13;
+workflow.scratchpad.errorsOccured = false;&#13;
+workflow.scratchpad.errorMessages = '';&#13;
+&#13;
+var scanLogRecord = new GlideRecord('x_unugr_certificat_certificate_scan_log');&#13;
+scanLogRecord.initialize();&#13;
+scanLogRecord.u_scan_started = currentDateTime;&#13;
+scanLogRecord.u_status = 'Processing';&#13;
+&#13;
+var logSysID = scanLogRecord.insert();&#13;
+&#13;
+workflow.scratchpad.currentLogRecord = logSysID;&#13;
+workflow.scratchpad.currentTenableInputFile = current.u_report_name;&#13;
+workflow.scratchpad.currentTenableInputFilePath = current.u_report_path; &#13;
+workflow.scratchpad.currentBatchSize = gs.getProperty('x_unugr_certificat.importscan.batchSize');&#13;
+&#13;
+//Get the credentials&#13;
+var certscanCredRecord = new GlideRecord('discovery_credentials');&#13;
+&#13;
+certscanCredRecord.addQuery('name','PROD Certificate Management');&#13;
+certscanCredRecord.query();&#13;
+if(certscanCredRecord.next()){&#13;
+	workflow.scratchpad.certScanUserDomain = ((certscanCredRecord.user_name).split('\\'))[0];&#13;
+	workflow.scratchpad.certScanUserName = ((certscanCredRecord.user_name).split('\\'))[1];&#13;
+	workflow.scratchpad.certScanUserPassword = certscanCredRecord.password;&#13;
+}&#13;
+&#13;
+&#13;
+&#13;
+&#13;
+</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Initialize Workflow vars and log">a896fe241b5be010e314c955624bcb86</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
+        <sys_id>6096fe241b5be010e314c955624bcb87</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>6</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Log Failure</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
+        <sys_id>e89636641b5be010e314c955624bcb0e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="14 Hours">2496fe241b5be010e314c955624bcb80</workflow_version>
+        <x>810</x>
+        <y>69</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=e89636641b5be010e314c955624bcb0e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e89636641b5be010e314c955624bcb0e</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
+        <sys_id>6c9636641b5be010e314c955624bcb0e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <value>var errorMessage = '';&#13;
+var fileProcessing = 0;&#13;
+&#13;
+workflow.scratchpad.errorsOccured = true;&#13;
+fileProcessing = workflow.scratchpad.counter+ 1;&#13;
+errorMessage ='Error Processing ' + workflow.scratchpad.currentTenableInputFile + ' File number ' + fileProcessing + ' ' + data.get(14).errorMessage;&#13;
+&#13;
+//write Error to application log also&#13;
+gs.info(errorMessage);</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>e89636641b5be010e314c955624bcb0e</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
+        <sys_id>6c9636641b5be010e314c955624bcb0e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <value>var errorMessage = '';&#13;
+var fileProcessing = 0;&#13;
+&#13;
+workflow.scratchpad.errorsOccured = true;&#13;
+fileProcessing = workflow.scratchpad.counter+ 1;&#13;
+errorMessage ='Error Processing ' + workflow.scratchpad.currentTenableInputFile + ' File number ' + fileProcessing + ' ' + data.get(14).errorMessage;&#13;
+&#13;
+//write Error to application log also&#13;
+gs.info(errorMessage);</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Log Failure">e89636641b5be010e314c955624bcb0e</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
+        <sys_id>a09636641b5be010e314c955624bcb0f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>11</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Log Scan Record</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
+        <sys_id>649636641b5be010e314c955624bcb11</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="14 Hours">2496fe241b5be010e314c955624bcb80</workflow_version>
+        <x>1280</x>
+        <y>413</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=649636641b5be010e314c955624bcb11"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>649636641b5be010e314c955624bcb11</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
+        <sys_id>e49636641b5be010e314c955624bcb11</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <value>var statusDescription = '';&#13;
+var processStatus = 'Success';&#13;
+&#13;
+&#13;
+statusDescription = workflow.scratchpad.certificateScanCount + ' Certificates Were Successfully Scanned: Relationships Inserted = ' + workflow.scratchpad.relationshipInserted + ' Updated = ' + workflow.scratchpad.relationshipUpdated + " Ignored = " + 		workflow.scratchpad.recordsIgnored;&#13;
+processStatus = "Success";&#13;
+&#13;
+var endingTime = new GlideDateTime();&#13;
+var scanLogRecord = new GlideRecord('x_unugr_certificat_certificate_scan_log');&#13;
+&#13;
+scanLogRecord.addQuery('sys_id','=',workflow.scratchpad.currentLogRecord);&#13;
+scanLogRecord.query();&#13;
+&#13;
+while (scanLogRecord.next()){&#13;
+	if(workflow.scratchpad.errorsOccured){&#13;
+		scanLogRecord.u_status = 'Partial Failure';&#13;
+		statusDescription += ' See application logs for error details';&#13;
+	} else {&#13;
+		scanLogRecord.u_status = 'Success';&#13;
+	}&#13;
+	scanLogRecord.u_status_description = statusDescription;&#13;
+	scanLogRecord.update();&#13;
+}&#13;
+&#13;
+current.u_scan_status = "Scan completed";&#13;
+</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>649636641b5be010e314c955624bcb11</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
+        <sys_id>e49636641b5be010e314c955624bcb11</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <value>var statusDescription = '';&#13;
+var processStatus = 'Success';&#13;
+&#13;
+&#13;
+statusDescription = workflow.scratchpad.certificateScanCount + ' Certificates Were Successfully Scanned: Relationships Inserted = ' + workflow.scratchpad.relationshipInserted + ' Updated = ' + workflow.scratchpad.relationshipUpdated + " Ignored = " + 		workflow.scratchpad.recordsIgnored;&#13;
+processStatus = "Success";&#13;
+&#13;
+var endingTime = new GlideDateTime();&#13;
+var scanLogRecord = new GlideRecord('x_unugr_certificat_certificate_scan_log');&#13;
+&#13;
+scanLogRecord.addQuery('sys_id','=',workflow.scratchpad.currentLogRecord);&#13;
+scanLogRecord.query();&#13;
+&#13;
+while (scanLogRecord.next()){&#13;
+	if(workflow.scratchpad.errorsOccured){&#13;
+		scanLogRecord.u_status = 'Partial Failure';&#13;
+		statusDescription += ' See application logs for error details';&#13;
+	} else {&#13;
+		scanLogRecord.u_status = 'Success';&#13;
+	}&#13;
+	scanLogRecord.u_status_description = statusDescription;&#13;
+	scanLogRecord.update();&#13;
+}&#13;
+&#13;
+current.u_scan_status = "Scan completed";&#13;
+</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Log Scan Record">649636641b5be010e314c955624bcb11</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
+        <sys_id>2c9636641b5be010e314c955624bcb11</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>9</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>populate current processing vars</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
+        <sys_id>209636641b5be010e314c955624bcb14</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="14 Hours">2496fe241b5be010e314c955624bcb80</workflow_version>
+        <x>488</x>
+        <y>271</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=209636641b5be010e314c955624bcb14"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>209636641b5be010e314c955624bcb14</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
+        <sys_id>a09636641b5be010e314c955624bcb14</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <value>workflow.scratchpad.currentFileName = null;&#13;
+var fileToProcess = workflow.scratchpad.filesToScanList[workflow.scratchpad.counter];&#13;
+workflow.scratchpad.currentfileFullPath = fileToProcess.fileFullPath;</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>209636641b5be010e314c955624bcb14</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
+        <sys_id>a09636641b5be010e314c955624bcb14</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <value>workflow.scratchpad.currentFileName = null;&#13;
+var fileToProcess = workflow.scratchpad.filesToScanList[workflow.scratchpad.counter];&#13;
+workflow.scratchpad.currentfileFullPath = fileToProcess.fileFullPath;</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="populate current processing vars">209636641b5be010e314c955624bcb14</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
+        <sys_id>e49636641b5be010e314c955624bcb14</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>8</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Populate Files to process</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-03-31 19:19:26</sys_created_on>
+        <sys_id>a096fe241b5be010e314c955624bcb83</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 19:19:26</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="14 Hours">2496fe241b5be010e314c955624bcb80</workflow_version>
+        <x>319</x>
+        <y>664</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=a096fe241b5be010e314c955624bcb83"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a096fe241b5be010e314c955624bcb83</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-03-31 19:19:26</sys_created_on>
+        <sys_id>e896fe241b5be010e314c955624bcb83</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 19:19:26</sys_updated_on>
+        <value>var scanFilesTotal = 0;&#13;
+&#13;
+var jsonData = data.get(14).filesCreated;&#13;
+var parser = new global.JSONParser();&#13;
+var parsedData = parser.parse(jsonData);&#13;
+&#13;
+workflow.scratchpad.fileData = JSON.stringify(parsedData);&#13;
+&#13;
+var scanFiles = parsedData.scanFilesCreated;&#13;
+scanFilesTotal = scanFiles.length;&#13;
+&#13;
+var fileToScan = {};&#13;
+var filesToScanList = [];&#13;
+&#13;
+&#13;
+for (i=0; i &lt; scanFilesTotal;i++){&#13;
+	fileToScan = {};&#13;
+	fileToScan.fileFullPath = scanFiles[i].FileCreated + '';&#13;
+	filesToScanList.push(fileToScan);	&#13;
+}&#13;
+&#13;
+workflow.scratchpad.totalFiles = scanFilesTotal;&#13;
+workflow.scratchpad.counter = 0;&#13;
+workflow.scratchpad.filesToScanList = filesToScanList;</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a096fe241b5be010e314c955624bcb83</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-03-31 19:19:26</sys_created_on>
+        <sys_id>e896fe241b5be010e314c955624bcb83</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 19:19:26</sys_updated_on>
+        <value>var scanFilesTotal = 0;&#13;
+&#13;
+var jsonData = data.get(14).filesCreated;&#13;
+var parser = new global.JSONParser();&#13;
+var parsedData = parser.parse(jsonData);&#13;
+&#13;
+workflow.scratchpad.fileData = JSON.stringify(parsedData);&#13;
+&#13;
+var scanFiles = parsedData.scanFilesCreated;&#13;
+scanFilesTotal = scanFiles.length;&#13;
+&#13;
+var fileToScan = {};&#13;
+var filesToScanList = [];&#13;
+&#13;
+&#13;
+for (i=0; i &lt; scanFilesTotal;i++){&#13;
+	fileToScan = {};&#13;
+	fileToScan.fileFullPath = scanFiles[i].FileCreated + '';&#13;
+	filesToScanList.push(fileToScan);	&#13;
+}&#13;
+&#13;
+workflow.scratchpad.totalFiles = scanFilesTotal;&#13;
+workflow.scratchpad.counter = 0;&#13;
+workflow.scratchpad.filesToScanList = filesToScanList;</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Populate Files to process">a096fe241b5be010e314c955624bcb83</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
+        <sys_id>2896fe241b5be010e314c955624bcb84</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>5</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Process Scan JSON Object</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
+        <sys_id>689636641b5be010e314c955624bcb0f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="14 Hours">2496fe241b5be010e314c955624bcb80</workflow_version>
+        <x>1046</x>
+        <y>671</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=689636641b5be010e314c955624bcb0f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>689636641b5be010e314c955624bcb0f</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
+        <sys_id>e89636641b5be010e314c955624bcb0f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <value>var certificateScanCount = 0;&#13;
+var statusDescription = '';&#13;
+var errorMessage = '';&#13;
+var errorOccured = false;&#13;
+var processStatus = 'Success';&#13;
+var debugOutput = true;&#13;
+var certUpdated = 0;&#13;
+var relationshipUpdated = 0;&#13;
+var certInserted = 0;&#13;
+var relationshipInserted = 0;&#13;
+var cimissing = 0;&#13;
+var recordsIgnored = 0;&#13;
+var unknownSource = 0;&#13;
+var vendorSource = 'Corporation Service Company';&#13;
+var scanSource = 'Tenable';&#13;
+&#13;
+var ignoreExpiredDays = parseInt(gs.getProperty('x_unugr_certificat.importscan.ignoreExpiredDays'));&#13;
+&#13;
+try{&#13;
+	var jsonData = data.get(15).certificateScans;&#13;
+&#13;
+// 	var parser = new global.JSONParser();&#13;
+&#13;
+// 	var parsedData = parser.parse(jsonData);&#13;
+&#13;
+	var parsedData = JSON.parse(jsonData);&#13;
+	// workflow.scratchpad.jsonStringData = JSON.stringify(parsedData);&#13;
+&#13;
+	var certificateScans = parsedData.certificateScans;&#13;
+	certificateScanCount = certificateScans.length;&#13;
+&#13;
+	if(debugOutput){&#13;
+		workflow.info('Number of Certificate Scans: ' + certificateScanCount);&#13;
+	}&#13;
+&#13;
+	// Loop through all Scan Records&#13;
+	for(i=0;i &lt; certificateScans.length;i++){&#13;
+&#13;
+		var ipAddress = certificateScans[i].ipAddress;&#13;
+		var dnsEntry = certificateScans[i].dnsEntry;&#13;
+		var netBios = certificateScans[i].netBios;&#13;
+		var firstDetected = certificateScans[i].firstDetected;&#13;
+		var lastDetected =  certificateScans[i].lastDetected;&#13;
+		var serialNumber = (certificateScans[i].serialNumber).trim();&#13;
+		var signatureAlgorithm = certificateScans[i].signatureAlgorithm;&#13;
+		var issuerOrganizationName = certificateScans[i].issuerOrganizationName;&#13;
+		var issuerCommonName =  certificateScans[i].issuerCommonName;&#13;
+		var subjectOrganizationName =  certificateScans[i].subjectOrganizationName;&#13;
+		var subjectCommonName =  certificateScans[i].subjectCommonName;&#13;
+		var validFrom =  certificateScans[i].validFrom;&#13;
+		var validTo =  certificateScans[i].validTo;&#13;
+		var ExtendedKeyUsage = certificateScans[i].ExtendedKeyUsage;&#13;
+		var SANs =  certificateScans[i].SANs;&#13;
+&#13;
+		var currentServerSysID = "";&#13;
+		//Lookup Server SysID based on what fields we have populated&#13;
+		if(dnsEntry !== ""){&#13;
+			currentServerSysID = serverLookupByName(dnsEntry);&#13;
+		}else if(netBios !== ""){&#13;
+			currentServerSysID = serverLookupByName(netBios);&#13;
+		}else {&#13;
+			currentServerSysID = serverLookupByIP(ipAddress);&#13;
+		}&#13;
+		&#13;
+		//Call function to handle certificates&#13;
+		//First See if we can find the certificate by serial number&#13;
+		var currentCertificateSysID = "";&#13;
+		currentCertificateSysID = certificateLookupBySerialNumber(serialNumber);&#13;
+		//if certificate isnt found see if we can make a match based on commonname, validFrom and validTo&#13;
+		//current external ssl vendor does not supply the actual serial number of the certificate so we need to&#13;
+		//try and find a match.  If we make the match update the current record with the actual serial number&#13;
+		&#13;
+		if(currentCertificateSysID === '' &amp;&amp; issuerOrganizationName == vendorSource) {&#13;
+			currentCertificateSysID = certificateVendorLookupByCommonName(subjectCommonName,validTo);&#13;
+			//if we found it see if we need to update any other data on the record, since the vendor supplies&#13;
+			//very little data&#13;
+			if(currentCertificateSysID !== ""){&#13;
+				checkUpdateVendorCertificate(currentCertificateSysID,serialNumber,signatureAlgorithm,SANs,ExtendedKeyUsage,subjectOrganizationName);			&#13;
+			}&#13;
+		}else if (currentCertificateSysID == '' &amp;&amp; issuerOrganizationName != vendorSource &amp;&amp; calcDaysDiffFromToday(convertToCommonDate(validTo)) &gt; -ignoreExpiredDays){&#13;
+			//Certificate not found and is not from our External Vendor and its expiration Date was not greate than 40 days ago then Add to Cert Repository&#13;
+			certificateRecord = new GlideRecord('x_unugr_certificat_digital_certificate');&#13;
+			certificateRecord.initialize();&#13;
+			&#13;
+			certificateRecord.u_subject = subjectOrganizationName;&#13;
+			certificateRecord.u_source = scanSource;&#13;
+			certificateRecord.u_signature_algorithm = signatureAlgorithm;&#13;
+			certificateRecord.u_short_description = ExtendedKeyUsage;&#13;
+			certificateRecord.u_serial_number = serialNumber;&#13;
+			certificateRecord.u_sans = SANs;&#13;
+			certificateRecord.u_issuer = issuerOrganizationName;&#13;
+			certificateRecord.u_common_name = subjectCommonName;&#13;
+			certificateRecord.u_environment = findEnvironmentByCommonNameOrSans(subjectCommonName,SANs);&#13;
+			certificateRecord.u_certificate_effective_date = convertToCommonDate(validFrom);&#13;
+			certificateRecord.u_expires = convertToCommonDate(validTo);&#13;
+			currentCertificateSysID = certificateRecord.insert();&#13;
+			certificateRecord += 1;&#13;
+			&#13;
+		}&#13;
+		&#13;
+		//now that we have either found or inserted the certificate we will either update an existing relationship to a ci or create a relationship&#13;
+		// if we couldnt match the CI that a cert is associated with we will need it to the CI Not matched table for follow-up&#13;
+		if(currentCertificateSysID != '' &amp;&amp; currentServerSysID != '' ){&#13;
+			//first see if the relationship already exists, if it does update the last found date&#13;
+			//if it doesnt then add it&#13;
+// 			workflow.info('Relationship Server ' + currentServerSysID + ' Certificate ' + currentCertificateSysID);&#13;
+			var queryString = 'server=' + currentServerSysID + '^digital_certificate=' + currentCertificateSysID; &#13;
+			var relationshipRecord =  new GlideRecord('x_unugr_certificat_m2m_servers_digital_cert');&#13;
+			relationshipRecord.addEncodedQuery(queryString);&#13;
+			relationshipRecord.query();&#13;
+			&#13;
+			if(relationshipRecord.next()){&#13;
+				relationshipRecord.u_last_found = lastDetected;&#13;
+				if(!firstDetected){&#13;
+					relationshipRecord.u_first_found = lastDetected;&#13;
+				}&#13;
+				relationshipRecord.update();&#13;
+				relationshipUpdated += 1;&#13;
+			} else {&#13;
+				relationshipRecord.initialize();&#13;
+				relationshipRecord.digital_certificate = currentCertificateSysID;&#13;
+				relationshipRecord.server = currentServerSysID;&#13;
+				relationshipRecord.u_first_found = lastDetected;&#13;
+				relationshipRecord.u_last_found = lastDetected;&#13;
+				relationshipRecord.insert();&#13;
+				relationshipInserted += 1;				&#13;
+			}&#13;
+		} else if(currentCertificateSysID != '' &amp;&amp; currentServerSysID == '') {&#13;
+			var missingCIRecord = new GlideRecord('x_unugr_certificat_scan_ci_not_found');&#13;
+			&#13;
+			var queryString ='ci_name=' + dnsEntry + '^ORci_netbios=' + netBios + '^ORci_ip_address=' + ipAddress + '^digital_certificate=' + currentCertificateSysID ;&#13;
+			&#13;
+			missingCIRecord.addEncodedQuery(queryString);&#13;
+			missingCIRecord.query();&#13;
+			&#13;
+			if(missingCIRecord.getRowCount() == 0){&#13;
+				missingCIRecord.initialize();&#13;
+				missingCIRecord.ci_name = dnsEntry;&#13;
+				missingCIRecord.ci_netbios = netBios;&#13;
+				missingCIRecord.ci_ip_address = ipAddress;&#13;
+				missingCIRecord.digital_certificate = currentCertificateSysID;&#13;
+				missingCIRecord.insert();				&#13;
+			}&#13;
+			cimissing += 1;&#13;
+		} else{&#13;
+			recordsIgnored += 1;&#13;
+		}&#13;
+			&#13;
+			&#13;
+		&#13;
+// 		if(debugOutput){&#13;
+// 			if(currentServerSysID !== ""){&#13;
+// 				workflow.info('Server Found: ' + dnsEntry + ' ' + currentServerSysID);&#13;
+// 			} else {&#13;
+// 				workflow.info('Server Not Found: ' + ipAddress + ' ' + dnsEntry);&#13;
+// 			}&#13;
+// 			if(currentCertificateSysID !== ""){&#13;
+// 				workflow.info('***Certificate Found***: ' + currentCertificateSysID);&#13;
+// 			}&#13;
+// 			else{&#13;
+// 				workflow.info('Certificate Not Found for Serial ' + serialNumber);&#13;
+// 			}&#13;
+// 		}&#13;
+	}&#13;
+} catch(e) {&#13;
+	errorOccured = true;&#13;
+	processStatus = 'Failure';&#13;
+	if(/null/.test(e.message)){//Error Message is null&#13;
+		errorMessage = 'Error Occured while parsing certificate scan data. Last processed IPAddresss: ' + ipAddress;&#13;
+		&#13;
+	} else {&#13;
+		errorMessage = 'Error Occured while parsing certificate scan data. Last processed IPAddresss: ' + ipAddress + 'Reason: ' + e.message;&#13;
+	}&#13;
+} finally {&#13;
+	var statusDescription = '';&#13;
+	//if error occured then log the error in the import table&#13;
+	if(errorOccured) {&#13;
+		statusDescription = errorMessage;&#13;
+	} else {&#13;
+		workflow.scratchpad.certificateScanCount += certificateScanCount;&#13;
+		workflow.scratchpad.relationshipUpdated += relationshipUpdated;&#13;
+		workflow.scratchpad.relationshipInserted += relationshipInserted;&#13;
+		workflow.scratchpad.recordsIgnored += recordsIgnored;&#13;
+&#13;
+	}&#13;
+	var endingTime = new GlideDateTime();&#13;
+	var scanLogRecord = new GlideRecord('x_unugr_certificat_certificate_scan_log');&#13;
+	&#13;
+	scanLogRecord.addQuery('sys_id', '=', workflow.scratchpad.currentLogRecord);&#13;
+	scanLogRecord.query();&#13;
+	var fileProcessing = 0;&#13;
+	fileProcessing = workflow.scratchpad.counter + 1;&#13;
+	statusDescription =  'Processing ' + workflow.scratchpad.currentTenableInputFile + ' File number ' + fileProcessing;&#13;
+	&#13;
+	while (scanLogRecord.next()) {&#13;
+		scanLogRecord.u_status = 'Processing';&#13;
+		scanLogRecord.u_status_description = statusDescription;&#13;
+		scanLogRecord.u_scan_ended = endingTime;&#13;
+		scanLogRecord.update();&#13;
+	}&#13;
+}&#13;
+&#13;
+//Functions&#13;
+function serverLookupByName(serverName){&#13;
+	var foundSysId = "";&#13;
+	&#13;
+	try{&#13;
+		if(serverName.indexOf('.') &gt;= 0) {&#13;
+			serverName = serverName.substring(0,serverName.indexOf('.'));&#13;
+		}&#13;
+&#13;
+		var serverLookupRecord = new GlideRecord('cmdb_ci_server');&#13;
+		serverLookupRecord.addQuery('name','=',serverName);&#13;
+		serverLookupRecord.query();&#13;
+&#13;
+		if(serverLookupRecord.getRowCount() != 0){&#13;
+			while(serverLookupRecord.next()){&#13;
+				foundSysId = serverLookupRecord.sys_id; &#13;
+			}&#13;
+		}		&#13;
+	}catch(e){&#13;
+		throw(e);&#13;
+	}&#13;
+	&#13;
+	return foundSysId;&#13;
+	&#13;
+}&#13;
+&#13;
+function serverLookupByIP(IPAddress){&#13;
+	var foundSysId = "";&#13;
+	&#13;
+	try {&#13;
+		&#13;
+		var serverLookupRecord = new GlideRecord('cmdb_ci_server');&#13;
+		serverLookupRecord.addQuery('ip_address','=',IPAddress);&#13;
+		serverLookupRecord.query();&#13;
+&#13;
+		if(serverLookupRecord.getRowCount() != 0){&#13;
+			while(serverLookupRecord.next()){&#13;
+				foundSysId = serverLookupRecord.sys_id; &#13;
+			}&#13;
+		}&#13;
+&#13;
+	}catch(e){&#13;
+		throw(e);&#13;
+	}&#13;
+	&#13;
+	return foundSysId;	&#13;
+}&#13;
+&#13;
+function certificateLookupBySerialNumber(serialNumber){&#13;
+	var foundSysId = "";&#13;
+	&#13;
+	try {&#13;
+		&#13;
+		var certificateLookupRecord = new GlideRecord('x_unugr_certificat_digital_certificate');&#13;
+		certificateLookupRecord.addQuery('u_serial_number','=',serialNumber);&#13;
+		certificateLookupRecord.query();&#13;
+		&#13;
+		if(certificateLookupRecord.getRowCount() != 0){&#13;
+			while(certificateLookupRecord.next()){&#13;
+				foundSysId = certificateLookupRecord.sys_id;&#13;
+			}&#13;
+		}&#13;
+		&#13;
+		&#13;
+	}catch(e){&#13;
+		throw(e);&#13;
+	}&#13;
+	return foundSysId;	&#13;
+}&#13;
+&#13;
+function certificateVendorLookupByCommonName(subjectCommonName,validTo){&#13;
+	var foundSysId = "";&#13;
+	&#13;
+	try {&#13;
+		&#13;
+		var dateTo = convertToCommonDate(validTo);&#13;
+		&#13;
+		var certificateLookupRecord = new GlideRecord('x_unugr_certificat_digital_certificate');&#13;
+		var encodedQuery = "u_common_name=" + subjectCommonName + "^u_expiresON" + dateTo + "@javascript:gs.dateGenerate('" + dateTo + "','start')@javascript:gs.dateGenerate('" + dateTo + "','end')";&#13;
+		&#13;
+		certificateLookupRecord.addEncodedQuery(encodedQuery);&#13;
+		certificateLookupRecord.query();&#13;
+		&#13;
+// 		workflow.info(subjectCommonName + ' before ' + validTo + ' after ' + dateTo);&#13;
+// 		workflow.info(encodedQuery);&#13;
+		if(certificateLookupRecord.getRowCount() != 0){&#13;
+			while(certificateLookupRecord.next()){&#13;
+				foundSysId = certificateLookupRecord.sys_id;&#13;
+			}&#13;
+		}&#13;
+		&#13;
+	}catch(e){&#13;
+		throw(e);&#13;
+	}&#13;
+	return foundSysId;	&#13;
+	&#13;
+}&#13;
+&#13;
+function checkUpdateVendorCertificate(currentCertificateSysID,serialNumber,signatureAlgorithm,SANs,ExtendedKeyUsage,subjectOrganizationName){&#13;
+	var doUpdate = false;&#13;
+	try {&#13;
+		&#13;
+		var certificateLookupRecord = new GlideRecord('x_unugr_certificat_digital_certificate');&#13;
+		certificateLookupRecord.addQuery('sys_id','=',currentCertificateSysID);&#13;
+		certificateLookupRecord.query();&#13;
+		&#13;
+		if(certificateLookupRecord.getRowCount() != 0){&#13;
+			while(certificateLookupRecord.next()){&#13;
+				if(certificateLookupRecord.u_serial_number == ''){&#13;
+					certificateLookupRecord.u_serial_number = serialNumber;&#13;
+					doUpdate = true;&#13;
+				}&#13;
+				if(certificateLookupRecord.u_signature_algorithm == ''){&#13;
+					certificateLookupRecord.u_signature_algorithm = signatureAlgorithm;&#13;
+					doUpdate = true;&#13;
+				}&#13;
+				if(certificateLookupRecord.u_sans == ''){&#13;
+					certificateLookupRecord.u_sans = SANs;&#13;
+					doUpdate = true;&#13;
+				}				&#13;
+				if(certificateLookupRecord.u_subject == ''){&#13;
+					certificateLookupRecord.u_subject = subjectOrganizationName;&#13;
+					doUpdate = true;&#13;
+				}							&#13;
+				if(certificateLookupRecord.u_short_description == ''){&#13;
+					certificateLookupRecord.u_short_description = ExtendedKeyUsage;&#13;
+					doUpdate = true;&#13;
+				}	&#13;
+				&#13;
+				if(doUpdate){&#13;
+					certificateLookupRecord.update();&#13;
+					certUpdated += 1;&#13;
+				}&#13;
+			}&#13;
+		}&#13;
+		&#13;
+		&#13;
+	}catch(e){&#13;
+		throw(e);&#13;
+	}	&#13;
+}&#13;
+&#13;
+function getMonthFromString(mon,year){&#13;
+   return new Date(Date.parse(mon +" 1, " + year)).getMonth()+1;&#13;
+}&#13;
+&#13;
+function convertToCommonDate(dateTestString){&#13;
+    var dateArray = dateTestString.split(' ');&#13;
+    var yearStr = dateArray[3];&#13;
+    var dayStr = dateArray[1];&#13;
+    var monStr = getMonthFromString(dateArray[0],yearStr);&#13;
+    var timeStr = dateArray[2];&#13;
+    &#13;
+    var dateString = monStr + '/' + dayStr + '/' + yearStr + ' ' + timeStr + ' GMT';&#13;
+    &#13;
+    var date = new Date(dateString);&#13;
+    &#13;
+    return formatDate(date);&#13;
+}&#13;
+&#13;
+function formatDate(date) {&#13;
+    var d = new Date(date),&#13;
+        month = '' + (d.getMonth() + 1),&#13;
+        day = '' + d.getDate(),&#13;
+        year = d.getFullYear();&#13;
+&#13;
+    if (month.length &lt; 2) month = '0' + month;&#13;
+    if (day.length &lt; 2) day = '0' + day;&#13;
+&#13;
+    return [year, month, day].join('-');&#13;
+}&#13;
+&#13;
+function findEnvironmentByCommonNameOrSans(subjectCommonName,SANs){&#13;
+	var environment;&#13;
+	var commonName = subjectCommonName.toUpperCase();&#13;
+	var alternateName = SANs.toUpperCase();&#13;
+	var acceptance = 'ACPT';&#13;
+	var development = 'DEV';&#13;
+	var production = 'CORP';&#13;
+	&#13;
+	if(commonName.includes('.' + development) || alternateName.includes('.' + development)  || &#13;
+		commonName.includes(' ' + development + ' ') || alternateName.includes(' ' + development + ' ') ){&#13;
+		environment = 'UP.DEV.UPC';&#13;
+	} else if(commonName.includes('.' + acceptance) || alternateName.includes('.' + acceptance)  || &#13;
+		commonName.includes(' ' + acceptance + ' ') || alternateName.includes(' ' + acceptance + ' ') ){&#13;
+		environment = 'UP.ACPT.UPC';&#13;
+	} else if(commonName.includes('.' + production) || alternateName.includes('.' + production)  || &#13;
+		commonName.includes(' ' + production + ' ') || alternateName.includes(' ' + production + ' ') ){&#13;
+		environment = 'UP.CORP.UPC';&#13;
+	} else{&#13;
+		environment = '';&#13;
+	}&#13;
+	&#13;
+	return environment;&#13;
+}&#13;
+&#13;
+function calcDaysDiffFromToday(dateString){&#13;
+	var todayDate = new GlideDateTime();&#13;
+	var compareDate = new GlideDateTime(dateString);&#13;
+	var duration = GlideDate.subtract(todayDate,compareDate);&#13;
+	var diffDays = duration.getRoundedDayPart();&#13;
+&#13;
+	if(debugOutput){&#13;
+		gs.info('Date is ' + dateString + ' Converted Date is: ' + compareDate + ' Days Diff is: ' + diffDays);&#13;
+	}&#13;
+	return diffDays;&#13;
+}&#13;
+// function calcDaysDiffFromToday(datestring){&#13;
+// 	var date1 = new Date();&#13;
+// 	var date2 = new Date(datestring);&#13;
+// 	var diffDays =  Math.floor((Date.UTC(date2.getFullYear(), date2.getMonth(), date2.getDate()) - Date.UTC(date1.getFullYear(), date1.getMonth(), date1.getDate()) ) /(1000 * 60 * 60 * 24));&#13;
+&#13;
+// 	if(debugOutput){&#13;
+// 		gs.info('Date is ' + datestring + ' Days Diff is ' + diffDays);&#13;
+// 	}&#13;
+	&#13;
+// 	return diffDays;&#13;
+// }&#13;
+&#13;
+&#13;
+&#13;
+&#13;
+&#13;
+&#13;
+&#13;
+&#13;
+</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>689636641b5be010e314c955624bcb0f</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
+        <sys_id>e89636641b5be010e314c955624bcb0f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <value>var certificateScanCount = 0;&#13;
+var statusDescription = '';&#13;
+var errorMessage = '';&#13;
+var errorOccured = false;&#13;
+var processStatus = 'Success';&#13;
+var debugOutput = true;&#13;
+var certUpdated = 0;&#13;
+var relationshipUpdated = 0;&#13;
+var certInserted = 0;&#13;
+var relationshipInserted = 0;&#13;
+var cimissing = 0;&#13;
+var recordsIgnored = 0;&#13;
+var unknownSource = 0;&#13;
+var vendorSource = 'Corporation Service Company';&#13;
+var scanSource = 'Tenable';&#13;
+&#13;
+var ignoreExpiredDays = parseInt(gs.getProperty('x_unugr_certificat.importscan.ignoreExpiredDays'));&#13;
+&#13;
+try{&#13;
+	var jsonData = data.get(15).certificateScans;&#13;
+&#13;
+// 	var parser = new global.JSONParser();&#13;
+&#13;
+// 	var parsedData = parser.parse(jsonData);&#13;
+&#13;
+	var parsedData = JSON.parse(jsonData);&#13;
+	// workflow.scratchpad.jsonStringData = JSON.stringify(parsedData);&#13;
+&#13;
+	var certificateScans = parsedData.certificateScans;&#13;
+	certificateScanCount = certificateScans.length;&#13;
+&#13;
+	if(debugOutput){&#13;
+		workflow.info('Number of Certificate Scans: ' + certificateScanCount);&#13;
+	}&#13;
+&#13;
+	// Loop through all Scan Records&#13;
+	for(i=0;i &lt; certificateScans.length;i++){&#13;
+&#13;
+		var ipAddress = certificateScans[i].ipAddress;&#13;
+		var dnsEntry = certificateScans[i].dnsEntry;&#13;
+		var netBios = certificateScans[i].netBios;&#13;
+		var firstDetected = certificateScans[i].firstDetected;&#13;
+		var lastDetected =  certificateScans[i].lastDetected;&#13;
+		var serialNumber = (certificateScans[i].serialNumber).trim();&#13;
+		var signatureAlgorithm = certificateScans[i].signatureAlgorithm;&#13;
+		var issuerOrganizationName = certificateScans[i].issuerOrganizationName;&#13;
+		var issuerCommonName =  certificateScans[i].issuerCommonName;&#13;
+		var subjectOrganizationName =  certificateScans[i].subjectOrganizationName;&#13;
+		var subjectCommonName =  certificateScans[i].subjectCommonName;&#13;
+		var validFrom =  certificateScans[i].validFrom;&#13;
+		var validTo =  certificateScans[i].validTo;&#13;
+		var ExtendedKeyUsage = certificateScans[i].ExtendedKeyUsage;&#13;
+		var SANs =  certificateScans[i].SANs;&#13;
+&#13;
+		var currentServerSysID = "";&#13;
+		//Lookup Server SysID based on what fields we have populated&#13;
+		if(dnsEntry !== ""){&#13;
+			currentServerSysID = serverLookupByName(dnsEntry);&#13;
+		}else if(netBios !== ""){&#13;
+			currentServerSysID = serverLookupByName(netBios);&#13;
+		}else {&#13;
+			currentServerSysID = serverLookupByIP(ipAddress);&#13;
+		}&#13;
+		&#13;
+		//Call function to handle certificates&#13;
+		//First See if we can find the certificate by serial number&#13;
+		var currentCertificateSysID = "";&#13;
+		currentCertificateSysID = certificateLookupBySerialNumber(serialNumber);&#13;
+		//if certificate isnt found see if we can make a match based on commonname, validFrom and validTo&#13;
+		//current external ssl vendor does not supply the actual serial number of the certificate so we need to&#13;
+		//try and find a match.  If we make the match update the current record with the actual serial number&#13;
+		&#13;
+		if(currentCertificateSysID === '' &amp;&amp; issuerOrganizationName == vendorSource) {&#13;
+			currentCertificateSysID = certificateVendorLookupByCommonName(subjectCommonName,validTo);&#13;
+			//if we found it see if we need to update any other data on the record, since the vendor supplies&#13;
+			//very little data&#13;
+			if(currentCertificateSysID !== ""){&#13;
+				checkUpdateVendorCertificate(currentCertificateSysID,serialNumber,signatureAlgorithm,SANs,ExtendedKeyUsage,subjectOrganizationName);			&#13;
+			}&#13;
+		}else if (currentCertificateSysID == '' &amp;&amp; issuerOrganizationName != vendorSource &amp;&amp; calcDaysDiffFromToday(convertToCommonDate(validTo)) &gt; -ignoreExpiredDays){&#13;
+			//Certificate not found and is not from our External Vendor and its expiration Date was not greate than 40 days ago then Add to Cert Repository&#13;
+			certificateRecord = new GlideRecord('x_unugr_certificat_digital_certificate');&#13;
+			certificateRecord.initialize();&#13;
+			&#13;
+			certificateRecord.u_subject = subjectOrganizationName;&#13;
+			certificateRecord.u_source = scanSource;&#13;
+			certificateRecord.u_signature_algorithm = signatureAlgorithm;&#13;
+			certificateRecord.u_short_description = ExtendedKeyUsage;&#13;
+			certificateRecord.u_serial_number = serialNumber;&#13;
+			certificateRecord.u_sans = SANs;&#13;
+			certificateRecord.u_issuer = issuerOrganizationName;&#13;
+			certificateRecord.u_common_name = subjectCommonName;&#13;
+			certificateRecord.u_environment = findEnvironmentByCommonNameOrSans(subjectCommonName,SANs);&#13;
+			certificateRecord.u_certificate_effective_date = convertToCommonDate(validFrom);&#13;
+			certificateRecord.u_expires = convertToCommonDate(validTo);&#13;
+			currentCertificateSysID = certificateRecord.insert();&#13;
+			certificateRecord += 1;&#13;
+			&#13;
+		}&#13;
+		&#13;
+		//now that we have either found or inserted the certificate we will either update an existing relationship to a ci or create a relationship&#13;
+		// if we couldnt match the CI that a cert is associated with we will need it to the CI Not matched table for follow-up&#13;
+		if(currentCertificateSysID != '' &amp;&amp; currentServerSysID != '' ){&#13;
+			//first see if the relationship already exists, if it does update the last found date&#13;
+			//if it doesnt then add it&#13;
+// 			workflow.info('Relationship Server ' + currentServerSysID + ' Certificate ' + currentCertificateSysID);&#13;
+			var queryString = 'server=' + currentServerSysID + '^digital_certificate=' + currentCertificateSysID; &#13;
+			var relationshipRecord =  new GlideRecord('x_unugr_certificat_m2m_servers_digital_cert');&#13;
+			relationshipRecord.addEncodedQuery(queryString);&#13;
+			relationshipRecord.query();&#13;
+			&#13;
+			if(relationshipRecord.next()){&#13;
+				relationshipRecord.u_last_found = lastDetected;&#13;
+				if(!firstDetected){&#13;
+					relationshipRecord.u_first_found = lastDetected;&#13;
+				}&#13;
+				relationshipRecord.update();&#13;
+				relationshipUpdated += 1;&#13;
+			} else {&#13;
+				relationshipRecord.initialize();&#13;
+				relationshipRecord.digital_certificate = currentCertificateSysID;&#13;
+				relationshipRecord.server = currentServerSysID;&#13;
+				relationshipRecord.u_first_found = lastDetected;&#13;
+				relationshipRecord.u_last_found = lastDetected;&#13;
+				relationshipRecord.insert();&#13;
+				relationshipInserted += 1;				&#13;
+			}&#13;
+		} else if(currentCertificateSysID != '' &amp;&amp; currentServerSysID == '') {&#13;
+			var missingCIRecord = new GlideRecord('x_unugr_certificat_scan_ci_not_found');&#13;
+			&#13;
+			var queryString ='ci_name=' + dnsEntry + '^ORci_netbios=' + netBios + '^ORci_ip_address=' + ipAddress + '^digital_certificate=' + currentCertificateSysID ;&#13;
+			&#13;
+			missingCIRecord.addEncodedQuery(queryString);&#13;
+			missingCIRecord.query();&#13;
+			&#13;
+			if(missingCIRecord.getRowCount() == 0){&#13;
+				missingCIRecord.initialize();&#13;
+				missingCIRecord.ci_name = dnsEntry;&#13;
+				missingCIRecord.ci_netbios = netBios;&#13;
+				missingCIRecord.ci_ip_address = ipAddress;&#13;
+				missingCIRecord.digital_certificate = currentCertificateSysID;&#13;
+				missingCIRecord.insert();				&#13;
+			}&#13;
+			cimissing += 1;&#13;
+		} else{&#13;
+			recordsIgnored += 1;&#13;
+		}&#13;
+			&#13;
+			&#13;
+		&#13;
+// 		if(debugOutput){&#13;
+// 			if(currentServerSysID !== ""){&#13;
+// 				workflow.info('Server Found: ' + dnsEntry + ' ' + currentServerSysID);&#13;
+// 			} else {&#13;
+// 				workflow.info('Server Not Found: ' + ipAddress + ' ' + dnsEntry);&#13;
+// 			}&#13;
+// 			if(currentCertificateSysID !== ""){&#13;
+// 				workflow.info('***Certificate Found***: ' + currentCertificateSysID);&#13;
+// 			}&#13;
+// 			else{&#13;
+// 				workflow.info('Certificate Not Found for Serial ' + serialNumber);&#13;
+// 			}&#13;
+// 		}&#13;
+	}&#13;
+} catch(e) {&#13;
+	errorOccured = true;&#13;
+	processStatus = 'Failure';&#13;
+	if(/null/.test(e.message)){//Error Message is null&#13;
+		errorMessage = 'Error Occured while parsing certificate scan data. Last processed IPAddresss: ' + ipAddress;&#13;
+		&#13;
+	} else {&#13;
+		errorMessage = 'Error Occured while parsing certificate scan data. Last processed IPAddresss: ' + ipAddress + 'Reason: ' + e.message;&#13;
+	}&#13;
+} finally {&#13;
+	var statusDescription = '';&#13;
+	//if error occured then log the error in the import table&#13;
+	if(errorOccured) {&#13;
+		statusDescription = errorMessage;&#13;
+	} else {&#13;
+		workflow.scratchpad.certificateScanCount += certificateScanCount;&#13;
+		workflow.scratchpad.relationshipUpdated += relationshipUpdated;&#13;
+		workflow.scratchpad.relationshipInserted += relationshipInserted;&#13;
+		workflow.scratchpad.recordsIgnored += recordsIgnored;&#13;
+&#13;
+	}&#13;
+	var endingTime = new GlideDateTime();&#13;
+	var scanLogRecord = new GlideRecord('x_unugr_certificat_certificate_scan_log');&#13;
+	&#13;
+	scanLogRecord.addQuery('sys_id', '=', workflow.scratchpad.currentLogRecord);&#13;
+	scanLogRecord.query();&#13;
+	var fileProcessing = 0;&#13;
+	fileProcessing = workflow.scratchpad.counter + 1;&#13;
+	statusDescription =  'Processing ' + workflow.scratchpad.currentTenableInputFile + ' File number ' + fileProcessing;&#13;
+	&#13;
+	while (scanLogRecord.next()) {&#13;
+		scanLogRecord.u_status = 'Processing';&#13;
+		scanLogRecord.u_status_description = statusDescription;&#13;
+		scanLogRecord.u_scan_ended = endingTime;&#13;
+		scanLogRecord.update();&#13;
+	}&#13;
+}&#13;
+&#13;
+//Functions&#13;
+function serverLookupByName(serverName){&#13;
+	var foundSysId = "";&#13;
+	&#13;
+	try{&#13;
+		if(serverName.indexOf('.') &gt;= 0) {&#13;
+			serverName = serverName.substring(0,serverName.indexOf('.'));&#13;
+		}&#13;
+&#13;
+		var serverLookupRecord = new GlideRecord('cmdb_ci_server');&#13;
+		serverLookupRecord.addQuery('name','=',serverName);&#13;
+		serverLookupRecord.query();&#13;
+&#13;
+		if(serverLookupRecord.getRowCount() != 0){&#13;
+			while(serverLookupRecord.next()){&#13;
+				foundSysId = serverLookupRecord.sys_id; &#13;
+			}&#13;
+		}		&#13;
+	}catch(e){&#13;
+		throw(e);&#13;
+	}&#13;
+	&#13;
+	return foundSysId;&#13;
+	&#13;
+}&#13;
+&#13;
+function serverLookupByIP(IPAddress){&#13;
+	var foundSysId = "";&#13;
+	&#13;
+	try {&#13;
+		&#13;
+		var serverLookupRecord = new GlideRecord('cmdb_ci_server');&#13;
+		serverLookupRecord.addQuery('ip_address','=',IPAddress);&#13;
+		serverLookupRecord.query();&#13;
+&#13;
+		if(serverLookupRecord.getRowCount() != 0){&#13;
+			while(serverLookupRecord.next()){&#13;
+				foundSysId = serverLookupRecord.sys_id; &#13;
+			}&#13;
+		}&#13;
+&#13;
+	}catch(e){&#13;
+		throw(e);&#13;
+	}&#13;
+	&#13;
+	return foundSysId;	&#13;
+}&#13;
+&#13;
+function certificateLookupBySerialNumber(serialNumber){&#13;
+	var foundSysId = "";&#13;
+	&#13;
+	try {&#13;
+		&#13;
+		var certificateLookupRecord = new GlideRecord('x_unugr_certificat_digital_certificate');&#13;
+		certificateLookupRecord.addQuery('u_serial_number','=',serialNumber);&#13;
+		certificateLookupRecord.query();&#13;
+		&#13;
+		if(certificateLookupRecord.getRowCount() != 0){&#13;
+			while(certificateLookupRecord.next()){&#13;
+				foundSysId = certificateLookupRecord.sys_id;&#13;
+			}&#13;
+		}&#13;
+		&#13;
+		&#13;
+	}catch(e){&#13;
+		throw(e);&#13;
+	}&#13;
+	return foundSysId;	&#13;
+}&#13;
+&#13;
+function certificateVendorLookupByCommonName(subjectCommonName,validTo){&#13;
+	var foundSysId = "";&#13;
+	&#13;
+	try {&#13;
+		&#13;
+		var dateTo = convertToCommonDate(validTo);&#13;
+		&#13;
+		var certificateLookupRecord = new GlideRecord('x_unugr_certificat_digital_certificate');&#13;
+		var encodedQuery = "u_common_name=" + subjectCommonName + "^u_expiresON" + dateTo + "@javascript:gs.dateGenerate('" + dateTo + "','start')@javascript:gs.dateGenerate('" + dateTo + "','end')";&#13;
+		&#13;
+		certificateLookupRecord.addEncodedQuery(encodedQuery);&#13;
+		certificateLookupRecord.query();&#13;
+		&#13;
+// 		workflow.info(subjectCommonName + ' before ' + validTo + ' after ' + dateTo);&#13;
+// 		workflow.info(encodedQuery);&#13;
+		if(certificateLookupRecord.getRowCount() != 0){&#13;
+			while(certificateLookupRecord.next()){&#13;
+				foundSysId = certificateLookupRecord.sys_id;&#13;
+			}&#13;
+		}&#13;
+		&#13;
+	}catch(e){&#13;
+		throw(e);&#13;
+	}&#13;
+	return foundSysId;	&#13;
+	&#13;
+}&#13;
+&#13;
+function checkUpdateVendorCertificate(currentCertificateSysID,serialNumber,signatureAlgorithm,SANs,ExtendedKeyUsage,subjectOrganizationName){&#13;
+	var doUpdate = false;&#13;
+	try {&#13;
+		&#13;
+		var certificateLookupRecord = new GlideRecord('x_unugr_certificat_digital_certificate');&#13;
+		certificateLookupRecord.addQuery('sys_id','=',currentCertificateSysID);&#13;
+		certificateLookupRecord.query();&#13;
+		&#13;
+		if(certificateLookupRecord.getRowCount() != 0){&#13;
+			while(certificateLookupRecord.next()){&#13;
+				if(certificateLookupRecord.u_serial_number == ''){&#13;
+					certificateLookupRecord.u_serial_number = serialNumber;&#13;
+					doUpdate = true;&#13;
+				}&#13;
+				if(certificateLookupRecord.u_signature_algorithm == ''){&#13;
+					certificateLookupRecord.u_signature_algorithm = signatureAlgorithm;&#13;
+					doUpdate = true;&#13;
+				}&#13;
+				if(certificateLookupRecord.u_sans == ''){&#13;
+					certificateLookupRecord.u_sans = SANs;&#13;
+					doUpdate = true;&#13;
+				}				&#13;
+				if(certificateLookupRecord.u_subject == ''){&#13;
+					certificateLookupRecord.u_subject = subjectOrganizationName;&#13;
+					doUpdate = true;&#13;
+				}							&#13;
+				if(certificateLookupRecord.u_short_description == ''){&#13;
+					certificateLookupRecord.u_short_description = ExtendedKeyUsage;&#13;
+					doUpdate = true;&#13;
+				}	&#13;
+				&#13;
+				if(doUpdate){&#13;
+					certificateLookupRecord.update();&#13;
+					certUpdated += 1;&#13;
+				}&#13;
+			}&#13;
+		}&#13;
+		&#13;
+		&#13;
+	}catch(e){&#13;
+		throw(e);&#13;
+	}	&#13;
+}&#13;
+&#13;
+function getMonthFromString(mon,year){&#13;
+   return new Date(Date.parse(mon +" 1, " + year)).getMonth()+1;&#13;
+}&#13;
+&#13;
+function convertToCommonDate(dateTestString){&#13;
+    var dateArray = dateTestString.split(' ');&#13;
+    var yearStr = dateArray[3];&#13;
+    var dayStr = dateArray[1];&#13;
+    var monStr = getMonthFromString(dateArray[0],yearStr);&#13;
+    var timeStr = dateArray[2];&#13;
+    &#13;
+    var dateString = monStr + '/' + dayStr + '/' + yearStr + ' ' + timeStr + ' GMT';&#13;
+    &#13;
+    var date = new Date(dateString);&#13;
+    &#13;
+    return formatDate(date);&#13;
+}&#13;
+&#13;
+function formatDate(date) {&#13;
+    var d = new Date(date),&#13;
+        month = '' + (d.getMonth() + 1),&#13;
+        day = '' + d.getDate(),&#13;
+        year = d.getFullYear();&#13;
+&#13;
+    if (month.length &lt; 2) month = '0' + month;&#13;
+    if (day.length &lt; 2) day = '0' + day;&#13;
+&#13;
+    return [year, month, day].join('-');&#13;
+}&#13;
+&#13;
+function findEnvironmentByCommonNameOrSans(subjectCommonName,SANs){&#13;
+	var environment;&#13;
+	var commonName = subjectCommonName.toUpperCase();&#13;
+	var alternateName = SANs.toUpperCase();&#13;
+	var acceptance = 'ACPT';&#13;
+	var development = 'DEV';&#13;
+	var production = 'CORP';&#13;
+	&#13;
+	if(commonName.includes('.' + development) || alternateName.includes('.' + development)  || &#13;
+		commonName.includes(' ' + development + ' ') || alternateName.includes(' ' + development + ' ') ){&#13;
+		environment = 'UP.DEV.UPC';&#13;
+	} else if(commonName.includes('.' + acceptance) || alternateName.includes('.' + acceptance)  || &#13;
+		commonName.includes(' ' + acceptance + ' ') || alternateName.includes(' ' + acceptance + ' ') ){&#13;
+		environment = 'UP.ACPT.UPC';&#13;
+	} else if(commonName.includes('.' + production) || alternateName.includes('.' + production)  || &#13;
+		commonName.includes(' ' + production + ' ') || alternateName.includes(' ' + production + ' ') ){&#13;
+		environment = 'UP.CORP.UPC';&#13;
+	} else{&#13;
+		environment = '';&#13;
+	}&#13;
+	&#13;
+	return environment;&#13;
+}&#13;
+&#13;
+function calcDaysDiffFromToday(dateString){&#13;
+	var todayDate = new GlideDateTime();&#13;
+	var compareDate = new GlideDateTime(dateString);&#13;
+	var duration = GlideDate.subtract(todayDate,compareDate);&#13;
+	var diffDays = duration.getRoundedDayPart();&#13;
+&#13;
+	if(debugOutput){&#13;
+		gs.info('Date is ' + dateString + ' Converted Date is: ' + compareDate + ' Days Diff is: ' + diffDays);&#13;
+	}&#13;
+	return diffDays;&#13;
+}&#13;
+// function calcDaysDiffFromToday(datestring){&#13;
+// 	var date1 = new Date();&#13;
+// 	var date2 = new Date(datestring);&#13;
+// 	var diffDays =  Math.floor((Date.UTC(date2.getFullYear(), date2.getMonth(), date2.getDate()) - Date.UTC(date1.getFullYear(), date1.getMonth(), date1.getDate()) ) /(1000 * 60 * 60 * 24));&#13;
+&#13;
+// 	if(debugOutput){&#13;
+// 		gs.info('Date is ' + datestring + ' Days Diff is ' + diffDays);&#13;
+// 	}&#13;
+	&#13;
+// 	return diffDays;&#13;
+// }&#13;
+&#13;
+&#13;
+&#13;
+&#13;
+&#13;
+&#13;
+&#13;
+&#13;
+</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Process Scan JSON Object">689636641b5be010e314c955624bcb0f</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
+        <sys_id>209636641b5be010e314c955624bcb10</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+    </wf_condition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Yes">689636641b5be010e314c955624bcb13</condition>
+        <from display_value="check counter value">249636641b5be010e314c955624bcb12</from>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
+        <sys_id>209636641b5be010e314c955624bcb18</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <to display_value="populate current processing vars">209636641b5be010e314c955624bcb14</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">e49636641b5be010e314c955624bcb14</condition>
+        <from display_value="populate current processing vars">209636641b5be010e314c955624bcb14</from>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
+        <sys_id>249636641b5be010e314c955624bcb17</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <to display_value="cm_processScanReport">a496fe241b5be010e314c955624bcb85</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">249636641b5be010e314c955624bcb0e</condition>
+        <from display_value="Begin">ec96fe241b5be010e314c955624bcb88</from>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
+        <sys_id>289636641b5be010e314c955624bcb17</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <to display_value="Initialize Workflow vars and log">a896fe241b5be010e314c955624bcb86</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">2c9636641b5be010e314c955624bcb11</condition>
+        <from display_value="Log Scan Record">649636641b5be010e314c955624bcb11</from>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
+        <sys_id>2c9636641b5be010e314c955624bcb17</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <to display_value="End">e49636641b5be010e314c955624bcb10</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Success">2896fe241b5be010e314c955624bcb88</condition>
+        <from display_value="cm_splitTenableScan">e896fe241b5be010e314c955624bcb87</from>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
+        <sys_id>649636641b5be010e314c955624bcb16</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <to display_value="Populate Files to process">a096fe241b5be010e314c955624bcb83</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Success">e096fe241b5be010e314c955624bcb86</condition>
+        <from display_value="cm_processScanReport">a496fe241b5be010e314c955624bcb85</from>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
+        <sys_id>689636641b5be010e314c955624bcb16</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <to display_value="Process Scan JSON Object">689636641b5be010e314c955624bcb0f</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="No">e49636641b5be010e314c955624bcb13</condition>
+        <from display_value="check counter value">249636641b5be010e314c955624bcb12</from>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
+        <sys_id>a09636641b5be010e314c955624bcb18</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <to display_value="Log Scan Record">649636641b5be010e314c955624bcb11</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">6096fe241b5be010e314c955624bcb87</condition>
+        <from display_value="Initialize Workflow vars and log">a896fe241b5be010e314c955624bcb86</from>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
+        <sys_id>a49636641b5be010e314c955624bcb18</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <to display_value="cm_splitTenableScan">e896fe241b5be010e314c955624bcb87</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">209636641b5be010e314c955624bcb10</condition>
+        <from display_value="Process Scan JSON Object">689636641b5be010e314c955624bcb0f</from>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
+        <sys_id>a89636641b5be010e314c955624bcb18</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <to display_value="check counter value">249636641b5be010e314c955624bcb12</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">2896fe241b5be010e314c955624bcb84</condition>
+        <from display_value="Populate Files to process">a096fe241b5be010e314c955624bcb83</from>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
+        <sys_id>ac9636641b5be010e314c955624bcb15</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <to display_value="populate current processing vars">209636641b5be010e314c955624bcb14</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Failure">a496fe241b5be010e314c955624bcb88</condition>
+        <from display_value="cm_splitTenableScan">e896fe241b5be010e314c955624bcb87</from>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
+        <sys_id>e09636641b5be010e314c955624bcb16</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <to display_value="Log Failure">e89636641b5be010e314c955624bcb0e</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Failure">6096fe241b5be010e314c955624bcb86</condition>
+        <from display_value="cm_processScanReport">a496fe241b5be010e314c955624bcb85</from>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
+        <sys_id>e89636641b5be010e314c955624bcb16</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <to display_value="Log Failure">e89636641b5be010e314c955624bcb0e</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">a09636641b5be010e314c955624bcb0f</condition>
+        <from display_value="Log Failure">e89636641b5be010e314c955624bcb0e</from>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
+        <sys_id>ec9636641b5be010e314c955624bcb16</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <to display_value="check counter value">249636641b5be010e314c955624bcb12</to>
+    </wf_transition>
+    <wf_estimated_runtime_config action="INSERT_OR_UPDATE">
+        <estimated_run_time/>
+        <no_of_data_points>1</no_of_data_points>
+        <percentage_threshold_ert>20</percentage_threshold_ert>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-03-31 19:19:26</sys_created_on>
+        <sys_id>a896fe241b5be010e314c955624bcb80</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-03-31 19:19:26</sys_updated_on>
+        <workflow_version display_value="14 Hours">2496fe241b5be010e314c955624bcb80</workflow_version>
+    </wf_estimated_runtime_config>
+    <wf_workflow_version action="update_multiple" query="workflow=f44b753adbb43f80d3e954f94896195e^sys_id!=2496fe241b5be010e314c955624bcb80">
+        <published>false</published>
+    </wf_workflow_version>
+</record_update>
