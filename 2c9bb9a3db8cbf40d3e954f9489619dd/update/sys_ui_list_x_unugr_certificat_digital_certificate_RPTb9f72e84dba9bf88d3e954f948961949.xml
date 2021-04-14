@@ -8,12 +8,12 @@
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
-            <sys_created_by>AJ620</sys_created_by>
-            <sys_created_on>2021-03-25 13:54:14</sys_created_on>
-            <sys_id>52923a6edb472010f75daca2ca961938</sys_id>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2021-04-09 14:15:16</sys_created_on>
+            <sys_id>e8474caf1b5fa450e314c955624bcba4</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>AJ620</sys_updated_by>
-            <sys_updated_on>2021-03-25 13:54:14</sys_updated_on>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2021-04-09 14:15:16</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -23,132 +23,12 @@
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
-            <sys_created_by>AJ620</sys_created_by>
-            <sys_created_on>2021-03-25 13:54:14</sys_created_on>
-            <sys_id>d2923a6edb472010f75daca2ca961938</sys_id>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2021-04-09 14:15:16</sys_created_on>
+            <sys_id>24474caf1b5fa450e314c955624bcba5</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>AJ620</sys_updated_by>
-            <sys_updated_on>2021-03-25 13:54:14</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>u_expires_in_days</element>
-            <list_id display_value="x_unugr_certificat_digital_certificate" element="NULL" name="x_unugr_certificat_digital_certificate" parent="NULL" relationship="NULL" sys_domain="global" view="e2b2e3361b977b408591524d0d4bcb11">caf7e6c4dba9bf88d3e954f9489619ce</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>2</position>
-            <sum>false</sum>
-            <sys_created_by>AJ620</sys_created_by>
-            <sys_created_on>2021-03-25 13:54:14</sys_created_on>
-            <sys_id>56923a6edb472010f75daca2ca961938</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>AJ620</sys_updated_by>
-            <sys_updated_on>2021-03-25 13:54:14</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>u_common_name</element>
-            <list_id display_value="x_unugr_certificat_digital_certificate" element="NULL" name="x_unugr_certificat_digital_certificate" parent="NULL" relationship="NULL" sys_domain="global" view="e2b2e3361b977b408591524d0d4bcb11">caf7e6c4dba9bf88d3e954f9489619ce</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>3</position>
-            <sum>false</sum>
-            <sys_created_by>AJ620</sys_created_by>
-            <sys_created_on>2021-03-25 13:54:14</sys_created_on>
-            <sys_id>d6923a6edb472010f75daca2ca961938</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>AJ620</sys_updated_by>
-            <sys_updated_on>2021-03-25 13:54:14</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>u_sans</element>
-            <list_id display_value="x_unugr_certificat_digital_certificate" element="NULL" name="x_unugr_certificat_digital_certificate" parent="NULL" relationship="NULL" sys_domain="global" view="e2b2e3361b977b408591524d0d4bcb11">caf7e6c4dba9bf88d3e954f9489619ce</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>4</position>
-            <sum>false</sum>
-            <sys_created_by>AJ620</sys_created_by>
-            <sys_created_on>2021-03-25 13:54:14</sys_created_on>
-            <sys_id>5a923a6edb472010f75daca2ca961938</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>AJ620</sys_updated_by>
-            <sys_updated_on>2021-03-25 13:54:14</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>u_issuer</element>
-            <list_id display_value="x_unugr_certificat_digital_certificate" element="NULL" name="x_unugr_certificat_digital_certificate" parent="NULL" relationship="NULL" sys_domain="global" view="e2b2e3361b977b408591524d0d4bcb11">caf7e6c4dba9bf88d3e954f9489619ce</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>5</position>
-            <sum>false</sum>
-            <sys_created_by>AJ620</sys_created_by>
-            <sys_created_on>2021-03-25 13:54:14</sys_created_on>
-            <sys_id>da923a6edb472010f75daca2ca961938</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>AJ620</sys_updated_by>
-            <sys_updated_on>2021-03-25 13:54:14</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>u_expires</element>
-            <list_id display_value="x_unugr_certificat_digital_certificate" element="NULL" name="x_unugr_certificat_digital_certificate" parent="NULL" relationship="NULL" sys_domain="global" view="e2b2e3361b977b408591524d0d4bcb11">caf7e6c4dba9bf88d3e954f9489619ce</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>6</position>
-            <sum>false</sum>
-            <sys_created_by>AJ620</sys_created_by>
-            <sys_created_on>2021-03-25 13:54:14</sys_created_on>
-            <sys_id>5e923a6edb472010f75daca2ca961938</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>AJ620</sys_updated_by>
-            <sys_updated_on>2021-03-25 13:54:14</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>u_certificate_effective_date</element>
-            <list_id display_value="x_unugr_certificat_digital_certificate" element="NULL" name="x_unugr_certificat_digital_certificate" parent="NULL" relationship="NULL" sys_domain="global" view="e2b2e3361b977b408591524d0d4bcb11">caf7e6c4dba9bf88d3e954f9489619ce</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>7</position>
-            <sum>false</sum>
-            <sys_created_by>AJ620</sys_created_by>
-            <sys_created_on>2021-03-25 13:54:14</sys_created_on>
-            <sys_id>de923a6edb472010f75daca2ca961938</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>AJ620</sys_updated_by>
-            <sys_updated_on>2021-03-25 13:54:14</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>u_expiration_notification</element>
-            <list_id display_value="x_unugr_certificat_digital_certificate" element="NULL" name="x_unugr_certificat_digital_certificate" parent="NULL" relationship="NULL" sys_domain="global" view="e2b2e3361b977b408591524d0d4bcb11">caf7e6c4dba9bf88d3e954f9489619ce</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>8</position>
-            <sum>false</sum>
-            <sys_created_by>AJ620</sys_created_by>
-            <sys_created_on>2021-03-25 13:54:14</sys_created_on>
-            <sys_id>52923a6edb472010f75daca2ca961939</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>AJ620</sys_updated_by>
-            <sys_updated_on>2021-03-25 13:54:14</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>u_source</element>
-            <list_id display_value="x_unugr_certificat_digital_certificate" element="NULL" name="x_unugr_certificat_digital_certificate" parent="NULL" relationship="NULL" sys_domain="global" view="e2b2e3361b977b408591524d0d4bcb11">caf7e6c4dba9bf88d3e954f9489619ce</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>9</position>
-            <sum>false</sum>
-            <sys_created_by>AJ620</sys_created_by>
-            <sys_created_on>2021-03-25 13:54:14</sys_created_on>
-            <sys_id>d2923a6edb472010f75daca2ca961939</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>AJ620</sys_updated_by>
-            <sys_updated_on>2021-03-25 13:54:14</sys_updated_on>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2021-04-09 14:15:16</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -156,14 +36,134 @@
             <list_id display_value="x_unugr_certificat_digital_certificate" element="NULL" name="x_unugr_certificat_digital_certificate" parent="NULL" relationship="NULL" sys_domain="global" view="e2b2e3361b977b408591524d0d4bcb11">caf7e6c4dba9bf88d3e954f9489619ce</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2021-04-09 14:15:16</sys_created_on>
+            <sys_id>28474caf1b5fa450e314c955624bcba5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2021-04-09 14:15:16</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_expires_in_days</element>
+            <list_id display_value="x_unugr_certificat_digital_certificate" element="NULL" name="x_unugr_certificat_digital_certificate" parent="NULL" relationship="NULL" sys_domain="global" view="e2b2e3361b977b408591524d0d4bcb11">caf7e6c4dba9bf88d3e954f9489619ce</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2021-04-09 14:15:16</sys_created_on>
+            <sys_id>28474caf1b5fa450e314c955624bcbd7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2021-04-09 14:15:16</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_common_name</element>
+            <list_id display_value="x_unugr_certificat_digital_certificate" element="NULL" name="x_unugr_certificat_digital_certificate" parent="NULL" relationship="NULL" sys_domain="global" view="e2b2e3361b977b408591524d0d4bcb11">caf7e6c4dba9bf88d3e954f9489619ce</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2021-04-09 14:15:16</sys_created_on>
+            <sys_id>2c474caf1b5fa450e314c955624bcbd7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2021-04-09 14:15:16</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_sans</element>
+            <list_id display_value="x_unugr_certificat_digital_certificate" element="NULL" name="x_unugr_certificat_digital_certificate" parent="NULL" relationship="NULL" sys_domain="global" view="e2b2e3361b977b408591524d0d4bcb11">caf7e6c4dba9bf88d3e954f9489619ce</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2021-04-09 14:15:16</sys_created_on>
+            <sys_id>20474caf1b5fa450e314c955624bcbd8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2021-04-09 14:15:16</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_issuer</element>
+            <list_id display_value="x_unugr_certificat_digital_certificate" element="NULL" name="x_unugr_certificat_digital_certificate" parent="NULL" relationship="NULL" sys_domain="global" view="e2b2e3361b977b408591524d0d4bcb11">caf7e6c4dba9bf88d3e954f9489619ce</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2021-04-09 14:15:16</sys_created_on>
+            <sys_id>24474caf1b5fa450e314c955624bcbd8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2021-04-09 14:15:16</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_expires</element>
+            <list_id display_value="x_unugr_certificat_digital_certificate" element="NULL" name="x_unugr_certificat_digital_certificate" parent="NULL" relationship="NULL" sys_domain="global" view="e2b2e3361b977b408591524d0d4bcb11">caf7e6c4dba9bf88d3e954f9489619ce</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2021-04-09 14:15:16</sys_created_on>
+            <sys_id>28474caf1b5fa450e314c955624bcbd8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2021-04-09 14:15:16</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_certificate_effective_date</element>
+            <list_id display_value="x_unugr_certificat_digital_certificate" element="NULL" name="x_unugr_certificat_digital_certificate" parent="NULL" relationship="NULL" sys_domain="global" view="e2b2e3361b977b408591524d0d4bcb11">caf7e6c4dba9bf88d3e954f9489619ce</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2021-04-09 14:15:16</sys_created_on>
+            <sys_id>2c474caf1b5fa450e314c955624bcbd8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2021-04-09 14:15:16</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_expiration_notification</element>
+            <list_id display_value="x_unugr_certificat_digital_certificate" element="NULL" name="x_unugr_certificat_digital_certificate" parent="NULL" relationship="NULL" sys_domain="global" view="e2b2e3361b977b408591524d0d4bcb11">caf7e6c4dba9bf88d3e954f9489619ce</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>9</position>
+            <sum>false</sum>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2021-04-09 14:15:16</sys_created_on>
+            <sys_id>20474caf1b5fa450e314c955624bcbd9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2021-04-09 14:15:16</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_source</element>
+            <list_id display_value="x_unugr_certificat_digital_certificate" element="NULL" name="x_unugr_certificat_digital_certificate" parent="NULL" relationship="NULL" sys_domain="global" view="e2b2e3361b977b408591524d0d4bcb11">caf7e6c4dba9bf88d3e954f9489619ce</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
             <position>10</position>
             <sum>false</sum>
-            <sys_created_by>AJ620</sys_created_by>
-            <sys_created_on>2021-03-25 13:54:14</sys_created_on>
-            <sys_id>56923a6edb472010f75daca2ca961939</sys_id>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2021-04-09 14:15:16</sys_created_on>
+            <sys_id>24474caf1b5fa450e314c955624bcbd9</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>AJ620</sys_updated_by>
-            <sys_updated_on>2021-03-25 13:54:14</sys_updated_on>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2021-04-09 14:15:16</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -176,8 +176,8 @@
             <relationship/>
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
-            <sys_created_by>AJ620</sys_created_by>
-            <sys_created_on>2021-03-25 13:54:14</sys_created_on>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2021-04-09 14:15:16</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_id>caf7e6c4dba9bf88d3e954f9489619ce</sys_id>
@@ -188,8 +188,8 @@
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
             <sys_update_name>sys_ui_list_x_unugr_certificat_digital_certificate_RPTb9f72e84dba9bf88d3e954f948961949</sys_update_name>
-            <sys_updated_by>AJ620</sys_updated_by>
-            <sys_updated_on>2021-03-25 13:54:14</sys_updated_on>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2021-04-09 14:15:16</sys_updated_on>
             <sys_user/>
             <view display_value="Rptb9f72e84dba9bf88d3e954f948961949" name="RPTb9f72e84dba9bf88d3e954f948961949">e2b2e3361b977b408591524d0d4bcb11</view>
             <view_name/>
