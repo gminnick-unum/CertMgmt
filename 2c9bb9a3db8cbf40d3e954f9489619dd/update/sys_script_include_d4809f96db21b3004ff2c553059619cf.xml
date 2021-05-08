@@ -10,170 +10,175 @@
         <script><![CDATA[//certificate requests
 var certMgmtRecordProducers = Class.create();
 certMgmtRecordProducers.prototype = {
-    initialize: function() {
+    initialize: function() {},
+    processRecordProducer: function(currentObject, producerObject) {
+        try {
+            var certType;
+            var currentReqSysID = currentObject.sys_id;
+            var defaultAssigmentGroup = gs.getProperty('x_unugr_certificat.certrequest.assignment.group');
+            var defaultInternalAssigmentGroup = gs.getProperty('x_unugr_certificat.certrequest.internal.assignment.group');
+            var defaultExternalAssigmentGroup = gs.getProperty('x_unugr_certificat.certrequest.external.assignment.group');
+            var defaultExternalAwsAssigmentGroup = gs.getProperty('x_unugr_certificat.certrequest.external.aws.assignment.group');
+
+            currentObject.u_certificate_request_type = producerObject.request_type;
+            if ((currentObject.u_certificate_request_type).includes('Internal')) {
+                certType = 'Internal';
+            } else {
+                certType = 'External';
+            }
+            if (currentObject.u_certificate_request_type == 'internal_update' || currentObject.u_certificate_request_type == 'external_update') {
+                currentObject.u_certificate = producerObject.select_exsiting_certificate;
+            }
+
+            if ((currentObject.u_certificate_request_type.getDisplayValue()).includes('Internal')) {
+                currentObject.assignment_group = getAssignmentGroupSysId(defaultInternalAssigmentGroup);
+            }
+            if (((currentObject.u_certificate_request_type.getDisplayValue()).includes('External') && (producerObject.certificate_to_be_installed.toString().indexOf('81927524dbead810d3e954f948961968') > -1))) {
+                currentObject.assignment_group = getAssignmentGroupSysId(defaultExternalAwsAssigmentGroup);
+            } else {
+                currentObject.assignment_group = getAssignmentGroupSysId(defaultExternalAssigmentGroup);
+            }
+            currentObject.u_environment = producerObject.environment;
+
+            if (installationIncludesOther(producerObject.certificate_to_be_installed)) {
+                currentObject.non_standard_installation = producerObject.install_on_other;
+            }
+
+            currentObject.u_install_on = producerObject.certificate_to_be_installed;
+
+            currentObject.u_requested_for = producerObject.requested_for;
+            currentObject.u_certificate_expiration_date = producerObject.cert_expire_date;
+
+            currentObject.associated_applications = producerObject.app_desc;
+            currentObject.u_certificate_purpose = producerObject.cert_purpose;
+            if (producerObject.external_website == 'Yes') {
+                currentObject.u_external_website = true;
+            } else if (certType == 'External') {
+                currentObject.u_external_website = true;
+            } else {
+                currentObject.u_external_website = false;
+            }
+            currentObject.u_associated_servers = producerObject.impacted_servers;
+            currentObject.u_certificate_name = producerObject.certificate_name;
+            currentObject.u_dns_names = producerObject.dns_name;
+            if (producerObject.multi_dns_entries == 'Yes') {
+                currentObject.u_multiple_dns_entries = true;
+            } else {
+                currentObject.u_multiple_dns_entries = false;
+            } // 			gs.info(producerObject.assistance_with_certificate_installation);
+            if (producerObject.assistance_with_certificate_installation == 'Yes') {
+                currentObject.u_installation_help = true;
+            } else {
+                currentObject.u_installation_help = false;
+            }
+            currentObject.u_certificate_duration = producerObject.duration;
+            currentObject.activity_due = producerObject.due_date;
+            //check to see if there is an attachment.  If so then mark u_csr_attached to true;
+            if (checkCSRisAttached(currentReqSysID)) {
+                currentObject.u_csr_attached = true;
+            } else {
+                currentObject.u_csr_attached = false;
+            }
+
+            var installationArray = (currentObject.u_install_on.toString()).split(',');
+
+
+            for (i = 0; i < installationArray.length; i++) {
+                currentObject.u_csr_required = false;
+                if (isCSRRequired(installationArray[0], certType)) {
+                    currentObject.u_csr_required = true;
+                    break;
+                }
+            }
+
+            currentObject.short_description = currentObject.u_certificate_request_type.getDisplayValue();
+
+
+        } catch (e) {
+            gs.info('Error occured in certMgmtRecordProducers().processRecordProducer: ' + e);
+            gs.info('certMgmtRecordProducers().processRecordProducer error stack: ' + e.stack);
+        }
+
+        function checkCSRisAttached(currentRequestSysId) {
+            var csrAttached = false;
+            var attachmentRecord = new GlideRecord('sys_attachment');
+            attachmentRecord.addQuery('table_name', 'x_unugr_certificat_certificate_request');
+            attachmentRecord.addQuery('table_sys_id', currentRequestSysId);
+            attachmentRecord.query();
+
+            if (attachmentRecord.next()) {
+                csrAttached = true;
+            }
+
+            return csrAttached;
+        }
+
+        function installationIncludesOther(installOn) {
+            var includesOther = false;
+            var installationArray = (installOn.toString()).split(',');
+
+            for (i = 0; i < installationArray.length; i++) {
+                var targetRecord = new GlideRecord('x_unugr_certificat_installation_targets');
+                targetRecord.addQuery('sys_id', installationArray[i]);
+                targetRecord.query();
+
+                while (targetRecord.next()) {
+                    if (targetRecord.u_target_value == 'non_standard') {
+                        includesOther = true;
+                    }
+                }
+
+            }
+            return includesOther;
+        }
+
+        function getAssignmentGroupSysId(assignmentGroupName) {
+            var assignmentGroupSysId = '';
+
+            var groupRecord = new GlideRecord('sys_user_group');
+            groupRecord.addQuery('name', assignmentGroupName);
+            groupRecord.query();
+
+            while (groupRecord.next()) {
+                assignmentGroupSysId = groupRecord.sys_id;
+            }
+
+            return assignmentGroupSysId;
+        }
+
+        function isCSRRequired(installOn, certificateType) {
+            try {
+                var csrRequired = false;
+                var parsedData;
+
+                if (certificateType == 'External') {
+                    csrRequired = true;
+                } else {
+                    var queryString = "category.option_name=Task Options^option_name=Requires CSR";
+                    var optionsRecord = new GlideRecord('x_unugr_certificat_certmgmt_options');
+                    optionsRecord.addEncodedQuery(queryString);
+                    optionsRecord.query();
+
+                    if (optionsRecord.getRowCount() != 0) {
+                        while (optionsRecord.next()) {
+                            var jsonData = optionsRecord.info_json;
+                            parsedData = JSON.parse(jsonData);
+                        }
+                        var installLocations = parsedData[certificateType];
+                        for (var i in parsedData[certificateType]) {
+                            if (installOn.includes(parsedData[certificateType][i])) {
+                                csrRequired = true;
+                                break;
+                            }
+                        }
+                    }
+                }
+                return csrRequired;
+            } catch (e) {
+                gs.info('Error occured in isCSRRequired: ' + e);
+            }
+        }
     },
-	processRecordProducer:function(currentObject,producerObject){
-		try 
-		{
-			var certType;
-			var currentReqSysID = currentObject.sys_id;
-			var defaultAssigmentGroup = gs.getProperty('x_unugr_certificat.certrequest.assignment.group');
-			var defaultInternalAssigmentGroup = gs.getProperty('x_unugr_certificat.certrequest.internal.assignment.group');
-			var defaultExternalAssigmentGroup = gs.getProperty('x_unugr_certificat.certrequest.external.assignment.group');
-			
-			currentObject.u_certificate_request_type = producerObject.request_type;
-			if((currentObject.u_certificate_request_type).includes('Internal')){
-				certType = 'Internal';
-			} else {
-				certType = 'External';
-			}
-			if(currentObject.u_certificate_request_type == 'internal_update' || currentObject.u_certificate_request_type == 'external_update' ){
-				currentObject.u_certificate = producerObject.select_exsiting_certificate;
-			} 
-
-			if((currentObject.u_certificate_request_type.getDisplayValue()).includes('Internal')){
-				currentObject.assignment_group = getAssignmentGroupSysId(defaultInternalAssigmentGroup);
-			} else {
-				currentObject.assignment_group = getAssignmentGroupSysId(defaultExternalAssigmentGroup);
-			}
-			currentObject.u_environment =  producerObject.environment;
-			
-			if(installationIncludesOther(producerObject.certificate_to_be_installed)){
-				currentObject.non_standard_installation = producerObject.install_on_other;
-			} 
-		
-			currentObject.u_install_on = producerObject.certificate_to_be_installed;
-			
-			currentObject.u_requested_for = producerObject.requested_for;
-			currentObject.u_certificate_expiration_date = producerObject.cert_expire_date;
-
-			currentObject.associated_applications = producerObject.app_desc;
-			currentObject.u_certificate_purpose = producerObject.cert_purpose;
-			if(producerObject.external_website == 'Yes'){
-				currentObject.u_external_website = true;
-			} else if (certType == 'External'){
-				currentObject.u_external_website = true;
-			} else {
-				currentObject.u_external_website = false;
-			}
-			currentObject.u_associated_servers = producerObject.impacted_servers;
-			currentObject.u_certificate_name = producerObject.certificate_name;
-			currentObject.u_dns_names = producerObject.dns_name;
-			if(producerObject.multi_dns_entries == 'Yes'){
-				currentObject.u_multiple_dns_entries = true;
-			} else {
-				currentObject.u_multiple_dns_entries = false;
-			}// 			gs.info(producerObject.assistance_with_certificate_installation);
-			if(producerObject.assistance_with_certificate_installation == 'Yes'){
-				currentObject.u_installation_help = true;
-			} else {
-				currentObject.u_installation_help = false;
-			}
-			currentObject.u_certificate_duration = producerObject.duration;
-			currentObject.activity_due = producerObject.due_date;
-			//check to see if there is an attachment.  If so then mark u_csr_attached to true;
-			if(checkCSRisAttached(currentReqSysID)){
-				currentObject.u_csr_attached = true;
-			} else{
-				currentObject.u_csr_attached = false;
-			}
-			
-			var installationArray = (currentObject.u_install_on.toString()).split(',');
-			
-			
-			for(i=0;i<installationArray.length;i++){
-				currentObject.u_csr_required = false;
-				if(isCSRRequired(installationArray[0],certType)){
-					currentObject.u_csr_required = true;
-					break;
-				}
-			}
-
-			currentObject.short_description = currentObject.u_certificate_request_type.getDisplayValue();
-			
-			
-		} catch(e){
-			gs.info('Error occured in certMgmtRecordProducers().processRecordProducer: ' + e);
-			gs.info('certMgmtRecordProducers().processRecordProducer error stack: ' + e.stack);
-		}
-		
-		function checkCSRisAttached(currentRequestSysId){
-			var csrAttached = false;
-			var attachmentRecord = new GlideRecord('sys_attachment');
-			attachmentRecord.addQuery('table_name','x_unugr_certificat_certificate_request');
-			attachmentRecord.addQuery('table_sys_id',currentRequestSysId);
-			attachmentRecord.query();
-			
-			if(attachmentRecord.next()){
-				csrAttached = true;
-			}
-			
-			return csrAttached;
-		}
-		function installationIncludesOther(installOn){
-			var includesOther = false;
-			var installationArray = (installOn.toString()).split(',');
-			
-			for(i=0;i<installationArray.length;i++){
-				var targetRecord = new GlideRecord('x_unugr_certificat_installation_targets');
-				targetRecord.addQuery('sys_id',installationArray[i]);
-				targetRecord.query();
-				
-				while(targetRecord.next()){
-					if(targetRecord.u_target_value == 'non_standard'){
-						includesOther = true;
-					}
-				}
-				
-			}
-			return includesOther;
-		}
-		function getAssignmentGroupSysId(assignmentGroupName){
-			var assignmentGroupSysId = '';
-			
-			var groupRecord = new GlideRecord('sys_user_group');
-			groupRecord.addQuery('name',assignmentGroupName);
-			groupRecord.query();
-			
-			while(groupRecord.next()){
-				assignmentGroupSysId = groupRecord.sys_id;
-			}
-			
-			return assignmentGroupSysId;
-		}
-		function isCSRRequired(installOn,certificateType){
-			try {
-				var csrRequired = false;
-				var parsedData;
-				
-				if(certificateType == 'External'){
-						csrRequired = true;
-				} else{
-					var queryString = "category.option_name=Task Options^option_name=Requires CSR";
-					var optionsRecord = new GlideRecord('x_unugr_certificat_certmgmt_options');
-					optionsRecord.addEncodedQuery(queryString);
-					optionsRecord.query();
-
-					if(optionsRecord.getRowCount() != 0){
-						while(optionsRecord.next()){
-							var jsonData = optionsRecord.info_json;
-							parsedData = JSON.parse(jsonData);
-						}
-						var installLocations = parsedData[certificateType];
-						for(var i in parsedData[certificateType]){
-							if (installOn.includes(parsedData[certificateType][i])) {
-								csrRequired = true;
-								break;
-							}
-						}
-					}
-				}
-				return csrRequired;
-			} catch(e){
-				gs.info('Error occured in isCSRRequired: ' + e);
-			}
-		}
-	},
 
     type: 'certMgmtRecordProducers'
 };]]></script>
@@ -182,14 +187,14 @@ certMgmtRecordProducers.prototype = {
         <sys_created_on>2019-05-23 19:20:58</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>d4809f96db21b3004ff2c553059619cf</sys_id>
-        <sys_mod_count>41</sys_mod_count>
+        <sys_mod_count>50</sys_mod_count>
         <sys_name>certMgmtRecordProducers</sys_name>
         <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
         <sys_policy>read</sys_policy>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
         <sys_update_name>sys_script_include_d4809f96db21b3004ff2c553059619cf</sys_update_name>
-        <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 18:24:04</sys_updated_on>
+        <sys_updated_by>DDK18</sys_updated_by>
+        <sys_updated_on>2021-04-28 18:32:58</sys_updated_on>
     </sys_script_include>
 </record_update>

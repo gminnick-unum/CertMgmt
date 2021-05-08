@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Certificate Request activity formatter fields</description>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>glide.ui.x_unugr_certificat_certificate_request_activity.fields</name>
+        <read_roles/>
+        <suffix>x_unugr_certificat</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>DDK18</sys_created_by>
+        <sys_created_on>2021-04-07 19:31:52</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>3e8c3632db57e010f75daca2ca9619a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>glide.ui.x_unugr_certificat_certificate_request_activity.fields</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sys_properties_3e8c3632db57e010f75daca2ca9619a4</sys_update_name>
+        <sys_updated_by>DDK18</sys_updated_by>
+        <sys_updated_on>2021-04-07 19:31:52</sys_updated_on>
+        <type>string</type>
+        <value>assigned_to,cmdb_ci,state,impact,priority,opened_by,work_notes,comments,*Attachments*,*Email*</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=3e8c3632db57e010f75daca2ca9619a4"/>
+</record_update>
