@@ -4,66 +4,93 @@
         <description>Fix script to populate installed on checkboxes on digital certs based on the matched request</description>
         <name>Populate installed on checkboxes on cert</name>
         <record_for_rollback>false</record_for_rollback>
-        <script><![CDATA[// Fix script to populate installed on checkboxes on digital certs
+        <script><![CDATA[// Fix Script to copy Certificate Request installed on to matched certificate
+// This one queries Request List Collector and populates Dig Cert check boxes
 
+var certificateRecord, certRequests, certSysId, installedOn, certReqInstalledOn;
 var outputLog = 'Log Begin - STRY0074361\n';
 var errorOccured = false;
 
-outputLog += 'Populate installed on checkboxes on digital certs\n';
+outputLog += "Fix script to populate installed on checkboxes on digital certs based on the matched request\n";
 
 try {
 
-    var certificateRecord, completedRequests;
 
-    completedRequests = new GlideRecord('x_unugr_certificat_certificate_request');
-    completedRequests.addEncodedQuery('u_certificateISNOTEMPTY');
-    completedRequests.query();
-    //gs.info("Record Count " + completedRequests.getRowCount());
-    outputLog += "Record Count " + completedRequests.getRowCount() + "\n\n";
-
-    while (completedRequests.next()) {
-        certSysId = completedRequests.u_certificate;
+    certRequests = new GlideRecord('x_unugr_certificat_certificate_request');
+    certRequests.addEncodedQuery('u_certificateISNOTEMPTY');
+    certRequests.query();
+    outputLog += "Record Count " + certRequests.getRowCount() + "\n\n";
+    gs.info(certRequests.getRowCount());
+    while (certRequests.next()) {
+        certSysId = certRequests.u_certificate;
         certificateRecord = new GlideRecord('x_unugr_certificat_digital_certificate');
         certificateRecord.addQuery('sys_id', certSysId);
         certificateRecord.query();
         while (certificateRecord.next()) {
-            //gs.info("certnumber " + certificateRecord.number);
-            certificateRecord.u_inston_f5 = completedRequests.u_inston_f5;
-            certificateRecord.u_inston_aws = completedRequests.u_inston_aws;
-            certificateRecord.u_inston_api_gateway = completedRequests.u_inston_api_gateway;
-            certificateRecord.u_inston_iis = completedRequests.u_inston_iis;
-            certificateRecord.u_inston_server = completedRequests.u_inston_server;
-            certificateRecord.u_inston_vendor_server = completedRequests.u_inston_vendor_server;
-
+            certReqInstalledOn = certRequests.u_install_on.toString().split(",");
+            //gs.info(certReqInstalledOn);
+            for (var instOnIndex in certReqInstalledOn) {
+                installedOn = new GlideRecord('x_unugr_certificat_installation_targets');
+                installedOn.addQuery('sys_id=' + certReqInstalledOn[instOnIndex]);
+                installedOn.query();
+                while (installedOn.next()) {
+                    switch (installedOn.u_target_value.toString()) {
+                        case 'f5':
+                            //gs.info('F5 Found');
+                            certificateRecord.u_inston_f5 = true;
+                            break;
+                        case 'aws':
+                            //gs.info('aws Found');
+                            certificateRecord.u_inston_aws = true;
+                            break;
+                        case 'api_gateway':
+                            //gs.info('API Gateway Found');
+                            certificateRecord.u_inston_api_gateway = true;
+                            break;
+                        case 'iis':
+                            //gs.info('IIS Found');
+                            certificateRecord.u_inston_iis = true;
+                            break;
+                        case 'server':
+                            //gs.info('Server Found');
+                            certificateRecord.u_inston_server = true;
+                            break;
+                        case 'vendor_server':
+                            //gs.info('Vendor Server Found');
+                            certificateRecord.u_inston_vendor_server = true;
+                            break;
+                    }
+                }
+            }
             certificateRecord.update();
         }
+
+        
 
     }
 
 } catch (e) {
     errorOccured = true;
-    var errorMessage = 'Error occured in populate installed on checkboxes on digital certs: ' + e;
+    var errorMessage = 'Error occured in add checkboxes for Installed On to cert requests: ' + e;
     outputLog += errorMessage;
     gs.info(errorMessage);
 } finally {
     if (errorOccured) {
-        gs.info('Populate installed on checkboxes on digital certs finished with Errors');
-		outputLog += 'Populate installed on checkboxes on digital certs finished with Errors';
+        gs.info('Add checkboxes for Installed On to cert requests finished with Errors');
+        outputLog += 'Add checkboxes for Installed On to cert requests finished with Errors';
     } else {
-        gs.info('Populate installed on checkboxes on digital certs finished without Errors');
-        outputLog += 'Populate installed on checkboxes on digital certs finished without Errors';
+        gs.info('Add checkboxes for Installed On to cert requests finished without Errors');
+        outputLog += 'Add checkboxes for Installed On to cert requests finished without Errors';
     }
 }
 
-gs.info(outputLog);
-
-]]></script>
+gs.info(outputLog);]]></script>
         <sys_class_name>sys_script_fix</sys_class_name>
         <sys_created_by>CNI06</sys_created_by>
         <sys_created_on>2021-05-26 17:15:37</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>45233e2adb58bc10f75daca2ca961967</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Populate installed on checkboxes on cert</sys_name>
         <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
         <sys_policy/>
@@ -71,7 +98,7 @@ gs.info(outputLog);
         <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
         <sys_update_name>sys_script_fix_45233e2adb58bc10f75daca2ca961967</sys_update_name>
         <sys_updated_by>CNI06</sys_updated_by>
-        <sys_updated_on>2021-05-27 20:15:10</sys_updated_on>
+        <sys_updated_on>2021-06-07 13:40:08</sys_updated_on>
         <unloadable>false</unloadable>
     </sys_script_fix>
 </record_update>
