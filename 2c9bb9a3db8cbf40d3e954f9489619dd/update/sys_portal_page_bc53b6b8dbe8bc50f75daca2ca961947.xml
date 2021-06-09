@@ -1,0 +1,702 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update node_type="sys_portal_page" unload_date="2021-06-03 19:39:40">
+    <sys_portal_page action="INSERT_OR_UPDATE">
+        <layout/>
+        <order/>
+        <read_roles>snc_internal</read_roles>
+        <roles/>
+        <selectable>false</selectable>
+        <sys_class_name>sys_portal_page</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-06-02 17:02:15</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>bc53b6b8dbe8bc50f75daca2ca961947</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>PA Internal Certificate - New Tab</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sys_portal_page_bc53b6b8dbe8bc50f75daca2ca961947</sys_update_name>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-06-02 17:02:15</sys_updated_on>
+        <title>PA Internal Certificate - New Tab</title>
+        <user/>
+        <view>pa_internal_certificate_-_new_tab_1</view>
+        <related_items_node>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone/>
+                <offset/>
+                <page display_value="PA Internal Certificate - New Tab">bc53b6b8dbe8bc50f75daca2ca961947</page>
+                <summary>Internal Digital Certificates</summary>
+                <sys_created_by>CNI06</sys_created_by>
+                <sys_created_on>2021-06-02 17:05:18</sys_created_on>
+                <sys_id>2904b6b8dbe8bc50f75daca2ca961958</sys_id>
+                <sys_mod_count>1</sys_mod_count>
+                <sys_updated_by>CNI06</sys_updated_by>
+                <sys_updated_on>2021-06-02 17:05:18</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 2021-06-02 01.05.18 PM">2904b6b8dbe8bc50f75daca2ca961958</portal_section>
+                        <sys_created_by>CNI06</sys_created_by>
+                        <sys_created_on>2021-06-02 17:05:18</sys_created_on>
+                        <sys_id>2904fa3cdbe8bc50f75daca2ca961984</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>CNI06</sys_updated_by>
+                        <sys_updated_on>2021-06-02 17:05:18</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 2021-06-02 01.05.18 PM">2904b6b8dbe8bc50f75daca2ca961958</portal_section>
+                        <sys_created_by>CNI06</sys_created_by>
+                        <sys_created_on>2021-06-02 17:05:18</sys_created_on>
+                        <sys_id>2d04b6b8dbe8bc50f75daca2ca961958</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>CNI06</sys_updated_by>
+                        <sys_updated_on>2021-06-02 17:05:18</sys_updated_on>
+                        <value>59527e48db2dbf88d3e954f9489619fe</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title_align</name>
+                        <portal_section display_value="Created 2021-06-02 01.05.18 PM">2904b6b8dbe8bc50f75daca2ca961958</portal_section>
+                        <sys_created_by>CNI06</sys_created_by>
+                        <sys_created_on>2021-06-02 17:05:35</sys_created_on>
+                        <sys_id>3114b6f8dbe8bc50f75daca2ca9619d9</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>CNI06</sys_updated_by>
+                        <sys_updated_on>2021-06-02 17:05:35</sys_updated_on>
+                        <value>left</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>filter_indicator</name>
+                        <portal_section display_value="Created 2021-06-02 01.05.18 PM">2904b6b8dbe8bc50f75daca2ca961958</portal_section>
+                        <sys_created_by>CNI06</sys_created_by>
+                        <sys_created_on>2021-06-02 17:05:35</sys_created_on>
+                        <sys_id>3114b6f8dbe8bc50f75daca2ca9619da</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>CNI06</sys_updated_by>
+                        <sys_updated_on>2021-06-02 17:05:35</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_border</name>
+                        <portal_section display_value="Created 2021-06-02 01.05.18 PM">2904b6b8dbe8bc50f75daca2ca961958</portal_section>
+                        <sys_created_by>CNI06</sys_created_by>
+                        <sys_created_on>2021-06-02 17:05:35</sys_created_on>
+                        <sys_id>3514b6f8dbe8bc50f75daca2ca9619d9</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>CNI06</sys_updated_by>
+                        <sys_updated_on>2021-06-02 17:05:35</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>real_time</name>
+                        <portal_section display_value="Created 2021-06-02 01.05.18 PM">2904b6b8dbe8bc50f75daca2ca961958</portal_section>
+                        <sys_created_by>CNI06</sys_created_by>
+                        <sys_created_on>2021-06-02 17:05:35</sys_created_on>
+                        <sys_id>3514b6f8dbe8bc50f75daca2ca9619da</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>CNI06</sys_updated_by>
+                        <sys_updated_on>2021-06-02 17:05:35</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_title</name>
+                        <portal_section display_value="Created 2021-06-02 01.05.18 PM">2904b6b8dbe8bc50f75daca2ca961958</portal_section>
+                        <sys_created_by>CNI06</sys_created_by>
+                        <sys_created_on>2021-06-02 17:05:35</sys_created_on>
+                        <sys_id>3914b6f8dbe8bc50f75daca2ca9619d8</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>CNI06</sys_updated_by>
+                        <sys_updated_on>2021-06-02 17:05:35</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>publisher_widget</name>
+                        <portal_section display_value="Created 2021-06-02 01.05.18 PM">2904b6b8dbe8bc50f75daca2ca961958</portal_section>
+                        <sys_created_by>CNI06</sys_created_by>
+                        <sys_created_on>2021-06-02 17:05:35</sys_created_on>
+                        <sys_id>3914b6f8dbe8bc50f75daca2ca9619d9</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>CNI06</sys_updated_by>
+                        <sys_updated_on>2021-06-02 17:05:35</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_header</name>
+                        <portal_section display_value="Created 2021-06-02 01.05.18 PM">2904b6b8dbe8bc50f75daca2ca961958</portal_section>
+                        <sys_created_by>CNI06</sys_created_by>
+                        <sys_created_on>2021-06-02 17:05:35</sys_created_on>
+                        <sys_id>3d14b6f8dbe8bc50f75daca2ca9619d8</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>CNI06</sys_updated_by>
+                        <sys_updated_on>2021-06-02 17:05:35</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>subscriber_widget</name>
+                        <portal_section display_value="Created 2021-06-02 01.05.18 PM">2904b6b8dbe8bc50f75daca2ca961958</portal_section>
+                        <sys_created_by>CNI06</sys_created_by>
+                        <sys_created_on>2021-06-02 17:05:35</sys_created_on>
+                        <sys_id>3d14b6f8dbe8bc50f75daca2ca9619d9</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>CNI06</sys_updated_by>
+                        <sys_updated_on>2021-06-02 17:05:35</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 2021-06-02 01.05.18 PM">2904b6b8dbe8bc50f75daca2ca961958</portal_section>
+                        <sys_created_by>CNI06</sys_created_by>
+                        <sys_created_on>2021-06-02 17:05:18</sys_created_on>
+                        <sys_id>6104fa3cdbe8bc50f75daca2ca961985</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>CNI06</sys_updated_by>
+                        <sys_updated_on>2021-06-02 17:05:18</sys_updated_on>
+                        <value>Internal Digital Certificates</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 2021-06-02 01.05.18 PM">2904b6b8dbe8bc50f75daca2ca961958</portal_section>
+                        <sys_created_by>CNI06</sys_created_by>
+                        <sys_created_on>2021-06-02 17:05:18</sys_created_on>
+                        <sys_id>6504fa3cdbe8bc50f75daca2ca961984</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>CNI06</sys_updated_by>
+                        <sys_updated_on>2021-06-02 17:05:18</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 2021-06-02 01.05.18 PM">2904b6b8dbe8bc50f75daca2ca961958</portal_section>
+                        <sys_created_by>CNI06</sys_created_by>
+                        <sys_created_on>2021-06-02 17:05:18</sys_created_on>
+                        <sys_id>ad04fa3cdbe8bc50f75daca2ca961984</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>CNI06</sys_updated_by>
+                        <sys_updated_on>2021-06-02 17:05:18</sys_updated_on>
+                        <value>list</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 2021-06-02 01.05.18 PM">2904b6b8dbe8bc50f75daca2ca961958</portal_section>
+                        <sys_created_by>CNI06</sys_created_by>
+                        <sys_created_on>2021-06-02 17:05:18</sys_created_on>
+                        <sys_id>e904fa3cdbe8bc50f75daca2ca961984</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>CNI06</sys_updated_by>
+                        <sys_updated_on>2021-06-02 17:05:18</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone/>
+                <offset/>
+                <page display_value="PA Internal Certificate - New Tab">bc53b6b8dbe8bc50f75daca2ca961947</page>
+                <summary>Internal Certificates by Template Type</summary>
+                <sys_created_by>CNI06</sys_created_by>
+                <sys_created_on>2021-06-02 17:04:10</sys_created_on>
+                <sys_id>4dc3b6f8dbe8bc50f75daca2ca9619d2</sys_id>
+                <sys_mod_count>1</sys_mod_count>
+                <sys_updated_by>CNI06</sys_updated_by>
+                <sys_updated_on>2021-06-02 17:04:10</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 2021-06-02 01.04.10 PM">4dc3b6f8dbe8bc50f75daca2ca9619d2</portal_section>
+                        <sys_created_by>CNI06</sys_created_by>
+                        <sys_created_on>2021-06-02 17:04:10</sys_created_on>
+                        <sys_id>09c3b6f8dbe8bc50f75daca2ca9619d4</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>CNI06</sys_updated_by>
+                        <sys_updated_on>2021-06-02 17:04:10</sys_updated_on>
+                        <value>pie</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 2021-06-02 01.04.10 PM">4dc3b6f8dbe8bc50f75daca2ca9619d2</portal_section>
+                        <sys_created_by>CNI06</sys_created_by>
+                        <sys_created_on>2021-06-02 17:04:10</sys_created_on>
+                        <sys_id>41c3b6f8dbe8bc50f75daca2ca9619d3</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>CNI06</sys_updated_by>
+                        <sys_updated_on>2021-06-02 17:04:10</sys_updated_on>
+                        <value>7981be44db2dbf88d3e954f948961972</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 2021-06-02 01.04.10 PM">4dc3b6f8dbe8bc50f75daca2ca9619d2</portal_section>
+                        <sys_created_by>CNI06</sys_created_by>
+                        <sys_created_on>2021-06-02 17:04:10</sys_created_on>
+                        <sys_id>45c3b6f8dbe8bc50f75daca2ca9619d4</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>CNI06</sys_updated_by>
+                        <sys_updated_on>2021-06-02 17:04:10</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_header</name>
+                        <portal_section display_value="Created 2021-06-02 01.04.10 PM">4dc3b6f8dbe8bc50f75daca2ca9619d2</portal_section>
+                        <sys_created_by>CNI06</sys_created_by>
+                        <sys_created_on>2021-06-02 17:04:39</sys_created_on>
+                        <sys_id>80e3f6b8dbe8bc50f75daca2ca9619c2</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>CNI06</sys_updated_by>
+                        <sys_updated_on>2021-06-02 17:04:39</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title_align</name>
+                        <portal_section display_value="Created 2021-06-02 01.04.10 PM">4dc3b6f8dbe8bc50f75daca2ca9619d2</portal_section>
+                        <sys_created_by>CNI06</sys_created_by>
+                        <sys_created_on>2021-06-02 17:04:39</sys_created_on>
+                        <sys_id>80e3fef8dbe8bc50f75daca2ca961946</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>CNI06</sys_updated_by>
+                        <sys_updated_on>2021-06-02 17:04:39</sys_updated_on>
+                        <value>left</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>filter_indicator</name>
+                        <portal_section display_value="Created 2021-06-02 01.04.10 PM">4dc3b6f8dbe8bc50f75daca2ca9619d2</portal_section>
+                        <sys_created_by>CNI06</sys_created_by>
+                        <sys_created_on>2021-06-02 17:04:39</sys_created_on>
+                        <sys_id>80e3fef8dbe8bc50f75daca2ca961947</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>CNI06</sys_updated_by>
+                        <sys_updated_on>2021-06-02 17:04:39</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 2021-06-02 01.04.10 PM">4dc3b6f8dbe8bc50f75daca2ca9619d2</portal_section>
+                        <sys_created_by>CNI06</sys_created_by>
+                        <sys_created_on>2021-06-02 17:04:10</sys_created_on>
+                        <sys_id>81c3b6f8dbe8bc50f75daca2ca9619d4</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>CNI06</sys_updated_by>
+                        <sys_updated_on>2021-06-02 17:04:10</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_border</name>
+                        <portal_section display_value="Created 2021-06-02 01.04.10 PM">4dc3b6f8dbe8bc50f75daca2ca9619d2</portal_section>
+                        <sys_created_by>CNI06</sys_created_by>
+                        <sys_created_on>2021-06-02 17:04:39</sys_created_on>
+                        <sys_id>84e3fef8dbe8bc50f75daca2ca961946</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>CNI06</sys_updated_by>
+                        <sys_updated_on>2021-06-02 17:04:39</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>real_time</name>
+                        <portal_section display_value="Created 2021-06-02 01.04.10 PM">4dc3b6f8dbe8bc50f75daca2ca9619d2</portal_section>
+                        <sys_created_by>CNI06</sys_created_by>
+                        <sys_created_on>2021-06-02 17:04:39</sys_created_on>
+                        <sys_id>84e3fef8dbe8bc50f75daca2ca961947</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>CNI06</sys_updated_by>
+                        <sys_updated_on>2021-06-02 17:04:39</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>publisher_widget</name>
+                        <portal_section display_value="Created 2021-06-02 01.04.10 PM">4dc3b6f8dbe8bc50f75daca2ca9619d2</portal_section>
+                        <sys_created_by>CNI06</sys_created_by>
+                        <sys_created_on>2021-06-02 17:04:39</sys_created_on>
+                        <sys_id>88e3fef8dbe8bc50f75daca2ca961946</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>CNI06</sys_updated_by>
+                        <sys_updated_on>2021-06-02 17:04:39</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_title</name>
+                        <portal_section display_value="Created 2021-06-02 01.04.10 PM">4dc3b6f8dbe8bc50f75daca2ca9619d2</portal_section>
+                        <sys_created_by>CNI06</sys_created_by>
+                        <sys_created_on>2021-06-02 17:04:39</sys_created_on>
+                        <sys_id>8ce3f6b8dbe8bc50f75daca2ca9619c1</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>CNI06</sys_updated_by>
+                        <sys_updated_on>2021-06-02 17:04:39</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>subscriber_widget</name>
+                        <portal_section display_value="Created 2021-06-02 01.04.10 PM">4dc3b6f8dbe8bc50f75daca2ca9619d2</portal_section>
+                        <sys_created_by>CNI06</sys_created_by>
+                        <sys_created_on>2021-06-02 17:04:39</sys_created_on>
+                        <sys_id>8ce3fef8dbe8bc50f75daca2ca961946</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>CNI06</sys_updated_by>
+                        <sys_updated_on>2021-06-02 17:04:39</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 2021-06-02 01.04.10 PM">4dc3b6f8dbe8bc50f75daca2ca9619d2</portal_section>
+                        <sys_created_by>CNI06</sys_created_by>
+                        <sys_created_on>2021-06-02 17:04:10</sys_created_on>
+                        <sys_id>c9c3b6f8dbe8bc50f75daca2ca9619d4</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>CNI06</sys_updated_by>
+                        <sys_updated_on>2021-06-02 17:04:10</sys_updated_on>
+                        <value>Internal Certificates by Template Type</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 2021-06-02 01.04.10 PM">4dc3b6f8dbe8bc50f75daca2ca9619d2</portal_section>
+                        <sys_created_by>CNI06</sys_created_by>
+                        <sys_created_on>2021-06-02 17:04:10</sys_created_on>
+                        <sys_id>cdc3b6f8dbe8bc50f75daca2ca9619d3</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>CNI06</sys_updated_by>
+                        <sys_updated_on>2021-06-02 17:04:10</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone/>
+                <offset/>
+                <page display_value="PA Internal Certificate - New Tab">bc53b6b8dbe8bc50f75daca2ca961947</page>
+                <summary>Internal Digital Certificates Installed On</summary>
+                <sys_created_by>CNI06</sys_created_by>
+                <sys_created_on>2021-06-02 17:04:57</sys_created_on>
+                <sys_id>a8f37ab8dbe8bc50f75daca2ca96193a</sys_id>
+                <sys_mod_count>1</sys_mod_count>
+                <sys_updated_by>CNI06</sys_updated_by>
+                <sys_updated_on>2021-06-02 17:04:57</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title_align</name>
+                        <portal_section display_value="Created 2021-06-02 01.04.57 PM">a8f37ab8dbe8bc50f75daca2ca96193a</portal_section>
+                        <sys_created_by>CNI06</sys_created_by>
+                        <sys_created_on>2021-06-02 17:09:29</sys_created_on>
+                        <sys_id>03f4763cdbe8bc50f75daca2ca961947</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>CNI06</sys_updated_by>
+                        <sys_updated_on>2021-06-02 17:09:29</sys_updated_on>
+                        <value>left</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>filter_indicator</name>
+                        <portal_section display_value="Created 2021-06-02 01.04.57 PM">a8f37ab8dbe8bc50f75daca2ca96193a</portal_section>
+                        <sys_created_by>CNI06</sys_created_by>
+                        <sys_created_on>2021-06-02 17:09:29</sys_created_on>
+                        <sys_id>03f4763cdbe8bc50f75daca2ca961948</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>CNI06</sys_updated_by>
+                        <sys_updated_on>2021-06-02 17:09:29</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_border</name>
+                        <portal_section display_value="Created 2021-06-02 01.04.57 PM">a8f37ab8dbe8bc50f75daca2ca96193a</portal_section>
+                        <sys_created_by>CNI06</sys_created_by>
+                        <sys_created_on>2021-06-02 17:09:29</sys_created_on>
+                        <sys_id>07f4763cdbe8bc50f75daca2ca961947</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>CNI06</sys_updated_by>
+                        <sys_updated_on>2021-06-02 17:09:29</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>real_time</name>
+                        <portal_section display_value="Created 2021-06-02 01.04.57 PM">a8f37ab8dbe8bc50f75daca2ca96193a</portal_section>
+                        <sys_created_by>CNI06</sys_created_by>
+                        <sys_created_on>2021-06-02 17:09:29</sys_created_on>
+                        <sys_id>07f4763cdbe8bc50f75daca2ca961948</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>CNI06</sys_updated_by>
+                        <sys_updated_on>2021-06-02 17:09:29</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>publisher_widget</name>
+                        <portal_section display_value="Created 2021-06-02 01.04.57 PM">a8f37ab8dbe8bc50f75daca2ca96193a</portal_section>
+                        <sys_created_by>CNI06</sys_created_by>
+                        <sys_created_on>2021-06-02 17:09:29</sys_created_on>
+                        <sys_id>0bf4763cdbe8bc50f75daca2ca961947</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>CNI06</sys_updated_by>
+                        <sys_updated_on>2021-06-02 17:09:29</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_header</name>
+                        <portal_section display_value="Created 2021-06-02 01.04.57 PM">a8f37ab8dbe8bc50f75daca2ca96193a</portal_section>
+                        <sys_created_by>CNI06</sys_created_by>
+                        <sys_created_on>2021-06-02 17:09:29</sys_created_on>
+                        <sys_id>0ff4763cdbe8bc50f75daca2ca961946</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>CNI06</sys_updated_by>
+                        <sys_updated_on>2021-06-02 17:09:29</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>subscriber_widget</name>
+                        <portal_section display_value="Created 2021-06-02 01.04.57 PM">a8f37ab8dbe8bc50f75daca2ca96193a</portal_section>
+                        <sys_created_by>CNI06</sys_created_by>
+                        <sys_created_on>2021-06-02 17:09:29</sys_created_on>
+                        <sys_id>0ff4763cdbe8bc50f75daca2ca961947</sys_id>
+                        <sys_mod_count>1</sys_mod_count>
+                        <sys_updated_by>CNI06</sys_updated_by>
+                        <sys_updated_on>2021-06-02 17:09:52</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 2021-06-02 01.04.57 PM">a8f37ab8dbe8bc50f75daca2ca96193a</portal_section>
+                        <sys_created_by>CNI06</sys_created_by>
+                        <sys_created_on>2021-06-02 17:04:57</sys_created_on>
+                        <sys_id>28f37ab8dbe8bc50f75daca2ca96193c</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>CNI06</sys_updated_by>
+                        <sys_updated_on>2021-06-02 17:04:57</sys_updated_on>
+                        <value>Internal Digital Certificates Installed On</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 2021-06-02 01.04.57 PM">a8f37ab8dbe8bc50f75daca2ca96193a</portal_section>
+                        <sys_created_by>CNI06</sys_created_by>
+                        <sys_created_on>2021-06-02 17:04:57</sys_created_on>
+                        <sys_id>2cf37ab8dbe8bc50f75daca2ca96193b</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>CNI06</sys_updated_by>
+                        <sys_updated_on>2021-06-02 17:04:57</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 2021-06-02 01.04.57 PM">a8f37ab8dbe8bc50f75daca2ca96193a</portal_section>
+                        <sys_created_by>CNI06</sys_created_by>
+                        <sys_created_on>2021-06-02 17:04:57</sys_created_on>
+                        <sys_id>64f37ab8dbe8bc50f75daca2ca96193c</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>CNI06</sys_updated_by>
+                        <sys_updated_on>2021-06-02 17:04:57</sys_updated_on>
+                        <value>pie</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 2021-06-02 01.04.57 PM">a8f37ab8dbe8bc50f75daca2ca96193a</portal_section>
+                        <sys_created_by>CNI06</sys_created_by>
+                        <sys_created_on>2021-06-02 17:04:57</sys_created_on>
+                        <sys_id>a0f37ab8dbe8bc50f75daca2ca96193c</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>CNI06</sys_updated_by>
+                        <sys_updated_on>2021-06-02 17:04:57</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 2021-06-02 01.04.57 PM">a8f37ab8dbe8bc50f75daca2ca96193a</portal_section>
+                        <sys_created_by>CNI06</sys_created_by>
+                        <sys_created_on>2021-06-02 17:04:57</sys_created_on>
+                        <sys_id>acf37ab8dbe8bc50f75daca2ca96193a</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>CNI06</sys_updated_by>
+                        <sys_updated_on>2021-06-02 17:04:57</sys_updated_on>
+                        <value>b2ae8264db287850f75daca2ca9619c3</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_title</name>
+                        <portal_section display_value="Created 2021-06-02 01.04.57 PM">a8f37ab8dbe8bc50f75daca2ca96193a</portal_section>
+                        <sys_created_by>CNI06</sys_created_by>
+                        <sys_created_on>2021-06-02 17:09:29</sys_created_on>
+                        <sys_id>c3f4763cdbe8bc50f75daca2ca961946</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>CNI06</sys_updated_by>
+                        <sys_updated_on>2021-06-02 17:09:29</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 2021-06-02 01.04.57 PM">a8f37ab8dbe8bc50f75daca2ca96193a</portal_section>
+                        <sys_created_by>CNI06</sys_created_by>
+                        <sys_created_on>2021-06-02 17:04:57</sys_created_on>
+                        <sys_id>ecf37ab8dbe8bc50f75daca2ca96193b</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>CNI06</sys_updated_by>
+                        <sys_updated_on>2021-06-02 17:04:57</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone/>
+                <offset/>
+                <page display_value="PA Internal Certificate - New Tab">bc53b6b8dbe8bc50f75daca2ca961947</page>
+                <summary>Internal Certificates Expiring within 90 Days</summary>
+                <sys_created_by>CNI06</sys_created_by>
+                <sys_created_on>2021-06-02 17:02:42</sys_created_on>
+                <sys_id>eb63f6b8dbe8bc50f75daca2ca961980</sys_id>
+                <sys_mod_count>1</sys_mod_count>
+                <sys_updated_by>CNI06</sys_updated_by>
+                <sys_updated_on>2021-06-02 17:02:42</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title_align</name>
+                        <portal_section display_value="Created 2021-06-02 01.02.42 PM">eb63f6b8dbe8bc50f75daca2ca961980</portal_section>
+                        <sys_created_by>CNI06</sys_created_by>
+                        <sys_created_on>2021-06-02 17:02:57</sys_created_on>
+                        <sys_id>0373be78dbe8bc50f75daca2ca96191d</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>CNI06</sys_updated_by>
+                        <sys_updated_on>2021-06-02 17:02:57</sys_updated_on>
+                        <value>left</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>filter_indicator</name>
+                        <portal_section display_value="Created 2021-06-02 01.02.42 PM">eb63f6b8dbe8bc50f75daca2ca961980</portal_section>
+                        <sys_created_by>CNI06</sys_created_by>
+                        <sys_created_on>2021-06-02 17:02:57</sys_created_on>
+                        <sys_id>0373be78dbe8bc50f75daca2ca96191e</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>CNI06</sys_updated_by>
+                        <sys_updated_on>2021-06-02 17:02:57</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_border</name>
+                        <portal_section display_value="Created 2021-06-02 01.02.42 PM">eb63f6b8dbe8bc50f75daca2ca961980</portal_section>
+                        <sys_created_by>CNI06</sys_created_by>
+                        <sys_created_on>2021-06-02 17:02:57</sys_created_on>
+                        <sys_id>0773be78dbe8bc50f75daca2ca96191d</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>CNI06</sys_updated_by>
+                        <sys_updated_on>2021-06-02 17:02:57</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>real_time</name>
+                        <portal_section display_value="Created 2021-06-02 01.02.42 PM">eb63f6b8dbe8bc50f75daca2ca961980</portal_section>
+                        <sys_created_by>CNI06</sys_created_by>
+                        <sys_created_on>2021-06-02 17:02:57</sys_created_on>
+                        <sys_id>0773be78dbe8bc50f75daca2ca96191e</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>CNI06</sys_updated_by>
+                        <sys_updated_on>2021-06-02 17:02:57</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_title</name>
+                        <portal_section display_value="Created 2021-06-02 01.02.42 PM">eb63f6b8dbe8bc50f75daca2ca961980</portal_section>
+                        <sys_created_by>CNI06</sys_created_by>
+                        <sys_created_on>2021-06-02 17:02:57</sys_created_on>
+                        <sys_id>0b73be78dbe8bc50f75daca2ca96191c</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>CNI06</sys_updated_by>
+                        <sys_updated_on>2021-06-02 17:02:57</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>publisher_widget</name>
+                        <portal_section display_value="Created 2021-06-02 01.02.42 PM">eb63f6b8dbe8bc50f75daca2ca961980</portal_section>
+                        <sys_created_by>CNI06</sys_created_by>
+                        <sys_created_on>2021-06-02 17:02:57</sys_created_on>
+                        <sys_id>0b73be78dbe8bc50f75daca2ca96191d</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>CNI06</sys_updated_by>
+                        <sys_updated_on>2021-06-02 17:02:57</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_header</name>
+                        <portal_section display_value="Created 2021-06-02 01.02.42 PM">eb63f6b8dbe8bc50f75daca2ca961980</portal_section>
+                        <sys_created_by>CNI06</sys_created_by>
+                        <sys_created_on>2021-06-02 17:02:57</sys_created_on>
+                        <sys_id>0f73be78dbe8bc50f75daca2ca96191c</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>CNI06</sys_updated_by>
+                        <sys_updated_on>2021-06-02 17:02:57</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>subscriber_widget</name>
+                        <portal_section display_value="Created 2021-06-02 01.02.42 PM">eb63f6b8dbe8bc50f75daca2ca961980</portal_section>
+                        <sys_created_by>CNI06</sys_created_by>
+                        <sys_created_on>2021-06-02 17:02:57</sys_created_on>
+                        <sys_id>0f73be78dbe8bc50f75daca2ca96191d</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>CNI06</sys_updated_by>
+                        <sys_updated_on>2021-06-02 17:02:57</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 2021-06-02 01.02.42 PM">eb63f6b8dbe8bc50f75daca2ca961980</portal_section>
+                        <sys_created_by>CNI06</sys_created_by>
+                        <sys_created_on>2021-06-02 17:02:42</sys_created_on>
+                        <sys_id>2b63f6b8dbe8bc50f75daca2ca961983</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>CNI06</sys_updated_by>
+                        <sys_updated_on>2021-06-02 17:02:42</sys_updated_on>
+                        <value>pie</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 2021-06-02 01.02.42 PM">eb63f6b8dbe8bc50f75daca2ca961980</portal_section>
+                        <sys_created_by>CNI06</sys_created_by>
+                        <sys_created_on>2021-06-02 17:02:42</sys_created_on>
+                        <sys_id>6763f6b8dbe8bc50f75daca2ca961983</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>CNI06</sys_updated_by>
+                        <sys_updated_on>2021-06-02 17:02:42</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 2021-06-02 01.02.42 PM">eb63f6b8dbe8bc50f75daca2ca961980</portal_section>
+                        <sys_created_by>CNI06</sys_created_by>
+                        <sys_created_on>2021-06-02 17:02:42</sys_created_on>
+                        <sys_id>a363f6b8dbe8bc50f75daca2ca961983</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>CNI06</sys_updated_by>
+                        <sys_updated_on>2021-06-02 17:02:42</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 2021-06-02 01.02.42 PM">eb63f6b8dbe8bc50f75daca2ca961980</portal_section>
+                        <sys_created_by>CNI06</sys_created_by>
+                        <sys_created_on>2021-06-02 17:02:42</sys_created_on>
+                        <sys_id>e763f6b8dbe8bc50f75daca2ca961981</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>CNI06</sys_updated_by>
+                        <sys_updated_on>2021-06-02 17:02:42</sys_updated_on>
+                        <value>4e21f244db2dbf88d3e954f948961947</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 2021-06-02 01.02.42 PM">eb63f6b8dbe8bc50f75daca2ca961980</portal_section>
+                        <sys_created_by>CNI06</sys_created_by>
+                        <sys_created_on>2021-06-02 17:02:42</sys_created_on>
+                        <sys_id>eb63f6b8dbe8bc50f75daca2ca961983</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>CNI06</sys_updated_by>
+                        <sys_updated_on>2021-06-02 17:02:42</sys_updated_on>
+                        <value>Internal Certificates Expiring within 90 Days</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 2021-06-02 01.02.42 PM">eb63f6b8dbe8bc50f75daca2ca961980</portal_section>
+                        <sys_created_by>CNI06</sys_created_by>
+                        <sys_created_on>2021-06-02 17:02:42</sys_created_on>
+                        <sys_id>ef63f6b8dbe8bc50f75daca2ca961982</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>CNI06</sys_updated_by>
+                        <sys_updated_on>2021-06-02 17:02:42</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+        </related_items_node>
+    </sys_portal_page>
+</record_update>

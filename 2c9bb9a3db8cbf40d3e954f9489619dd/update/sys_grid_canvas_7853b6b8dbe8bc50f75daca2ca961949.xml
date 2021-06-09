@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas">
+    <sys_grid_canvas action="INSERT_OR_UPDATE">
+        <legacy_page display_value="PA Internal Certificate - New Tab">bc53b6b8dbe8bc50f75daca2ca961947</legacy_page>
+        <name>PA Internal Certificate - New Tab</name>
+        <sys_class_name>sys_grid_canvas</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-06-02 17:02:15</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>7853b6b8dbe8bc50f75daca2ca961949</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>PA Internal Certificate - New Tab</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sys_grid_canvas_7853b6b8dbe8bc50f75daca2ca961949</sys_update_name>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-06-02 17:02:15</sys_updated_on>
+    </sys_grid_canvas>
+</record_update>

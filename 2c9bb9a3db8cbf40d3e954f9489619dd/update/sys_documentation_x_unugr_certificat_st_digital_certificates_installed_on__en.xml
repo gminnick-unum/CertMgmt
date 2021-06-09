@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="" label="Digital Certificates Installed On" language="en" table="x_unugr_certificat_st_digital_certificates_installed_on">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element/>
+            <help/>
+            <hint/>
+            <label>Digital Certificates Installed On</label>
+            <language>en</language>
+            <name>x_unugr_certificat_st_digital_certificates_installed_on</name>
+            <plural>Digital Certificates Installed Ons</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>CNI06</sys_created_by>
+            <sys_created_on>2021-06-01 19:36:52</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>902d0aa0db287850f75daca2ca961952</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Digital Certificates Installed On</sys_name>
+            <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+            <sys_update_name>sys_documentation_x_unugr_certificat_st_digital_certificates_installed_on__en</sys_update_name>
+            <sys_updated_by>CNI06</sys_updated_by>
+            <sys_updated_on>2021-06-01 19:36:52</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
