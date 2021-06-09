@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
     <sysauto_script action="INSERT_OR_UPDATE">
-        <active>false</active>
+        <active>true</active>
         <business_calendar/>
         <condition/>
         <conditional>false</conditional>
@@ -12,10 +12,10 @@
         <run_as_tz/>
         <run_dayofmonth>1</run_dayofmonth>
         <run_dayofweek>1</run_dayofweek>
-        <run_period/>
+        <run_period>1970-01-01 04:00:00</run_period>
         <run_start>2021-03-04 12:52:57</run_start>
         <run_time>1970-01-01 05:00:00</run_time>
-        <run_type>daily</run_type>
+        <run_type>periodically</run_type>
         <script><![CDATA[//Script attempts to match Closed requests to existing certificates
 var errorOccured = false;
 
@@ -155,6 +155,16 @@ function transferRequestDataToCertificate(certificateMatch, completedRequests) {
         //find the maintenance group by looking for the installation task. Use task the assignment group
         var maintAssignmentGroup = getMaintenanceGroup(completedRequests.sys_id);
         certificateRecord.maintenance_group = maintAssignmentGroup;
+		
+		// Set installed on checkboxes
+		certificateRecord.u_inston_f5 = completedRequests.u_inston_f5;
+		certificateRecord.u_inston_aws = completedRequests.u_inston_aws;
+		certificateRecord.u_inston_api_gateway = completedRequests.u_inston_api_gateway;
+		certificateRecord.u_inston_iis = completedRequests.u_inston_iis;
+		certificateRecord.u_inston_server = completedRequests.u_inston_server;
+		certificateRecord.u_inston_vendor_server = completedRequests.u_inston_vendor_server;
+
+	
         certificateRecord.update();
     }
 
@@ -251,7 +261,7 @@ function getBySubjectName(certificateName) {
         <sys_created_on>2021-03-04 13:15:38</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>7f2b1677dbea6410f75daca2ca9619dc</sys_id>
-        <sys_mod_count>42</sys_mod_count>
+        <sys_mod_count>56</sys_mod_count>
         <sys_name>Match Completed Service Requests to Certs_v2</sys_name>
         <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
         <sys_policy/>
@@ -259,7 +269,7 @@ function getBySubjectName(certificateName) {
         <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
         <sys_update_name>sysauto_script_7f2b1677dbea6410f75daca2ca9619dc</sys_update_name>
         <sys_updated_by>CNI06</sys_updated_by>
-        <sys_updated_on>2021-03-29 17:31:34</sys_updated_on>
+        <sys_updated_on>2021-05-25 18:45:45</sys_updated_on>
         <time_zone/>
         <upgrade_safe>false</upgrade_safe>
     </sysauto_script>

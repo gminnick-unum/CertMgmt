@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Other Information" section_id="757cb112db503810f75daca2ca96190e" sys_domain="global" table="x_unugr_certificat_certificate_request" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_certificate_purpose</element>
+            <position>0</position>
+            <sys_created_by>CNI06</sys_created_by>
+            <sys_created_on>2021-05-25 18:37:45</sys_created_on>
+            <sys_id>027cb112db503810f75daca2ca96196f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Other Information" display_value="Other Information" name="x_unugr_certificat_certificate_request" sys_domain="global" view="Default view">757cb112db503810f75daca2ca96190e</sys_ui_section>
+            <sys_updated_by>CNI06</sys_updated_by>
+            <sys_updated_on>2021-05-25 18:37:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>short_description</element>
+            <position>1</position>
+            <sys_created_by>CNI06</sys_created_by>
+            <sys_created_on>2021-05-25 18:37:45</sys_created_on>
+            <sys_id>867cb112db503810f75daca2ca96196f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Other Information" display_value="Other Information" name="x_unugr_certificat_certificate_request" sys_domain="global" view="Default view">757cb112db503810f75daca2ca96190e</sys_ui_section>
+            <sys_updated_by>CNI06</sys_updated_by>
+            <sys_updated_on>2021-05-25 18:37:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>description</element>
+            <position>2</position>
+            <sys_created_by>CNI06</sys_created_by>
+            <sys_created_on>2021-05-25 18:37:46</sys_created_on>
+            <sys_id>0e7cb112db503810f75daca2ca96196f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Other Information" display_value="Other Information" name="x_unugr_certificat_certificate_request" sys_domain="global" view="Default view">757cb112db503810f75daca2ca96190e</sys_ui_section>
+            <sys_updated_by>CNI06</sys_updated_by>
+            <sys_updated_on>2021-05-25 18:37:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>close_notes</element>
+            <position>3</position>
+            <sys_created_by>CNI06</sys_created_by>
+            <sys_created_on>2021-05-25 18:37:46</sys_created_on>
+            <sys_id>827cb112db503810f75daca2ca961970</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Other Information" display_value="Other Information" name="x_unugr_certificat_certificate_request" sys_domain="global" view="Default view">757cb112db503810f75daca2ca96190e</sys_ui_section>
+            <sys_updated_by>CNI06</sys_updated_by>
+            <sys_updated_on>2021-05-25 18:37:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>work_notes</element>
+            <position>4</position>
+            <sys_created_by>CNI06</sys_created_by>
+            <sys_created_on>2021-05-25 18:37:46</sys_created_on>
+            <sys_id>0a7cb112db503810f75daca2ca961970</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Other Information" display_value="Other Information" name="x_unugr_certificat_certificate_request" sys_domain="global" view="Default view">757cb112db503810f75daca2ca96190e</sys_ui_section>
+            <sys_updated_by>CNI06</sys_updated_by>
+            <sys_updated_on>2021-05-25 18:37:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_initial_contact</element>
+            <position>5</position>
+            <sys_created_by>CNI06</sys_created_by>
+            <sys_created_on>2021-05-25 18:37:46</sys_created_on>
+            <sys_id>8e7cb112db503810f75daca2ca961970</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Other Information" display_value="Other Information" name="x_unugr_certificat_certificate_request" sys_domain="global" view="Default view">757cb112db503810f75daca2ca96190e</sys_ui_section>
+            <sys_updated_by>CNI06</sys_updated_by>
+            <sys_updated_on>2021-05-25 18:37:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_csr_attached</element>
+            <position>6</position>
+            <sys_created_by>CNI06</sys_created_by>
+            <sys_created_on>2021-05-25 18:37:46</sys_created_on>
+            <sys_id>067cb112db503810f75daca2ca961971</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Other Information" display_value="Other Information" name="x_unugr_certificat_certificate_request" sys_domain="global" view="Default view">757cb112db503810f75daca2ca96190e</sys_ui_section>
+            <sys_updated_by>CNI06</sys_updated_by>
+            <sys_updated_on>2021-05-25 18:37:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_csr_required</element>
+            <position>7</position>
+            <sys_created_by>CNI06</sys_created_by>
+            <sys_created_on>2021-05-25 18:37:46</sys_created_on>
+            <sys_id>8a7cb112db503810f75daca2ca961971</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Other Information" display_value="Other Information" name="x_unugr_certificat_certificate_request" sys_domain="global" view="Default view">757cb112db503810f75daca2ca96190e</sys_ui_section>
+            <sys_updated_by>CNI06</sys_updated_by>
+            <sys_updated_on>2021-05-25 18:37:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>stage</element>
+            <position>8</position>
+            <sys_created_by>CNI06</sys_created_by>
+            <sys_created_on>2021-05-25 18:37:46</sys_created_on>
+            <sys_id>027cb112db503810f75daca2ca961972</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Other Information" display_value="Other Information" name="x_unugr_certificat_certificate_request" sys_domain="global" view="Default view">757cb112db503810f75daca2ca96190e</sys_ui_section>
+            <sys_updated_by>CNI06</sys_updated_by>
+            <sys_updated_on>2021-05-25 18:37:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>non_standard_installation</element>
+            <position>9</position>
+            <sys_created_by>CNI06</sys_created_by>
+            <sys_created_on>2021-05-25 18:37:46</sys_created_on>
+            <sys_id>867cb112db503810f75daca2ca961972</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Other Information" display_value="Other Information" name="x_unugr_certificat_certificate_request" sys_domain="global" view="Default view">757cb112db503810f75daca2ca96190e</sys_ui_section>
+            <sys_updated_by>CNI06</sys_updated_by>
+            <sys_updated_on>2021-05-25 18:37:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>activity.xml</element>
+            <position>10</position>
+            <sys_created_by>CNI06</sys_created_by>
+            <sys_created_on>2021-05-25 18:37:46</sys_created_on>
+            <sys_id>0e7cb112db503810f75daca2ca961972</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter display_value="Activities (filtered)">444ea5c6bf310100e628555b3f0739d6</sys_ui_formatter>
+            <sys_ui_section caption="Other Information" display_value="Other Information" name="x_unugr_certificat_certificate_request" sys_domain="global" view="Default view">757cb112db503810f75daca2ca96190e</sys_ui_section>
+            <sys_updated_by>CNI06</sys_updated_by>
+            <sys_updated_on>2021-05-25 18:37:46</sys_updated_on>
+            <sys_user/>
+            <type>formatter</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>activity.xml</element>
+            <position>11</position>
+            <sys_created_by>CNI06</sys_created_by>
+            <sys_created_on>2021-05-25 18:37:46</sys_created_on>
+            <sys_id>067cb112db503810f75daca2ca961973</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter display_value="Activities (filtered)">b832d3560a0001c700d781efe21e22f5</sys_ui_formatter>
+            <sys_ui_section caption="Other Information" display_value="Other Information" name="x_unugr_certificat_certificate_request" sys_domain="global" view="Default view">757cb112db503810f75daca2ca96190e</sys_ui_section>
+            <sys_updated_by>CNI06</sys_updated_by>
+            <sys_updated_on>2021-05-25 18:37:46</sys_updated_on>
+            <sys_user/>
+            <type>formatter</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_requested_for.cost_center</element>
+            <position>12</position>
+            <sys_created_by>CNI06</sys_created_by>
+            <sys_created_on>2021-05-25 18:37:46</sys_created_on>
+            <sys_id>0e7cb112db503810f75daca2ca961973</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Other Information" display_value="Other Information" name="x_unugr_certificat_certificate_request" sys_domain="global" view="Default view">757cb112db503810f75daca2ca96190e</sys_ui_section>
+            <sys_updated_by>CNI06</sys_updated_by>
+            <sys_updated_on>2021-05-25 18:37:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Other Information</caption>
+            <header>false</header>
+            <name>x_unugr_certificat_certificate_request</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>CNI06</sys_created_by>
+            <sys_created_on>2021-05-25 18:37:44</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_id>757cb112db503810f75daca2ca96190e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_unugr_certificat_certificate_request</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+            <sys_update_name>sys_ui_section_757cb112db503810f75daca2ca96190e</sys_update_name>
+            <sys_updated_by>CNI06</sys_updated_by>
+            <sys_updated_on>2021-05-25 18:37:44</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>
