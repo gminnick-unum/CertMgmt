@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item/>
+        <catalog_variable>IO:4a90284fdb583450f75daca2ca96193d</catalog_variable>
+        <cleared>true</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>ignore</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>DDK18</sys_created_by>
+        <sys_created_on>2021-06-08 20:15:53</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>49291af21b6834d0e314c955624bcb65</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>aws_account_name</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_49291af21b6834d0e314c955624bcb65</sys_update_name>
+        <sys_updated_by>DDK18</sys_updated_by>
+        <sys_updated_on>2021-06-08 20:15:53</sys_updated_on>
+        <table/>
+        <ui_policy display_value="clear AWS name and number">8ff89a721b6834d0e314c955624bcb7e</ui_policy>
+        <variable>aws_account_name</variable>
+        <variable_set display_value="Certificate Request">afcc3037dbd5bf484ff2c553059619c1</variable_set>
+        <visible>false</visible>
+    </catalog_ui_policy_action>
+</record_update>
