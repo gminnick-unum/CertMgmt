@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Certificate Owner Update">7e7c6c641b04f050e314c955624bcb98</sc_cat_item>
+        <sc_category display_value="Global Hosting &amp; Infrastructure">2714b2ce3722b5001bc2a6d2b3990eda</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>BB420</sys_created_by>
+        <sys_created_on>2021-05-07 16:04:57</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>10ece4e41b04f050e314c955624bcbcc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Global Hosting &amp; Infrastructure.Certificate Owner Update</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sc_cat_item_category_10ece4e41b04f050e314c955624bcbcc</sys_update_name>
+        <sys_updated_by>BB420</sys_updated_by>
+        <sys_updated_on>2021-05-07 16:04:57</sys_updated_on>
+    </sc_cat_item_category>
+</record_update>
