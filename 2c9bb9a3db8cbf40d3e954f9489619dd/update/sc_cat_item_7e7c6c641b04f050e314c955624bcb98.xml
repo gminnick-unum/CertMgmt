@@ -14,7 +14,7 @@
         <description><![CDATA[<p><span style="font-family: helvetica; font-size: 10pt;">This offering is to update &#39;Owned By&#39; Details in Digital Certificate records. The owner of the certificate will be notified 90 days prior to the certificate expiration date. </span><br /><span style="font-family: helvetica; font-size: 10pt;">Should you have questions prior to submitting your request contactDL Certificate Management .</span><br /><span style="font-family: helvetica; font-size: 10pt;"> </span><br /><span style="font-family: helvetica; font-size: 10pt;">The following details are required to submit the request:</span><br /><span style="font-family: helvetica; font-size: 10pt;">1. Provide “Common Name” or “SAN Name”</span><br /><span style="font-family: helvetica; font-size: 10pt;">               a. Certificate Name - Common name of the digital certificate for which you want to update the Owner details.</span><br /><span style="font-family: helvetica; font-size: 10pt;">               b. SAN Name- Subject Alternative Name of the digital certificate for which you want to update the Owner details.</span><br /><span style="font-family: helvetica; font-size: 10pt;">2. Provide New Owner Name of the digit</span>al Certificate.</p>]]></description>
         <display_price_property>non_zero</display_price_property>
         <entitlement_script/>
-        <flow_designer_flow/>
+        <flow_designer_flow display_value="">e0c853591bc43010e314c955624bcbe3</flow_designer_flow>
         <group/>
         <hide_sp>false</hide_sp>
         <icon/>
@@ -22,7 +22,7 @@
         <image/>
         <location/>
         <mandatory_attachment>false</mandatory_attachment>
-        <meta/>
+        <meta>certificate, certificate owner, certificate update, SSL, Certificate Management, Digital Certificate</meta>
         <mobile_hide_price>false</mobile_hide_price>
         <mobile_picture/>
         <mobile_picture_type>use_desktop_picture</mobile_picture_type>
@@ -36,7 +36,7 @@
         <no_order_now>false</no_order_now>
         <no_proceed_checkout>false</no_proceed_checkout>
         <no_quantity>false</no_quantity>
-        <no_quantity_v2>false</no_quantity_v2>
+        <no_quantity_v2>true</no_quantity_v2>
         <no_search>false</no_search>
         <no_wishlist_v2>false</no_wishlist_v2>
         <omit_price>false</omit_price>
@@ -64,7 +64,7 @@
         <sys_created_on>2021-05-07 16:04:57</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>7e7c6c641b04f050e314c955624bcb98</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Certificate Owner Update</sys_name>
         <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
         <sys_policy/>
@@ -72,7 +72,7 @@
         <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
         <sys_update_name>sc_cat_item_7e7c6c641b04f050e314c955624bcb98</sys_update_name>
         <sys_updated_by>BB420</sys_updated_by>
-        <sys_updated_on>2021-05-07 16:04:57</sys_updated_on>
+        <sys_updated_on>2021-05-26 15:41:35</sys_updated_on>
         <template/>
         <template_manager_roles/>
         <type>item</type>
