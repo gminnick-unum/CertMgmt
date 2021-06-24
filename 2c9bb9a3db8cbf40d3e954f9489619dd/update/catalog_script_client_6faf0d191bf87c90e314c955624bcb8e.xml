@@ -27,7 +27,8 @@
 }
 function callback(caller) { 
 	
-	g_form.setValue('environment',caller.u_environment);	
+	g_form.setValue('environment',caller.getDisplayValue('u_environment'));	
+
 	g_form.setValue('cert_expire_date',caller.u_expires);	
 	g_form.setValue('dns_name',caller.u_sans);	
 	g_form.setValue('impacted_servers',caller.u_associated_servers);	
@@ -45,7 +46,7 @@ function callback(caller) {
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>6faf0d191bf87c90e314c955624bcb8e</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_name>To autopopulate DNS, environment ,Expiry</sys_name>
         <sys_overrides/>
         <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
@@ -54,7 +55,7 @@ function callback(caller) {
         <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
         <sys_update_name>catalog_script_client_6faf0d191bf87c90e314c955624bcb8e</sys_update_name>
         <sys_updated_by>BB420</sys_updated_by>
-        <sys_updated_on>2021-06-18 15:55:02</sys_updated_on>
+        <sys_updated_on>2021-06-22 15:18:35</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>
