@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Certificate Owner Update">7e7c6c641b04f050e314c955624bcb98</catalog_item>
+        <catalog_variable>IO:b5376ca50f873900fc3baf58b1050e18</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>ignore</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>BB420</sys_created_by>
+        <sys_created_on>2021-06-14 13:43:09</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>35b83ba8dbfc7454f75daca2ca96199a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>requested_for</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_35b83ba8dbfc7454f75daca2ca96199a</sys_update_name>
+        <sys_updated_by>BB420</sys_updated_by>
+        <sys_updated_on>2021-06-14 13:43:09</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Hide on behalf of">47883f68dbfc7454f75daca2ca961904</ui_policy>
+        <variable>requested_for</variable>
+        <variable_set/>
+        <visible>false</visible>
+    </catalog_ui_policy_action>
+</record_update>
