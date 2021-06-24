@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="wf_workflow_version">
     <wf_workflow_version action="INSERT_OR_UPDATE">
         <active>true</active>
-        <activity_stages>{"activities":{},"subflows":[],"stages":{},"ends":["e49636641b5be010e314c955624bcb10"]}</activity_stages>
+        <activity_stages>{"subflows":[],"stages":{},"activities":{},"ends":["ef78da6b1b78fcd0e314c955624bcb0e"]}</activity_stages>
         <after_business_rules>false</after_business_rules>
         <checked_out/>
         <checked_out_by/>
@@ -9,10 +9,10 @@
         <condition/>
         <condition_type/>
         <description>Load and process qualualys Scan Report</description>
-        <expected_sequences>ec96fe241b5be010e314c955624bcb88,a896fe241b5be010e314c955624bcb86,e896fe241b5be010e314c955624bcb87,a096fe241b5be010e314c955624bcb83,209636641b5be010e314c955624bcb14,a496fe241b5be010e314c955624bcb85,689636641b5be010e314c955624bcb0f,249636641b5be010e314c955624bcb12</expected_sequences>
+        <expected_sequences>af78da6b1b78fcd0e314c955624bcb12,6f78da6b1b78fcd0e314c955624bcb0d,a778da6b1b78fcd0e314c955624bcb11,af78da6b1b78fcd0e314c955624bcb0a,6b78962b1b78fcd0e314c955624bcb13,2778da6b1b78fcd0e314c955624bcb0c,2f78da6b1b78fcd0e314c955624bcb09,6378962b1b78fcd0e314c955624bcb16</expected_sequences>
         <expected_time>1970-01-01 14:00:00</expected_time>
         <expected_time_type/>
-        <full_sequences>ec96fe241b5be010e314c955624bcb88,a896fe241b5be010e314c955624bcb86,e896fe241b5be010e314c955624bcb87,a096fe241b5be010e314c955624bcb83,e89636641b5be010e314c955624bcb0e,209636641b5be010e314c955624bcb14,249636641b5be010e314c955624bcb12,a496fe241b5be010e314c955624bcb85,649636641b5be010e314c955624bcb11,689636641b5be010e314c955624bcb0f,e49636641b5be010e314c955624bcb10</full_sequences>
+        <full_sequences>af78da6b1b78fcd0e314c955624bcb12,6f78da6b1b78fcd0e314c955624bcb0d,a778da6b1b78fcd0e314c955624bcb11,af78da6b1b78fcd0e314c955624bcb0a,6378da6b1b78fcd0e314c955624bcb10,6b78962b1b78fcd0e314c955624bcb13,6378962b1b78fcd0e314c955624bcb16,2778da6b1b78fcd0e314c955624bcb0c,ab78da6b1b78fcd0e314c955624bcb08,2f78da6b1b78fcd0e314c955624bcb09,ef78da6b1b78fcd0e314c955624bcb0e</full_sequences>
         <journal/>
         <max_activity_count>100</max_activity_count>
         <name>wf_CertificateScanSync</name>
@@ -27,13 +27,13 @@
         <schedule/>
         <stage_field/>
         <stage_order>computed</stage_order>
-        <start display_value="Begin">ec96fe241b5be010e314c955624bcb88</start>
+        <start display_value="Begin">af78da6b1b78fcd0e314c955624bcb12</start>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-03-31 19:19:26</sys_created_on>
-        <sys_id>2496fe241b5be010e314c955624bcb80</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_created_on>2021-06-23 14:23:59</sys_created_on>
+        <sys_id>6f78962b1b78fcd0e314c955624bcb10</sys_id>
+        <sys_mod_count>5</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 19:19:38</sys_updated_on>
+        <sys_updated_on>2021-06-23 14:25:20</sys_updated_on>
         <table>x_unugr_certificat_qualys_scan_reports</table>
         <timezone/>
         <validated>false</validated>
@@ -80,21 +80,21 @@
         <pinned_version/>
         <stage/>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
-        <sys_id>ec96fe241b5be010e314c955624bcb88</sys_id>
+        <sys_created_on>2021-06-23 14:23:59</sys_created_on>
+        <sys_id>af78da6b1b78fcd0e314c955624bcb12</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <sys_updated_on>2021-06-23 14:23:59</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width>80</width>
-        <workflow_version display_value="14 Hours">2496fe241b5be010e314c955624bcb80</workflow_version>
+        <workflow_version display_value="14 Hours">6f78962b1b78fcd0e314c955624bcb10</workflow_version>
         <x>20</x>
         <y>20</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=ec96fe241b5be010e314c955624bcb88"/>
+    <sys_variable_value action="delete_multiple" query="document_key=af78da6b1b78fcd0e314c955624bcb12"/>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Begin">ec96fe241b5be010e314c955624bcb88</activity>
+        <activity display_value="Begin">af78da6b1b78fcd0e314c955624bcb12</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -108,11 +108,11 @@
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
-        <sys_id>249636641b5be010e314c955624bcb0e</sys_id>
+        <sys_created_on>2021-06-23 14:23:59</sys_created_on>
+        <sys_id>2f78da6b1b78fcd0e314c955624bcb13</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <sys_updated_on>2021-06-23 14:23:59</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="If">98f621ca0a0a0b5900f7c291f5e45a0e</activity_definition>
@@ -130,30 +130,30 @@
         <pinned_version/>
         <stage/>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
-        <sys_id>249636641b5be010e314c955624bcb12</sys_id>
+        <sys_created_on>2021-06-23 14:23:59</sys_created_on>
+        <sys_id>6378962b1b78fcd0e314c955624bcb16</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <sys_updated_on>2021-06-23 14:23:59</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="14 Hours">2496fe241b5be010e314c955624bcb80</workflow_version>
+        <workflow_version display_value="14 Hours">6f78962b1b78fcd0e314c955624bcb10</workflow_version>
         <x>1143</x>
         <y>73</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=249636641b5be010e314c955624bcb12"/>
+    <sys_variable_value action="delete_multiple" query="document_key=6378962b1b78fcd0e314c955624bcb16"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>249636641b5be010e314c955624bcb12</document_key>
+        <document_key>6378962b1b78fcd0e314c955624bcb16</document_key>
         <order>300</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
-        <sys_id>209636641b5be010e314c955624bcb13</sys_id>
+        <sys_created_on>2021-06-23 14:23:59</sys_created_on>
+        <sys_id>6f78962b1b78fcd0e314c955624bcb16</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <sys_updated_on>2021-06-23 14:23:59</sys_updated_on>
         <value>answer = checkCounter();&#13;
 &#13;
 function checkCounter() {&#13;
@@ -166,75 +166,75 @@ function checkCounter() {&#13;
 &#13;
 	return check;	&#13;
 }</value>
-        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+        <variable display_value="Script">c35e50810a0a0ba96248a709b450fc32</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>249636641b5be010e314c955624bcb12</document_key>
+        <document_key>6378962b1b78fcd0e314c955624bcb16</document_key>
         <order>200</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
-        <sys_id>6c9636641b5be010e314c955624bcb12</sys_id>
+        <sys_created_on>2021-06-23 14:23:59</sys_created_on>
+        <sys_id>ab78962b1b78fcd0e314c955624bcb16</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <sys_updated_on>2021-06-23 14:23:59</sys_updated_on>
         <value>1</value>
-        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+        <variable display_value="Advanced">493d2c1d0a6a803f3217a75738ea3289</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>249636641b5be010e314c955624bcb12</document_key>
+        <document_key>6378962b1b78fcd0e314c955624bcb16</document_key>
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
-        <sys_id>a89636641b5be010e314c955624bcb12</sys_id>
+        <sys_created_on>2021-06-23 14:23:59</sys_created_on>
+        <sys_id>e778962b1b78fcd0e314c955624bcb16</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <sys_updated_on>2021-06-23 14:23:59</sys_updated_on>
         <value/>
-        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+        <variable display_value="Condition">493cba6a0a6a803f07df24b118473551</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>249636641b5be010e314c955624bcb12</document_key>
+        <document_key>6378962b1b78fcd0e314c955624bcb16</document_key>
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
-        <sys_id>a89636641b5be010e314c955624bcb12</sys_id>
+        <sys_created_on>2021-06-23 14:23:59</sys_created_on>
+        <sys_id>e778962b1b78fcd0e314c955624bcb16</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <sys_updated_on>2021-06-23 14:23:59</sys_updated_on>
         <value/>
-        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+        <variable display_value="Condition">493cba6a0a6a803f07df24b118473551</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>249636641b5be010e314c955624bcb12</document_key>
+        <document_key>6378962b1b78fcd0e314c955624bcb16</document_key>
         <order>200</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
-        <sys_id>6c9636641b5be010e314c955624bcb12</sys_id>
+        <sys_created_on>2021-06-23 14:23:59</sys_created_on>
+        <sys_id>ab78962b1b78fcd0e314c955624bcb16</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <sys_updated_on>2021-06-23 14:23:59</sys_updated_on>
         <value>1</value>
-        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+        <variable display_value="Advanced">493d2c1d0a6a803f3217a75738ea3289</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>249636641b5be010e314c955624bcb12</document_key>
+        <document_key>6378962b1b78fcd0e314c955624bcb16</document_key>
         <order>300</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
-        <sys_id>209636641b5be010e314c955624bcb13</sys_id>
+        <sys_created_on>2021-06-23 14:23:59</sys_created_on>
+        <sys_id>6f78962b1b78fcd0e314c955624bcb16</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <sys_updated_on>2021-06-23 14:23:59</sys_updated_on>
         <value>answer = checkCounter();&#13;
 &#13;
 function checkCounter() {&#13;
@@ -247,10 +247,10 @@ function checkCounter() {&#13;
 &#13;
 	return check;	&#13;
 }</value>
-        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+        <variable display_value="Script">c35e50810a0a0ba96248a709b450fc32</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="check counter value">249636641b5be010e314c955624bcb12</activity>
+        <activity display_value="check counter value">6378962b1b78fcd0e314c955624bcb16</activity>
         <condition>activity.result == 'no'</condition>
         <condition_default display_value="No">c1eff6430a0a0b59000f955abe842c94</condition_default>
         <condition_type>standard</condition_type>
@@ -264,14 +264,14 @@ function checkCounter() {&#13;
         <short_description/>
         <skip_during_generate>true</skip_during_generate>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
-        <sys_id>e49636641b5be010e314c955624bcb13</sys_id>
+        <sys_created_on>2021-06-23 14:23:59</sys_created_on>
+        <sys_id>ab78962b1b78fcd0e314c955624bcb17</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <sys_updated_on>2021-06-23 14:23:59</sys_updated_on>
     </wf_condition>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="check counter value">249636641b5be010e314c955624bcb12</activity>
+        <activity display_value="check counter value">6378962b1b78fcd0e314c955624bcb16</activity>
         <condition>activity.result == 'yes'</condition>
         <condition_default display_value="Yes">c1ef63200a0a0b59005ef89bae78feb7</condition_default>
         <condition_type>standard</condition_type>
@@ -285,11 +285,11 @@ function checkCounter() {&#13;
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
-        <sys_id>689636641b5be010e314c955624bcb13</sys_id>
+        <sys_created_on>2021-06-23 14:23:59</sys_created_on>
+        <sys_id>2b78962b1b78fcd0e314c955624bcb17</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <sys_updated_on>2021-06-23 14:23:59</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="cm_processScanReport">f27b4dcbdb968c104ff2c5530596191c</activity_definition>
@@ -307,21 +307,21 @@ function checkCounter() {&#13;
         <pinned_version/>
         <stage/>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
-        <sys_id>a496fe241b5be010e314c955624bcb85</sys_id>
+        <sys_created_on>2021-06-23 14:23:59</sys_created_on>
+        <sys_id>2778da6b1b78fcd0e314c955624bcb0c</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <sys_updated_on>2021-06-23 14:23:59</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="14 Hours">2496fe241b5be010e314c955624bcb80</workflow_version>
+        <workflow_version display_value="14 Hours">6f78962b1b78fcd0e314c955624bcb10</workflow_version>
         <x>657</x>
         <y>699</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=a496fe241b5be010e314c955624bcb85"/>
+    <sys_variable_value action="delete_multiple" query="document_key=2778da6b1b78fcd0e314c955624bcb0c"/>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="cm_processScanReport">a496fe241b5be010e314c955624bcb85</activity>
+        <activity display_value="cm_processScanReport">2778da6b1b78fcd0e314c955624bcb0c</activity>
         <condition/>
         <condition_default display_value="Failure">e960114bdb5a8c104ff2c553059619a5</condition_default>
         <condition_type>standard</condition_type>
@@ -335,14 +335,14 @@ function checkCounter() {&#13;
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
-        <sys_id>6096fe241b5be010e314c955624bcb86</sys_id>
+        <sys_created_on>2021-06-23 14:23:59</sys_created_on>
+        <sys_id>2778da6b1b78fcd0e314c955624bcb0d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <sys_updated_on>2021-06-23 14:23:59</sys_updated_on>
     </wf_condition>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="cm_processScanReport">a496fe241b5be010e314c955624bcb85</activity>
+        <activity display_value="cm_processScanReport">2778da6b1b78fcd0e314c955624bcb0c</activity>
         <condition>activityOutput.result == "success"</condition>
         <condition_default display_value="Success">3a9ccd83dbd68c104ff2c55305961994</condition_default>
         <condition_type>standard</condition_type>
@@ -356,11 +356,11 @@ function checkCounter() {&#13;
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
-        <sys_id>e096fe241b5be010e314c955624bcb86</sys_id>
+        <sys_created_on>2021-06-23 14:23:59</sys_created_on>
+        <sys_id>a778da6b1b78fcd0e314c955624bcb0d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <sys_updated_on>2021-06-23 14:23:59</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="cm_splitTenableScan">aae849c7db568c104ff2c553059619ad</activity_definition>
@@ -378,21 +378,21 @@ function checkCounter() {&#13;
         <pinned_version/>
         <stage/>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
-        <sys_id>e896fe241b5be010e314c955624bcb87</sys_id>
+        <sys_created_on>2021-06-23 14:23:59</sys_created_on>
+        <sys_id>a778da6b1b78fcd0e314c955624bcb11</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <sys_updated_on>2021-06-23 14:23:59</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="14 Hours">2496fe241b5be010e314c955624bcb80</workflow_version>
+        <workflow_version display_value="14 Hours">6f78962b1b78fcd0e314c955624bcb10</workflow_version>
         <x>181</x>
         <y>323</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=e896fe241b5be010e314c955624bcb87"/>
+    <sys_variable_value action="delete_multiple" query="document_key=a778da6b1b78fcd0e314c955624bcb11"/>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="cm_splitTenableScan">e896fe241b5be010e314c955624bcb87</activity>
+        <activity display_value="cm_splitTenableScan">a778da6b1b78fcd0e314c955624bcb11</activity>
         <condition/>
         <condition_default display_value="Failure">a84b0d4bdb968c104ff2c5530596197f</condition_default>
         <condition_type>standard</condition_type>
@@ -406,14 +406,14 @@ function checkCounter() {&#13;
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
-        <sys_id>a496fe241b5be010e314c955624bcb88</sys_id>
+        <sys_created_on>2021-06-23 14:23:59</sys_created_on>
+        <sys_id>e778da6b1b78fcd0e314c955624bcb12</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <sys_updated_on>2021-06-23 14:23:59</sys_updated_on>
     </wf_condition>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="cm_splitTenableScan">e896fe241b5be010e314c955624bcb87</activity>
+        <activity display_value="cm_splitTenableScan">a778da6b1b78fcd0e314c955624bcb11</activity>
         <condition>activityOutput.result == "success"</condition>
         <condition_default display_value="Success">0d6a8d83db968c104ff2c5530596192e</condition_default>
         <condition_type>standard</condition_type>
@@ -427,11 +427,11 @@ function checkCounter() {&#13;
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
-        <sys_id>2896fe241b5be010e314c955624bcb88</sys_id>
+        <sys_created_on>2021-06-23 14:23:59</sys_created_on>
+        <sys_id>6778da6b1b78fcd0e314c955624bcb12</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <sys_updated_on>2021-06-23 14:23:59</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
@@ -449,19 +449,19 @@ function checkCounter() {&#13;
         <pinned_version/>
         <stage/>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
-        <sys_id>e49636641b5be010e314c955624bcb10</sys_id>
+        <sys_created_on>2021-06-23 14:23:59</sys_created_on>
+        <sys_id>ef78da6b1b78fcd0e314c955624bcb0e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <sys_updated_on>2021-06-23 14:23:59</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width>80</width>
-        <workflow_version display_value="14 Hours">2496fe241b5be010e314c955624bcb80</workflow_version>
+        <workflow_version display_value="14 Hours">6f78962b1b78fcd0e314c955624bcb10</workflow_version>
         <x>1416</x>
         <y>742</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=e49636641b5be010e314c955624bcb10"/>
+    <sys_variable_value action="delete_multiple" query="document_key=ef78da6b1b78fcd0e314c955624bcb0e"/>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
         <activity_definition_updated>false</activity_definition_updated>
@@ -478,30 +478,30 @@ function checkCounter() {&#13;
         <pinned_version/>
         <stage/>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
-        <sys_id>a896fe241b5be010e314c955624bcb86</sys_id>
+        <sys_created_on>2021-06-23 14:23:59</sys_created_on>
+        <sys_id>6f78da6b1b78fcd0e314c955624bcb0d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <sys_updated_on>2021-06-23 14:23:59</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="14 Hours">2496fe241b5be010e314c955624bcb80</workflow_version>
+        <workflow_version display_value="14 Hours">6f78962b1b78fcd0e314c955624bcb10</workflow_version>
         <x>60</x>
         <y>148</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=a896fe241b5be010e314c955624bcb86"/>
+    <sys_variable_value action="delete_multiple" query="document_key=6f78da6b1b78fcd0e314c955624bcb0d"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>a896fe241b5be010e314c955624bcb86</document_key>
+        <document_key>6f78da6b1b78fcd0e314c955624bcb0d</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
-        <sys_id>2c96fe241b5be010e314c955624bcb86</sys_id>
+        <sys_created_on>2021-06-23 14:23:59</sys_created_on>
+        <sys_id>ef78da6b1b78fcd0e314c955624bcb0d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <sys_updated_on>2021-06-23 14:23:59</sys_updated_on>
         <value>var currentDateTime = new GlideDateTime();&#13;
 workflow.scratchpad.fileCounter = 0;&#13;
 workflow.scratchpad.totalFiles = 0;&#13;
@@ -535,19 +535,19 @@ if(certscanCredRecord.next()){&#13;
 &#13;
 &#13;
 </value>
-        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+        <variable display_value="Script">c35ddef20a0a0ba96248a7090eccd518</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>a896fe241b5be010e314c955624bcb86</document_key>
+        <document_key>6f78da6b1b78fcd0e314c955624bcb0d</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
-        <sys_id>2c96fe241b5be010e314c955624bcb86</sys_id>
+        <sys_created_on>2021-06-23 14:23:59</sys_created_on>
+        <sys_id>ef78da6b1b78fcd0e314c955624bcb0d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <sys_updated_on>2021-06-23 14:23:59</sys_updated_on>
         <value>var currentDateTime = new GlideDateTime();&#13;
 workflow.scratchpad.fileCounter = 0;&#13;
 workflow.scratchpad.totalFiles = 0;&#13;
@@ -581,10 +581,10 @@ if(certscanCredRecord.next()){&#13;
 &#13;
 &#13;
 </value>
-        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+        <variable display_value="Script">c35ddef20a0a0ba96248a7090eccd518</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Initialize Workflow vars and log">a896fe241b5be010e314c955624bcb86</activity>
+        <activity display_value="Initialize Workflow vars and log">6f78da6b1b78fcd0e314c955624bcb0d</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -598,11 +598,11 @@ if(certscanCredRecord.next()){&#13;
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
-        <sys_id>6096fe241b5be010e314c955624bcb87</sys_id>
+        <sys_created_on>2021-06-23 14:23:59</sys_created_on>
+        <sys_id>2b78da6b1b78fcd0e314c955624bcb0e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <sys_updated_on>2021-06-23 14:23:59</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
@@ -620,30 +620,30 @@ if(certscanCredRecord.next()){&#13;
         <pinned_version/>
         <stage/>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
-        <sys_id>e89636641b5be010e314c955624bcb0e</sys_id>
+        <sys_created_on>2021-06-23 14:23:59</sys_created_on>
+        <sys_id>6378da6b1b78fcd0e314c955624bcb10</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <sys_updated_on>2021-06-23 14:23:59</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="14 Hours">2496fe241b5be010e314c955624bcb80</workflow_version>
+        <workflow_version display_value="14 Hours">6f78962b1b78fcd0e314c955624bcb10</workflow_version>
         <x>810</x>
         <y>69</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=e89636641b5be010e314c955624bcb0e"/>
+    <sys_variable_value action="delete_multiple" query="document_key=6378da6b1b78fcd0e314c955624bcb10"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>e89636641b5be010e314c955624bcb0e</document_key>
+        <document_key>6378da6b1b78fcd0e314c955624bcb10</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
-        <sys_id>6c9636641b5be010e314c955624bcb0e</sys_id>
+        <sys_created_on>2021-06-23 14:23:59</sys_created_on>
+        <sys_id>e378da6b1b78fcd0e314c955624bcb10</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <sys_updated_on>2021-06-23 14:23:59</sys_updated_on>
         <value>var errorMessage = '';&#13;
 var fileProcessing = 0;&#13;
 &#13;
@@ -653,19 +653,19 @@ errorMessage ='Error Processing ' + workflow.scratchpad.currentTenableInputFile 
 &#13;
 //write Error to application log also&#13;
 gs.info(errorMessage);</value>
-        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+        <variable display_value="Script">c35ddef20a0a0ba96248a7090eccd518</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>e89636641b5be010e314c955624bcb0e</document_key>
+        <document_key>6378da6b1b78fcd0e314c955624bcb10</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
-        <sys_id>6c9636641b5be010e314c955624bcb0e</sys_id>
+        <sys_created_on>2021-06-23 14:23:59</sys_created_on>
+        <sys_id>e378da6b1b78fcd0e314c955624bcb10</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <sys_updated_on>2021-06-23 14:23:59</sys_updated_on>
         <value>var errorMessage = '';&#13;
 var fileProcessing = 0;&#13;
 &#13;
@@ -675,10 +675,10 @@ errorMessage ='Error Processing ' + workflow.scratchpad.currentTenableInputFile 
 &#13;
 //write Error to application log also&#13;
 gs.info(errorMessage);</value>
-        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+        <variable display_value="Script">c35ddef20a0a0ba96248a7090eccd518</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Log Failure">e89636641b5be010e314c955624bcb0e</activity>
+        <activity display_value="Log Failure">6378da6b1b78fcd0e314c955624bcb10</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -692,11 +692,11 @@ gs.info(errorMessage);</value>
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
-        <sys_id>a09636641b5be010e314c955624bcb0f</sys_id>
+        <sys_created_on>2021-06-23 14:23:59</sys_created_on>
+        <sys_id>2f78da6b1b78fcd0e314c955624bcb10</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <sys_updated_on>2021-06-23 14:23:59</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
@@ -714,30 +714,30 @@ gs.info(errorMessage);</value>
         <pinned_version/>
         <stage/>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
-        <sys_id>649636641b5be010e314c955624bcb11</sys_id>
+        <sys_created_on>2021-06-23 14:23:59</sys_created_on>
+        <sys_id>ab78da6b1b78fcd0e314c955624bcb08</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <sys_updated_on>2021-06-23 14:23:59</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="14 Hours">2496fe241b5be010e314c955624bcb80</workflow_version>
+        <workflow_version display_value="14 Hours">6f78962b1b78fcd0e314c955624bcb10</workflow_version>
         <x>1280</x>
         <y>413</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=649636641b5be010e314c955624bcb11"/>
+    <sys_variable_value action="delete_multiple" query="document_key=ab78da6b1b78fcd0e314c955624bcb08"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>649636641b5be010e314c955624bcb11</document_key>
+        <document_key>ab78da6b1b78fcd0e314c955624bcb08</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
-        <sys_id>e49636641b5be010e314c955624bcb11</sys_id>
+        <sys_created_on>2021-06-23 14:23:59</sys_created_on>
+        <sys_id>2f78da6b1b78fcd0e314c955624bcb08</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <sys_updated_on>2021-06-23 14:23:59</sys_updated_on>
         <value>var statusDescription = '';&#13;
 var processStatus = 'Success';&#13;
 &#13;
@@ -764,19 +764,19 @@ while (scanLogRecord.next()){&#13;
 &#13;
 current.u_scan_status = "Scan completed";&#13;
 </value>
-        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+        <variable display_value="Script">c35ddef20a0a0ba96248a7090eccd518</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>649636641b5be010e314c955624bcb11</document_key>
+        <document_key>ab78da6b1b78fcd0e314c955624bcb08</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
-        <sys_id>e49636641b5be010e314c955624bcb11</sys_id>
+        <sys_created_on>2021-06-23 14:23:59</sys_created_on>
+        <sys_id>2f78da6b1b78fcd0e314c955624bcb08</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <sys_updated_on>2021-06-23 14:23:59</sys_updated_on>
         <value>var statusDescription = '';&#13;
 var processStatus = 'Success';&#13;
 &#13;
@@ -803,10 +803,10 @@ while (scanLogRecord.next()){&#13;
 &#13;
 current.u_scan_status = "Scan completed";&#13;
 </value>
-        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+        <variable display_value="Script">c35ddef20a0a0ba96248a7090eccd518</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Log Scan Record">649636641b5be010e314c955624bcb11</activity>
+        <activity display_value="Log Scan Record">ab78da6b1b78fcd0e314c955624bcb08</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -820,11 +820,11 @@ current.u_scan_status = "Scan completed";&#13;
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
-        <sys_id>2c9636641b5be010e314c955624bcb11</sys_id>
+        <sys_created_on>2021-06-23 14:23:59</sys_created_on>
+        <sys_id>6778da6b1b78fcd0e314c955624bcb09</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <sys_updated_on>2021-06-23 14:23:59</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
@@ -842,53 +842,53 @@ current.u_scan_status = "Scan completed";&#13;
         <pinned_version/>
         <stage/>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
-        <sys_id>209636641b5be010e314c955624bcb14</sys_id>
+        <sys_created_on>2021-06-23 14:23:59</sys_created_on>
+        <sys_id>6b78962b1b78fcd0e314c955624bcb13</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <sys_updated_on>2021-06-23 14:23:59</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="14 Hours">2496fe241b5be010e314c955624bcb80</workflow_version>
+        <workflow_version display_value="14 Hours">6f78962b1b78fcd0e314c955624bcb10</workflow_version>
         <x>488</x>
         <y>271</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=209636641b5be010e314c955624bcb14"/>
+    <sys_variable_value action="delete_multiple" query="document_key=6b78962b1b78fcd0e314c955624bcb13"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>209636641b5be010e314c955624bcb14</document_key>
+        <document_key>6b78962b1b78fcd0e314c955624bcb13</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
-        <sys_id>a09636641b5be010e314c955624bcb14</sys_id>
+        <sys_created_on>2021-06-23 14:23:59</sys_created_on>
+        <sys_id>a378962b1b78fcd0e314c955624bcb14</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <sys_updated_on>2021-06-23 14:23:59</sys_updated_on>
         <value>workflow.scratchpad.currentFileName = null;&#13;
 var fileToProcess = workflow.scratchpad.filesToScanList[workflow.scratchpad.counter];&#13;
 workflow.scratchpad.currentfileFullPath = fileToProcess.fileFullPath;</value>
-        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+        <variable display_value="Script">c35ddef20a0a0ba96248a7090eccd518</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>209636641b5be010e314c955624bcb14</document_key>
+        <document_key>6b78962b1b78fcd0e314c955624bcb13</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
-        <sys_id>a09636641b5be010e314c955624bcb14</sys_id>
+        <sys_created_on>2021-06-23 14:23:59</sys_created_on>
+        <sys_id>a378962b1b78fcd0e314c955624bcb14</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <sys_updated_on>2021-06-23 14:23:59</sys_updated_on>
         <value>workflow.scratchpad.currentFileName = null;&#13;
 var fileToProcess = workflow.scratchpad.filesToScanList[workflow.scratchpad.counter];&#13;
 workflow.scratchpad.currentfileFullPath = fileToProcess.fileFullPath;</value>
-        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+        <variable display_value="Script">c35ddef20a0a0ba96248a7090eccd518</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="populate current processing vars">209636641b5be010e314c955624bcb14</activity>
+        <activity display_value="populate current processing vars">6b78962b1b78fcd0e314c955624bcb13</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -902,11 +902,11 @@ workflow.scratchpad.currentfileFullPath = fileToProcess.fileFullPath;</value>
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
-        <sys_id>e49636641b5be010e314c955624bcb14</sys_id>
+        <sys_created_on>2021-06-23 14:23:59</sys_created_on>
+        <sys_id>2778962b1b78fcd0e314c955624bcb15</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <sys_updated_on>2021-06-23 14:23:59</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
@@ -924,30 +924,30 @@ workflow.scratchpad.currentfileFullPath = fileToProcess.fileFullPath;</value>
         <pinned_version/>
         <stage/>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-03-31 19:19:26</sys_created_on>
-        <sys_id>a096fe241b5be010e314c955624bcb83</sys_id>
+        <sys_created_on>2021-06-23 14:23:59</sys_created_on>
+        <sys_id>af78da6b1b78fcd0e314c955624bcb0a</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 19:19:26</sys_updated_on>
+        <sys_updated_on>2021-06-23 14:23:59</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="14 Hours">2496fe241b5be010e314c955624bcb80</workflow_version>
+        <workflow_version display_value="14 Hours">6f78962b1b78fcd0e314c955624bcb10</workflow_version>
         <x>319</x>
         <y>664</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=a096fe241b5be010e314c955624bcb83"/>
+    <sys_variable_value action="delete_multiple" query="document_key=af78da6b1b78fcd0e314c955624bcb0a"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>a096fe241b5be010e314c955624bcb83</document_key>
+        <document_key>af78da6b1b78fcd0e314c955624bcb0a</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-03-31 19:19:26</sys_created_on>
-        <sys_id>e896fe241b5be010e314c955624bcb83</sys_id>
+        <sys_created_on>2021-06-23 14:23:59</sys_created_on>
+        <sys_id>2378da6b1b78fcd0e314c955624bcb0b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 19:19:26</sys_updated_on>
+        <sys_updated_on>2021-06-23 14:23:59</sys_updated_on>
         <value>var scanFilesTotal = 0;&#13;
 &#13;
 var jsonData = data.get(14).filesCreated;&#13;
@@ -972,19 +972,19 @@ for (i=0; i &lt; scanFilesTotal;i++){&#13;
 workflow.scratchpad.totalFiles = scanFilesTotal;&#13;
 workflow.scratchpad.counter = 0;&#13;
 workflow.scratchpad.filesToScanList = filesToScanList;</value>
-        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+        <variable display_value="Script">c35ddef20a0a0ba96248a7090eccd518</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>a096fe241b5be010e314c955624bcb83</document_key>
+        <document_key>af78da6b1b78fcd0e314c955624bcb0a</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-03-31 19:19:26</sys_created_on>
-        <sys_id>e896fe241b5be010e314c955624bcb83</sys_id>
+        <sys_created_on>2021-06-23 14:23:59</sys_created_on>
+        <sys_id>2378da6b1b78fcd0e314c955624bcb0b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 19:19:26</sys_updated_on>
+        <sys_updated_on>2021-06-23 14:23:59</sys_updated_on>
         <value>var scanFilesTotal = 0;&#13;
 &#13;
 var jsonData = data.get(14).filesCreated;&#13;
@@ -1009,10 +1009,10 @@ for (i=0; i &lt; scanFilesTotal;i++){&#13;
 workflow.scratchpad.totalFiles = scanFilesTotal;&#13;
 workflow.scratchpad.counter = 0;&#13;
 workflow.scratchpad.filesToScanList = filesToScanList;</value>
-        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+        <variable display_value="Script">c35ddef20a0a0ba96248a7090eccd518</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Populate Files to process">a096fe241b5be010e314c955624bcb83</activity>
+        <activity display_value="Populate Files to process">af78da6b1b78fcd0e314c955624bcb0a</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -1026,11 +1026,11 @@ workflow.scratchpad.filesToScanList = filesToScanList;</value>
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
-        <sys_id>2896fe241b5be010e314c955624bcb84</sys_id>
+        <sys_created_on>2021-06-23 14:23:59</sys_created_on>
+        <sys_id>6b78da6b1b78fcd0e314c955624bcb0b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <sys_updated_on>2021-06-23 14:23:59</sys_updated_on>
     </wf_condition>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
@@ -1048,30 +1048,30 @@ workflow.scratchpad.filesToScanList = filesToScanList;</value>
         <pinned_version/>
         <stage/>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
-        <sys_id>689636641b5be010e314c955624bcb0f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_created_on>2021-06-23 14:23:59</sys_created_on>
+        <sys_id>2f78da6b1b78fcd0e314c955624bcb09</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <sys_updated_on>2021-06-23 14:25:13</sys_updated_on>
         <timeout>1970-01-01 00:00:00</timeout>
         <vars/>
         <width/>
-        <workflow_version display_value="14 Hours">2496fe241b5be010e314c955624bcb80</workflow_version>
+        <workflow_version display_value="14 Hours">6f78962b1b78fcd0e314c955624bcb10</workflow_version>
         <x>1046</x>
         <y>671</y>
     </wf_activity>
-    <sys_variable_value action="delete_multiple" query="document_key=689636641b5be010e314c955624bcb0f"/>
+    <sys_variable_value action="delete_multiple" query="document_key=2f78da6b1b78fcd0e314c955624bcb09"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>689636641b5be010e314c955624bcb0f</document_key>
+        <document_key>2f78da6b1b78fcd0e314c955624bcb09</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
-        <sys_id>e89636641b5be010e314c955624bcb0f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_created_on>2021-06-23 14:23:59</sys_created_on>
+        <sys_id>af78da6b1b78fcd0e314c955624bcb09</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <sys_updated_on>2021-06-23 14:25:13</sys_updated_on>
         <value>var certificateScanCount = 0;&#13;
 var statusDescription = '';&#13;
 var errorMessage = '';&#13;
@@ -1456,13 +1456,13 @@ function findEnvironmentByCommonNameOrSans(subjectCommonName,SANs){&#13;
 	&#13;
 	if(commonName.includes('.' + development) || alternateName.includes('.' + development)  || &#13;
 		commonName.includes(' ' + development + ' ') || alternateName.includes(' ' + development + ' ') ){&#13;
-		environment = 'UP.DEV.UPC';&#13;
+		environment = 'DEV';&#13;
 	} else if(commonName.includes('.' + acceptance) || alternateName.includes('.' + acceptance)  || &#13;
 		commonName.includes(' ' + acceptance + ' ') || alternateName.includes(' ' + acceptance + ' ') ){&#13;
-		environment = 'UP.ACPT.UPC';&#13;
+		environment = 'UAT';&#13;
 	} else if(commonName.includes('.' + production) || alternateName.includes('.' + production)  || &#13;
 		commonName.includes(' ' + production + ' ') || alternateName.includes(' ' + production + ' ') ){&#13;
-		environment = 'UP.CORP.UPC';&#13;
+		environment = 'PRODUCTION';&#13;
 	} else{&#13;
 		environment = '';&#13;
 	}&#13;
@@ -1501,19 +1501,19 @@ function calcDaysDiffFromToday(dateString){&#13;
 &#13;
 &#13;
 </value>
-        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+        <variable display_value="Script">c35ddef20a0a0ba96248a7090eccd518</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
-        <document_key>689636641b5be010e314c955624bcb0f</document_key>
+        <document_key>2f78da6b1b78fcd0e314c955624bcb09</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
-        <sys_id>e89636641b5be010e314c955624bcb0f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_created_on>2021-06-23 14:23:59</sys_created_on>
+        <sys_id>af78da6b1b78fcd0e314c955624bcb09</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <sys_updated_on>2021-06-23 14:25:13</sys_updated_on>
         <value>var certificateScanCount = 0;&#13;
 var statusDescription = '';&#13;
 var errorMessage = '';&#13;
@@ -1898,13 +1898,13 @@ function findEnvironmentByCommonNameOrSans(subjectCommonName,SANs){&#13;
 	&#13;
 	if(commonName.includes('.' + development) || alternateName.includes('.' + development)  || &#13;
 		commonName.includes(' ' + development + ' ') || alternateName.includes(' ' + development + ' ') ){&#13;
-		environment = 'UP.DEV.UPC';&#13;
+		environment = 'DEV';&#13;
 	} else if(commonName.includes('.' + acceptance) || alternateName.includes('.' + acceptance)  || &#13;
 		commonName.includes(' ' + acceptance + ' ') || alternateName.includes(' ' + acceptance + ' ') ){&#13;
-		environment = 'UP.ACPT.UPC';&#13;
+		environment = 'UAT';&#13;
 	} else if(commonName.includes('.' + production) || alternateName.includes('.' + production)  || &#13;
 		commonName.includes(' ' + production + ' ') || alternateName.includes(' ' + production + ' ') ){&#13;
-		environment = 'UP.CORP.UPC';&#13;
+		environment = 'PRODUCTION';&#13;
 	} else{&#13;
 		environment = '';&#13;
 	}&#13;
@@ -1943,10 +1943,10 @@ function calcDaysDiffFromToday(dateString){&#13;
 &#13;
 &#13;
 </value>
-        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+        <variable display_value="Script">c35ddef20a0a0ba96248a7090eccd518</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
-        <activity display_value="Process Scan JSON Object">689636641b5be010e314c955624bcb0f</activity>
+        <activity display_value="Process Scan JSON Object">2f78da6b1b78fcd0e314c955624bcb09</activity>
         <condition>true</condition>
         <condition_default/>
         <condition_type>standard</condition_type>
@@ -1960,168 +1960,168 @@ function calcDaysDiffFromToday(dateString){&#13;
         <short_description/>
         <skip_during_generate>false</skip_during_generate>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
-        <sys_id>209636641b5be010e314c955624bcb10</sys_id>
+        <sys_created_on>2021-06-23 14:23:59</sys_created_on>
+        <sys_id>e778da6b1b78fcd0e314c955624bcb0a</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
+        <sys_updated_on>2021-06-23 14:23:59</sys_updated_on>
     </wf_condition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Yes">689636641b5be010e314c955624bcb13</condition>
-        <from display_value="check counter value">249636641b5be010e314c955624bcb12</from>
+        <condition display_value="Failure">2778da6b1b78fcd0e314c955624bcb0d</condition>
+        <from display_value="cm_processScanReport">2778da6b1b78fcd0e314c955624bcb0c</from>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
-        <sys_id>209636641b5be010e314c955624bcb18</sys_id>
+        <sys_created_on>2021-06-23 14:23:59</sys_created_on>
+        <sys_id>2378da6b1b78fcd0e314c955624bcb16</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
-        <to display_value="populate current processing vars">209636641b5be010e314c955624bcb14</to>
+        <sys_updated_on>2021-06-23 14:23:59</sys_updated_on>
+        <to display_value="Log Failure">6378da6b1b78fcd0e314c955624bcb10</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">e49636641b5be010e314c955624bcb14</condition>
-        <from display_value="populate current processing vars">209636641b5be010e314c955624bcb14</from>
+        <condition display_value="Always">2f78da6b1b78fcd0e314c955624bcb10</condition>
+        <from display_value="Log Failure">6378da6b1b78fcd0e314c955624bcb10</from>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
-        <sys_id>249636641b5be010e314c955624bcb17</sys_id>
+        <sys_created_on>2021-06-23 14:23:59</sys_created_on>
+        <sys_id>2378da6b1b78fcd0e314c955624bcb17</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
-        <to display_value="cm_processScanReport">a496fe241b5be010e314c955624bcb85</to>
+        <sys_updated_on>2021-06-23 14:23:59</sys_updated_on>
+        <to display_value="check counter value">6378962b1b78fcd0e314c955624bcb16</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">249636641b5be010e314c955624bcb0e</condition>
-        <from display_value="Begin">ec96fe241b5be010e314c955624bcb88</from>
+        <condition display_value="Always">2778962b1b78fcd0e314c955624bcb15</condition>
+        <from display_value="populate current processing vars">6b78962b1b78fcd0e314c955624bcb13</from>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
-        <sys_id>289636641b5be010e314c955624bcb17</sys_id>
+        <sys_created_on>2021-06-23 14:23:59</sys_created_on>
+        <sys_id>2778da6b1b78fcd0e314c955624bcb16</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
-        <to display_value="Initialize Workflow vars and log">a896fe241b5be010e314c955624bcb86</to>
+        <sys_updated_on>2021-06-23 14:23:59</sys_updated_on>
+        <to display_value="cm_processScanReport">2778da6b1b78fcd0e314c955624bcb0c</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">2c9636641b5be010e314c955624bcb11</condition>
-        <from display_value="Log Scan Record">649636641b5be010e314c955624bcb11</from>
+        <condition display_value="Always">6778da6b1b78fcd0e314c955624bcb09</condition>
+        <from display_value="Log Scan Record">ab78da6b1b78fcd0e314c955624bcb08</from>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
-        <sys_id>2c9636641b5be010e314c955624bcb17</sys_id>
+        <sys_created_on>2021-06-23 14:23:59</sys_created_on>
+        <sys_id>2778da6b1b78fcd0e314c955624bcb17</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
-        <to display_value="End">e49636641b5be010e314c955624bcb10</to>
+        <sys_updated_on>2021-06-23 14:23:59</sys_updated_on>
+        <to display_value="End">ef78da6b1b78fcd0e314c955624bcb0e</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Success">2896fe241b5be010e314c955624bcb88</condition>
-        <from display_value="cm_splitTenableScan">e896fe241b5be010e314c955624bcb87</from>
+        <condition display_value="Always">e778da6b1b78fcd0e314c955624bcb0a</condition>
+        <from display_value="Process Scan JSON Object">2f78da6b1b78fcd0e314c955624bcb09</from>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
-        <sys_id>649636641b5be010e314c955624bcb16</sys_id>
+        <sys_created_on>2021-06-23 14:23:59</sys_created_on>
+        <sys_id>2b78da6b1b78fcd0e314c955624bcb16</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
-        <to display_value="Populate Files to process">a096fe241b5be010e314c955624bcb83</to>
+        <sys_updated_on>2021-06-23 14:23:59</sys_updated_on>
+        <to display_value="check counter value">6378962b1b78fcd0e314c955624bcb16</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Success">e096fe241b5be010e314c955624bcb86</condition>
-        <from display_value="cm_processScanReport">a496fe241b5be010e314c955624bcb85</from>
+        <condition display_value="Always">2b78da6b1b78fcd0e314c955624bcb0e</condition>
+        <from display_value="Initialize Workflow vars and log">6f78da6b1b78fcd0e314c955624bcb0d</from>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
-        <sys_id>689636641b5be010e314c955624bcb16</sys_id>
+        <sys_created_on>2021-06-23 14:23:59</sys_created_on>
+        <sys_id>2b78da6b1b78fcd0e314c955624bcb17</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
-        <to display_value="Process Scan JSON Object">689636641b5be010e314c955624bcb0f</to>
+        <sys_updated_on>2021-06-23 14:23:59</sys_updated_on>
+        <to display_value="cm_splitTenableScan">a778da6b1b78fcd0e314c955624bcb11</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="No">e49636641b5be010e314c955624bcb13</condition>
-        <from display_value="check counter value">249636641b5be010e314c955624bcb12</from>
+        <condition display_value="Always">2f78da6b1b78fcd0e314c955624bcb13</condition>
+        <from display_value="Begin">af78da6b1b78fcd0e314c955624bcb12</from>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
-        <sys_id>a09636641b5be010e314c955624bcb18</sys_id>
+        <sys_created_on>2021-06-23 14:23:59</sys_created_on>
+        <sys_id>2f78da6b1b78fcd0e314c955624bcb16</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
-        <to display_value="Log Scan Record">649636641b5be010e314c955624bcb11</to>
+        <sys_updated_on>2021-06-23 14:23:59</sys_updated_on>
+        <to display_value="Initialize Workflow vars and log">6f78da6b1b78fcd0e314c955624bcb0d</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">6096fe241b5be010e314c955624bcb87</condition>
-        <from display_value="Initialize Workflow vars and log">a896fe241b5be010e314c955624bcb86</from>
+        <condition display_value="Yes">2b78962b1b78fcd0e314c955624bcb17</condition>
+        <from display_value="check counter value">6378962b1b78fcd0e314c955624bcb16</from>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
-        <sys_id>a49636641b5be010e314c955624bcb18</sys_id>
+        <sys_created_on>2021-06-23 14:23:59</sys_created_on>
+        <sys_id>2f78da6b1b78fcd0e314c955624bcb17</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
-        <to display_value="cm_splitTenableScan">e896fe241b5be010e314c955624bcb87</to>
+        <sys_updated_on>2021-06-23 14:23:59</sys_updated_on>
+        <to display_value="populate current processing vars">6b78962b1b78fcd0e314c955624bcb13</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">209636641b5be010e314c955624bcb10</condition>
-        <from display_value="Process Scan JSON Object">689636641b5be010e314c955624bcb0f</from>
+        <condition display_value="Failure">e778da6b1b78fcd0e314c955624bcb12</condition>
+        <from display_value="cm_splitTenableScan">a778da6b1b78fcd0e314c955624bcb11</from>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
-        <sys_id>a89636641b5be010e314c955624bcb18</sys_id>
+        <sys_created_on>2021-06-23 14:23:59</sys_created_on>
+        <sys_id>a778da6b1b78fcd0e314c955624bcb15</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
-        <to display_value="check counter value">249636641b5be010e314c955624bcb12</to>
+        <sys_updated_on>2021-06-23 14:23:59</sys_updated_on>
+        <to display_value="Log Failure">6378da6b1b78fcd0e314c955624bcb10</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">2896fe241b5be010e314c955624bcb84</condition>
-        <from display_value="Populate Files to process">a096fe241b5be010e314c955624bcb83</from>
+        <condition display_value="Always">6b78da6b1b78fcd0e314c955624bcb0b</condition>
+        <from display_value="Populate Files to process">af78da6b1b78fcd0e314c955624bcb0a</from>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
-        <sys_id>ac9636641b5be010e314c955624bcb15</sys_id>
+        <sys_created_on>2021-06-23 14:23:59</sys_created_on>
+        <sys_id>ab78da6b1b78fcd0e314c955624bcb15</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
-        <to display_value="populate current processing vars">209636641b5be010e314c955624bcb14</to>
+        <sys_updated_on>2021-06-23 14:23:59</sys_updated_on>
+        <to display_value="populate current processing vars">6b78962b1b78fcd0e314c955624bcb13</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Failure">a496fe241b5be010e314c955624bcb88</condition>
-        <from display_value="cm_splitTenableScan">e896fe241b5be010e314c955624bcb87</from>
+        <condition display_value="Success">a778da6b1b78fcd0e314c955624bcb0d</condition>
+        <from display_value="cm_processScanReport">2778da6b1b78fcd0e314c955624bcb0c</from>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
-        <sys_id>e09636641b5be010e314c955624bcb16</sys_id>
+        <sys_created_on>2021-06-23 14:23:59</sys_created_on>
+        <sys_id>af78da6b1b78fcd0e314c955624bcb15</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
-        <to display_value="Log Failure">e89636641b5be010e314c955624bcb0e</to>
+        <sys_updated_on>2021-06-23 14:23:59</sys_updated_on>
+        <to display_value="Process Scan JSON Object">2f78da6b1b78fcd0e314c955624bcb09</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Failure">6096fe241b5be010e314c955624bcb86</condition>
-        <from display_value="cm_processScanReport">a496fe241b5be010e314c955624bcb85</from>
+        <condition display_value="No">ab78962b1b78fcd0e314c955624bcb17</condition>
+        <from display_value="check counter value">6378962b1b78fcd0e314c955624bcb16</from>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
-        <sys_id>e89636641b5be010e314c955624bcb16</sys_id>
+        <sys_created_on>2021-06-23 14:23:59</sys_created_on>
+        <sys_id>af78da6b1b78fcd0e314c955624bcb17</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
-        <to display_value="Log Failure">e89636641b5be010e314c955624bcb0e</to>
+        <sys_updated_on>2021-06-23 14:23:59</sys_updated_on>
+        <to display_value="Log Scan Record">ab78da6b1b78fcd0e314c955624bcb08</to>
     </wf_transition>
     <wf_transition action="INSERT_OR_UPDATE">
-        <condition display_value="Always">a09636641b5be010e314c955624bcb0f</condition>
-        <from display_value="Log Failure">e89636641b5be010e314c955624bcb0e</from>
+        <condition display_value="Success">6778da6b1b78fcd0e314c955624bcb12</condition>
+        <from display_value="cm_splitTenableScan">a778da6b1b78fcd0e314c955624bcb11</from>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-03-31 19:19:27</sys_created_on>
-        <sys_id>ec9636641b5be010e314c955624bcb16</sys_id>
+        <sys_created_on>2021-06-23 14:23:59</sys_created_on>
+        <sys_id>e378da6b1b78fcd0e314c955624bcb15</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 19:19:27</sys_updated_on>
-        <to display_value="check counter value">249636641b5be010e314c955624bcb12</to>
+        <sys_updated_on>2021-06-23 14:23:59</sys_updated_on>
+        <to display_value="Populate Files to process">af78da6b1b78fcd0e314c955624bcb0a</to>
     </wf_transition>
     <wf_estimated_runtime_config action="INSERT_OR_UPDATE">
         <estimated_run_time/>
         <no_of_data_points>1</no_of_data_points>
         <percentage_threshold_ert>20</percentage_threshold_ert>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-03-31 19:19:26</sys_created_on>
-        <sys_id>a896fe241b5be010e314c955624bcb80</sys_id>
+        <sys_created_on>2021-06-23 14:23:59</sys_created_on>
+        <sys_id>e378962b1b78fcd0e314c955624bcb11</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-03-31 19:19:26</sys_updated_on>
-        <workflow_version display_value="14 Hours">2496fe241b5be010e314c955624bcb80</workflow_version>
+        <sys_updated_on>2021-06-23 14:23:59</sys_updated_on>
+        <workflow_version display_value="14 Hours">6f78962b1b78fcd0e314c955624bcb10</workflow_version>
     </wf_estimated_runtime_config>
-    <wf_workflow_version action="update_multiple" query="workflow=f44b753adbb43f80d3e954f94896195e^sys_id!=2496fe241b5be010e314c955624bcb80">
+    <wf_workflow_version action="update_multiple" query="workflow=f44b753adbb43f80d3e954f94896195e^sys_id!=6f78962b1b78fcd0e314c955624bcb10">
         <published>false</published>
     </wf_workflow_version>
 </record_update>
