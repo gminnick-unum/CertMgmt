@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_transform_entry">
+    <sys_transform_entry action="INSERT_OR_UPDATE">
+        <choice_action>create</choice_action>
+        <coalesce>false</coalesce>
+        <coalesce_case_sensitive>false</coalesce_case_sensitive>
+        <coalesce_empty_fields>false</coalesce_empty_fields>
+        <date_format>yyyy-MM-dd hh:mm:ss</date_format>
+        <map display_value="CSC Digital Certs">32fc12231bf8fcd0e314c955624bcb15</map>
+        <reference_value_field/>
+        <source_field>[Script]</source_field>
+        <source_script><![CDATA[answer = (function transformEntry(source) {
+
+	// Add your code here
+	return "External"; // return the value to be put into the target field
+
+})(source);]]></source_script>
+        <source_table>x_unugr_certificat_csc_api_digital_certs</source_table>
+        <sys_class_name>sys_transform_entry</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-06-23 14:57:40</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>9f10e6231b3cfcd0e314c955624bcb5e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>[Script]</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sys_transform_entry_9f10e6231b3cfcd0e314c955624bcb5e</sys_update_name>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-06-23 14:57:50</sys_updated_on>
+        <target_field>u_certificate_type</target_field>
+        <target_table>x_unugr_certificat_digital_certificate</target_table>
+        <use_source_script>true</use_source_script>
+    </sys_transform_entry>
+</record_update>
