@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <inactive>false</inactive>
+        <misc>0</misc>
+        <order>100</order>
+        <published_ref/>
+        <question display_value="Cancellation Category">56a1b258dbaaf81047241fb748961984</question>
+        <rec_misc>0</rec_misc>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>BB420</sys_created_by>
+        <sys_created_on>2021-09-08 13:44:59</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>47e17250dbeaf81047241fb7489619ae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Different Certificate ordered</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>question_choice_47e17250dbeaf81047241fb7489619ae</sys_update_name>
+        <sys_updated_by>BB420</sys_updated_by>
+        <sys_updated_on>2021-09-08 13:44:59</sys_updated_on>
+        <text>Different Certificate ordered</text>
+        <value>different_cert</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=47e17250dbeaf81047241fb7489619ae"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>misc</field>
+        <id>47e17250dbeaf81047241fb7489619ae</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>BB420</sys_created_by>
+        <sys_created_on>2021-09-08 13:44:59</sys_created_on>
+        <sys_id>f2f1b650dbeaf81047241fb748961944</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>BB420</sys_updated_by>
+        <sys_updated_on>2021-09-08 13:44:59</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>rec_misc</field>
+        <id>47e17250dbeaf81047241fb7489619ae</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>BB420</sys_created_by>
+        <sys_created_on>2021-09-08 13:44:59</sys_created_on>
+        <sys_id>f2f1b650dbeaf81047241fb748961943</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>BB420</sys_updated_by>
+        <sys_updated_on>2021-09-08 13:44:59</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+</record_update>

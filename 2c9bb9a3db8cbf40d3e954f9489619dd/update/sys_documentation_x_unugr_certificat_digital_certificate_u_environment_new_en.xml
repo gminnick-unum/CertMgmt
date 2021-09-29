@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_environment_new" label="Environment new" language="en" table="x_unugr_certificat_digital_certificate">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_environment_new</element>
+            <help/>
+            <hint/>
+            <label>Environment new</label>
+            <language>en</language>
+            <name>x_unugr_certificat_digital_certificate</name>
+            <plural>Environment news</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>BB420</sys_created_by>
+            <sys_created_on>2021-09-01 10:00:35</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>a37b31ce1b5a3410e314c955624bcbf1</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>Environment new</sys_name>
+            <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+            <sys_update_name>sys_documentation_x_unugr_certificat_digital_certificate_u_environment_new_en</sys_update_name>
+            <sys_updated_by>BB420</sys_updated_by>
+            <sys_updated_on>2021-09-03 15:25:36</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

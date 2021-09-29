@@ -22,12 +22,12 @@
         <field/>
         <global>true</global>
         <help_tag>More information</help_tag>
-        <help_text/>
+        <help_text>Select Domain field above to filter the Environment values.</help_text>
         <hidden>false</hidden>
         <include_none>true</include_none>
         <instructions/>
         <layout>normal</layout>
-        <list_table/>
+        <list_table>u_catalog_choice_list</list_table>
         <lookup_label/>
         <lookup_price/>
         <lookup_table/>
@@ -39,12 +39,12 @@
         <map_to_field>false</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
-        <name>certificate_name</name>
-        <order>750</order>
+        <name>environment_new</name>
+        <order>95</order>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
         <published_ref/>
-        <question_text>What will be the certificate common name?</question_text>
+        <question_text>Environment New</question_text>
         <read_only>false</read_only>
         <read_roles/>
         <read_script/>
@@ -53,38 +53,38 @@
         <record/>
         <record_producer_table/>
         <reference/>
-        <reference_qual/>
+        <reference_qual>javascript: 'u_included_in_itemsLIKEe989bc37db95bf484ff2c55305961903^u_list_name=Environment New^u_parent.u_value=' + current.variables.domain</reference_qual>
         <reference_qual_condition/>
         <rich_text/>
         <roles_to_use_also_request_for/>
         <save_script/>
         <scale_max>5</scale_max>
         <scale_min>0</scale_min>
-        <show_help>false</show_help>
-        <show_help_on_load>false</show_help_on_load>
+        <show_help>true</show_help>
+        <show_help_on_load>true</show_help_on_load>
         <sp_widget/>
         <summary_macro/>
         <sys_class_name>item_option_new</sys_class_name>
-        <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2019-05-15 16:18:59</sys_created_on>
+        <sys_created_by>BB420</sys_created_by>
+        <sys_created_on>2021-08-25 16:24:10</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>7d7ad537db5dbf484ff2c5530596190d</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>What will be the certificate common name?</sys_name>
+        <sys_id>f79e03f71b4a3010e314c955624bcb9f</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Environment New</sys_name>
         <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
-        <sys_update_name>item_option_new_7d7ad537db5dbf484ff2c5530596190d</sys_update_name>
+        <sys_update_name>item_option_new_f79e03f71b4a3010e314c955624bcb9f</sys_update_name>
         <sys_updated_by>BB420</sys_updated_by>
-        <sys_updated_on>2021-09-21 16:27:25</sys_updated_on>
+        <sys_updated_on>2021-09-23 09:26:57</sys_updated_on>
         <table/>
         <tooltip/>
-        <type>6</type>
+        <type>21</type>
         <ui_page/>
         <unique>false</unique>
         <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
+        <use_reference_qualifier>advanced</use_reference_qualifier>
         <validate_regex/>
         <variable_name/>
         <variable_set display_value="Certificate Request">afcc3037dbd5bf484ff2c553059619c1</variable_set>
@@ -96,39 +96,39 @@
         <visible_summary>true</visible_summary>
         <write_roles/>
     </item_option_new>
-    <sys_translated_text action="delete_multiple" query="documentkey=7d7ad537db5dbf484ff2c5530596190d"/>
-    <fx_price action="delete_multiple" query="id=7d7ad537db5dbf484ff2c5530596190d"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=f79e03f71b4a3010e314c955624bcb9f"/>
+    <fx_price action="delete_multiple" query="id=f79e03f71b4a3010e314c955624bcb9f"/>
     <fx_price action="INSERT_OR_UPDATE">
         <amount>0</amount>
-        <currency display_value="USD">USD</currency>
+        <currency display_value="EUR">EUR</currency>
         <field>price_if_checked</field>
-        <id>7d7ad537db5dbf484ff2c5530596190d</id>
+        <id>f79e03f71b4a3010e314c955624bcb9f</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
-        <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2019-05-15 16:18:59</sys_created_on>
-        <sys_id>acaad177db5dbf484ff2c553059619bd</sys_id>
+        <sys_created_by>BB420</sys_created_by>
+        <sys_created_on>2021-08-25 16:24:11</sys_created_on>
+        <sys_id>1a20d3331b0e3010e314c955624bcb1a</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2019-05-15 16:18:59</sys_updated_on>
+        <sys_updated_by>BB420</sys_updated_by>
+        <sys_updated_on>2021-08-25 16:24:11</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>
     <fx_price action="INSERT_OR_UPDATE">
         <amount>0</amount>
-        <currency display_value="USD">USD</currency>
+        <currency display_value="EUR">EUR</currency>
         <field>rec_price_if_checked</field>
-        <id>7d7ad537db5dbf484ff2c5530596190d</id>
+        <id>f79e03f71b4a3010e314c955624bcb9f</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
-        <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2019-05-15 16:18:59</sys_created_on>
-        <sys_id>64aad177db5dbf484ff2c553059619bd</sys_id>
+        <sys_created_by>BB420</sys_created_by>
+        <sys_created_on>2021-08-25 16:24:11</sys_created_on>
+        <sys_id>1a20d3331b0e3010e314c955624bcb19</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2019-05-15 16:18:59</sys_updated_on>
+        <sys_updated_by>BB420</sys_updated_by>
+        <sys_updated_on>2021-08-25 16:24:11</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>

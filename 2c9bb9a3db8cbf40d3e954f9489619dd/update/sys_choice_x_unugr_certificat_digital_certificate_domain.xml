@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="domain" table="x_unugr_certificat_digital_certificate" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>domain</element>
+            <name>x_unugr_certificat_digital_certificate</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>BB420</sys_created_by>
+            <sys_created_on>2021-09-01 10:13:11</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>8c6eb18e1b9a3410e314c955624bcb68</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>domain</sys_name>
+            <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+            <sys_update_name>sys_choice_x_unugr_certificat_digital_certificate_domain</sys_update_name>
+            <sys_updated_by>BB420</sys_updated_by>
+            <sys_updated_on>2021-09-01 10:13:11</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>domain</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>UPD</label>
+            <language>en</language>
+            <name>x_unugr_certificat_digital_certificate</name>
+            <sequence>100</sequence>
+            <synonyms/>
+            <sys_created_by>BB420</sys_created_by>
+            <sys_created_on>2021-09-01 10:13:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>544e398e1b9a3410e314c955624bcbea</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>BB420</sys_updated_by>
+            <sys_updated_on>2021-09-01 10:13:11</sys_updated_on>
+            <value>u_upd</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>domain</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>UPA</label>
+            <language>en</language>
+            <name>x_unugr_certificat_digital_certificate</name>
+            <sequence>200</sequence>
+            <synonyms/>
+            <sys_created_by>BB420</sys_created_by>
+            <sys_created_on>2021-09-01 10:13:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>0e7e7d4e1b9a3410e314c955624bcbbe</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>BB420</sys_updated_by>
+            <sys_updated_on>2021-09-01 10:13:36</sys_updated_on>
+            <value>u_upa</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>domain</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>UP</label>
+            <language>en</language>
+            <name>x_unugr_certificat_digital_certificate</name>
+            <sequence>300</sequence>
+            <synonyms/>
+            <sys_created_by>BB420</sys_created_by>
+            <sys_created_on>2021-09-01 10:13:56</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>4f8ef5821b9a3410e314c955624bcb0d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>BB420</sys_updated_by>
+            <sys_updated_on>2021-09-01 10:13:56</sys_updated_on>
+            <value>u_up</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

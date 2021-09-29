@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item/>
+        <catalog_variable>IO:56a1b258dbaaf81047241fb748961984</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>true</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>BB420</sys_created_by>
+        <sys_created_on>2021-09-08 13:51:17</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>64637a5cdb6ef81047241fb748961982</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>cancellation_category</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_64637a5cdb6ef81047241fb748961982</sys_update_name>
+        <sys_updated_by>BB420</sys_updated_by>
+        <sys_updated_on>2021-09-08 13:51:17</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Display Cancellation Reason and Category">b4237e14db6ef81047241fb74896197a</ui_policy>
+        <variable>cancellation_category</variable>
+        <variable_set display_value="Certificate Request">afcc3037dbd5bf484ff2c553059619c1</variable_set>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+</record_update>

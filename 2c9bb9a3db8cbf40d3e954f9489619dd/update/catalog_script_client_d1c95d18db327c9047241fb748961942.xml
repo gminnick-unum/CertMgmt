@@ -3,61 +3,44 @@
         <active>true</active>
         <applies_catalog>true</applies_catalog>
         <applies_extended>false</applies_extended>
-        <applies_req_item>false</applies_req_item>
-        <applies_sc_task>false</applies_sc_task>
-        <applies_target_record>false</applies_target_record>
+        <applies_req_item>true</applies_req_item>
+        <applies_sc_task>true</applies_sc_task>
+        <applies_target_record>true</applies_target_record>
         <applies_to>set</applies_to>
         <cat_item/>
-        <cat_variable>IO:82a10da7dbfd7f044ff2c553059619d1</cat_variable>
+        <cat_variable>IO:f0f2717fdb0eb010f75daca2ca961941</cat_variable>
         <condition/>
         <description/>
         <field/>
         <global>true</global>
         <isolate_script>false</isolate_script>
         <messages/>
-        <name>To autopopulate DNS, environment ,Expiry</name>
+        <name>To populate the clear values for domain</name>
         <order/>
         <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
    if (isLoading || newValue == '') {
       return;
    }
 
-  
-	var caller = g_form.getReference('select_exsiting_certificate', callback); //  callback is my callback function here :
-}
-function callback(caller) { 
+	g_form.clearValue('environment_new');
 	
-	g_form.setValue('environment_new',caller.getValue('u_environment_new'));	
-	
-     g_form.setValue('domain',caller.getValue('domain'));
-	
-	g_form.setValue('cert_expire_date',caller.u_expires);	
-	g_form.setValue('dns_name',caller.u_sans);	
-	g_form.setValue('impacted_servers',caller.u_associated_servers);	
-	g_form.setValue('certificate_to_be_installed',caller.u_install_on);
-	g_form.setValue('app_desc',caller.associated_applications);	
-	g_form.setValue('certificate_name',caller.u_common_name);	
-		
-
-
-}	
-]]></script>
+}]]></script>
         <sys_class_name>catalog_script_client</sys_class_name>
         <sys_created_by>BB420</sys_created_by>
-        <sys_created_on>2021-06-16 09:29:36</sys_created_on>
+        <sys_created_on>2021-09-20 17:36:58</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
-        <sys_id>6faf0d191bf87c90e314c955624bcb8e</sys_id>
-        <sys_mod_count>24</sys_mod_count>
-        <sys_name>To autopopulate DNS, environment ,Expiry</sys_name>
+        <sys_id>d1c95d18db327c9047241fb748961942</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>To populate the clear values for domain</sys_name>
         <sys_overrides/>
         <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
-        <sys_update_name>catalog_script_client_6faf0d191bf87c90e314c955624bcb8e</sys_update_name>
+        <sys_update_name>catalog_script_client_d1c95d18db327c9047241fb748961942</sys_update_name>
         <sys_updated_by>BB420</sys_updated_by>
-        <sys_updated_on>2021-09-08 11:59:21</sys_updated_on>
+        <sys_updated_on>2021-09-20 17:39:29</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>
