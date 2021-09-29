@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Certificate Details" section_id="ea2d65a0db74bf00d3e954f94896197f" sys_domain="global" table="x_unugr_certificat_digital_certificate" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_serial_number</element>
+            <position>0</position>
+            <sys_created_by>CNI06</sys_created_by>
+            <sys_created_on>2021-09-10 14:22:26</sys_created_on>
+            <sys_id>43bd4501db2e385047241fb748961968</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Certificate Details" display_value="Certificate Details" name="x_unugr_certificat_digital_certificate" sys_domain="global" view="Default view">ea2d65a0db74bf00d3e954f94896197f</sys_ui_section>
+            <sys_updated_by>CNI06</sys_updated_by>
+            <sys_updated_on>2021-09-10 14:22:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_store_location</element>
+            <position>1</position>
+            <sys_created_by>CNI06</sys_created_by>
+            <sys_created_on>2021-09-10 14:22:26</sys_created_on>
+            <sys_id>0fbd4501db2e385047241fb748961968</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Certificate Details" display_value="Certificate Details" name="x_unugr_certificat_digital_certificate" sys_domain="global" view="Default view">ea2d65a0db74bf00d3e954f94896197f</sys_ui_section>
+            <sys_updated_by>CNI06</sys_updated_by>
+            <sys_updated_on>2021-09-10 14:22:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_requester_name</element>
+            <position>2</position>
+            <sys_created_by>CNI06</sys_created_by>
+            <sys_created_on>2021-09-10 14:22:26</sys_created_on>
+            <sys_id>83bd4501db2e385047241fb748961969</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Certificate Details" display_value="Certificate Details" name="x_unugr_certificat_digital_certificate" sys_domain="global" view="Default view">ea2d65a0db74bf00d3e954f94896197f</sys_ui_section>
+            <sys_updated_by>CNI06</sys_updated_by>
+            <sys_updated_on>2021-09-10 14:22:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_certificate_type</element>
+            <position>3</position>
+            <sys_created_by>CNI06</sys_created_by>
+            <sys_created_on>2021-09-10 14:22:26</sys_created_on>
+            <sys_id>0bbd4501db2e385047241fb748961969</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Certificate Details" display_value="Certificate Details" name="x_unugr_certificat_digital_certificate" sys_domain="global" view="Default view">ea2d65a0db74bf00d3e954f94896197f</sys_ui_section>
+            <sys_updated_by>CNI06</sys_updated_by>
+            <sys_updated_on>2021-09-10 14:22:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>4</position>
+            <sys_created_by>CNI06</sys_created_by>
+            <sys_created_on>2021-09-10 14:22:26</sys_created_on>
+            <sys_id>8fbd4501db2e385047241fb748961969</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Certificate Details" display_value="Certificate Details" name="x_unugr_certificat_digital_certificate" sys_domain="global" view="Default view">ea2d65a0db74bf00d3e954f94896197f</sys_ui_section>
+            <sys_updated_by>CNI06</sys_updated_by>
+            <sys_updated_on>2021-09-10 14:22:26</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_signature_algorithm</element>
+            <position>5</position>
+            <sys_created_by>CNI06</sys_created_by>
+            <sys_created_on>2021-09-10 14:22:26</sys_created_on>
+            <sys_id>07bd4501db2e385047241fb74896196a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Certificate Details" display_value="Certificate Details" name="x_unugr_certificat_digital_certificate" sys_domain="global" view="Default view">ea2d65a0db74bf00d3e954f94896197f</sys_ui_section>
+            <sys_updated_by>CNI06</sys_updated_by>
+            <sys_updated_on>2021-09-10 14:22:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_source</element>
+            <position>6</position>
+            <sys_created_by>CNI06</sys_created_by>
+            <sys_created_on>2021-09-10 14:22:26</sys_created_on>
+            <sys_id>8bbd4501db2e385047241fb74896196a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Certificate Details" display_value="Certificate Details" name="x_unugr_certificat_digital_certificate" sys_domain="global" view="Default view">ea2d65a0db74bf00d3e954f94896197f</sys_ui_section>
+            <sys_updated_by>CNI06</sys_updated_by>
+            <sys_updated_on>2021-09-10 14:22:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_certificate_template</element>
+            <position>7</position>
+            <sys_created_by>CNI06</sys_created_by>
+            <sys_created_on>2021-09-10 14:22:26</sys_created_on>
+            <sys_id>03bd4501db2e385047241fb74896196b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Certificate Details" display_value="Certificate Details" name="x_unugr_certificat_digital_certificate" sys_domain="global" view="Default view">ea2d65a0db74bf00d3e954f94896197f</sys_ui_section>
+            <sys_updated_by>CNI06</sys_updated_by>
+            <sys_updated_on>2021-09-10 14:22:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Certificate Details</caption>
+            <header>false</header>
+            <name>x_unugr_certificat_digital_certificate</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-04-10 18:48:18</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_id>ea2d65a0db74bf00d3e954f94896197f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_unugr_certificat_digital_certificate</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+            <sys_update_name>sys_ui_section_ea2d65a0db74bf00d3e954f94896197f</sys_update_name>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-04-10 18:48:18</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

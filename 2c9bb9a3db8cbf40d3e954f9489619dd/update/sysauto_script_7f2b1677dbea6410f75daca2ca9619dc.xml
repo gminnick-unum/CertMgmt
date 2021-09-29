@@ -158,7 +158,8 @@ function transferRequestDataToCertificate(certificateMatch, completedRequests) {
         var maintAssignmentGroup = getMaintenanceGroup(completedRequests.sys_id);
         certificateRecord.maintenance_group = maintAssignmentGroup;
 
-				// Set installed on checkboxes on certificate based on request
+		/* Moved these steps to the UpdateDigCertWhenMatched as that is where it should have gone instead of here
+		// Set installed on checkboxes on certificate based on request
 		// This line gets the comma delimeted sys_id for each reference field in the list collector and splits into an array
 		var certReqInstalledOn = completedRequests.u_install_on.toString().split(",");
 		var installedOn;
@@ -195,6 +196,7 @@ function transferRequestDataToCertificate(certificateMatch, completedRequests) {
 				}
 			}
 		}
+		*/
 
         certificateRecord.update();
 
@@ -293,7 +295,7 @@ function getBySubjectName(certificateName) {
         <sys_created_on>2021-03-04 13:15:38</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>7f2b1677dbea6410f75daca2ca9619dc</sys_id>
-        <sys_mod_count>57</sys_mod_count>
+        <sys_mod_count>60</sys_mod_count>
         <sys_name>Match Completed Service Requests to Certs_v2</sys_name>
         <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
         <sys_policy/>
@@ -301,7 +303,7 @@ function getBySubjectName(certificateName) {
         <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
         <sys_update_name>sysauto_script_7f2b1677dbea6410f75daca2ca9619dc</sys_update_name>
         <sys_updated_by>CNI06</sys_updated_by>
-        <sys_updated_on>2021-06-07 14:05:10</sys_updated_on>
+        <sys_updated_on>2021-09-08 16:07:49</sys_updated_on>
         <time_zone/>
         <upgrade_safe>false</upgrade_safe>
     </sysauto_script>

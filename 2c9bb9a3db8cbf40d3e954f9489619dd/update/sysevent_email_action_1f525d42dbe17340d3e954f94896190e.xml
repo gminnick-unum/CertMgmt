@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_email_action">
+    <sysevent_email_action action="INSERT_OR_UPDATE">
+        <action_insert>false</action_insert>
+        <action_update>false</action_update>
+        <active>false</active>
+        <advanced_condition/>
+        <affected_field_on_event/>
+        <category display_value="Certificate Expiration" name="Certificate Expiration">28604dc6db217340d3e954f948961971</category>
+        <collection>sys_user</collection>
+        <condition/>
+        <content_type>text/html</content_type>
+        <default_interval/>
+        <description>Certificate Management third Notification.  Sent when Certificate Expiration Date meets the poperty criteria</description>
+        <digest_from/>
+        <digest_html/>
+        <digest_reply_to/>
+        <digest_separator_html><![CDATA[<p><br /></p>
+<hr />
+<p><br /></p>]]></digest_separator_html>
+        <digest_separator_text><![CDATA[\n--------------------------------------------------------------------------------\n]]></digest_separator_text>
+        <digest_subject/>
+        <digest_template/>
+        <digest_text/>
+        <digestable>false</digestable>
+        <event_name>x_unugr_certificat.expire.dailynotify</event_name>
+        <event_parm_1>false</event_parm_1>
+        <event_parm_2>false</event_parm_2>
+        <exclude_delegates>false</exclude_delegates>
+        <force_delivery>false</force_delivery>
+        <from/>
+        <generation_type>event</generation_type>
+        <importance>high</importance>
+        <include_attachments>false</include_attachments>
+        <item>event.parm1</item>
+        <item_table/>
+        <mandatory>false</mandatory>
+        <message/>
+        <message_html><![CDATA[<p>${mail_script:cert_no_owner_selected}</p>
+<p>The following Certificate will expire in ${u_expires_in_days} days.&nbsp;</p>
+<p><strong>This is a daily notification and will continue to be sent until action has been taken.</strong></p>
+<p>&nbsp;Number:&nbsp;${URI_REF}</p>
+<p>Certificate Type: ${u_certificate_type}</p>
+<p>Common Name: ${u_common_name}</p>
+<p>SANs: ${u_sans}</p>
+<p>Environment: ${u_environment}</p>
+<p>Owner: ${u_owned_by.first_name}&nbsp; ${u_owned_by.last_name}</p>
+<p><br /></p>
+<p><strong><span style="font-size: 11.0pt; font-family: 'Calibri',sans-serif;">If this certificate needs to be renewed please use the Certificate Request form in Service Catalog.&nbsp;&nbsp;</span></strong></p>
+<p><strong><span style="font-size: 11.0pt; font-family: 'Calibri',sans-serif;">Go to the ESS Portal by clicking on the ServiceNow Logo below:</span></strong></p>
+<p><span style="font-size: 11.0pt; font-family: 'Calibri',sans-serif;">${mail_script:getServicePortalHomeLinkWithLogo}</span></p>
+<p><br /></p>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>Cert Expiring Daily Notification</name>
+        <omit_watermark>false</omit_watermark>
+        <order>100</order>
+        <push_message_only>false</push_message_only>
+        <recipient_fields/>
+        <recipient_groups/>
+        <recipient_users/>
+        <reply_to/>
+        <send_self>true</send_self>
+        <sms_alternate/>
+        <style/>
+        <subject>Certificate Expiring in ${u_expires_in_days}  days - Daily Notification</subject>
+        <subscribable>false</subscribable>
+        <sys_class_name>sysevent_email_action</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-05-22 15:29:11</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>1f525d42dbe17340d3e954f94896190e</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name>Cert Expiring Daily Notification</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sysevent_email_action_1f525d42dbe17340d3e954f94896190e</sys_update_name>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-08 17:29:06</sys_updated_on>
+        <sys_version>2</sys_version>
+        <template display_value="unum.it.ess">132590c40f3a9780fc3baf58b1050e7d</template>
+        <type>email</type>
+        <weight>0</weight>
+    </sysevent_email_action>
+</record_update>
