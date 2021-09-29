@@ -1,0 +1,3644 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_template>DATASOURCE_REQUEST</action_template>
+        <active>true</active>
+        <annotation>Get Digital Certs</annotation>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Get digital certificates from AWS using their API</description>
+        <ih_action>true</ih_action>
+        <internal_name>aws_api_get_digital_certs</internal_name>
+        <label_cache>[{"name":"{{action.limit}}","label":"action➛Limit","type":"action","ref":""},{"name":"{{action.offset}}","label":"action➛Offset","type":"action","ref":""},{"name":"{{action.attachment_name}}","label":"action➛Attachment Name","type":"action","ref":""},{"name":"{{action.last_success_import_time}}","label":"action➛Last Success Import Time","type":"action","ref":""},{"name":"{{action.import_start_time}}","label":"action➛Import Start Time","type":"action","ref":""},{"name":"{{action.name}}","label":"action➛auth","type":"action","ref":""},{"name":"{{action.pw}}","label":"action➛pw","type":"action","ref":""},{"name":"{{action.name.password}}","label":"action➛auth➛Password","type":"action","ref":""},{"name":"{{action.name.user_name}}","label":"action➛auth➛User name","type":"action","ref":""},{"name":"{{step[cc72cb45-9430-491d-9633-b2132a88c6db].sn_auth_token}}","label":"step➛REST step➛Credential Value","type":"step","ref":""},{"name":"{{step[c54a3c39-63a4-4315-8418-c0f4396396de].variable}}","label":"step➛Script step➛variable","type":"step","ref":""},{"name":"{{step[c54a3c39-63a4-4315-8418-c0f4396396de].authorization}}","label":"step➛Script step➛authorization","type":"step","ref":""},{"name":"{{step[c54a3c39-63a4-4315-8418-c0f4396396de].authne}}","label":"step➛Script step➛authne","type":"step","ref":""}]</label_cache>
+        <master_snapshot>da9765c71be2f050e314c955624bcbe1</master_snapshot>
+        <name>AWS API Get Digital Certs</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 20:47:43</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>597fddc71b62f050e314c955624bcb7a</sys_id>
+        <sys_mod_count>75</sys_mod_count>
+        <sys_name>AWS API Get Digital Certs</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_597fddc71b62f050e314c955624bcb7a</sys_update_name>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-21 12:59:24</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_variable_value action="delete_multiple" query="document_key=597fddc71b62f050e314c955624bcb7a"/>
+    <sys_element_mapping action="delete_multiple" query="id=597fddc71b62f050e314c955624bcb7a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>error_code</field>
+        <id>597fddc71b62f050e314c955624bcb7a</id>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:20:58</sys_created_on>
+        <sys_id>581765471be2f050e314c955624bcbf7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:20:58</sys_updated_on>
+        <table>var__m_sys_hub_action_output_597fddc71b62f050e314c955624bcb7a</table>
+        <value>{{step[cc72cb45-9430-491d-9633-b2132a88c6db].error_code}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>error_message</field>
+        <id>597fddc71b62f050e314c955624bcb7a</id>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:20:58</sys_created_on>
+        <sys_id>101765471be2f050e314c955624bcbf7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:20:58</sys_updated_on>
+        <table>var__m_sys_hub_action_output_597fddc71b62f050e314c955624bcb7a</table>
+        <value>{{step[cc72cb45-9430-491d-9633-b2132a88c6db].error_message}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>response_body</field>
+        <id>597fddc71b62f050e314c955624bcb7a</id>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:20:58</sys_created_on>
+        <sys_id>d01765471be2f050e314c955624bcbf7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:20:58</sys_updated_on>
+        <table>var__m_sys_hub_action_output_597fddc71b62f050e314c955624bcb7a</table>
+        <value>{{step[cc72cb45-9430-491d-9633-b2132a88c6db].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>response_headers</field>
+        <id>597fddc71b62f050e314c955624bcb7a</id>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:20:58</sys_created_on>
+        <sys_id>941765471be2f050e314c955624bcbf7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:20:58</sys_updated_on>
+        <table>var__m_sys_hub_action_output_597fddc71b62f050e314c955624bcb7a</table>
+        <value>{{step[cc72cb45-9430-491d-9633-b2132a88c6db].response_headers}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>status_code</field>
+        <id>597fddc71b62f050e314c955624bcb7a</id>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:20:58</sys_created_on>
+        <sys_id>1c1765471be2f050e314c955624bcbf7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:20:58</sys_updated_on>
+        <table>var__m_sys_hub_action_output_597fddc71b62f050e314c955624bcb7a</table>
+        <value>{{step[cc72cb45-9430-491d-9633-b2132a88c6db].status_code}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=597fddc71b62f050e314c955624bcb7a^sys_idNOT INb30765471be2f050e314c955624bcb37,eaf2e1ec1b3e70d0e314c955624bcb16,ff0765471be2f050e314c955624bcb3c"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="AWS API Get Digital Certs">597fddc71b62f050e314c955624bcb7a</action>
+        <cid>002def34-7d8d-4db0-88b3-09439836998d</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Data Source Request</label>
+        <order>1</order>
+        <outputs/>
+        <section>DATASOURCE_REQUEST</section>
+        <step_type display_value="Data Source Request">7f9ba495cb83b300a2fcb895634c9c38</step_type>
+        <sys_class_name>sys_hub_step_instance</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:20:56</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b30765471be2f050e314c955624bcb37</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-21 12:53:59</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b30765471be2f050e314c955624bcb37"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>b30765471be2f050e314c955624bcb37</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-21 12:53:59</sys_created_on>
+        <sys_id>2ef2e1ec1b3e70d0e314c955624bcb14</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-21 12:53:59</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Enable preprocessing script">ca760551cbc3b300a2fcb895634c9cda</variable>
+    </sys_variable_value>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="AWS API Get Digital Certs">597fddc71b62f050e314c955624bcb7a</action>
+        <cid>c54a3c39-63a4-4315-8418-c0f4396396de</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>2</order>
+        <outputs/>
+        <section>DATASOURCE_REQUEST</section>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_class_name>sys_hub_step_instance</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-21 12:53:59</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>eaf2e1ec1b3e70d0e314c955624bcb16</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-21 12:59:12</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=eaf2e1ec1b3e70d0e314c955624bcb16"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>eaf2e1ec1b3e70d0e314c955624bcb16</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-21 12:54:00</sys_created_on>
+        <sys_id>2ef2e1ec1b3e70d0e314c955624bcb2c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-21 12:59:12</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+  var basicAuth = new global.CertMgmtEncodeBase64().base64("AWS API Digital Certs");
+  outputs.authorization = sn_fd.GlideActionUtil.setEncryptedOutput(basicAuth);
+  
+})(inputs, outputs);
+</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>eaf2e1ec1b3e70d0e314c955624bcb16</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-21 12:54:00</sys_created_on>
+        <sys_id>6af2e1ec1b3e70d0e314c955624bcb2c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-21 12:54:00</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=eaf2e1ec1b3e70d0e314c955624bcb16^sys_idNOT INe6f2e1ec1b3e70d0e314c955624bcb1e"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=password2,uiTypeLabel=Password (2 Way Encrypted),uiUniqueId=645ff455-9f7e-452b-b2c0-afb4cbd630c5</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>authorization</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">password2</internal_type>
+        <label>authorization</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="Script step">eaf2e1ec1b3e70d0e314c955624bcb16</model>
+        <model_id>eaf2e1ec1b3e70d0e314c955624bcb16</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_eaf2e1ec1b3e70d0e314c955624bcb16</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-21 12:53:59</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e6f2e1ec1b3e70d0e314c955624bcb1e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-21 12:53:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="AWS API Get Digital Certs">597fddc71b62f050e314c955624bcb7a</action>
+        <cid>cc72cb45-9430-491d-9633-b2132a88c6db</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>REST step</label>
+        <order>3</order>
+        <outputs/>
+        <section>DATASOURCE_REQUEST</section>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_class_name>sys_hub_step_instance</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:20:56</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>ff0765471be2f050e314c955624bcb3c</sys_id>
+        <sys_mod_count>44</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-21 12:59:12</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ff0765471be2f050e314c955624bcb3c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ff0765471be2f050e314c955624bcb3c</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:20:57</sys_created_on>
+        <sys_id>041765471be2f050e314c955624bcb76</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 22:39:25</sys_updated_on>
+        <value>use_connection_alias</value>
+        <variable display_value="Connection">91e207d03b50030057a4a2e334efc4a0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ff0765471be2f050e314c955624bcb3c</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:23:11</sys_created_on>
+        <sys_id>3097e1c71be2f050e314c955624bcb9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:23:11</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ff0765471be2f050e314c955624bcb3c</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:29:20</sys_created_on>
+        <sys_id>36f8614f1be2f050e314c955624bcba6</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 22:39:25</sys_updated_on>
+        <value/>
+        <variable display_value="Credential Alias">445c2a72b3701300176b051a16a8dcc2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ff0765471be2f050e314c955624bcb3c</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:20:57</sys_created_on>
+        <sys_id>401765471be2f050e314c955624bcb76</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:20:57</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Is Temporary Attachment">89fa6545cb200010a2fcb895634c9c3c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ff0765471be2f050e314c955624bcb3c</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:56:36</sys_created_on>
+        <sys_id>5e3fa5c31b66f050e314c955624bcbfb</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 22:39:25</sys_updated_on>
+        <value>9fcd614f1b26f050e314c955624bcb34</value>
+        <variable display_value="Connection Alias">262882f03b23320057a4a2e334efc4f0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ff0765471be2f050e314c955624bcb3c</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:23:11</sys_created_on>
+        <sys_id>7c97e1c71be2f050e314c955624bcb9d</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-20 18:51:42</sys_updated_on>
+        <value>https://c8k1te6iml.execute-api.us-east-1.amazonaws.com/prod/getcertinfo</value>
+        <variable display_value="Base URL">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ff0765471be2f050e314c955624bcb3c</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:20:57</sys_created_on>
+        <sys_id>881765471be2f050e314c955624bcb76</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:20:57</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ff0765471be2f050e314c955624bcb3c</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:56:36</sys_created_on>
+        <sys_id>923fa5c31b66f050e314c955624bcbfb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:56:36</sys_updated_on>
+        <value>ef751ff07301330025d71afe2ff6a7f9</value>
+        <variable display_value="Retry Policy">37be397587c03300a8cc7d5e27cb0ba2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ff0765471be2f050e314c955624bcb3c</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:32:28</sys_created_on>
+        <sys_id>b4b921cf1be2f050e314c955624bcbcb</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 22:39:25</sys_updated_on>
+        <value/>
+        <variable display_value="Resource Path">3d090af03b23320057a4a2e334efc455</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ff0765471be2f050e314c955624bcb3c</document_key>
+        <order>49</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:20:57</sys_created_on>
+        <sys_id>b70765471be2f050e314c955624bcb75</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:20:57</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Save As Attachment">f9df589687301300735f7d5e27cb0b2d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ff0765471be2f050e314c955624bcb3c</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:20:57</sys_created_on>
+        <sys_id>c41765471be2f050e314c955624bcb76</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:20:57</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ff0765471be2f050e314c955624bcb3c</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:23:11</sys_created_on>
+        <sys_id>f097e1c71be2f050e314c955624bcb9d</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-21 12:54:35</sys_updated_on>
+        <value>{}</value>
+        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ff0765471be2f050e314c955624bcb3c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>ff0765471be2f050e314c955624bcb3c</id>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:20:57</sys_created_on>
+        <sys_id>730765471be2f050e314c955624bcb75</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:20:57</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>attachment_file_name</field>
+        <id>ff0765471be2f050e314c955624bcb3c</id>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:20:57</sys_created_on>
+        <sys_id>370765471be2f050e314c955624bcb75</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:20:57</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{{action.attachment_name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>ff0765471be2f050e314c955624bcb3c</id>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:23:11</sys_created_on>
+        <sys_id>bc97e1c71be2f050e314c955624bcb9c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:23:11</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>ff0765471be2f050e314c955624bcb3c</id>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:20:57</sys_created_on>
+        <sys_id>bf0765471be2f050e314c955624bcb74</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:20:57</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection</field>
+        <id>ff0765471be2f050e314c955624bcb3c</id>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:20:57</sys_created_on>
+        <sys_id>fb0765471be2f050e314c955624bcb74</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:20:57</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_alias</field>
+        <id>ff0765471be2f050e314c955624bcb3c</id>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:56:36</sys_created_on>
+        <sys_id>1a3fa5c31b66f050e314c955624bcbfa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:56:36</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>credential_alias</field>
+        <id>ff0765471be2f050e314c955624bcb3c</id>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:29:19</sys_created_on>
+        <sys_id>bef8614f1be2f050e314c955624bcba5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:29:19</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>ff0765471be2f050e314c955624bcb3c</id>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:23:11</sys_created_on>
+        <sys_id>7497e1c71be2f050e314c955624bcb9c</sys_id>
+        <sys_mod_count>27</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-21 12:59:12</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{"type":"ADV_NV","value":[{"name":"Content-Type","value":"application/json","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"Accept","value":"application/json","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"Authorization","value":"{{step[c54a3c39-63a4-4315-8418-c0f4396396de].authorization}}","attributes":{"omit_if_empty":false,"mandatory":false}}]}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>is_temporary_attachment</field>
+        <id>ff0765471be2f050e314c955624bcb3c</id>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:20:57</sys_created_on>
+        <sys_id>3b0765471be2f050e314c955624bcb74</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:20:57</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>ff0765471be2f050e314c955624bcb3c</id>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:23:11</sys_created_on>
+        <sys_id>7097e1c71be2f050e314c955624bcb9d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:23:11</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>resource_path</field>
+        <id>ff0765471be2f050e314c955624bcb3c</id>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:32:28</sys_created_on>
+        <sys_id>b0b921cf1be2f050e314c955624bcbca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:32:28</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>retry_policy</field>
+        <id>ff0765471be2f050e314c955624bcb3c</id>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:56:36</sys_created_on>
+        <sys_id>ce3fa5c31b66f050e314c955624bcbf9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:56:36</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>save_response_as_attachment</field>
+        <id>ff0765471be2f050e314c955624bcb3c</id>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:20:57</sys_created_on>
+        <sys_id>ff0765471be2f050e314c955624bcb73</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:20:57</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=ff0765471be2f050e314c955624bcb3c^sys_idNOT INaaf8614f1be2f050e314c955624bcb8a"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2,uiTypeLabel=Password (2 Way Encrypted),uiUniqueId=c7161039-30af-435b-9fa0-f573cba652f1</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sn_auth_token</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">password2</internal_type>
+        <label>Credential Value</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="REST step">ff0765471be2f050e314c955624bcb3c</model>
+        <model_id>ff0765471be2f050e314c955624bcb3c</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_ff0765471be2f050e314c955624bcb3c</name>
+        <next_element/>
+        <order>7</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:29:19</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>aaf8614f1be2f050e314c955624bcb8a</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 22:44:05</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ff0765471be2f050e314c955624bcb3c^sys_idNOT INae7d4ac71beef050e314c955624bcbf9"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <input_name>connection_alias</input_name>
+        <instance>ff0765471be2f050e314c955624bcb3c</instance>
+        <referenced_table>sys_hub_step_instance</referenced_table>
+        <script>{"connection_alias":{"scriptActive":false}}</script>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-17 00:08:48</sys_created_on>
+        <sys_id>ae7d4ac71beef050e314c955624bcbf9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-17 00:08:48</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_action_input action="delete_multiple" query="model=597fddc71b62f050e314c955624bcb7a^sys_idNOT INaf0765471be2f050e314c955624bcb15,b30765471be2f050e314c955624bcb2d,b70765471be2f050e314c955624bcb25,bb0765471be2f050e314c955624bcb1d,e30725471be2f050e314c955624bcbfd"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=9fb428bb-2460-4e8d-8729-8244bdf2d3ce</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>offset</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Offset</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="AWS API Get Digital Certs">597fddc71b62f050e314c955624bcb7a</model>
+        <model_id>597fddc71b62f050e314c955624bcb7a</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_597fddc71b62f050e314c955624bcb7a</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:20:56</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>af0765471be2f050e314c955624bcb15</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:23:08</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=longint,uiTypeLabel=Long,uiUniqueId=d70f1cf2-3d4d-475a-9c98-29bf6ec2652d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>import_start_time</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">longint</internal_type>
+        <label>Import Start Time</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="AWS API Get Digital Certs">597fddc71b62f050e314c955624bcb7a</model>
+        <model_id>597fddc71b62f050e314c955624bcb7a</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_597fddc71b62f050e314c955624bcb7a</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:20:56</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b30765471be2f050e314c955624bcb2d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:23:08</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=longint,uiTypeLabel=Long,uiUniqueId=989937ea-ad6a-4c21-b752-eafe50a6c9a7</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>last_success_import_time</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">longint</internal_type>
+        <label>Last Success Import Time</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="AWS API Get Digital Certs">597fddc71b62f050e314c955624bcb7a</model>
+        <model_id>597fddc71b62f050e314c955624bcb7a</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_597fddc71b62f050e314c955624bcb7a</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:20:56</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b70765471be2f050e314c955624bcb25</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:23:08</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=1f500380-d25d-4ef3-8f51-7acdd00f6b23</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>attachment_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Attachment Name</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="AWS API Get Digital Certs">597fddc71b62f050e314c955624bcb7a</model>
+        <model_id>597fddc71b62f050e314c955624bcb7a</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_597fddc71b62f050e314c955624bcb7a</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:20:56</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>bb0765471be2f050e314c955624bcb1d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:23:08</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=58a35c87-7ed5-465c-8361-c41b0fb1e9cc</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>limit</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Limit</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="AWS API Get Digital Certs">597fddc71b62f050e314c955624bcb7a</model>
+        <model_id>597fddc71b62f050e314c955624bcb7a</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_597fddc71b62f050e314c955624bcb7a</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:20:55</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e30725471be2f050e314c955624bcbfd</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:23:07</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_output action="delete_multiple" query="model=597fddc71b62f050e314c955624bcb7a^sys_idNOT IN081765471be2f050e314c955624bcb7a,081765471be2f050e314c955624bcb83,441765471be2f050e314c955624bcb9f,881765471be2f050e314c955624bcb97,c41765471be2f050e314c955624bcbb3"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>response_body</element>
+        <element_prototype display_value="Response Body" element="response_body" name="var__m_sys_flow_step_definition_output_07a762fb47222200b4fad7527c9a7129">a804c77347622200b4fad7527c9a7119</element_prototype>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>response_body</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="AWS API Get Digital Certs">597fddc71b62f050e314c955624bcb7a</model>
+        <model_id>597fddc71b62f050e314c955624bcb7a</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_597fddc71b62f050e314c955624bcb7a</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:20:57</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>081765471be2f050e314c955624bcb7a</sys_id>
+        <sys_mod_count>109</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-21 12:59:18</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>response_headers</element>
+        <element_prototype display_value="Response Headers" element="response_headers" name="var__m_sys_flow_step_definition_output_07a762fb47222200b4fad7527c9a7129">09d4cb7347622200b4fad7527c9a71e3</element_prototype>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>response_headers</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="AWS API Get Digital Certs">597fddc71b62f050e314c955624bcb7a</model>
+        <model_id>597fddc71b62f050e314c955624bcb7a</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_597fddc71b62f050e314c955624bcb7a</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:20:57</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>081765471be2f050e314c955624bcb83</sys_id>
+        <sys_mod_count>109</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-21 12:59:18</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>status_code</element>
+        <element_prototype display_value="Status Code" element="status_code" name="var__m_sys_flow_step_definition_output_07a762fb47222200b4fad7527c9a7129">a053077347622200b4fad7527c9a716e</element_prototype>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>status_code</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="AWS API Get Digital Certs">597fddc71b62f050e314c955624bcb7a</model>
+        <model_id>597fddc71b62f050e314c955624bcb7a</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_597fddc71b62f050e314c955624bcb7a</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:20:57</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>441765471be2f050e314c955624bcb9f</sys_id>
+        <sys_mod_count>109</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-21 12:59:18</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>error_message</element>
+        <element_prototype display_value="Error Message" element="error_message" name="var__m_sys_flow_step_definition_output_07a762fb47222200b4fad7527c9a7129">26a48b7347622200b4fad7527c9a71c0</element_prototype>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>error_message</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="AWS API Get Digital Certs">597fddc71b62f050e314c955624bcb7a</model>
+        <model_id>597fddc71b62f050e314c955624bcb7a</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_597fddc71b62f050e314c955624bcb7a</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:20:57</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>881765471be2f050e314c955624bcb97</sys_id>
+        <sys_mod_count>109</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-21 12:59:18</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>error_code</element>
+        <element_prototype display_value="Error Code" element="error_code" name="var__m_sys_flow_step_definition_output_07a762fb47222200b4fad7527c9a7129">d1744b7347622200b4fad7527c9a7105</element_prototype>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>error_code</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="AWS API Get Digital Certs">597fddc71b62f050e314c955624bcb7a</model>
+        <model_id>597fddc71b62f050e314c955624bcb7a</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_597fddc71b62f050e314c955624bcb7a</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:20:57</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c41765471be2f050e314c955624bcbb3</sys_id>
+        <sys_mod_count>109</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-21 12:59:19</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_597fddc71b62f050e314c955624bcb7a^sys_idNOT IN630765471be2f050e314c955624bcb14,f30765471be2f050e314c955624bcb1c,f70765471be2f050e314c955624bcb33,fb0765471be2f050e314c955624bcb2b,ff0765471be2f050e314c955624bcb23"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>limit</element>
+        <help/>
+        <hint/>
+        <label>Limit</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_597fddc71b62f050e314c955624bcb7a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:20:56</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>630765471be2f050e314c955624bcb14</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:20:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>offset</element>
+        <help/>
+        <hint/>
+        <label>Offset</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_597fddc71b62f050e314c955624bcb7a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:20:56</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>f30765471be2f050e314c955624bcb1c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:20:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>import_start_time</element>
+        <help/>
+        <hint/>
+        <label>Import Start Time</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_597fddc71b62f050e314c955624bcb7a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:20:56</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>f70765471be2f050e314c955624bcb33</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:20:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>last_success_import_time</element>
+        <help/>
+        <hint/>
+        <label>Last Success Import Time</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_597fddc71b62f050e314c955624bcb7a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:20:56</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>fb0765471be2f050e314c955624bcb2b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:20:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>attachment_name</element>
+        <help/>
+        <hint/>
+        <label>Attachment Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_597fddc71b62f050e314c955624bcb7a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:20:56</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>ff0765471be2f050e314c955624bcb23</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:20:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_597fddc71b62f050e314c955624bcb7a^sys_idNOT IN001765471be2f050e314c955624bcbb2,401765471be2f050e314c955624bcb82,8c1765471be2f050e314c955624bcb9d,c01765471be2f050e314c955624bcb96,c81765471be2f050e314c955624bcbb9"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>status_code</element>
+        <help/>
+        <hint/>
+        <label>status_code</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_597fddc71b62f050e314c955624bcb7a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:20:57</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>001765471be2f050e314c955624bcbb2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:20:57</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>response_body</element>
+        <help/>
+        <hint/>
+        <label>response_body</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_597fddc71b62f050e314c955624bcb7a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:20:57</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>401765471be2f050e314c955624bcb82</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:20:57</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>error_message</element>
+        <help/>
+        <hint/>
+        <label>error_message</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_597fddc71b62f050e314c955624bcb7a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:20:57</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>8c1765471be2f050e314c955624bcb9d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:20:57</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>response_headers</element>
+        <help/>
+        <hint/>
+        <label>response_headers</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_597fddc71b62f050e314c955624bcb7a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:20:57</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c01765471be2f050e314c955624bcb96</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:20:57</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>error_code</element>
+        <help/>
+        <hint/>
+        <label>error_code</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_597fddc71b62f050e314c955624bcb7a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:20:58</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c81765471be2f050e314c955624bcbb9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:20:58</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=597fddc71b62f050e314c955624bcb7a^sys_idNOT IN9b97e5c71be2f050e314c955624bcb2a"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="AWS API Get Digital Certs">597fddc71b62f050e314c955624bcb7a</action_id>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"9b97e5c71be2f050e314c955624bcb2a","name":"plan"}}</plan>
+        <snapshot>bdbc6910dbb2bc9047241fb74896196b</snapshot>
+        <sys_class_name>sys_hub_action_plan</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:23:22</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>9b97e5c71be2f050e314c955624bcb2a</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-20 18:58:05</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_template>DATASOURCE_REQUEST</action_template>
+        <annotation>Get Digital Certs</annotation>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Get digital certificates from AWS using their API</description>
+        <internal_name>aws_api_get_digital_certs</internal_name>
+        <label_cache>[{"name":"{{action.limit}}","label":"action➛Limit","type":"action","ref":""},{"name":"{{action.offset}}","label":"action➛Offset","type":"action","ref":""},{"name":"{{action.attachment_name}}","label":"action➛Attachment Name","type":"action","ref":""},{"name":"{{action.last_success_import_time}}","label":"action➛Last Success Import Time","type":"action","ref":""},{"name":"{{action.import_start_time}}","label":"action➛Import Start Time","type":"action","ref":""},{"name":"{{action.name}}","label":"action➛auth","type":"action","ref":""},{"name":"{{action.pw}}","label":"action➛pw","type":"action","ref":""},{"name":"{{action.name.password}}","label":"action➛auth➛Password","type":"action","ref":""},{"name":"{{action.name.user_name}}","label":"action➛auth➛User name","type":"action","ref":""},{"name":"{{step[cc72cb45-9430-491d-9633-b2132a88c6db].sn_auth_token}}","label":"step➛REST step➛Credential Value","type":"step","ref":""},{"name":"{{step[c54a3c39-63a4-4315-8418-c0f4396396de].variable}}","label":"step➛Script step➛variable","type":"step","ref":""},{"name":"{{step[c54a3c39-63a4-4315-8418-c0f4396396de].authorization}}","label":"step➛Script step➛authorization","type":"step","ref":""},{"name":"{{step[c54a3c39-63a4-4315-8418-c0f4396396de].authne}}","label":"step➛Script step➛authne","type":"step","ref":""}]</label_cache>
+        <master>true</master>
+        <name>AWS API Get Digital Certs</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <parent_action display_value="AWS API Get Digital Certs">597fddc71b62f050e314c955624bcb7a</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:23:18</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>da9765c71be2f050e314c955624bcbe1</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-21 12:59:20</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_variable_value action="delete_multiple" query="document_key=da9765c71be2f050e314c955624bcbe1"/>
+    <sys_element_mapping action="delete_multiple" query="id=da9765c71be2f050e314c955624bcbe1"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>error_code</field>
+        <id>da9765c71be2f050e314c955624bcbe1</id>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:23:20</sys_created_on>
+        <sys_id>0797a5c71be2f050e314c955624bcb98</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:23:20</sys_updated_on>
+        <table>var__m_sys_hub_action_output_da9765c71be2f050e314c955624bcbe1</table>
+        <value>{{step[cc72cb45-9430-491d-9633-b2132a88c6db].error_code}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>error_message</field>
+        <id>da9765c71be2f050e314c955624bcbe1</id>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:23:20</sys_created_on>
+        <sys_id>cb97a5c71be2f050e314c955624bcb97</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:23:20</sys_updated_on>
+        <table>var__m_sys_hub_action_output_da9765c71be2f050e314c955624bcbe1</table>
+        <value>{{step[cc72cb45-9430-491d-9633-b2132a88c6db].error_message}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>response_body</field>
+        <id>da9765c71be2f050e314c955624bcbe1</id>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:23:20</sys_created_on>
+        <sys_id>8f97a5c71be2f050e314c955624bcb97</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:23:20</sys_updated_on>
+        <table>var__m_sys_hub_action_output_da9765c71be2f050e314c955624bcbe1</table>
+        <value>{{step[cc72cb45-9430-491d-9633-b2132a88c6db].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>response_headers</field>
+        <id>da9765c71be2f050e314c955624bcbe1</id>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:23:20</sys_created_on>
+        <sys_id>4397a5c71be2f050e314c955624bcb98</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:23:20</sys_updated_on>
+        <table>var__m_sys_hub_action_output_da9765c71be2f050e314c955624bcbe1</table>
+        <value>{{step[cc72cb45-9430-491d-9633-b2132a88c6db].response_headers}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>status_code</field>
+        <id>da9765c71be2f050e314c955624bcbe1</id>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:23:20</sys_created_on>
+        <sys_id>c797a5c71be2f050e314c955624bcb98</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:23:20</sys_updated_on>
+        <table>var__m_sys_hub_action_output_da9765c71be2f050e314c955624bcbe1</table>
+        <value>{{step[cc72cb45-9430-491d-9633-b2132a88c6db].status_code}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=da9765c71be2f050e314c955624bcbe1^sys_idNOT IN2297a5c71be2f050e314c955624bcb23,5134a5641b7e70d0e314c955624bcb16,e697a5c71be2f050e314c955624bcb1e"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="AWS API Get Digital Certs">da9765c71be2f050e314c955624bcbe1</action>
+        <cid>cc72cb45-9430-491d-9633-b2132a88c6db</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>REST step</label>
+        <order>3</order>
+        <outputs/>
+        <section>DATASOURCE_REQUEST</section>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_class_name>sys_hub_step_instance</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:23:19</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>2297a5c71be2f050e314c955624bcb23</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-21 12:59:22</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=2297a5c71be2f050e314c955624bcb23"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2297a5c71be2f050e314c955624bcb23</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:23:19</sys_created_on>
+        <sys_id>2697a5c71be2f050e314c955624bcb31</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-20 18:58:01</sys_updated_on>
+        <value>https://c8k1te6iml.execute-api.us-east-1.amazonaws.com/prod/getcertinfo</value>
+        <variable display_value="Base URL">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2297a5c71be2f050e314c955624bcb23</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:23:19</sys_created_on>
+        <sys_id>2a97a5c71be2f050e314c955624bcb30</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:23:19</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Is Temporary Attachment">89fa6545cb200010a2fcb895634c9c3c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2297a5c71be2f050e314c955624bcb23</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:23:19</sys_created_on>
+        <sys_id>6297a5c71be2f050e314c955624bcb31</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:23:19</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2297a5c71be2f050e314c955624bcb23</document_key>
+        <order>49</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:23:19</sys_created_on>
+        <sys_id>6697a5c71be2f050e314c955624bcb30</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:23:19</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Save As Attachment">f9df589687301300735f7d5e27cb0b2d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2297a5c71be2f050e314c955624bcb23</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 23:29:17</sys_created_on>
+        <sys_id>7b648e871b6ef050e314c955624bcbdf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 23:29:17</sys_updated_on>
+        <value>9fcd614f1b26f050e314c955624bcb34</value>
+        <variable display_value="Connection Alias">262882f03b23320057a4a2e334efc4f0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2297a5c71be2f050e314c955624bcb23</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:23:19</sys_created_on>
+        <sys_id>aa97a5c71be2f050e314c955624bcb31</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:23:19</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2297a5c71be2f050e314c955624bcb23</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:23:19</sys_created_on>
+        <sys_id>ae97a5c71be2f050e314c955624bcb30</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-21 12:59:22</sys_updated_on>
+        <value>{}</value>
+        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2297a5c71be2f050e314c955624bcb23</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 23:29:17</sys_created_on>
+        <sys_id>b7648e871b6ef050e314c955624bcbdf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 23:29:17</sys_updated_on>
+        <value>ef751ff07301330025d71afe2ff6a7f9</value>
+        <variable display_value="Retry Policy">37be397587c03300a8cc7d5e27cb0ba2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2297a5c71be2f050e314c955624bcb23</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:23:19</sys_created_on>
+        <sys_id>e697a5c71be2f050e314c955624bcb31</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:23:19</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2297a5c71be2f050e314c955624bcb23</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:23:19</sys_created_on>
+        <sys_id>ea97a5c71be2f050e314c955624bcb30</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 23:29:17</sys_updated_on>
+        <value>use_connection_alias</value>
+        <variable display_value="Connection">91e207d03b50030057a4a2e334efc4a0</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=2297a5c71be2f050e314c955624bcb23"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>2297a5c71be2f050e314c955624bcb23</id>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:23:19</sys_created_on>
+        <sys_id>6e97a5c71be2f050e314c955624bcb2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:23:19</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>attachment_file_name</field>
+        <id>2297a5c71be2f050e314c955624bcb23</id>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:23:19</sys_created_on>
+        <sys_id>e297a5c71be2f050e314c955624bcb30</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:23:19</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{{action.attachment_name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>2297a5c71be2f050e314c955624bcb23</id>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:23:19</sys_created_on>
+        <sys_id>aa97a5c71be2f050e314c955624bcb2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:23:19</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>2297a5c71be2f050e314c955624bcb23</id>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:23:19</sys_created_on>
+        <sys_id>e697a5c71be2f050e314c955624bcb2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:23:19</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection</field>
+        <id>2297a5c71be2f050e314c955624bcb23</id>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:23:19</sys_created_on>
+        <sys_id>6297a5c71be2f050e314c955624bcb2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:23:19</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_alias</field>
+        <id>2297a5c71be2f050e314c955624bcb23</id>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 23:29:17</sys_created_on>
+        <sys_id>33648e871b6ef050e314c955624bcbdf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 23:29:17</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>2297a5c71be2f050e314c955624bcb23</id>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:23:19</sys_created_on>
+        <sys_id>2697a5c71be2f050e314c955624bcb2f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-21 12:59:22</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{"type":"ADV_NV","value":[{"name":"Content-Type","value":"application/json","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"Accept","value":"application/json","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"Authorization","value":"{{step[c54a3c39-63a4-4315-8418-c0f4396396de].authorization}}","attributes":{"omit_if_empty":false,"mandatory":false}}]}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>is_temporary_attachment</field>
+        <id>2297a5c71be2f050e314c955624bcb23</id>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:23:19</sys_created_on>
+        <sys_id>ae97a5c71be2f050e314c955624bcb2e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:23:19</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>2297a5c71be2f050e314c955624bcb23</id>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:23:19</sys_created_on>
+        <sys_id>2297a5c71be2f050e314c955624bcb30</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:23:19</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>retry_policy</field>
+        <id>2297a5c71be2f050e314c955624bcb23</id>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 23:29:17</sys_created_on>
+        <sys_id>7f648e871b6ef050e314c955624bcbde</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 23:29:17</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>save_response_as_attachment</field>
+        <id>2297a5c71be2f050e314c955624bcb23</id>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:23:19</sys_created_on>
+        <sys_id>ea97a5c71be2f050e314c955624bcb2e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:23:19</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=2297a5c71be2f050e314c955624bcb23^sys_idNOT IN33648e871b6ef050e314c955624bcbc5"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2,uiTypeLabel=Password (2 Way Encrypted),uiUniqueId=c7161039-30af-435b-9fa0-f573cba652f1</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sn_auth_token</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">password2</internal_type>
+        <label>Credential Value</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="REST step">2297a5c71be2f050e314c955624bcb23</model>
+        <model_id>2297a5c71be2f050e314c955624bcb23</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_2297a5c71be2f050e314c955624bcb23</name>
+        <next_element/>
+        <order>7</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 23:29:17</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>33648e871b6ef050e314c955624bcbc5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 23:29:17</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2297a5c71be2f050e314c955624bcb23^sys_idNOT IN608d4ec71beef050e314c955624bcbbc"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <input_name>connection_alias</input_name>
+        <instance>2297a5c71be2f050e314c955624bcb23</instance>
+        <referenced_table>sys_hub_step_instance</referenced_table>
+        <script>{"connection_alias":{"scriptActive":false}}</script>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-17 00:08:56</sys_created_on>
+        <sys_id>608d4ec71beef050e314c955624bcbbc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-17 00:08:56</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="AWS API Get Digital Certs">da9765c71be2f050e314c955624bcbe1</action>
+        <cid>c54a3c39-63a4-4315-8418-c0f4396396de</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>2</order>
+        <outputs/>
+        <section>DATASOURCE_REQUEST</section>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_class_name>sys_hub_step_instance</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-21 12:59:22</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>5134a5641b7e70d0e314c955624bcb16</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-21 12:59:22</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=5134a5641b7e70d0e314c955624bcb16"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>5134a5641b7e70d0e314c955624bcb16</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-21 12:59:22</sys_created_on>
+        <sys_id>1934a5641b7e70d0e314c955624bcb88</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-21 12:59:22</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+  var basicAuth = new global.CertMgmtEncodeBase64().base64("AWS API Digital Certs");
+  outputs.authorization = sn_fd.GlideActionUtil.setEncryptedOutput(basicAuth);
+  
+})(inputs, outputs);
+</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>5134a5641b7e70d0e314c955624bcb16</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-21 12:59:22</sys_created_on>
+        <sys_id>5534a5641b7e70d0e314c955624bcb88</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-21 12:59:22</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=5134a5641b7e70d0e314c955624bcb16^sys_idNOT INd134a5641b7e70d0e314c955624bcb1a"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=password2,uiTypeLabel=Password (2 Way Encrypted),uiUniqueId=645ff455-9f7e-452b-b2c0-afb4cbd630c5</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>authorization</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">password2</internal_type>
+        <label>authorization</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="Script step">5134a5641b7e70d0e314c955624bcb16</model>
+        <model_id>5134a5641b7e70d0e314c955624bcb16</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_5134a5641b7e70d0e314c955624bcb16</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-21 12:59:22</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d134a5641b7e70d0e314c955624bcb1a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-21 12:59:22</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="AWS API Get Digital Certs">da9765c71be2f050e314c955624bcbe1</action>
+        <cid>002def34-7d8d-4db0-88b3-09439836998d</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Data Source Request</label>
+        <order>1</order>
+        <outputs/>
+        <section>DATASOURCE_REQUEST</section>
+        <step_type display_value="Data Source Request">7f9ba495cb83b300a2fcb895634c9c38</step_type>
+        <sys_class_name>sys_hub_step_instance</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:23:19</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e697a5c71be2f050e314c955624bcb1e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-21 12:59:22</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e697a5c71be2f050e314c955624bcb1e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>e697a5c71be2f050e314c955624bcb1e</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-21 12:59:22</sys_created_on>
+        <sys_id>5934a5641b7e70d0e314c955624bcb14</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-21 12:59:22</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Enable preprocessing script">ca760551cbc3b300a2fcb895634c9cda</variable>
+    </sys_variable_value>
+    <sys_hub_action_input action="delete_multiple" query="model=da9765c71be2f050e314c955624bcbe1^sys_idNOT IN969765c71be2f050e314c955624bcbe5,e29765c71be2f050e314c955624bcbf1,e697a5c71be2f050e314c955624bcb08,ea97a5c71be2f050e314c955624bcb00,ee9765c71be2f050e314c955624bcbf8"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=58a35c87-7ed5-465c-8361-c41b0fb1e9cc</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>limit</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Limit</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="AWS API Get Digital Certs">da9765c71be2f050e314c955624bcbe1</model>
+        <model_id>da9765c71be2f050e314c955624bcbe1</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_da9765c71be2f050e314c955624bcbe1</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:23:18</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>969765c71be2f050e314c955624bcbe5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:23:18</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=9fb428bb-2460-4e8d-8729-8244bdf2d3ce</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>offset</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Offset</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="AWS API Get Digital Certs">da9765c71be2f050e314c955624bcbe1</model>
+        <model_id>da9765c71be2f050e314c955624bcbe1</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_da9765c71be2f050e314c955624bcbe1</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:23:18</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e29765c71be2f050e314c955624bcbf1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:23:18</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=longint,uiTypeLabel=Long,uiUniqueId=d70f1cf2-3d4d-475a-9c98-29bf6ec2652d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>import_start_time</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">longint</internal_type>
+        <label>Import Start Time</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="AWS API Get Digital Certs">da9765c71be2f050e314c955624bcbe1</model>
+        <model_id>da9765c71be2f050e314c955624bcbe1</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_da9765c71be2f050e314c955624bcbe1</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:23:18</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e697a5c71be2f050e314c955624bcb08</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:23:18</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=longint,uiTypeLabel=Long,uiUniqueId=989937ea-ad6a-4c21-b752-eafe50a6c9a7</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>last_success_import_time</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">longint</internal_type>
+        <label>Last Success Import Time</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="AWS API Get Digital Certs">da9765c71be2f050e314c955624bcbe1</model>
+        <model_id>da9765c71be2f050e314c955624bcbe1</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_da9765c71be2f050e314c955624bcbe1</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:23:18</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>ea97a5c71be2f050e314c955624bcb00</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:23:18</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=1f500380-d25d-4ef3-8f51-7acdd00f6b23</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>attachment_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Attachment Name</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="AWS API Get Digital Certs">da9765c71be2f050e314c955624bcbe1</model>
+        <model_id>da9765c71be2f050e314c955624bcbe1</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_da9765c71be2f050e314c955624bcbe1</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:23:18</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>ee9765c71be2f050e314c955624bcbf8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:23:18</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_output action="delete_multiple" query="model=da9765c71be2f050e314c955624bcbe1^sys_idNOT IN7297a5c71be2f050e314c955624bcb52,a297a5c71be2f050e314c955624bcb35,b697a5c71be2f050e314c955624bcb4a,be97a5c71be2f050e314c955624bcb6d,f297a5c71be2f050e314c955624bcb66"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>error_message</element>
+        <element_prototype display_value="Error Message" element="error_message" name="var__m_sys_flow_step_definition_output_07a762fb47222200b4fad7527c9a7129">26a48b7347622200b4fad7527c9a71c0</element_prototype>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>error_message</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="AWS API Get Digital Certs">da9765c71be2f050e314c955624bcbe1</model>
+        <model_id>da9765c71be2f050e314c955624bcbe1</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_da9765c71be2f050e314c955624bcbe1</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:23:19</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>7297a5c71be2f050e314c955624bcb52</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-21 12:59:23</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>response_body</element>
+        <element_prototype display_value="Response Body" element="response_body" name="var__m_sys_flow_step_definition_output_07a762fb47222200b4fad7527c9a7129">a804c77347622200b4fad7527c9a7119</element_prototype>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>response_body</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="AWS API Get Digital Certs">da9765c71be2f050e314c955624bcbe1</model>
+        <model_id>da9765c71be2f050e314c955624bcbe1</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_da9765c71be2f050e314c955624bcbe1</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:23:19</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a297a5c71be2f050e314c955624bcb35</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-21 12:59:23</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>response_headers</element>
+        <element_prototype display_value="Response Headers" element="response_headers" name="var__m_sys_flow_step_definition_output_07a762fb47222200b4fad7527c9a7129">09d4cb7347622200b4fad7527c9a71e3</element_prototype>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>response_headers</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="AWS API Get Digital Certs">da9765c71be2f050e314c955624bcbe1</model>
+        <model_id>da9765c71be2f050e314c955624bcbe1</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_da9765c71be2f050e314c955624bcbe1</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:23:19</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b697a5c71be2f050e314c955624bcb4a</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-21 12:59:23</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>error_code</element>
+        <element_prototype display_value="Error Code" element="error_code" name="var__m_sys_flow_step_definition_output_07a762fb47222200b4fad7527c9a7129">d1744b7347622200b4fad7527c9a7105</element_prototype>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>error_code</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="AWS API Get Digital Certs">da9765c71be2f050e314c955624bcbe1</model>
+        <model_id>da9765c71be2f050e314c955624bcbe1</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_da9765c71be2f050e314c955624bcbe1</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:23:19</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>be97a5c71be2f050e314c955624bcb6d</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-21 12:59:23</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>status_code</element>
+        <element_prototype display_value="Status Code" element="status_code" name="var__m_sys_flow_step_definition_output_07a762fb47222200b4fad7527c9a7129">a053077347622200b4fad7527c9a716e</element_prototype>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>status_code</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="AWS API Get Digital Certs">da9765c71be2f050e314c955624bcbe1</model>
+        <model_id>da9765c71be2f050e314c955624bcbe1</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_da9765c71be2f050e314c955624bcbe1</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:23:19</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>f297a5c71be2f050e314c955624bcb66</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-21 12:59:23</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_da9765c71be2f050e314c955624bcbe1^sys_idNOT IN2297a5c71be2f050e314c955624bcb07,269765c71be2f050e314c955624bcbff,2a9765c71be2f050e314c955624bcbf7,a69765c71be2f050e314c955624bcbef,e297a5c71be2f050e314c955624bcb1b"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>last_success_import_time</element>
+        <help/>
+        <hint/>
+        <label>Last Success Import Time</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_da9765c71be2f050e314c955624bcbe1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:23:18</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>2297a5c71be2f050e314c955624bcb07</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:23:18</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>attachment_name</element>
+        <help/>
+        <hint/>
+        <label>Attachment Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_da9765c71be2f050e314c955624bcbe1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:23:18</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>269765c71be2f050e314c955624bcbff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:23:18</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>offset</element>
+        <help/>
+        <hint/>
+        <label>Offset</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_da9765c71be2f050e314c955624bcbe1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:23:18</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>2a9765c71be2f050e314c955624bcbf7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:23:18</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>limit</element>
+        <help/>
+        <hint/>
+        <label>Limit</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_da9765c71be2f050e314c955624bcbe1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:23:18</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a69765c71be2f050e314c955624bcbef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:23:18</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>import_start_time</element>
+        <help/>
+        <hint/>
+        <label>Import Start Time</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_da9765c71be2f050e314c955624bcbe1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:23:19</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e297a5c71be2f050e314c955624bcb1b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:23:19</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_da9765c71be2f050e314c955624bcbe1^sys_idNOT IN3e97a5c71be2f050e314c955624bcb64,b297a5c71be2f050e314c955624bcb74,ba97a5c71be2f050e314c955624bcb50,f697a5c71be2f050e314c955624bcb6c,fe97a5c71be2f050e314c955624bcb48"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>error_message</element>
+        <help/>
+        <hint/>
+        <label>error_message</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_da9765c71be2f050e314c955624bcbe1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:23:19</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>3e97a5c71be2f050e314c955624bcb64</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:23:19</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>error_code</element>
+        <help/>
+        <hint/>
+        <label>error_code</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_da9765c71be2f050e314c955624bcbe1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:23:20</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b297a5c71be2f050e314c955624bcb74</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:23:20</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>response_headers</element>
+        <help/>
+        <hint/>
+        <label>response_headers</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_da9765c71be2f050e314c955624bcbe1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:23:19</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>ba97a5c71be2f050e314c955624bcb50</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:23:19</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>status_code</element>
+        <help/>
+        <hint/>
+        <label>status_code</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_da9765c71be2f050e314c955624bcbe1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:23:19</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>f697a5c71be2f050e314c955624bcb6c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:23:19</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>response_body</element>
+        <help/>
+        <hint/>
+        <label>response_body</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_da9765c71be2f050e314c955624bcbe1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-16 21:23:19</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>fe97a5c71be2f050e314c955624bcb48</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-16 21:23:19</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_type_definition action="update">
+        <sys_id>597fddc71b62f050e314c955624bcb7a</sys_id>
+        <latest_snapshot>da9765c71be2f050e314c955624bcbe1</latest_snapshot>
+    </sys_hub_action_type_definition>
+</record_update>
