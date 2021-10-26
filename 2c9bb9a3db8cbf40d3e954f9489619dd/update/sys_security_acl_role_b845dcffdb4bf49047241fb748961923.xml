@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-10-13 19:51:08</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b845dcffdb4bf49047241fb748961923</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_unugr_certificat_certificate_task.itil</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_security_acl display_value="x_unugr_certificat_certificate_task">79adffc3dbf274d047241fb748961984</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_b845dcffdb4bf49047241fb748961923</sys_update_name>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-10-13 19:51:08</sys_updated_on>
+        <sys_user_role display_value="itil" name="itil">5b422e230f013100fc3baf58b1050ee6</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>
