@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <name>Terminated Owner Notification</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2019-06-05 19:32:10</run_start>
+        <run_time>1970-01-01 10:00:00</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[//Constants for Communication Type
+var OwnerTerminated = 6;
+var OwnerTerminatedDaily = 7;
+var OwnerTerminatedEscalate = 8;
+
+var errorOccured = false;
+
+var notificationDays = parseInt(gs.getProperty('x_unugr_certificat.cert.ownerchange.notifications.notifyDays'));
+var startDailyAfterOccurence = parseInt(gs.getProperty('x_unugr_certificat.cert.ownerchange.notifications.startDailyNotifify'));
+var startEscalateOccurence = parseInt(gs.getProperty('x_unugr_certificat.cert.ownerchange.notifications.StartEscalate'));
+
+gs.info('Termed notificationDays ' + notificationDays);
+gs.info('Termed startDailyAfterOccurence ' + startDailyAfterOccurence);
+gs.info('Termed startEscalateOccurence ' + startEscalateOccurence);
+
+try {
+	var terminatedCertificateOwnersRecord = new GlideRecord('x_unugr_certificat_digital_certificate');
+	terminatedCertificateOwnersRecord.addEncodedQuery('u_active=true^u_owned_by.active=false');
+	terminatedCertificateOwnersRecord.query();
+
+// 	gs.info('Terminated Owners Record ' + terminatedCertificateOwnersRecord.getRowCount());
+	
+	var termOwnerArray = [];
+
+	while(terminatedCertificateOwnersRecord.next()){
+		termOwnerArray.push(terminatedCertificateOwnersRecord.u_owned_by +"");
+	}
+
+	gs.info('Term Owner Array Count ' + termOwnerArray.length);
+	
+	if(termOwnerArray.length > 0){
+		var uniqueTermOwners = new global.ArrayUtil().unique(termOwnerArray);
+	}
+
+	var arrayCount = uniqueTermOwners.length;
+	
+	gs.info('Term Owner Array Count Distinct ' + arrayCount);
+	
+	if(arrayCount > 0){
+		var terminatedOwnersRecord = new GlideRecord('sys_user');
+		terminatedOwnersRecord.addQuery('sys_id', 'IN',uniqueTermOwners);
+		terminatedOwnersRecord.query();
+
+		//See if we need to send another notification
+		while(terminatedOwnersRecord.next()){
+			
+			var sendDaily = false;
+			var sendEscalated = false;
+			var sendTerm = false;
+			
+			var communicationCount = getCommunicationCount(terminatedOwnersRecord.manager.sys_id,OwnerTerminated);
+			gs.info('communication count ' + communicationCount);
+			
+			if(communicationCount > 0){
+				//if there are previous notifications
+				//first see if any of the tresholds are met
+				if(communicationCount > startDailyAfterOccurence){
+					sendDaily = true;
+				} else{
+					sendDaily = false;
+					//We have communications but they have not yet reached
+					//Thresholds.  Check to see if we need to send the next communication by
+					//seeing if the proper amount of days has passed since the last communication
+					//call function to get the amount of days since the last communication
+					var daysLastCommunication = getDaysSinceLastCommunication(terminatedOwnersRecord.sys_id,OwnerTerminated);
+					gs.info('Days since last communication ' + daysLastCommunication);
+					if(daysLastCommunication >= notificationDays){
+						sendTerm = true;
+					}
+										
+				}
+				//see if we need to escalte to managers managager based on how may daily notifications have been sent
+				var dailyCommunicationCount = getCommunicationCount(terminatedOwnersRecord.manager.sys_id,OwnerTerminatedDaily);
+				gs.info('Daily Communication Count ' + dailyCommunicationCount);
+				if(dailyCommunicationCount > startEscalateOccurence){
+					sendEscalated = true;
+				} else{
+					sendEscalated = false;
+				}
+				
+				
+			}else {
+				//no previous communication so send
+				sendTerm = true;
+			}
+			var communicationDescription;
+			var ownedCerts = getOwnerCertCount(terminatedOwnersRecord.sys_id);
+			//next send the communications needed as set by the flags
+			if(sendTerm){
+				gs.eventQueue('x_unugr_certificat.owner.terminate.notif',terminatedOwnersRecord);
+				communicationDescription = 'Certificate Owner ' + terminatedOwnersRecord.user_name + ' ' + terminatedOwnersRecord.first_name + ' ' + terminatedOwnersRecord.last_name + ' termination notification. ' + ownedCerts + ' certificates are owned' ;
+				addCommunicationHistory(terminatedOwnersRecord.manager.sys_id,OwnerTerminated,communicationDescription);
+			}
+			if(sendDaily){
+				gs.eventQueue('x_unugr_certificat.owner.terminate.daily',terminatedOwnersRecord);
+				communicationDescription = 'Certificate Owner ' + terminatedOwnersRecord.user_name + ' ' + terminatedOwnersRecord.first_name + ' ' + terminatedOwnersRecord.last_name + ' daily termination notification' + ownedCerts + ' certificates are owned' ;
+				addCommunicationHistory(terminatedOwnersRecord.manager.sys_id,OwnerTerminatedDaily,communicationDescription);				
+			}
+			if(sendEscalated){
+				gs.info('sending escalate event.');
+				gs.eventQueue('x_unugr_certificat.owner.terminate.escal',terminatedOwnersRecord);
+				communicationDescription = 'Certificate Owner ' + terminatedOwnersRecord.user_name + ' ' + terminatedOwnersRecord.first_name + ' ' + terminatedOwnersRecord.last_name + ' Escalated termination notification' + ownedCerts + ' certificates are owned' ;
+				addCommunicationHistory(terminatedOwnersRecord.manager.manager.sys_id,OwnerTerminatedEscalate,communicationDescription);				
+			}			
+		}
+
+	}
+} catch(e){
+	errorOccured = true;
+	var errorMessage = 'Error occured in Terminated Owner Notification: ' + e;
+	gs.info(errorMessage);
+} finally{
+	if(errorOccured) {
+		gs.info('Terminated Owner Notification finished with Errors');
+	} else{
+		gs.info('Terminated Owner Notification finished without Errors');
+	}
+}
+
+function addCommunicationHistory(notificationUserSysId, communicationType, communicationDescription){
+	
+	var communicationHistoryRecord = new GlideRecord('x_unugr_certificat_communication_history');
+	communicationHistoryRecord.initialize();
+	communicationHistoryRecord.u_communication_type = communicationType.toString();
+	communicationHistoryRecord.u_notification_user = notificationUserSysId;
+	communicationHistoryRecord.u_communication_description = communicationDescription;
+	communicationHistoryRecord.insert();
+		
+}
+
+function getDaysSinceLastCommunication(ownerSysId, communicationType){
+	var daysSinceLastCommunication = 0;
+	var queryString = 'u_notification_user=|OWNERSYSID|^u_communication_type=|COMMUNICATIONTYPE|^ORDERBYDESCsys_created_on';
+	queryString = queryString.replace('|OWNERSYSID|',ownerSysId);
+	queryString = queryString.replace('|COMMUNICATIONTYPE|',communicationType);
+// 	gs.info(queryString);
+
+	var previousCommunicationRecord = new GlideRecord('x_unugr_certificat_communication_history');
+	previousCommunicationRecord.addEncodedQuery(queryString);
+	previousCommunicationRecord.setLimit(1);
+	previousCommunicationRecord.query();
+	
+	
+	var dateLastSend = new GlideDateTime();
+	
+	while(previousCommunicationRecord.next()){
+		dateLastSend = previousCommunicationRecord.sys_created_on.getDisplayValue();
+	}
+
+	
+	var currentDate = new GlideDateTime();
+	var currentValue = currentDate.getDisplayValue();
+	
+	var currentSplit = (currentValue).toString().split(" ");
+	currentDate.setValue(currentSplit[0] + ' 00:00:00');
+	
+	
+	
+	var dateLastSendSplit = dateLastSend.toString().split(" ");
+	var dateofLastCommunication = new GlideDateTime();
+	dateofLastCommunication.setValue(dateLastSendSplit[0] + ' 00:00:00');
+	
+// 	gs.info(dateofLastCommunication);
+	var duration = GlideDate.subtract(currentDate,dateofLastCommunication);
+	daysSinceLastCommunication = duration.getRoundedDayPart();
+
+	return daysSinceLastCommunication;
+}
+
+function getCommunicationCount(ownerSysID,communicationType){
+	//Get a count of the previous Communications Sent
+	var communicationsSent = 0;
+	var queryString = 'u_notification_user=|OWNERSYSID|^u_communication_type=|COMMUNICATIONTYPE|';
+	queryString = queryString.replace('|OWNERSYSID|',ownerSysID);
+	queryString = queryString.replace('|COMMUNICATIONTYPE|',communicationType);
+	gs.info('comunication count query' + queryString);
+
+	var previousCommunicationRecord = new GlideAggregate('x_unugr_certificat_communication_history');
+	previousCommunicationRecord.addEncodedQuery(queryString);
+	previousCommunicationRecord.addAggregate('COUNT');
+	previousCommunicationRecord.query();
+	
+	if(previousCommunicationRecord.next()){
+		communicationsSent = previousCommunicationRecord.getAggregate('COUNT');
+	}
+	
+	return communicationsSent;
+	
+}
+
+function getOwnerCertCount(ownerSysID){
+	var ownerCertCount = 0;
+	var queryString = 'u_owned_by=|OWNERID|^u_active=true';
+
+	queryString = queryString.replace('|OWNERID|',ownerSysID);
+// 	gs.info(queryString);
+	var ownedCertificates = new GlideAggregate('x_unugr_certificat_digital_certificate');
+	ownedCertificates.addEncodedQuery(queryString);
+	ownedCertificates.addAggregate('COUNT');
+	ownedCertificates.query();
+	
+	if(ownedCertificates.next()){
+		ownerCertCount = ownedCertificates.getAggregate('COUNT');
+	}
+	
+	return ownerCertCount;	
+	
+}
+]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-06-05 20:32:23</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>4f3096eedbb57704d3e954f9489619f1</sys_id>
+        <sys_mod_count>62</sys_mod_count>
+        <sys_name>Terminated Owner Notification</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sysauto_script_4f3096eedbb57704d3e954f9489619f1</sys_update_name>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2022-03-03 16:26:29</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>
