@@ -32,7 +32,8 @@ certMgmtRecordProducers.prototype = {
 			}
 
 			if(currentObject.u_certificate_request_type == 'internal_update' || currentObject.u_certificate_request_type == 'external_update' ){
-				currentObject.u_certificate = producerObject.select_exsiting_certificate;
+				//currentObject.u_certificate = producerObject.select_exsiting_certificate;
+				currentObject.certificate_to_be_renewed = producerObject.select_exsiting_certificate;
 			}
 			if(currentObject.u_certificate_request_type == 'cancel_certificate') {
 				currentObject.u_certificate = producerObject.select_exsiting_certificate;
@@ -203,14 +204,14 @@ certMgmtRecordProducers.prototype = {
         <sys_created_on>2019-05-23 19:20:58</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>d4809f96db21b3004ff2c553059619cf</sys_id>
-        <sys_mod_count>70</sys_mod_count>
+        <sys_mod_count>71</sys_mod_count>
         <sys_name>certMgmtRecordProducers</sys_name>
         <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
         <sys_policy>read</sys_policy>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
         <sys_update_name>sys_script_include_d4809f96db21b3004ff2c553059619cf</sys_update_name>
-        <sys_updated_by>CNI06</sys_updated_by>
-        <sys_updated_on>2021-09-17 15:39:46</sys_updated_on>
+        <sys_updated_by>DWU20</sys_updated_by>
+        <sys_updated_on>2022-05-10 15:52:50</sys_updated_on>
     </sys_script_include>
 </record_update>

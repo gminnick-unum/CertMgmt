@@ -44,7 +44,7 @@
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
         <published_ref/>
-        <question_text>Select Exsiting Certificate</question_text>
+        <question_text>Certificate to be renewed/cancelled</question_text>
         <read_only>false</read_only>
         <read_roles/>
         <read_script/>
@@ -69,15 +69,15 @@
         <sys_created_on>2019-06-08 16:24:26</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>82a10da7dbfd7f044ff2c553059619d1</sys_id>
-        <sys_mod_count>9</sys_mod_count>
-        <sys_name>Select Exsiting Certificate</sys_name>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>Certificate to be renewed/cancelled</sys_name>
         <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
         <sys_update_name>item_option_new_82a10da7dbfd7f044ff2c553059619d1</sys_update_name>
-        <sys_updated_by>BB420</sys_updated_by>
-        <sys_updated_on>2022-04-28 10:32:31</sys_updated_on>
+        <sys_updated_by>DWU20</sys_updated_by>
+        <sys_updated_on>2022-05-23 18:42:09</sys_updated_on>
         <table/>
         <tooltip/>
         <type>8</type>

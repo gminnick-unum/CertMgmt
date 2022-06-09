@@ -4,9 +4,9 @@
         <access>package_private</access>
         <action_delete>false</action_delete>
         <action_insert>true</action_insert>
-        <action_query>false</action_query>
+        <action_query>true</action_query>
         <action_update>true</action_update>
-        <active>true</active>
+        <active>false</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
         <change_fields>false</change_fields>
@@ -15,11 +15,13 @@
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition/>
+        <filter_condition table="x_unugr_certificat_digital_certificate">u_expiresISNOTEMPTY^EQ<item endquery="false" field="u_expires" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
         <is_rest>false</is_rest>
         <message/>
-        <name>Set Notify Flag</name>
-        <order>500</order>
+        <name>Set certificate active flag</name>
+        <order>100</order>
         <priority>100</priority>
         <rest_method/>
         <rest_method_text/>
@@ -27,43 +29,39 @@
         <rest_service_text/>
         <rest_variables/>
         <role_conditions/>
-        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	var certificateActive = false;
+	var currentValue = current.u_expires.getDisplayValue();
+	var certExpirationDate = new GlideDate();
+	certExpirationDate.setDisplayValue(currentValue);
+	var currentDate = new GlideDate();
 	
+	if(certExpirationDate <= currentDate){
+		certificateActive = false;
+	} else {
+		certificateActive = true;
+	}
+	
+	current.u_active = certificateActive;
 
-    if (current.operation() == 'insert' || (current.operation() == 'update' && (previous.u_notify_of_expiration.toString() != current.u_notify_of_expiration.toString() || previous.u_owned_by != current.u_owned_by))) {
-        var setNotify = false;
-
-
-        var notifyList = current.u_notify_of_expiration.toString();
-        if (notifyList || !current.u_owned_by.nil()) {
-            setNotify = true;
-        }
-        
-        if (setNotify) {
-            current.u_expiration_notification = true;
-        } else {
-            current.u_expiration_notification = false;
-        }
-
-    }
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2020-01-03 17:11:29</sys_created_on>
+        <sys_created_on>2019-03-27 21:22:59</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
-        <sys_id>3aeb9db2db4e08d4d3e954f948961932</sys_id>
-        <sys_mod_count>17</sys_mod_count>
-        <sys_name>Set Notify Flag</sys_name>
+        <sys_id>be49828cdbe0fb804ff2c553059619c5</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Set certificate active flag</sys_name>
         <sys_overrides/>
         <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
-        <sys_update_name>sys_script_3aeb9db2db4e08d4d3e954f948961932</sys_update_name>
+        <sys_update_name>sys_script_be49828cdbe0fb804ff2c553059619c5</sys_update_name>
         <sys_updated_by>DWU20</sys_updated_by>
-        <sys_updated_on>2022-05-10 16:51:54</sys_updated_on>
+        <sys_updated_on>2022-05-10 20:22:27</sys_updated_on>
         <template/>
-        <when>before</when>
+        <when>before_display</when>
     </sys_script>
 </record_update>

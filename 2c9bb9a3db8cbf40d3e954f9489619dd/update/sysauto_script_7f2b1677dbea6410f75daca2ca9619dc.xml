@@ -23,27 +23,31 @@ var errorOccured = false;
 
 try {
     var reqNotes;
-	var updatesMade = 0;
-	var queryString = 'state=3^u_certificateISEMPTY';
+    var updatesMade = 0;
+    var queryString = 'state=3^u_certificateISEMPTY';
     var completedRequests = new GlideRecord('x_unugr_certificat_certificate_request');
     completedRequests.addEncodedQuery(queryString);
+    //completedRequests.addQuery("sys_id", "8447f04f1b9f4558e314c955624bcb78");
     completedRequests.query();
 
-    gs.info('Completed Requests ' + completedRequests.getRowCount());
+    //gs.info('Completed Requests ' + completedRequests.getRowCount());
 
     while (completedRequests.next()) {
         //See if we can make a match using Common Name using the certificate name entered in the request
-		//If no match using command name then we try Subject Name
+        //If no match using command name then we try Subject Name
         //If 0 or >1 matches we will add a note to the request with this information
         //if we have only one match then proceed with transfering the request data to the cert
         var foundByFlag = "None";
 
-        foundMatches = getByCommonName(completedRequests.u_certificate_name);
+        foundMatches = getByCommonName(completedRequests.u_certificate_name, completedRequests.u_certificate_request_type);
         //if no matches found on common name try matching to subject name
         if (foundMatches.length == 0) {
-            foundMatches = getBySubjectName(completedRequests.u_certificate_name);
+            //foundMatches = getBySubjectName(completedRequests.u_certificate_name);
+            foundMatches = getBySansFields(completedRequests.u_certificate_name, completedRequests.u_certificate_request_type); //sans method added new -- Ameet
             if (foundMatches.length != 0) {
-                foundByFlag = "Subject Name";
+                //foundByFlag = "Subject Name";
+                foundByFlag = "Sans";
+                //gs.info("32==" + foundByFlag);
             }
         } else {
             foundByFlag = "Common Name";
@@ -51,21 +55,53 @@ try {
 
         if (foundByFlag == "None") {
             reqNotes = "Match Issue: No match on Common or Subject Name for " + completedRequests.u_certificate_name;
-            //gs.info(reqNotes);
-			addWorkNote(completedRequests,reqNotes);
+            addWorkNote(completedRequests, reqNotes);
         } else {
-            //gs.info("Match found by " + foundByFlag);
+
             if (foundMatches.length == 1) {
-				reqNotes = "Found single match for " + completedRequests.u_certificate_name;
-                //gs.info(reqNotes);
-				certificateMatch = foundMatches[0];
-				transferRequestDataToCertificate(certificateMatch,completedRequests);
-				completedRequests.u_certificate = certificateMatch;
-				completedRequests.update();
+                reqNotes = "Found single match for " + completedRequests.u_certificate_name;
+
+                certificateMatch = foundMatches[0];
+                transferRequestDataToCertificate(certificateMatch, completedRequests);
+                completedRequests.u_certificate = certificateMatch;
+                completedRequests.update();
             } else {
-                reqNotes = "Match Issue: Found " + foundMatches.length + " matches by " + foundByFlag + " for certificate " + completedRequests.u_certificate_name;
-                //gs.info(reqNotes);
-				addWorkNote(completedRequests,reqNotes);
+
+
+                //*********************fetch digital certification more than 100*************
+                //gs.info("54===");
+                var findDigitalCertificate = new GlideRecord('x_unugr_certificat_digital_certificate');
+                //u_sansLIKEslime1acvnd01.up.acpt.upc^ORu_common_name=slime1acvnd01.up.acpt.upc
+                 if (foundByFlag == "Common Name") {
+                    findDigitalCertificate.addEncodedQuery("u_expires_in_days>100^u_active=true^u_common_name=" + completedRequests.u_certificate_name);
+                } else {
+                    findDigitalCertificate.addEncodedQuery("u_expires_in_days>100^u_active=true^ORu_sansLIKE" + completedRequests.u_certificate_name);
+                }
+				var certificateType=completedRequests.u_certificate_request_type;
+                if (certificateType == "external_new" || certificateType == "external_update") {
+                    findDigitalCertificate.addQuery("u_certificate_type", "External");
+                } else if (certificateType == "internal_new" || certificateType == "internal_update") {
+                    findDigitalCertificate.addQuery("u_certificate_type", "Internal");
+                }
+                findDigitalCertificate.orderByDesc("u_expires_in_days");
+                findDigitalCertificate.setLimit(1);
+                findDigitalCertificate.query();
+                if (findDigitalCertificate.getRowCount() == 1) {
+                    if (findDigitalCertificate.next()) {
+                        //gs.info("59===" + findDigitalCertificate.sys_id.toString() + completedRequests.sys_id);
+
+                        var certDigitalCert = findDigitalCertificate.sys_id.toString();
+                        transferRequestDataToCertificate(certDigitalCert, completedRequests);
+                        completedRequests.u_certificate = findDigitalCertificate.sys_id;
+                        completedRequests.update();
+
+                    }
+                } else {
+
+                    reqNotes = "Match Issue: Found " + foundMatches.length + " matches by " + foundByFlag + " for certificate " + completedRequests.u_certificate_name;
+
+                    addWorkNote(completedRequests, reqNotes);
+                }
             }
         }
     }
@@ -81,74 +117,83 @@ try {
     }
 }
 
-function addWorkNote(reqRecord, workNote){
-	//Check to see if work notes already exist for Matching error
-	var reqSysId = reqRecord.sys_id.toString();
-	var queryString = 'element_id=' + reqSysId;
-	var workNotes = new GlideRecord('sys_journal_field');
-	workNotes.addEncodedQuery(queryString);
-	workNotes.query();
-	
-	var noteMatch = "false";
-	var workNotesString;
-	
-	while(workNotes.next()){
-		workNotesString = workNotes.value.toString();
-		//gs.info(workNotesString);
-		if(workNotesString.includes("Match Issue:")) {
-			gs.info("Not updated");
-			noteMatch = "true";
-		}
-	}
-	if(noteMatch == "false"){
-		gs.info("Updated");
-		reqRecord.work_notes = reqNotes;
-		reqRecord.update();
-	}
+function addWorkNote(reqRecord, workNote) {
+    //Check to see if work notes already exist for Matching error
+    var reqSysId = reqRecord.sys_id.toString();
+    var queryString = 'element_id=' + reqSysId;
+    var workNotes = new GlideRecord('sys_journal_field');
+    workNotes.addEncodedQuery(queryString);
+    workNotes.query();
+
+    var noteMatch = "false";
+    var workNotesString;
+
+    while (workNotes.next()) {
+        workNotesString = workNotes.value.toString();
+        //gs.info(workNotesString);
+        if (workNotesString.includes("Match Issue:")) {
+            gs.info("Not updated");
+            noteMatch = "true";
+        }
+    }
+    if (noteMatch == "false") {
+        gs.info("Updated");
+        reqRecord.work_notes = reqNotes;
+        reqRecord.update();
+    }
 }
 
-function addFindingToRecon(foundMatches,completedRequests){
-	
-	for(i=0;i < foundMatches.length;i++){
-		var reconRecord = new GlideRecord('x_unugr_certificat_request_recon');
-		reconRecord.addQuery('u_certificate_request',completedRequests.sys_id);
-		reconRecord.addQuery('u_certificate_match',foundMatches[i]);
-		reconRecord.query();
+function addFindingToRecon(foundMatches, completedRequests) {
 
-		if(reconRecord.next()){
-			reconRecord.u_last_found = new GlideDateTime();
-			reconRecord.update();
-		} else{
-			var dateFound = new GlideDateTime();
-			reconRecord.initialize();
-			reconRecord.u_first_found = dateFound;
-			reconRecord.u_last_found = dateFound;
-			reconRecord.u_certificate_request = completedRequests.sys_id;
-			reconRecord.u_certificate_match = foundMatches[i];
-			reconRecord.insert();
-		}		
-	}
+    for (i = 0; i < foundMatches.length; i++) {
+        var reconRecord = new GlideRecord('x_unugr_certificat_request_recon');
+        reconRecord.addQuery('u_certificate_request', completedRequests.sys_id);
+        reconRecord.addQuery('u_certificate_match', foundMatches[i]);
+        reconRecord.query();
+
+        if (reconRecord.next()) {
+            reconRecord.u_last_found = new GlideDateTime();
+            reconRecord.update();
+        } else {
+            var dateFound = new GlideDateTime();
+            reconRecord.initialize();
+            reconRecord.u_first_found = dateFound;
+            reconRecord.u_last_found = dateFound;
+            reconRecord.u_certificate_request = completedRequests.sys_id;
+            reconRecord.u_certificate_match = foundMatches[i];
+            reconRecord.insert();
+        }
+    }
 
 }
+
 function transferRequestDataToCertificate(certificateMatch, completedRequests) {
     //function is called if only one match was found.  
     //Set the certificate owner as the onbehalf of
+
     var certificateRecord = new GlideRecord('x_unugr_certificat_digital_certificate');
     certificateRecord.addQuery('sys_id', certificateMatch);
     certificateRecord.query();
 
     if (certificateRecord.next()) {
+
         certificateRecord.u_owned_by = completedRequests.u_requested_for;
         //If Sans is empty and the request has Sans informtion
         //then populate with that value
         if ((certificateRecord.u_sans.toString()).length == 0 && (completedRequests.u_dns_names.toString()).length != 0) {
             certificateRecord.u_sans = completedRequests.u_dns_names;
         }
+
         //add any associated servers
         if (completedRequests.u_associated_servers.length != 0) {
-            var serverArray = completedRequests.u_associated_servers.split(',');
-            addServerAssociations(serverArray, certificateRecord.sys_id);
+
+            if (completedRequests.u_associated_servers != "") { //added if condition to check if associate server there prior to split
+                var serverArray = completedRequests.u_associated_servers.split(',');
+                addServerAssociations(serverArray, certificateRecord.sys_id);
+
+            }
         }
+
         //add any associated applications
         if (completedRequests.associated_applications.length != 0) {
             var applicationArray = completedRequests.associated_applications.split(',');
@@ -157,52 +202,51 @@ function transferRequestDataToCertificate(certificateMatch, completedRequests) {
         //find the maintenance group by looking for the installation task. Use task the assignment group
         var maintAssignmentGroup = getMaintenanceGroup(completedRequests.sys_id);
         certificateRecord.maintenance_group = maintAssignmentGroup;
-
-		/* Moved these steps to the UpdateDigCertWhenMatched as that is where it should have gone instead of here
-		// Set installed on checkboxes on certificate based on request
-		// This line gets the comma delimeted sys_id for each reference field in the list collector and splits into an array
-		var certReqInstalledOn = completedRequests.u_install_on.toString().split(",");
-		var installedOn;
-		for (var instOnIndex in certReqInstalledOn) {
-			installedOn = new GlideRecord('x_unugr_certificat_installation_targets');
-			installedOn.addQuery('sys_id=' + certReqInstalledOn[instOnIndex]);
-			installedOn.query();
-			while (installedOn.next()) {
-				switch (installedOn.u_target_value.toString()) {
-					case 'f5':
-						//gs.info('F5 Found');
-						certificateRecord.u_inston_f5 = true;
-						break;
-					case 'aws':
-						//gs.info('aws Found');
-						certificateRecord.u_inston_aws = true;
-						break;
-					case 'api_gateway':
-						//gs.info('API Gateway Found');
-						certificateRecord.u_inston_api_gateway = true;
-						break;
-					case 'iis':
-						//gs.info('IIS Found');
-						certificateRecord.u_inston_iis = true;
-						break;
-					case 'server':
-						//gs.info('Server Found');
-						certificateRecord.u_inston_server = true;
-						break;
-					case 'vendor_server':
-						//gs.info('Vendor Server Found');
-						certificateRecord.u_inston_vendor_server = true;
-						break;
-				}
-			}
-		}
-		*/
-
         certificateRecord.update();
 
-    }
+        /* Moved these steps to the UpdateDigCertWhenMatched as that is where it should have gone instead of here
+        // Set installed on checkboxes on certificate based on request
+        // This line gets the comma delimeted sys_id for each reference field in the list collector and splits into an array
+        var certReqInstalledOn = completedRequests.u_install_on.toString().split(",");
+        var installedOn;
+        for (var instOnIndex in certReqInstalledOn) {
+        	installedOn = new GlideRecord('x_unugr_certificat_installation_targets');
+        	installedOn.addQuery('sys_id=' + certReqInstalledOn[instOnIndex]);
+        	installedOn.query();
+        	while (installedOn.next()) {
+        		switch (installedOn.u_target_value.toString()) {
+        			case 'f5':
+        				//gs.info('F5 Found');
+        				certificateRecord.u_inston_f5 = true;
+        				break;
+        			case 'aws':
+        				//gs.info('aws Found');
+        				certificateRecord.u_inston_aws = true;
+        				break;
+        			case 'api_gateway':
+        				//gs.info('API Gateway Found');
+        				certificateRecord.u_inston_api_gateway = true;
+        				break;
+        			case 'iis':
+        				//gs.info('IIS Found');
+        				certificateRecord.u_inston_iis = true;
+        				break;
+        			case 'server':
+        				//gs.info('Server Found');
+        				certificateRecord.u_inston_server = true;
+        				break;
+        			case 'vendor_server':
+        				//gs.info('Vendor Server Found');
+        				certificateRecord.u_inston_vendor_server = true;
+        				break;
+        		}
+        	}
+        }
+        */
 
+    }
 }
+
 function getMaintenanceGroup(requestSysId) {
     var maintGroup;
     var queryString = 'certificate_request.sys_id=|REQUESTSYSID|^u_task_activity=installation';
@@ -218,6 +262,7 @@ function getMaintenanceGroup(requestSysId) {
 
     return maintGroup;
 }
+
 function addApplicationAssociations(associatedApplications, certificateSysId) {
     //Loop through the associatedApplications Array
     for (i = 0; i < associatedApplications.length; i++) {
@@ -241,12 +286,14 @@ function addApplicationAssociations(associatedApplications, certificateSysId) {
 
 function addServerAssociations(associatedServers, certificateSysId) {
     //Loop through the associatedServers Array
+
     for (i = 0; i < associatedServers.length; i++) {
         var serverAssociation = new GlideRecord('x_unugr_certificat_m2m_servers_digital_cert');
         //First check to see if association is already made.	0
         serverAssociation.addQuery('server', associatedServers[i]);
         serverAssociation.addQuery('digital_certificate', certificateSysId);
         serverAssociation.query();
+
         //if not found then add the association
         if (serverAssociation.getRowCount() == 0) {
             serverAssociation.initialize();
@@ -256,18 +303,25 @@ function addServerAssociations(associatedServers, certificateSysId) {
             serverAssociation.u_last_found = new GlideDateTime();
             serverAssociation.insert();
         }
+
     }
 
 
 
 
 }
-function getByCommonName(certificateName) {
+
+function getByCommonName(certificateName, certificateType) {
     var queryString = 'u_common_name=|COMMONNAME|^u_active=true';
     var matchesArray = [];
     queryString = queryString.replace('|COMMONNAME|', certificateName);
     var findByCommonName = new GlideRecord('x_unugr_certificat_digital_certificate');
     findByCommonName.addEncodedQuery(queryString);
+    if (certificateType == "external_new" || certificateType == "external_update") {
+        findByCommonName.addQuery("u_certificate_type", "External");
+    } else if (certificateType == "internal_new" || certificateType == "internal_update") {
+        findByCommonName.addQuery("u_certificate_type", "Internal");
+    }
     findByCommonName.query();
     while (findByCommonName.next()) {
         matchesArray.push(findByCommonName.sys_id.toString());
@@ -275,6 +329,7 @@ function getByCommonName(certificateName) {
 
     return matchesArray;
 }
+
 function getBySubjectName(certificateName) {
     var queryString = 'u_subject=|COMMONNAME|^u_active=true';
     var matchesArray = [];
@@ -289,21 +344,39 @@ function getBySubjectName(certificateName) {
 
     return matchesArray;
 }
-]]></script>
+
+function getBySansFields(certificateName, certificateType) { //add new function to compare certificate name with SANS if no common name it will match using sans. 
+
+    var matchesArray = [];
+    var findBySubjectName = new GlideRecord('x_unugr_certificat_digital_certificate');
+    findBySubjectName.addEncodedQuery("u_sansLIKE" + certificateName);
+    if (certificateType == "external_new" || certificateType == "external_update") {
+        findBySubjectName.addQuery("u_certificate_type", "External");
+    } else if (certificateType == "internal_new" || certificateType == "internal_update") {
+        findBySubjectName.addQuery("u_certificate_type", "Internal");
+    }
+    findBySubjectName.query();
+
+    while (findBySubjectName.next()) {
+        matchesArray.push(findBySubjectName.sys_id.toString());
+    }
+
+    return matchesArray;
+}]]></script>
         <sys_class_name>sysauto_script</sys_class_name>
         <sys_created_by>CNI06</sys_created_by>
         <sys_created_on>2021-03-04 13:15:38</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>7f2b1677dbea6410f75daca2ca9619dc</sys_id>
-        <sys_mod_count>60</sys_mod_count>
+        <sys_mod_count>104</sys_mod_count>
         <sys_name>Match Completed Service Requests to Certs_v2</sys_name>
         <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
         <sys_update_name>sysauto_script_7f2b1677dbea6410f75daca2ca9619dc</sys_update_name>
-        <sys_updated_by>CNI06</sys_updated_by>
-        <sys_updated_on>2021-09-08 16:07:49</sys_updated_on>
+        <sys_updated_by>DWU20</sys_updated_by>
+        <sys_updated_on>2022-05-26 18:09:55</sys_updated_on>
         <time_zone/>
         <upgrade_safe>false</upgrade_safe>
     </sysauto_script>
