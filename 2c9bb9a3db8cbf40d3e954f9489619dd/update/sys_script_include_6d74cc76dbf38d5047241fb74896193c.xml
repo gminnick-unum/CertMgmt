@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_unugr_certificat.certificateManagmentHelper</api_name>
+        <caller_access>1</caller_access>
+        <client_callable>false</client_callable>
+        <description>Certificate Managment Helper Functions</description>
+        <name>certificateManagmentHelper</name>
+        <script><![CDATA[var certificateManagmentHelper = Class.create();
+certificateManagmentHelper.prototype = {
+    initialize: function() {
+    },
+	selectCertExistingQualifier: function(requestType){
+		var encodedQuery;
+		
+		if(requestType == 'external_update'){
+			encodedQuery = 'u_active=true^u_certificate_type =External';
+		} else if(requestType == 'internal_update'){
+			encodedQuery = 'u_active=true^u_certificate_type =Internal';
+		} else {
+			encodedQuery = 'u_active=true';
+		}
+		
+		return encodedQuery;
+	},
+
+    type: 'certificateManagmentHelper'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2022-06-03 19:11:15</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>6d74cc76dbf38d5047241fb74896193c</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>certificateManagmentHelper</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sys_script_include_6d74cc76dbf38d5047241fb74896193c</sys_update_name>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2022-06-03 21:52:28</sys_updated_on>
+    </sys_script_include>
+</record_update>
