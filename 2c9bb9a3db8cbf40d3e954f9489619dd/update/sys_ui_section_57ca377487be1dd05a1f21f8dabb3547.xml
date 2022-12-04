@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="57ca377487be1dd05a1f21f8dabb3547" sys_domain="global" table="x_unugr_certificat_st_digital_certificates_installed_on" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>installed_on</element>
+            <position>0</position>
+            <sys_created_by>C12P1</sys_created_by>
+            <sys_created_on>2022-10-25 10:58:06</sys_created_on>
+            <sys_id>1fcaffb487be1dd05a1f21f8dabb35f3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unugr_certificat_st_digital_certificates_installed_on" sys_domain="global" view="Default view">57ca377487be1dd05a1f21f8dabb3547</sys_ui_section>
+            <sys_updated_by>C12P1</sys_updated_by>
+            <sys_updated_on>2022-10-25 10:58:06</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>certificate_type</element>
+            <position>1</position>
+            <sys_created_by>C12P1</sys_created_by>
+            <sys_created_on>2022-10-25 10:58:06</sys_created_on>
+            <sys_id>97caffb487be1dd05a1f21f8dabb35f4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unugr_certificat_st_digital_certificates_installed_on" sys_domain="global" view="Default view">57ca377487be1dd05a1f21f8dabb3547</sys_ui_section>
+            <sys_updated_by>C12P1</sys_updated_by>
+            <sys_updated_on>2022-10-25 10:58:06</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_unugr_certificat_st_digital_certificates_installed_on</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>C12P1</sys_created_by>
+            <sys_created_on>2022-10-25 10:58:05</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_id>57ca377487be1dd05a1f21f8dabb3547</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_unugr_certificat_st_digital_certificates_installed_on</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+            <sys_update_name>sys_ui_section_57ca377487be1dd05a1f21f8dabb3547</sys_update_name>
+            <sys_updated_by>C12P1</sys_updated_by>
+            <sys_updated_on>2022-10-25 10:58:05</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>
