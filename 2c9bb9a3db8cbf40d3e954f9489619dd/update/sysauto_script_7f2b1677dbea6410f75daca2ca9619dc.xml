@@ -20,17 +20,19 @@
 //Updated to include copying Installed on List Collector to Dig Cert Checkboxes - GAM
 
 var errorOccured = false;
+var log = new global.UnumLogUtil('Match Completed Service Request');
 
 try {
     var reqNotes;
     var updatesMade = 0;
     var queryString = 'state=3^u_certificateISEMPTY';
+	//var queryString = 'state=3^u_certificateISEMPTY^number=CREQ0002695';
     var completedRequests = new GlideRecord('x_unugr_certificat_certificate_request');
     completedRequests.addEncodedQuery(queryString);
     //completedRequests.addQuery("sys_id", "8447f04f1b9f4558e314c955624bcb78");
     completedRequests.query();
 
-    //gs.info('Completed Requests ' + completedRequests.getRowCount());
+    log.info("Completed Requests found:" + completedRequests.getRowCount());
 
     while (completedRequests.next()) {
         //See if we can make a match using Common Name using the certificate name entered in the request
@@ -38,13 +40,17 @@ try {
         //If 0 or >1 matches we will add a note to the request with this information
         //if we have only one match then proceed with transfering the request data to the cert
         var foundByFlag = "None";
+		log.info("Request: " + completedRequests.number);
 
         foundMatches = getByCommonName(completedRequests.u_certificate_name, completedRequests.u_certificate_request_type);
+		log.info("Found matches by Common Name: " + foundMatches.length);
         //if no matches found on common name try matching to subject name
         if (foundMatches.length == 0) {
+			log.info("No matches found by Common Name. Trying SANS");
             //foundMatches = getBySubjectName(completedRequests.u_certificate_name);
             foundMatches = getBySansFields(completedRequests.u_certificate_name, completedRequests.u_certificate_request_type); //sans method added new -- Ameet
-            if (foundMatches.length != 0) {
+            log.info("Found matches by SAN Name: " + foundMatches.length);
+			if (foundMatches.length != 0) {
                 //foundByFlag = "Subject Name";
                 foundByFlag = "Sans";
                 //gs.info("32==" + foundByFlag);
@@ -52,24 +58,23 @@ try {
         } else {
             foundByFlag = "Common Name";
         }
-
+		log.info("foundByFlag: " + foundByFlag);
         if (foundByFlag == "None") {
             reqNotes = "Match Issue: No match on Common or Subject Name for " + completedRequests.u_certificate_name;
+			log.info(reqNotes);
             addWorkNote(completedRequests, reqNotes);
         } else {
-
             if (foundMatches.length == 1) {
                 reqNotes = "Found single match for " + completedRequests.u_certificate_name;
-
+				log.info(reqNotes);
                 certificateMatch = foundMatches[0];
                 transferRequestDataToCertificate(certificateMatch, completedRequests);
                 completedRequests.u_certificate = certificateMatch;
                 completedRequests.update();
             } else {
-
-
-                //*********************fetch digital certification more than 100*************
+                //*********************fetch digital certificates expire more than 100*************
                 //gs.info("54===");
+				log.info("Fetch digital certificates expire > than 100 days");
                 var findDigitalCertificate = new GlideRecord('x_unugr_certificat_digital_certificate');
                 //u_sansLIKEslime1acvnd01.up.acpt.upc^ORu_common_name=slime1acvnd01.up.acpt.upc
                  if (foundByFlag == "Common Name") {
@@ -78,6 +83,7 @@ try {
                     findDigitalCertificate.addEncodedQuery("u_expires_in_days>100^u_active=true^ORu_sansLIKE" + completedRequests.u_certificate_name);
                 }
 				var certificateType=completedRequests.u_certificate_request_type;
+				log.info("cert type: " + certificateType);
                 if (certificateType == "external_new" || certificateType == "external_update") {
                     findDigitalCertificate.addQuery("u_certificate_type", "External");
                 } else if (certificateType == "internal_new" || certificateType == "internal_update") {
@@ -86,20 +92,21 @@ try {
                 findDigitalCertificate.orderByDesc("u_expires_in_days");
                 findDigitalCertificate.setLimit(1);
                 findDigitalCertificate.query();
+				log.info("Found Digital Certs: " + findDigitalCertificate.getRowCount());
                 if (findDigitalCertificate.getRowCount() == 1) {
                     if (findDigitalCertificate.next()) {
                         //gs.info("59===" + findDigitalCertificate.sys_id.toString() + completedRequests.sys_id);
-
                         var certDigitalCert = findDigitalCertificate.sys_id.toString();
+						log.info("certDigCert: " + certDigitalCert);
+						log.info("compReq: " + completedRequests.number);
                         transferRequestDataToCertificate(certDigitalCert, completedRequests);
+						log.info("findDC sysid " + findDigitalCertificate.sys_id);
                         completedRequests.u_certificate = findDigitalCertificate.sys_id;
                         completedRequests.update();
-
                     }
                 } else {
-
                     reqNotes = "Match Issue: Found " + foundMatches.length + " matches by " + foundByFlag + " for certificate " + completedRequests.u_certificate_name;
-
+					log.info(reqNotes);
                     addWorkNote(completedRequests, reqNotes);
                 }
             }
@@ -107,14 +114,16 @@ try {
     }
 } catch (e) {
     errorOccured = true;
-    var errorMessage = 'Error occured in Match Completed Service Requests to Certs: ' + e;
-    gs.info(errorMessage);
+    var errorMessage = 'Error occured in Match Completed Service Requests to Certs: ' + e.message;
+	errorMessage += "\nLine number " + e.lineNumber;
+    log.error(errorMessage);
 } finally {
     if (errorOccured) {
-        gs.info('Match Completed Service Requests to Certs finished with Errors');
+        log.error('Match Completed Service Requests to Certs finished with Errors');
     } else {
-        gs.info('Match Completed Service Requests to Certs without Errors');
+        log.info('Match Completed Service Requests to Certs without Errors');
     }
+	log.flush();
 }
 
 function addWorkNote(reqRecord, workNote) {
@@ -186,18 +195,18 @@ function transferRequestDataToCertificate(certificateMatch, completedRequests) {
 
         //add any associated servers
         if (completedRequests.u_associated_servers.length != 0) {
-
-            if (completedRequests.u_associated_servers != "") { //added if condition to check if associate server there prior to split
+            if (completedRequests.u_associated_servers != "") { //added if condition to check if associated servers is not empty prior to split
                 var serverArray = completedRequests.u_associated_servers.split(',');
                 addServerAssociations(serverArray, certificateRecord.sys_id);
-
             }
         }
 
         //add any associated applications
         if (completedRequests.associated_applications.length != 0) {
-            var applicationArray = completedRequests.associated_applications.split(',');
-            addApplicationAssociations(applicationArray, certificateRecord.sys_id);
+			if (completedRequests.associated_applications != "") { //added if condition to check if associated applications is not empty prior to split
+				var applicationArray = completedRequests.associated_applications.split(',');
+				addApplicationAssociations(applicationArray, certificateRecord.sys_id);
+			}
         }
         //find the maintenance group by looking for the installation task. Use task the assignment group
         var maintAssignmentGroup = getMaintenanceGroup(completedRequests.sys_id);
@@ -368,15 +377,15 @@ function getBySansFields(certificateName, certificateType) { //add new function 
         <sys_created_on>2021-03-04 13:15:38</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>7f2b1677dbea6410f75daca2ca9619dc</sys_id>
-        <sys_mod_count>108</sys_mod_count>
+        <sys_mod_count>148</sys_mod_count>
         <sys_name>Match Completed Service Requests to Certs_v2</sys_name>
         <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
         <sys_update_name>sysauto_script_7f2b1677dbea6410f75daca2ca9619dc</sys_update_name>
-        <sys_updated_by>DWU20</sys_updated_by>
-        <sys_updated_on>2022-06-22 15:46:47</sys_updated_on>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2022-11-17 21:12:03</sys_updated_on>
         <time_zone/>
         <upgrade_safe>false</upgrade_safe>
     </sysauto_script>
