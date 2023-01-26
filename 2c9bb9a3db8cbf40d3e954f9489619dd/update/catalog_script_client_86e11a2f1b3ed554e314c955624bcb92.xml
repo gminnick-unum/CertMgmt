@@ -32,20 +32,20 @@
         g_form.setMandatory("aws_account_name", true);
         g_form.setMandatory("aws_account_number", true);
 
-    } else {
+    } 
+		else {
         g_form.setMandatory("aws_account_name", false);
-        g_form.setMandatory("aws_account_number", false);
-        g_form.clearValue("certificate_to_be_installed");
+        g_form.setMandatory("aws_account_number", false);		
         g_form.setVisible("aws_account_name", false);
         g_form.setVisible("aws_account_number", false);
         g_form.clearValue("aws_account_name");
         g_form.clearValue("aws_account_number");
+		g_form.clearValue("certificate_to_be_installed",'AWS');	
         // 		g_form.setMandatory("aws_account_name",false);
         // 		g_form.setMandatory("aws_account_number",false);
 
     }
    
-
 }]]></script>
         <sys_class_name>catalog_script_client</sys_class_name>
         <sys_created_by>DWU20</sys_created_by>
@@ -53,7 +53,7 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>86e11a2f1b3ed554e314c955624bcb92</sys_id>
-        <sys_mod_count>21</sys_mod_count>
+        <sys_mod_count>42</sys_mod_count>
         <sys_name>set certificate installed on</sys_name>
         <sys_overrides/>
         <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
@@ -62,7 +62,7 @@
         <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
         <sys_update_name>catalog_script_client_86e11a2f1b3ed554e314c955624bcb92</sys_update_name>
         <sys_updated_by>DWU20</sys_updated_by>
-        <sys_updated_on>2022-11-10 16:21:01</sys_updated_on>
+        <sys_updated_on>2023-01-23 18:45:29</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>

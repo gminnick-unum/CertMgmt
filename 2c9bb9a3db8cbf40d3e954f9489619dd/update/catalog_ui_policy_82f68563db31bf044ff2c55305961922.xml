@@ -6,7 +6,7 @@
         <applies_sc_task>true</applies_sc_task>
         <applies_target_record>false</applies_target_record>
         <applies_to>set</applies_to>
-        <catalog_conditions>IO:137f3c73db19bf484ff2c553059619dc=external_update^ORIO:137f3c73db19bf484ff2c553059619dc=internal_update^ORIO:137f3c73db19bf484ff2c553059619dc=AWS Internal Certificate – Renew Existing^ORIO:137f3c73db19bf484ff2c553059619dc=AWS External Certificate – Renew Existing^ORIO:137f3c73db19bf484ff2c553059619dc=AWS Generated Certificate – Renew Existing^ORIO:137f3c73db19bf484ff2c553059619dc=AWS Certificate Deletion^EQ</catalog_conditions>
+        <catalog_conditions>IO:137f3c73db19bf484ff2c553059619dc=external_update^ORIO:137f3c73db19bf484ff2c553059619dc=internal_update^ORIO:137f3c73db19bf484ff2c553059619dc=AWS Internal Certificate – Renew Existing^ORIO:137f3c73db19bf484ff2c553059619dc=AWS External Certificate – Renew Existing^ORIO:137f3c73db19bf484ff2c553059619dc=AWS Generated Certificate – Renew Existing^ORIO:137f3c73db19bf484ff2c553059619dc=AWS Certificate Deletion^ORIO:137f3c73db19bf484ff2c553059619dc=cancel_certificate^EQ</catalog_conditions>
         <catalog_item/>
         <conditions/>
         <description/>
@@ -33,7 +33,7 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>82f68563db31bf044ff2c55305961922</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>If Request is for Existing Force Select of Existing</sys_name>
         <sys_overrides/>
         <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
@@ -42,7 +42,7 @@
         <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
         <sys_update_name>catalog_ui_policy_82f68563db31bf044ff2c55305961922</sys_update_name>
         <sys_updated_by>DWU20</sys_updated_by>
-        <sys_updated_on>2022-11-10 16:01:03</sys_updated_on>
+        <sys_updated_on>2023-01-06 16:30:58</sys_updated_on>
         <table/>
         <ui_type>0</ui_type>
         <variable_set display_value="Certificate Request">afcc3037dbd5bf484ff2c553059619c1</variable_set>
