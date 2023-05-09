@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
+    <sys_script_fix action="INSERT_OR_UPDATE">
+        <before>false</before>
+        <description/>
+        <name>ENHC0014723  - Populate Cert to App M2M</name>
+        <record_for_rollback>true</record_for_rollback>
+        <script><![CDATA[populate();
+
+function populate(){
+	var grCert = new GlideRecord('x_unugr_certificat_digital_certificate');
+	grCert.addNotNullQuery('associated_applications');
+	grCert.query();
+	while(grCert.next()){
+		var currentApps = grCert.associated_applications.split(',');		
+		var certSys = grCert.sys_id.toString();
+
+		for(var i = 0; i < currentApps.length; i++){
+			var grM2M = new GlideRecord('x_unugr_certificat_m2m_unum_applica_digital_cert');
+			grM2M.addQuery('digital_certificate', certSys)
+			grM2M.addQuery('unum_application', currentApps[i])
+			grM2M.query();
+			if(!grM2M.next()){
+				grM2M.initialize();
+				grM2M.setValue('digital_certificate', certSys)
+				grM2M.setValue('unum_application', currentApps[i]);
+				grM2M.insert();
+			}
+		}
+	}
+}]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>ADI13</sys_created_by>
+        <sys_created_on>2023-04-12 16:02:23</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>bc7413531b8a6510e314c955624bcb33</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>ENHC0014723  - Populate Cert to App M2M</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sys_script_fix_bc7413531b8a6510e314c955624bcb33</sys_update_name>
+        <sys_updated_by>ADI13</sys_updated_by>
+        <sys_updated_on>2023-04-18 15:48:25</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+</record_update>

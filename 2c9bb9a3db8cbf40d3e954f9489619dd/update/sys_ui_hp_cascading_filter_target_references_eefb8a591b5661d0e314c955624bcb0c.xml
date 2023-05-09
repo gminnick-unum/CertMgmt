@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_hp_cascading_filter_target_references">
+    <sys_ui_hp_cascading_filter_target_references action="INSERT_OR_UPDATE">
+        <cascading_filter display_value="Applications">65cbc2191b5661d0e314c955624bcbe2</cascading_filter>
+        <filter_field>associated_applications</filter_field>
+        <sys_class_name>sys_ui_hp_cascading_filter_target_references</sys_class_name>
+        <sys_created_by>ADI13</sys_created_by>
+        <sys_created_on>2023-04-18 15:51:02</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>eefb8a591b5661d0e314c955624bcb0c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>associated_applications</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sys_ui_hp_cascading_filter_target_references_eefb8a591b5661d0e314c955624bcb0c</sys_update_name>
+        <sys_updated_by>ADI13</sys_updated_by>
+        <sys_updated_on>2023-04-18 15:51:02</sys_updated_on>
+        <target_table>x_unugr_certificat_digital_certificate</target_table>
+    </sys_ui_hp_cascading_filter_target_references>
+</record_update>

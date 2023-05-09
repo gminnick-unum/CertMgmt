@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_hp_reference">
+    <sys_ui_hp_reference action="INSERT_OR_UPDATE">
+        <publisher_reference display_value="Associated Applications">3a832530478e6954cfd71347e26d4324</publisher_reference>
+        <reference_field>unum_application</reference_field>
+        <reference_table>x_unugr_certificat_m2m_unum_applica_digital_cert</reference_table>
+        <sys_class_name>sys_ui_hp_reference</sys_class_name>
+        <sys_created_by>ADI13</sys_created_by>
+        <sys_created_on>2023-04-24 14:02:13</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>869c6c1b1bd6a59413217591dd4bcb0f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>3a832530478e6954cfd71347e26d4324</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sys_ui_hp_reference_869c6c1b1bd6a59413217591dd4bcb0f</sys_update_name>
+        <sys_updated_by>ADI13</sys_updated_by>
+        <sys_updated_on>2023-04-24 14:02:13</sys_updated_on>
+    </sys_ui_hp_reference>
+</record_update>
