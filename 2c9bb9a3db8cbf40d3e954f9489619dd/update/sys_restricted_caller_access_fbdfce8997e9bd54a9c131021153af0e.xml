@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_restricted_caller_access">
+    <sys_restricted_caller_access action="INSERT_OR_UPDATE">
+        <description/>
+        <operation>execute</operation>
+        <rca_type>real_rca</rca_type>
+        <source/>
+        <source_scope display_value="Global">global</source_scope>
+        <source_table>sys_ui_page</source_table>
+        <source_type>15</source_type>
+        <status>2</status>
+        <sys_class_name>sys_restricted_caller_access</sys_class_name>
+        <sys_created_by>GGL21</sys_created_by>
+        <sys_created_on>2023-09-26 10:53:12</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>fbdfce8997e9bd54a9c131021153af0e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>2c9bb9a3db8cbf40d3e954f9489619dd</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sys_restricted_caller_access_fbdfce8997e9bd54a9c131021153af0e</sys_update_name>
+        <sys_updated_by>GGL21</sys_updated_by>
+        <sys_updated_on>2023-09-26 10:53:12</sys_updated_on>
+        <target>6d74cc76dbf38d5047241fb74896193c</target>
+        <target_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</target_scope>
+        <target_table>sys_script_include</target_table>
+        <target_type>2</target_type>
+    </sys_restricted_caller_access>
+</record_update>
