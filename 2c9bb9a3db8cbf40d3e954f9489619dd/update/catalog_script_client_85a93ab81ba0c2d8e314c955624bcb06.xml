@@ -32,14 +32,14 @@
         g_form.removeOption('request_type', 'internal_new');
         g_form.removeOption('request_type', 'internal_update');
         g_form.removeOption('request_type', 'cancel_certificate');
-		g_form.addOption('request_type', 'AWS Internal Certificate – New', 'AWS Internal Certificate – New');
-        g_form.addOption('request_type', 'AWS Internal Certificate – Renew Existing', 'AWS Internal Certificate – Renew Existing');
-        g_form.addOption('request_type', 'AWS External Certificate – New', 'AWS External Certificate – New');
-        g_form.addOption('request_type', 'AWS External Certificate – Renew Existing', 'AWS External Certificate – Renew Existing');
-        g_form.addOption('request_type', 'AWS Generated Certificate – New', 'AWS Generated Certificate – New');
-        g_form.addOption('request_type', 'AWS Generated Certificate – Renew Existing', 'AWS Generated Certificate – Renew Existing');
+		g_form.addOption('request_type', 'AWS Internal Certificate – New', "Internal Certificate for AWS – New (UNUM Certificate Authority)");
+        g_form.addOption('request_type', 'AWS Internal Certificate – Renew Existing', "Internal Certificate for AWS – Renew (UNUM Certificate Authority)");
+        g_form.addOption('request_type', 'AWS External Certificate – New', "External Certificate for AWS – New (External Certificate Authority)");
+        g_form.addOption('request_type', 'AWS External Certificate – Renew Existing', "External Certificate for AWS – Renew (External Certificate Authority)");
+        g_form.addOption('request_type', 'AWS Generated Certificate – New', "Amazon Issued Certificate – New");
+        g_form.addOption('request_type', 'AWS Generated Certificate – Renew Existing', "Amazon Issued Certificate – Renewal");
         g_form.addOption('request_type', 'AWS Certificate Deletion', 'AWS Certificate Deletion');
-        g_form.setMandatory('request_type',true);
+    
     }
    if (newValue == 'Other') {
         g_form.removeOption('request_type', 'AWS Internal Certificate – New');
@@ -64,7 +64,7 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>85a93ab81ba0c2d8e314c955624bcb06</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>popuate Reuqest type Dropdown</sys_name>
         <sys_overrides/>
         <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
@@ -73,7 +73,7 @@
         <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
         <sys_update_name>catalog_script_client_85a93ab81ba0c2d8e314c955624bcb06</sys_update_name>
         <sys_updated_by>DDK18</sys_updated_by>
-        <sys_updated_on>2024-02-21 23:08:15</sys_updated_on>
+        <sys_updated_on>2024-03-19 17:50:30</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>
