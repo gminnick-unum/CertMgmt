@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="ml_capability_definition_clustering">
+    <ml_capability_definition_clustering action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <cal_purity>true</cal_purity>
+        <capability display_value="Workflow Clustering">3e25a0a4eb111110f4e8dc7ab55228f1</capability>
+        <cluster_concept_fields/>
+        <cluster_concept_type/>
+        <create_ci_table>true</create_ci_table>
+        <current_solution_version/>
+        <dataset_language>en</dataset_language>
+        <fields>short_description,assignment_group</fields>
+        <filter/>
+        <group_unclustered_rec>false</group_unclustered_rec>
+        <min_records>2</min_records>
+        <pretrained>false</pretrained>
+        <purity_fields/>
+        <request_source>api</request_source>
+        <segmentation_field/>
+        <solution_label>Service Requests for the past 6 months</solution_label>
+        <solution_name>ml_x_unugr_x_unugr_certificat_global_service_requests_for_the_past_6_months</solution_name>
+        <solution_parameters/>
+        <solution_properties>{"calculatePurity":true,"clusterConcept":"","clusterConceptFieldNames":[],"createClusterInsights":true,"datasetProperties":{"tableName":"sc_req_item","fieldNames":["short_description","assignment_group","sys_id","sys_created_on"],"maxRowLimit":300000.0,"fetchDisplayValue":false},"description":"Workflow Clustering","inputFieldNames":["short_description","assignment_group"],"label":"Service Requests for the past 6 months","minRecordsPerCluster":2,"name":"ml_x_unugr_x_unugr_certificat_global_service_requests_for_the_past_6_months","processingLanguage":"en","purityFieldNames":[],"schedulingInfo":{"useCase":"workflow_clustering_trainer"},"stopwords":["Default English Stopwords"],"tags":["Clustering","Workflow"],"trainingFrequency":"every_30_days","trainingPipeline":{"pipelineName":"clustering_pipeline_kmeans_generic_preprocessor_v23","pipelineInput":{"datasets":{"incidents":{"tableName":"sc_req_item","fieldNames":["short_description","assignment_group","sys_id","sys_created_on"],"maxRowLimit":300000.0,"fetchDisplayValue":false}},"config":{"cluster_concept_type":"","group_unclustered_records":false,"min_records":2.0,"language":"en","calculate_purity":true,"group_by_fields":[],"features":["short_description","assignment_group"],"algorithm_type":"KMEANS","save_stem":true,"lookup_table":"sc_req_item","purity_fields":[],"cluster_concept_fields":[],"push_stats_artifact":false,"stopwords":"a, about, above, after, again, against, all, am, an, and, any, are, as, at, b, be, because, been, before, being, below, between, both, but, by, c, can, could, d, did, do, does, doing, down, during, e, each, f, few, for, from, further, g, h, had, has, have, having, he, he\u0027d, he\u0027ll, he\u0027s, her, here, here\u0027s, hers, herself, him, himself, his, how, how\u0027s, i, i\u0027d, i\u0027ll, i\u0027m, i\u0027ve, if, in, into, is, it, it\u0027s, its, itself, j, k, l, let\u0027s, m, me, more, most, my, myself, n, no, nor, not, o, of, off, on, once, only, or, other, ought, our, ours , ourselves, out, over, own, p, q, r, s, same, she, she\u0027d, she\u0027ll, she\u0027s, should, so, some, such, t, than, that, that\u0027s, the, their, theirs, them, themselves, then, there, there\u0027s, these, they, they\u0027d, they\u0027ll, they\u0027re, they\u0027ve, this, those, through, to, too, u, under, until, up, v, very, w, was, we, we\u0027d, we\u0027ll, we\u0027re, we\u0027ve, were, what, what\u0027s, when, when\u0027s, where, where\u0027s, which, while, who, who\u0027s, whom, why, why\u0027s, with, would, x, y, you, you\u0027d, you\u0027ll, you\u0027re, you\u0027ve, your, yours, yourself, yourselves, z, return, hes, heres, hows, im, its, lets, shes, thats, theres, theyll, theyre, theyve, were, whats, whens, wheres, whos, whys, youd, youll, youre, youve, -lrb-, -rrb-, -lsb-, -rsb-, \u0027ll, \u0027s, \u0027m"}}},"triggered_source":"UI","updateFrequency":"do_not_update","workflowConfiguration":{}}</solution_properties>
+        <stopwords>a6282a25533333008c5bddeeff7b12c3</stopwords>
+        <sys_class_name>ml_capability_definition_clustering</sys_class_name>
+        <sys_created_by>DEZ20</sys_created_by>
+        <sys_created_on>2024-09-09 18:03:37</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>d5744da993a8d618ae59394a6aba10ac</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Service Requests for the past 6 months</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>ml_capability_definition_clustering_d5744da993a8d618ae59394a6aba10ac</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-09-09 18:03:39</sys_updated_on>
+        <table>sc_req_item</table>
+        <training_frequency>run_once</training_frequency>
+        <triggered_source>UI</triggered_source>
+        <update_frequency>do_not_update</update_frequency>
+        <use_segmentation>false</use_segmentation>
+        <word_vector_corpus/>
+    </ml_capability_definition_clustering>
+</record_update>
