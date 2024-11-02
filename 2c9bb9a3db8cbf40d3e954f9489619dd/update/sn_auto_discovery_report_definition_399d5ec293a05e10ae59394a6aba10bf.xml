@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_auto_discovery_report_definition">
+    <sn_auto_discovery_report_definition action="INSERT_OR_UPDATE">
+        <closed_column>closed_at</closed_column>
+        <cluster_records>true</cluster_records>
+        <current_stage>1</current_stage>
+        <distribution_column>priority</distribution_column>
+        <field>short_description</field>
+        <filter table="ticket">assignment_group=a08ca9badb887f00054ba9f705961939<item display_table="sys_user_group" display_value="Customer Experience Center" endquery="false" field="assignment_group" goto="false" newquery="false" operator="=" or="false" value="a08ca9badb887f00054ba9f705961939"/>
+        </filter>
+        <group_field>category</group_field>
+        <integration/>
+        <model>ITSM</model>
+        <name>Customer Experience Center - Adhoc</name>
+        <opened_column>opened_at</opened_column>
+        <rule_based_model_id/>
+        <solution_definition/>
+        <status>solution_error</status>
+        <sys_class_name>sn_auto_discovery_report_definition</sys_class_name>
+        <sys_created_by>DEZ20</sys_created_by>
+        <sys_created_on>2024-09-11 13:46:36</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>399d5ec293a05e10ae59394a6aba10bf</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>1</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sn_auto_discovery_report_definition_399d5ec293a05e10ae59394a6aba10bf</sys_update_name>
+        <sys_updated_by>sharedservice.worker</sys_updated_by>
+        <sys_updated_on>2024-09-11 14:00:27</sys_updated_on>
+        <table>ticket</table>
+        <training_frequency>run_once</training_frequency>
+        <user_fields>state,contact_type,assignment_group,opened_at,closed_at,sys_updated_on</user_fields>
+        <watch_list/>
+    </sn_auto_discovery_report_definition>
+</record_update>
