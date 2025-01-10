@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="ecc_agent_script_file">
+    <ecc_agent_script_file action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <checksum>VAmAfDp7ZRBYvJxybwyLvw==</checksum>
+        <description/>
+        <directory>false</directory>
+        <name>getF5CertificateInformation.ps1</name>
+        <parent display_value="PowerShell">ef89e4fc372001006b882d465abe5d60</parent>
+        <script>Add-PSSnapin -Name iControlSnapIn -ErrorAction SilentlyContinue&#13;
+	#region input variables&#13;
+	&#13;
+	if (Test-Path env:\SNC_f5Host) {&#13;
+		$f5Host = $env:SNC_f5Host&#13;
+		$f5UserId = $env:SNC_f5UserId&#13;
+		$f5UserPassword = $env:SNC_f5UserPassword&#13;
+		$expiredDaysThreshold = $env:SNC_expiredDaysThreshold&#13;
+	}&#13;
+	&#13;
+	#endregion input variables&#13;
+&#13;
+	$daysExpired = -$expiredDaysThreshold&#13;
+	&#13;
+	#region F5 iControl Constants&#13;
+	#Constants&#13;
+	$MANAGEMENT_MODE_DEFAULT = 0&#13;
+	$MANAGEMENT_MODE_WEBSERVER = 1&#13;
+	$MANAGEMENT_MODE_EM = 2&#13;
+	$MANAGEMENT_MODE_IQUERY = 3&#13;
+	$MANAGEMENT_MODE_IQUERY_BIG3D = 4&#13;
+	#endregion F5 iControl Constants&#13;
+&#13;
+	#region initalize internal vars&#13;
+	$errorOccured 					= $false;&#13;
+	$errorString					= "";&#13;
+	&#13;
+	#endregion initalize internal vars&#13;
+	&#13;
+	#region system variables for extended error reporting&#13;
+&#13;
+	$ReportErrorShowExceptionClass	= 1;&#13;
+	$ReportErrorShowInnerException	= 1;&#13;
+	$ReportErrorShowSource 			= 1;&#13;
+	$ReportErrorShowStackTrace 		= 1;&#13;
+	#system variable must be set to stop to catch &#13;
+	#external invoke errors.&#13;
+	$ErrorActionPreference 			= "stop";&#13;
+&#13;
+	#endregion system variables for extended error reporting&#13;
+&#13;
+	function getStringConvertedDate&#13;
+	{&#13;
+		Param(&#13;
+		    [Parameter()][string]$stringToConvert&#13;
+			)		&#13;
+&#13;
+		$dateArray = $stringToConvert.split(' ')&#13;
+&#13;
+		$newString = ''&#13;
+&#13;
+		foreach($element in $dateArray) {&#13;
+			if($element.Length -ne 0 -and $element.Length -ne 8 -and $element -ne " " -and $element -ne "GMT"){&#13;
+				$len = $element.Length&#13;
+				$newString += $element + ' '&#13;
+			}&#13;
+		}&#13;
+&#13;
+		return $newString&#13;
+&#13;
+	}&#13;
+&#13;
+&#13;
+	try&#13;
+	{&#13;
+		$result = Initialize-F5.iControl -Hostname $f5Host -username $f5UserId -Password $f5UserPassword&#13;
+&#13;
+&#13;
+		$f5Interface = Get-F5.iControl&#13;
+&#13;
+		$f5Certificates = ($f5Interface).ManagementKeyCertificate.get_certificate_list($MANAGEMENT_MODE_DEFAULT);&#13;
+&#13;
+		$f5CertArray = @()&#13;
+&#13;
+		$currentDateTime = Get-Date -UFormat "%m/%d/%Y"&#13;
+		$rowID = 0;&#13;
+&#13;
+		for($i=0; $i -le $f5Certificates.count - 1; $i++) {&#13;
+&#13;
+		   $expireDateGMT = $f5Certificates[$i].certificate.expiration_string; &#13;
+		   $certdate1 = getStringConvertedDate $expireDateGMT &#13;
+		   [datetime]$expireExactDate = $certdate1&#13;
+		   $daysUntilExpire = ($expireExactDate - [datetime]$currentDateTime).TotalDays &#13;
+			&#13;
+			if($daysUntilExpire -gt $daysExpired -and $f5Certificates[$i].certificate.serial_number -ne $null -and ($f5Certificates[$i].certificate.serial_number).length -ne 0 -and $f5Certificates[$i].certificate.subject.common_name -ne 'localhost.localdomain' ) {&#13;
+				$rowID += 1;&#13;
+				$isBundled = ($f5Certificates[$i]).is_bundled&#13;
+				&#13;
+				if($isBundled) {&#13;
+					[String[]]$fileName = ($f5Certificates[$i]).file_name&#13;
+					$f5CertficateListSan = ($f5Interface).ManagementKeyCertificate.get_certificate_subject_alternative_name_bundle($MANAGEMENT_MODE_DEFAULT,$fileName)&#13;
+					$sansArrayTemp = $f5CertficateListSan.Split(",",[System.StringSplitOptions]::RemoveEmptyEntries)&#13;
+					$sansArray = $sansArrayTemp | Where-Object {$_ -notlike '*&lt;Unsupported&gt;*'} | Where-Object {$_ -NotLike 'email:*' -and $_ -NotLike ' email*'}&#13;
+					$sansString = $sansArray | Out-String&#13;
+				}&#13;
+				$scannedCertificate = New-Object -TypeName PSCustomObject&#13;
+				&#13;
+				$scannedCertificate | Add-Member -MemberType NoteProperty -Name "RowID" -Value $rowID -Force&#13;
+				$scannedCertificate | Add-Member -MemberType NoteProperty -Name "CertificateType" -Value ($f5Certificates[$i].certificate.cert_type).toString() -Force&#13;
+				$scannedCertificate | Add-Member -MemberType NoteProperty -Name "ExpirationDateGMT" -Value $expireDateGMT -Force&#13;
+				$scannedCertificate | Add-Member -MemberType NoteProperty -Name "ExpirationDateExact" -Value ($expireExactDate).toString() -Force&#13;
+				$scannedCertificate | Add-Member -MemberType NoteProperty -Name "KeyType" -Value ($f5Certificates[$i].certificate.key_type).toString() -Force&#13;
+				$scannedCertificate | Add-Member -MemberType NoteProperty -Name "BitLength" -Value $f5Certificates[$i].certificate.bit_length -Force&#13;
+				$scannedCertificate | Add-Member -MemberType NoteProperty -Name "SerialNumber" -Value ($f5Certificates[$i].certificate.serial_number).replace(':','') -Force&#13;
+				$scannedCertificate | Add-Member -MemberType NoteProperty -Name "SubjectCommonName" -Value $f5Certificates[$i].certificate.subject.common_name -Force&#13;
+				$scannedCertificate | Add-Member -MemberType NoteProperty -Name "SubjectOrganization" -Value $f5Certificates[$i].certificate.subject.organization_name -Force&#13;
+				$scannedCertificate | Add-Member -MemberType NoteProperty -Name "IssuerCommonName" -Value $f5Certificates[$i].certificate.issuer.common_name -Force&#13;
+				$scannedCertificate | Add-Member -MemberType NoteProperty -Name "IssuerOrganization" -Value $f5Certificates[$i].certificate.issuer.organization_name -Force&#13;
+				$scannedCertificate | Add-Member -MemberType NoteProperty -Name "SANs" -Value $sansString -Force&#13;
+&#13;
+				$f5CertArray += $scannedCertificate&#13;
+			}&#13;
+&#13;
+		}&#13;
+&#13;
+&#13;
+		$f5CertificateObject = New-Object PSCustomObject &#13;
+		$f5CertificateObject | Add-Member -type NoteProperty -Name f5Certificates -Value $f5CertArray&#13;
+&#13;
+		$jsonf5CertificateObject = $f5CertificateObject | ConvertTo-Json &#13;
+		$jsonf5CertificateObject = $jsonf5CertificateObject | ConvertTo-Json -Compress&#13;
+		&#13;
+	}&#13;
+	catch [System.Management.Automation.ActionPreferenceStopException]&#13;
+	{&#13;
+		$errorOccured = $true;&#13;
+		$errorString = $error[0].Exception.Message;&#13;
+		$errorCode = -1&#13;
+	}&#13;
+	catch [System.Exception]&#13;
+	{&#13;
+		$errorOccured = $true;&#13;
+		$errorString = $error[0].Exception.Message;&#13;
+		$errorCode = -1&#13;
+&#13;
+	}&#13;
+	finally &#13;
+	{&#13;
+		if ($errorOccured -eq $true)&#13;
+		{&#13;
+    		SNCLog-DebugInfo "`t getF5CertificateInformation failed error: $error"&#13;
+    		[Console]::Error.WriteLine("The operation failed: " + $error.Message);&#13;
+			Write-Output $errorString&#13;
+		}&#13;
+		else&#13;
+		{&#13;
+			Write-Host $jsonf5CertificateObject&#13;
+		}&#13;
+		&#13;
+	}	&#13;
+	</script>
+        <script_attachment/>
+        <source/>
+        <sys_class_name>ecc_agent_script_file</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-06-12 16:07:26</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>5d546d74db4673844ff2c553059619f8</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>getF5CertificateInformation.ps1</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>ecc_agent_script_file_5d546d74db4673844ff2c553059619f8</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-06-03 04:37:08</sys_updated_on>
+        <use_attachment>false</use_attachment>
+        <version/>
+    </ecc_agent_script_file>
+</record_update>

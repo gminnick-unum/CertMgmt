@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m">
+    <sys_properties_category_m2m action="INSERT_OR_UPDATE">
+        <category display_value="Notification Events">01b6d798db6d73c8d3e954f948961993</category>
+        <order>800</order>
+        <property display_value="x_unugr_certificat.cert.ownerchange.notifications.startDailyNotifify" name="x_unugr_certificat.cert.ownerchange.notifications.startDailyNotifify">deabf1f2dbfdf704d3e954f94896194e</property>
+        <sys_class_name>sys_properties_category_m2m</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-06-06 12:43:13</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>de3cf976dbfdf704d3e954f9489619ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_unugr_certificat.cert.ownerchange.notifications.startDailyNotifify.Notification Events</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sys_properties_category_m2m_de3cf976dbfdf704d3e954f9489619ed</sys_update_name>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-06-06 12:43:13</sys_updated_on>
+    </sys_properties_category_m2m>
+</record_update>

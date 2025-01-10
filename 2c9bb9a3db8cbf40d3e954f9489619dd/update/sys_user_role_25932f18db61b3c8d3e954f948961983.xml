@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="INSERT_OR_UPDATE">
+        <assignable_by display_value="x_unugr_certificat.management.admin" name="x_unugr_certificat.management.admin">496683ffdb7e37404ff2c55305961989</assignable_by>
+        <can_delegate>true</can_delegate>
+        <description/>
+        <elevated_privilege>false</elevated_privilege>
+        <encryption_context/>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_unugr_certificat.cert_to_ci_viewer</name>
+        <scoped_admin>false</scoped_admin>
+        <suffix>cert_to_ci_viewer</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-05-17 15:35:27</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>25932f18db61b3c8d3e954f948961983</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_unugr_certificat.cert_to_ci_viewer</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sys_user_role_25932f18db61b3c8d3e954f948961983</sys_update_name>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-09-25 00:49:24</sys_updated_on>
+    </sys_user_role>
+</record_update>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_related sys_domain="global" table="x_unugr_certificat_digital_certificate" version="2" view="">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Digital Certificate - Default view" name="x_unugr_certificat_digital_certificate" related_list="NULL" sys_domain="global" view="Default view">0fbd8287dbcaffc44ff2c55305961918</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>x_unugr_certificat_m2m_servers_digital_cert.digital_certificate</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-06-19 18:53:54</sys_created_on>
+            <sys_id>4fbd8287dbcaffc44ff2c55305961919</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-06-19 18:53:54</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Digital Certificate - Default view" name="x_unugr_certificat_digital_certificate" related_list="NULL" sys_domain="global" view="Default view">0fbd8287dbcaffc44ff2c55305961918</list_id>
+            <order_by/>
+            <position>1</position>
+            <related_list>x_unugr_certificat_scan_ci_not_found.digital_certificate</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-06-19 18:53:54</sys_created_on>
+            <sys_id>0bbd8287dbcaffc44ff2c5530596191a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-06-19 18:53:54</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Digital Certificate - Default view" name="x_unugr_certificat_digital_certificate" related_list="NULL" sys_domain="global" view="Default view">0fbd8287dbcaffc44ff2c55305961918</list_id>
+            <order_by/>
+            <position>2</position>
+            <related_list>x_unugr_certificat_communication_history.u_certificate</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-06-19 18:53:54</sys_created_on>
+            <sys_id>8fbd8287dbcaffc44ff2c5530596191a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-06-19 18:53:54</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Digital Certificate - Default view" name="x_unugr_certificat_digital_certificate" related_list="NULL" sys_domain="global" view="Default view">0fbd8287dbcaffc44ff2c55305961918</list_id>
+            <order_by/>
+            <position>3</position>
+            <related_list>x_unugr_certificat_certificate_request.u_certificate</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-06-19 18:53:54</sys_created_on>
+            <sys_id>07bd8287dbcaffc44ff2c5530596191b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-06-19 18:53:54</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Digital Certificate - Default view" name="x_unugr_certificat_digital_certificate" related_list="NULL" sys_domain="global" view="Default view">0fbd8287dbcaffc44ff2c55305961918</list_id>
+            <order_by/>
+            <position>4</position>
+            <related_list>x_unugr_certificat_m2m_load_balance_digital_cert.digital_certificate</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-06-19 18:53:54</sys_created_on>
+            <sys_id>8bbd8287dbcaffc44ff2c5530596191b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-06-19 18:53:54</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Digital Certificate - Default view" name="x_unugr_certificat_digital_certificate" related_list="NULL" sys_domain="global" view="Default view">0fbd8287dbcaffc44ff2c55305961918</list_id>
+            <order_by/>
+            <position>5</position>
+            <related_list>x_unugr_certificat_m2m_unum_applica_digital_cert.digital_certificate</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-06-19 18:53:54</sys_created_on>
+            <sys_id>03bd8287dbcaffc44ff2c5530596191c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-06-19 18:53:54</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>Digital Certificate - Default view</calculated_name>
+            <filter/>
+            <name>x_unugr_certificat_digital_certificate</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-06-19 18:53:54</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_id>0fbd8287dbcaffc44ff2c55305961918</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Digital Certificate - Default view</sys_name>
+            <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+            <sys_update_name>sys_ui_related_x_unugr_certificat_digital_certificate_null</sys_update_name>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-06-19 18:53:54</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+</record_update>

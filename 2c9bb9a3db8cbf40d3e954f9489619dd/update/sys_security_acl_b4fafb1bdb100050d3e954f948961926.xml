@@ -3,11 +3,15 @@
         <active>true</active>
         <admin_overrides>true</admin_overrides>
         <advanced>false</advanced>
+        <applies_to/>
         <condition/>
+        <decision_type>allow</decision_type>
         <description/>
+        <local_or_existing>Local</local_or_existing>
         <name>x_unugr_certificat_m2m_servers_digital_cert</name>
         <operation display_value="list_edit">54f535270a0a0b8c007c67009ab2bdc0</operation>
         <script/>
+        <security_attribute/>
         <sys_class_name>sys_security_acl</sys_class_name>
         <sys_created_by>CHF03</sys_created_by>
         <sys_created_on>2019-10-10 17:51:59</sys_created_on>

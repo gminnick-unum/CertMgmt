@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="ecc_agent_script_file">
+    <ecc_agent_script_file action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <checksum>PeXd/VCDlgvm0Rlx6NNe/w==</checksum>
+        <description/>
+        <directory>false</directory>
+        <name>fetchQualysReport.ps1</name>
+        <parent display_value="PowerShell">ef89e4fc372001006b882d465abe5d60</parent>
+        <script>	#region input variables&#13;
+	if (Test-Path env:\SNC_qualysServer) {&#13;
+		$qualysServer = $env:SNC_qualysServer&#13;
+		$qualysReportId = $env:SNC_qualysReportId&#13;
+		$outputDirectory = $env:SNC_outputDirectory&#13;
+		$qualysUserName = $env:SNC_qualysUserName&#13;
+		$qualysPassword = $env:SNC_qualysPassword&#13;
+		$userName = $env:SNC_userName&#13;
+		$userDomain = $env:SNC_userDomain&#13;
+		$userPass = $env:SNC_userPass&#13;
+		}        &#13;
+    #endregion input variables&#13;
+&#13;
+function Set-Impersonation&#13;
+{&#13;
+	Param(&#13;
+	    [Parameter(ParameterSetName="ClearText", Mandatory=$true)][string]$Username,&#13;
+	    [Parameter(ParameterSetName="ClearText", Mandatory=$true)][string]$Domain,&#13;
+	    [Parameter(ParameterSetName="ClearText", Mandatory=$true)][string]$Password,&#13;
+	    [Parameter(ParameterSetName="Credential", Mandatory=$true, Position=0)][PSCredential]$Credential,&#13;
+	    [Parameter()][Switch]$Quiet&#13;
+	)&#13;
+&#13;
+#Import the LogonUser Function from advapi32.dll and the CloseHandle Function from kernel32.dll&#13;
+Add-Type -Namespace Import -Name Win32 -MemberDefinition @'&#13;
+    [DllImport("advapi32.dll", SetLastError = true)]&#13;
+    public static extern bool LogonUser(string user, string domain, string password, int logonType, int logonProvider, out IntPtr token);&#13;
+&#13;
+    [DllImport("kernel32.dll", SetLastError = true)]&#13;
+    public static extern bool CloseHandle(IntPtr handle);&#13;
+'@&#13;
+&#13;
+#Set Global variable to hold the Impersonation after it is created so it may be ended after script run&#13;
+$Global:ImpersonatedUser = @{}&#13;
+#Initialize handle variable so that it exists to be referenced in the LogonUser method&#13;
+$tokenHandle = 0&#13;
+&#13;
+#Pass the PSCredentials to the variables to be sent to the LogonUser method&#13;
+if ($Credential) {&#13;
+    Get-Variable Username, Domain, Password | ForEach-Object {&#13;
+        Set-Variable $_.Name -Value $Credential.GetNetworkCredential().$($_.Name)}&#13;
+}&#13;
+&#13;
+#Call LogonUser and store its success.  [ref]$tokenHandle is used to store the token "out IntPtr token" from LogonUser.&#13;
+$returnValue = [Import.Win32]::LogonUser($Username, $Domain, $Password, 2, 0, [ref]$tokenHandle)&#13;
+&#13;
+#If it fails, throw the verbose with the error code&#13;
+if (!$returnValue) {&#13;
+    $errCode = [System.Runtime.InteropServices.Marshal]::GetLastWin32Error();&#13;
+	if (!$Quiet) {&#13;
+    	Write-Host "Impersonate-User failed a call to LogonUser with error code: $errCode"&#13;
+	}&#13;
+    throw [System.ComponentModel.Win32Exception]$errCode&#13;
+}&#13;
+#Successful token stored in $tokenHandle&#13;
+else {&#13;
+    #Call the Impersonate method with the returned token. An ImpersonationContext is returned and stored in the&#13;
+    #Global variable so that it may be used after script run.&#13;
+    $Global:ImpersonatedUser.ImpersonationContext = [System.Security.Principal.WindowsIdentity]::Impersonate($tokenHandle)&#13;
+    &#13;
+    #Close the handle to the token. Voided to mask the Boolean return value.&#13;
+    [void][Import.Win32]::CloseHandle($tokenHandle)&#13;
+&#13;
+    #Write the current user to ensure Impersonation worked and to remind user to revert back when finished.&#13;
+    if (!$Quiet) {&#13;
+        Write-Host "You are now impersonating user $([System.Security.Principal.WindowsIdentity]::GetCurrent().Name)"&#13;
+        Write-Host "It is very important that you call Remove-ImpersonateUser when finished to revert back to your user." `&#13;
+            -ForegroundColor DarkYellow -BackgroundColor Black&#13;
+    }&#13;
+}&#13;
+&#13;
+#Clean up sensitive variables&#13;
+$Username = $Domain = $Password = $Credential = $null&#13;
+}&#13;
+&#13;
+#Function put in the Global scope to be used when Impersonation is finished.&#13;
+Function Global:Remove-ImpersonateUser {&#13;
+    &lt;#&#13;
+    .SYNOPSIS&#13;
+    Used to revert back to the orginal user after New-ImpersonateUser is called. You can only call this function once; it is deleted after it runs.&#13;
+&#13;
+    .INPUTS&#13;
+    None.  You cannot pipe objects to Remove-ImpersonateUser&#13;
+&#13;
+    .OUTPUTS&#13;
+    None.  Remove-ImpersonateUser does not generate any output.&#13;
+    #&gt;&#13;
+&#13;
+    #Calling the Undo method reverts back to the original user.&#13;
+    $ImpersonatedUser.ImpersonationContext.Undo()&#13;
+&#13;
+    #Clean up the Global variable and the function itself.&#13;
+    Remove-Variable ImpersonatedUser -Scope Global&#13;
+    Remove-Item Function:\Remove-ImpersonateUser&#13;
+}&#13;
+&#13;
+&#13;
+&#13;
+	#region initalize internal vars&#13;
+	$errorOccured 					= $false;&#13;
+    $errorString					= "";&#13;
+    $errorCode                      = 0;&#13;
+	&#13;
+	#endregion initalize internal vars&#13;
+	&#13;
+	#region system variables for extended error reporting&#13;
+&#13;
+	$ReportErrorShowExceptionClass	= 1;&#13;
+	$ReportErrorShowInnerException	= 1;&#13;
+	$ReportErrorShowSource 			= 1;&#13;
+	$ReportErrorShowStackTrace 		= 1;&#13;
+	#system variable must be set to stop to catch &#13;
+	#external invoke errors.&#13;
+	$ErrorActionPreference 			= "stop";&#13;
+&#13;
+	#endregion system variables for extended error reporting&#13;
+&#13;
+	try&#13;
+	{&#13;
+               [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12&#13;
+&#13;
+		Set-Impersonation -Username $Username -Domain $userDomain -Password $userPass -Quiet&#13;
+&#13;
+		$baseFileName = 'QualysScanReport_[DATETIME].csv'&#13;
+		$fileName = $baseFileName.replace('[DATETIME]',(Get-Date -Format "MM-dd-yyyy"))&#13;
+&#13;
+		$outFileFullPath = $outputDirectory + $fileName&#13;
+		&#13;
+		$authInfo = [System.Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes("$qualysUserName`:$qualysPassword"))&#13;
+&#13;
+		$headers = @{"X-Requested-With"="powershell";"Authorization"="Basic $authInfo"}&#13;
+&#13;
+&#13;
+		$uriFetch = "https://$qualysServer/api/2.0/fo/report/?action=fetch&amp;id=$qualysReportId "&#13;
+&#13;
+		$fetchResponse = Invoke-RestMethod -Headers $headers -Uri $uriFetch -Method post -OutFile $outFileFullPath&#13;
+&#13;
+		#Delete The Report&#13;
+		$uriDeleteReport = "https://$qualysServer/api/2.0/fo/report/?action=delete&amp;id=$qualysReportId"&#13;
+&#13;
+		$deleteResponse = Invoke-RestMethod -Headers $headers -Uri $uriDeleteReport -Method post &#13;
+		&#13;
+		$reportStatus = $deleteResponse.SIMPLE_RETURN.RESPONSE.TEXT&#13;
+		$reportID = $deleteResponse.SIMPLE_RETURN.RESPONSE.ITEM_LIST.ITEM.VALUE&#13;
+		&#13;
+		$reportResult = New-Object -TypeName PSCustomObject&#13;
+		$reportResult | Add-Member -MemberType NoteProperty -Name "Status" -Value $reportStatus -Force&#13;
+		$reportResult | Add-Member -MemberType NoteProperty -Name "ReportId" -Value $reportID -Force&#13;
+		$reportResult | Add-Member -MemberType NoteProperty -Name "ReportPath" -Value $outputDirectory -Force&#13;
+		$reportResult | Add-Member -MemberType NoteProperty -Name "ReportName" -Value $fileName -Force&#13;
+&#13;
+		$fetchReportResults = New-Object PSCustomObject &#13;
+		$fetchReportResults | Add-Member -type NoteProperty -Name launchResult -Value $reportResult&#13;
+&#13;
+		$jsonFetchReport = $fetchReportResults | ConvertTo-Json &#13;
+		&#13;
+		&#13;
+	}&#13;
+	catch [System.Management.Automation.ActionPreferenceStopException]&#13;
+	{&#13;
+		$errorOccured = $true;&#13;
+		$errorString = $error[0].Exception.Message;&#13;
+		$errorCode = -1&#13;
+	}&#13;
+	catch [System.Exception]&#13;
+	{&#13;
+		$errorOccured = $true;&#13;
+		$errorString = $error[0].Exception.Message;&#13;
+		$errorCode = -1&#13;
+&#13;
+	}&#13;
+	finally &#13;
+	{&#13;
+		if ($errorOccured -eq $true)&#13;
+		{&#13;
+    		SNCLog-DebugInfo "`t Failed to QualysReport : $error"&#13;
+    		[Console]::Error.WriteLine("The operation failed: " + $errorString);&#13;
+			Write-Host $errorString&#13;
+		}&#13;
+		else&#13;
+		{&#13;
+			Write-Host $jsonFetchReport&#13;
+		}&#13;
+		&#13;
+		if($ImpersonatedUser.ImpersonationContext)&#13;
+		{&#13;
+			Remove-ImpersonateUser&#13;
+		}&#13;
+		&#13;
+	}	</script>
+        <script_attachment/>
+        <source/>
+        <sys_class_name>ecc_agent_script_file</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-06-04 20:33:30</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>c5d01d1edbf1fbc04ff2c55305961901</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>fetchQualysReport.ps1</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>ecc_agent_script_file_c5d01d1edbf1fbc04ff2c55305961901</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-06-03 04:37:14</sys_updated_on>
+        <use_attachment>false</use_attachment>
+        <version/>
+    </ecc_agent_script_file>
+</record_update>

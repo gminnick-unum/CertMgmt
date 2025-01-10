@@ -5,6 +5,8 @@
         <cleared>false</cleared>
         <disabled>ignore</disabled>
         <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
         <mandatory>true</mandatory>
         <order>100</order>
         <sys_class_name>catalog_ui_policy_action</sys_class_name>
@@ -22,7 +24,9 @@
         <sys_updated_by>CHF03</sys_updated_by>
         <sys_updated_on>2024-01-18 20:09:21</sys_updated_on>
         <table/>
-        <ui_policy display_value="Make Attachment Mandatory is CSR Selected">6b739bb91bf73950e314c955624bcb48</ui_policy>
+        <ui_policy display_value="Make Attachment Mandatory if CSR Selected">6b739bb91bf73950e314c955624bcb48</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
         <variable>csr_attachment</variable>
         <variable_set display_value="Certificate Request">afcc3037dbd5bf484ff2c553059619c1</variable_set>
         <visible>true</visible>

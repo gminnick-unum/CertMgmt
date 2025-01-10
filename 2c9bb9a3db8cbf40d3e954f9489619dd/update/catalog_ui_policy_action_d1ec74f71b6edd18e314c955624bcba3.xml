@@ -5,6 +5,8 @@
         <cleared>false</cleared>
         <disabled>ignore</disabled>
         <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
         <mandatory>true</mandatory>
         <order>100</order>
         <sys_class_name>catalog_ui_policy_action</sys_class_name>
@@ -23,6 +25,8 @@
         <sys_updated_on>2022-10-21 18:35:31</sys_updated_on>
         <table/>
         <ui_policy display_value="Display AWS account No and Name">a9c1e843db983450f75daca2ca9619bb</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
         <variable>certificate_installation_region</variable>
         <variable_set display_value="Certificate Request">afcc3037dbd5bf484ff2c553059619c1</variable_set>
         <visible>true</visible>

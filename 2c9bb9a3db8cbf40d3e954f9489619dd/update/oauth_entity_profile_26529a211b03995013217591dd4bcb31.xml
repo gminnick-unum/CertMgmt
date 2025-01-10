@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="oauth_entity_profile">
+    <oauth_entity_profile action="INSERT_OR_UPDATE">
+        <default>true</default>
+        <grant_type>authorization_code</grant_type>
+        <jwt_provider/>
+        <name>Salesforce Default Profile.11</name>
+        <oauth_entity display_value="Salesforce Spoke OAuth.11">6a529a211b03995013217591dd4bcb30</oauth_entity>
+        <saml2_assertion_producer/>
+        <sys_class_name>oauth_entity_profile</sys_class_name>
+        <sys_created_by>DWU20</sys_created_by>
+        <sys_created_on>2022-11-08 21:32:54</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>26529a211b03995013217591dd4bcb31</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Salesforce Default Profile.11</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>oauth_entity_profile_26529a211b03995013217591dd4bcb31</sys_update_name>
+        <sys_updated_by>DWU20</sys_updated_by>
+        <sys_updated_on>2022-11-08 21:32:54</sys_updated_on>
+    </oauth_entity_profile>
+</record_update>

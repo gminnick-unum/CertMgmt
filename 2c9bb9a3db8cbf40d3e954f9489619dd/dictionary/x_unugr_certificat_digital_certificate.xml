@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="audit_type=whitelist,hasLabels=true" audit="true" db_object_id="1462ef321b577b408591524d0d4bcb23" label="Digital Certificate" max_length="40" name="x_unugr_certificat_digital_certificate" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="IIS" max_length="40" name="u_inston_iis" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="AWS" max_length="40" name="u_inston_aws" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true,no_sort=true,slushbucket_ref_no_expand=true" label="Associated Applications" max_length="4000" name="associated_applications" reference="cmdb_ci_business_app" type="glide_list"/>
+        <element attributes="ref_contributions=show_oncall_group;pretty_on_call" label="Maintenance Group" max_length="32" name="maintenance_group" reference="sys_user_group" reference_qual="typeISEMPTY^ORtypeLIKE7b032f360f36f500fc3baf58b1050ef1^EQ" reference_qual_condition="typeISEMPTY^ORtypeLIKE7b032f360f36f500fc3baf58b1050ef1^EQ" type="reference"/>
+        <element attributes="edge_encryption_enabled=true,no_sort=true,slushbucket_ref_no_expand=true" label="Associated Servers" max_length="4000" name="u_associated_servers" reference="cmdb_ci_server" type="glide_list"/>
+        <element label="Signature Algorithm" max_length="40" name="u_signature_algorithm" type="string"/>
+        <element default="Internal" label="Source" max_length="20" name="u_source" type="string"/>
+        <element label="Certificate Store" max_length="32" name="u_store_location" reference="x_unugr_certificat_authority_servers" type="reference"/>
+        <element label="Subject" max_length="100" name="u_subject" type="string"/>
+        <element attributes="ignore_filter_on_new=true,ts_weight=50" default="javascript:getNextObjNumberPadded();" display="true" dynamic_default_value="fdcb83a85f220100a9ad2572f2b4773c" label="Number" max_length="40" name="number" read_only="true" type="string" use_dynamic_default="true"/>
+        <element attributes="audit=true,edge_encryption_enabled=true" audit="true" label="Active" max_length="40" name="u_active" type="boolean"/>
+        <element label="Certificate" max_length="4000" name="u_certificate" type="string"/>
+        <element attributes="audit=true" audit="true" label="Certificate Effective Date" max_length="40" name="u_certificate_effective_date" type="glide_date_time"/>
+        <element label="Certificate Template" max_length="250" name="u_certificate_template" type="string"/>
+        <element choice="3" default="Internal" label="Certificate Type" max_length="40" name="u_certificate_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="External" sequence="200" value="External"/>
+                <element inactive_on_update="false" label="Internal" sequence="100" value="Internal"/>
+            </choice>
+        </element>
+        <element label="Comments" max_length="4000" name="u_comments" type="string"/>
+        <element attributes="audit=true" audit="true" label="Common Name" max_length="256" name="u_common_name" type="string"/>
+        <element active="false" attributes="edge_encryption_enabled=true" audit="true" choice="1" label="Environment" max_length="20" name="u_environment" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="DEV" sequence="100" value="DEV"/>
+                <element inactive_on_update="false" label="PFIX" sequence="500" value="PFIX"/>
+                <element inactive_on_update="false" label="UK Production" sequence="800" value="UK.PROD.UPE"/>
+                <element inactive_on_update="false" label="ITEST" sequence="200" value="ITEST"/>
+                <element inactive_on_update="false" label="TRAINING" sequence="600" value="TRAINING"/>
+                <element inactive_on_update="false" label="UAT" sequence="300" value="UAT"/>
+                <element inactive_on_update="false" label="UK Test" sequence="900" value="TEST.PROD.UPE"/>
+                <element inactive_on_update="false" label="ITS Lab" sequence="1000" value="UP.ITS.UPC"/>
+                <element inactive_on_update="false" label="Starmount" sequence="1100" value="STARMOUNT"/>
+                <element inactive_on_update="false" label="PRODUCTION" sequence="700" value="PRODUCTION"/>
+                <element inactive_on_update="false" label="STRESS" sequence="400" value="STRESS"/>
+            </choice>
+        </element>
+        <element attributes="audit" audit="true" label="Expiration Notification" max_length="40" name="u_expiration_notification" type="boolean"/>
+        <element attributes="audit=true" audit="true" label="Certificate Expiration Date" max_length="40" name="u_expires" type="glide_date_time"/>
+        <element calculation="(function calculatedFieldValue(current) {&#10;&#9;var daysToExpire = 0;&#10;&#9;var expiredValue = current.u_expires.getDisplayValue();&#10;&#9;var expiredSplit = expiredValue.split(&quot; &quot;);&#10;&#9;var certExpirationDate = new GlideDateTime();&#10;&#9;certExpirationDate.setValue(expiredSplit[0] + ' 00:00:00');&#10;&#9;&#10;&#9;var currentDate = new GlideDateTime();&#10;&#9;var currentValue = currentDate.getDisplayValue();&#10;&#9;var currentSplit = currentValue.split(&quot; &quot;);&#10;&#9;currentDate.setValue(currentSplit[0] + ' 00:00:00');&#10;&#9;&#10;&#9;if(certExpirationDate &lt;= currentDate){&#10;&#9;&#9;daysToExpire = 0;&#10;&#9;} else {&#10;&#9;&#9;var duration = GlideDate.subtract(currentDate,certExpirationDate);&#10;&#9;&#9;daysToExpire = duration.getRoundedDayPart();&#10;&#9;}&#10;&#9;// Add your code here&#10;&#9;return daysToExpire;  // return the calculated value&#10;&#10;})(current);" label="Expires in days" max_length="40" name="u_expires_in_days" read_only="true" type="integer"/>
+        <element label="External Order Contact" max_length="32" name="u_external_order_contact" reference="sys_user" type="reference"/>
+        <element label="External Order ID" max_length="20" name="u_external_order_id" type="string"/>
+        <element attributes="audit=true" audit="true" label="External Unique ID" max_length="100" name="u_external_unique_id" type="string"/>
+        <element label="Format" max_length="40" name="u_format" type="string"/>
+        <element label="Issuer" max_length="1000" name="u_issuer" type="string"/>
+        <element attributes="is_legacy_password2=true" label="Key Store Password" max_length="255" name="u_key_store_password" type="password2"/>
+        <element label="Managed by" max_length="32" name="u_managed_by" reference="sys_user_group" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="F5" max_length="40" name="u_inston_f5" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true,no_sort=true,slushbucket_ref_no_expand=true" label="Install on" max_length="4000" name="u_install_on" reference="x_unugr_certificat_installation_targets" type="glide_list"/>
+        <element label="Notify of Expiration" max_length="4000" name="u_notify_of_expiration" reference="sys_user" type="glide_list"/>
+        <element attributes="audit=true,edge_encryption_enabled=true,encode_utf8=false" audit="true" label="Owned by" max_length="32" name="u_owned_by" reference="sys_user" type="reference"/>
+        <element label="Requester Name" max_length="50" name="u_requester_name" type="string"/>
+        <element label="SANs" max_length="2000" name="u_sans" type="string"/>
+        <element label="Serial Number" max_length="100" name="u_serial_number" type="string"/>
+        <element label="Short Description" max_length="100" name="u_short_description" type="string"/>
+        <element attributes="audit=true,edge_encryption_enabled=true,no_sort=true,slushbucket_ref_no_expand=true" choice="1" label="Environment new" max_length="1024" name="u_environment_new" reference="u_catalog_choice_list" reference_qual="u_list_name=Environment New^u_included_in_itemsLIKEe989bc37db95bf484ff2c55305961903^EQ" reference_qual_condition="u_list_name=Environment New^u_included_in_itemsLIKEe989bc37db95bf484ff2c55305961903^EQ" type="glide_list">
+            <choice>
+                <element inactive="true" inactive_on_update="true" label="TEST" sequence="300" value="test"/>
+                <element inactive="true" inactive_on_update="true" label="UAT" sequence="900" value="uat"/>
+                <element inactive="true" inactive_on_update="true" label="PFIX" sequence="500" value="pfix"/>
+                <element inactive="true" inactive_on_update="true" label="STRESS" sequence="700" value="stress"/>
+                <element inactive="true" inactive_on_update="true" label="DEV 2" sequence="100" value="dev_2"/>
+                <element inactive="true" inactive_on_update="true" label="PRODUCTION" sequence="600" value="production"/>
+                <element inactive="true" inactive_on_update="true" label="TRAINING" sequence="800" value="training"/>
+                <element inactive="true" inactive_on_update="true" label="DEV 1" sequence="50" value="dev_1"/>
+                <element inactive="true" inactive_on_update="true" label="ITEST 1" sequence="310" value="itest_1"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Server" max_length="40" name="u_inston_server" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Domain" max_length="40" name="domain" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="UPA" sequence="200" value="u_upa"/>
+                <element inactive_on_update="false" label="UP" sequence="300" value="u_up"/>
+                <element inactive_on_update="false" label="UPD" sequence="100" value="u_upd"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="API Gateway" max_length="40" name="u_inston_api_gateway" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Vendor Server" max_length="40" name="u_inston_vendor_server" type="boolean"/>
+        <index name="index">
+            <element name="maintenance_group"/>
+        </index>
+        <index name="index2">
+            <element name="u_external_order_contact"/>
+        </index>
+        <index name="index3">
+            <element name="u_external_unique_id"/>
+        </index>
+        <index name="index4">
+            <element name="u_managed_by"/>
+        </index>
+        <index name="index5">
+            <element name="u_owned_by"/>
+        </index>
+        <index name="index6">
+            <element name="u_store_location"/>
+        </index>
+    </element>
+</database>

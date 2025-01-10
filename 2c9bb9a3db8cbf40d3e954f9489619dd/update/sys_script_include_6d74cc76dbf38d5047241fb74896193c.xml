@@ -6,7 +6,9 @@
         <caller_access>1</caller_access>
         <client_callable>false</client_callable>
         <description>Certificate Managment Helper Functions</description>
+        <mobile_callable>false</mobile_callable>
         <name>certificateManagmentHelper</name>
+        <sandbox_callable>false</sandbox_callable>
         <script><![CDATA[var certificateManagmentHelper = Class.create();
 certificateManagmentHelper.prototype = {
     initialize: function() {},

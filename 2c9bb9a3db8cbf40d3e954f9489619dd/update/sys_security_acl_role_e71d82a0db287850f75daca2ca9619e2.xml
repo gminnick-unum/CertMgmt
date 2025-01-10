@@ -16,6 +16,5 @@
         <sys_updated_by>CNI06</sys_updated_by>
         <sys_updated_on>2021-06-01 19:36:50</sys_updated_on>
         <sys_user_role display_value="x_unugr_certificat.digital_certificates_installed_on_user" name="x_unugr_certificat.digital_certificates_installed_on_user">57206de8db6c3850f75daca2ca9619e0</sys_user_role>
-        <transaction_id/>
     </sys_security_acl_role>
 </record_update>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="b5a38dfedb067380d3e954f9489619ec" sys_domain="global" table="x_unugr_certificat_f5_scan_log" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>0</position>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-06-18 18:51:46</sys_created_on>
+            <sys_id>8aa38dfedb067380d3e954f9489619fe</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unugr_certificat_f5_scan_log" sys_domain="global" view="Default view">b5a38dfedb067380d3e954f9489619ec</sys_ui_section>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-06-18 18:51:46</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_f5_host</element>
+            <position>1</position>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-06-18 18:51:46</sys_created_on>
+            <sys_id>82a38dfedb067380d3e954f9489619ff</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unugr_certificat_f5_scan_log" sys_domain="global" view="Default view">b5a38dfedb067380d3e954f9489619ec</sys_ui_section>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-06-18 18:51:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_status</element>
+            <position>2</position>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-06-18 18:51:46</sys_created_on>
+            <sys_id>06a38dfedb067380d3e954f9489619ff</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unugr_certificat_f5_scan_log" sys_domain="global" view="Default view">b5a38dfedb067380d3e954f9489619ec</sys_ui_section>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-06-18 18:51:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_scan_started</element>
+            <position>3</position>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-06-18 18:51:46</sys_created_on>
+            <sys_id>86a38dfedb067380d3e954f9489619ff</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unugr_certificat_f5_scan_log" sys_domain="global" view="Default view">b5a38dfedb067380d3e954f9489619ec</sys_ui_section>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-06-18 18:51:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>4</position>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-06-18 18:51:46</sys_created_on>
+            <sys_id>0aa38dfedb067380d3e954f9489619ff</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unugr_certificat_f5_scan_log" sys_domain="global" view="Default view">b5a38dfedb067380d3e954f9489619ec</sys_ui_section>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-06-18 18:51:46</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_scan_duration</element>
+            <position>5</position>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-06-18 18:51:46</sys_created_on>
+            <sys_id>8aa38dfedb067380d3e954f9489619ff</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unugr_certificat_f5_scan_log" sys_domain="global" view="Default view">b5a38dfedb067380d3e954f9489619ec</sys_ui_section>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-06-18 18:51:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_scan_ended</element>
+            <position>6</position>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-06-18 18:51:46</sys_created_on>
+            <sys_id>0ea38dfedb067380d3e954f9489619ff</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unugr_certificat_f5_scan_log" sys_domain="global" view="Default view">b5a38dfedb067380d3e954f9489619ec</sys_ui_section>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-06-18 18:51:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>7</position>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-06-18 18:51:46</sys_created_on>
+            <sys_id>8ea38dfedb067380d3e954f9489619ff</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unugr_certificat_f5_scan_log" sys_domain="global" view="Default view">b5a38dfedb067380d3e954f9489619ec</sys_ui_section>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-06-18 18:51:46</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_status_description</element>
+            <position>8</position>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-06-18 18:51:46</sys_created_on>
+            <sys_id>02a3cdfedb067380d3e954f948961900</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unugr_certificat_f5_scan_log" sys_domain="global" view="Default view">b5a38dfedb067380d3e954f9489619ec</sys_ui_section>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-06-18 18:51:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_unugr_certificat_f5_scan_log</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-06-18 18:51:46</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_id>b5a38dfedb067380d3e954f9489619ec</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_unugr_certificat_f5_scan_log</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+            <sys_update_name>sys_ui_section_b5a38dfedb067380d3e954f9489619ec</sys_update_name>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-06-18 18:51:46</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

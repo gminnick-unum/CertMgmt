@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="hasLabels=true" audit="true" db_object_id="e9626b721b577b408591524d0d4bcbc0" extends="task" label="Certificate Task" max_length="40" name="x_unugr_certificat_certificate_task" text_index="true" type="collection">
+        <element label="Certificate Request" max_length="32" name="certificate_request" reference="x_unugr_certificat_certificate_request" reference_cascade_rule="cascade" type="reference"/>
+        <element choice="1" label="Task Activity" max_length="40" name="u_task_activity" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Generate CNAME" sequence="400" value="cname"/>
+                <element inactive_on_update="false" label="Obtain CSR" sequence="100" value="csr"/>
+                <element inactive_on_update="false" label="Installation" sequence="600" value="installation"/>
+                <element inactive_on_update="false" label="Generate/Order Certificate" sequence="200" value="generate_certificate"/>
+                <element inactive_on_update="false" label="Waiting Vendor SSL" sequence="700" value="ssl_wait"/>
+                <element inactive_on_update="false" label="Vendor Email" sequence="300" value="vendor_email"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="certificate_request"/>
+        </index>
+    </element>
+</database>

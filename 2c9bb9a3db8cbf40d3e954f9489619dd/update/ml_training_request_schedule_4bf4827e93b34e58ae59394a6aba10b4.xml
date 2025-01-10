@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ml_training_request_schedule">
+    <ml_training_request_schedule action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <business_calendar/>
+        <capability/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <max_drift/>
+        <ml_capability_definition display_value="discovery_python_classification">87f4827e93b34e58ae59394a6aba10a8</ml_capability_definition>
+        <ml_solution/>
+        <name>discovery_python_classification</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="Curtis Rowell">c7ef2662dbb29010f7b22fe51b961900</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek/>
+        <run_period/>
+        <run_start>2024-08-07 13:07:27</run_start>
+        <run_time/>
+        <run_type>once</run_type>
+        <solution_definition/>
+        <sys_class_name>ml_training_request_schedule</sys_class_name>
+        <sys_created_by>DEZ20</sys_created_by>
+        <sys_created_on>2024-08-07 13:07:27</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>4bf4827e93b34e58ae59394a6aba10b4</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>discovery_python_classification</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>ml_training_request_schedule_4bf4827e93b34e58ae59394a6aba10b4</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-11-02 18:46:33</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </ml_training_request_schedule>
+</record_update>

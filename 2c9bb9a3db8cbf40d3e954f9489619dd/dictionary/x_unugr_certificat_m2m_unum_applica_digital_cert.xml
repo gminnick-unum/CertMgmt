@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="b962ab721b577b408591524d0d4bcb66" label="Certificate to Applications" max_length="40" name="x_unugr_certificat_m2m_unum_applica_digital_cert" type="collection">
+        <element label="Digital Certificate" max_length="32" name="digital_certificate" reference="x_unugr_certificat_digital_certificate" type="reference"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Unum Application" max_length="32" name="unum_application" reference="cmdb_ci_business_app" type="reference"/>
+        <index name="index">
+            <element name="digital_certificate"/>
+        </index>
+        <index name="index2">
+            <element name="unum_application"/>
+        </index>
+    </element>
+</database>

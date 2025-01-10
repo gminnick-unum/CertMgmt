@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Use this property to set the base url of the QualysServer</description>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_unugr_certificat.importscan.tenableServer</name>
+        <read_roles/>
+        <suffix>importscan.tenableServer</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-03-15 13:30:17</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>ff0a6a40db187780d3e954f948961967</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>x_unugr_certificat.importscan.tenableServer</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sys_properties_ff0a6a40db187780d3e954f948961967</sys_update_name>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2020-01-20 20:41:50</sys_updated_on>
+        <type>string</type>
+        <value>10.14.44.118</value>
+        <write_roles>x_unugr_certificat.management.admin</write_roles>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=ff0a6a40db187780d3e954f948961967"/>
+</record_update>

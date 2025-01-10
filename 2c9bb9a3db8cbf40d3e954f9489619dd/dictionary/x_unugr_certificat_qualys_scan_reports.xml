@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="0d62a7721b577b408591524d0d4bcb9d" label="Tenable Scan Reports" max_length="40" name="x_unugr_certificat_qualys_scan_reports" type="collection">
+        <element label="Report Id" max_length="50" name="u_report_id" type="string"/>
+        <element label="Report Name" max_length="50" name="u_report_name" type="string"/>
+        <element label="Report Path" max_length="200" name="u_report_path" type="string"/>
+        <element choice="1" label="Scan Status" max_length="40" name="u_scan_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Report Deleted" sequence="500" value="Report deleted"/>
+                <element inactive_on_update="false" label="Launch Request" sequence="100" value="Launch request"/>
+                <element inactive_on_update="false" label="Scan Completed" sequence="600" value="Scan completed"/>
+                <element inactive_on_update="false" label="New Report Launched" sequence="200" value="New report launched"/>
+                <element inactive_on_update="false" label="Fetch Report" sequence="300" value="Fetch report"/>
+            </choice>
+        </element>
+        <element label="Template Id" max_length="50" name="u_template_id" type="string"/>
+    </element>
+</database>

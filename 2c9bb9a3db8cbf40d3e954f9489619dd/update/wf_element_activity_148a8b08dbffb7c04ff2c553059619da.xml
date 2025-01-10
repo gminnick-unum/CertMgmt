@@ -62,7 +62,7 @@ gs.info('Capability sys_id is: ' + executionParam.midCapabilities);
     <wf_versionable action="INSERT_OR_UPDATE">
         <checked_out/>
         <checked_out_by/>
-        <published>true</published>
+        <published>false</published>
         <sys_created_by>CHF03</sys_created_by>
         <sys_created_on>2019-09-05 15:27:31</sys_created_on>
         <sys_id>548a8b08dbffb7c04ff2c553059619db</sys_id>

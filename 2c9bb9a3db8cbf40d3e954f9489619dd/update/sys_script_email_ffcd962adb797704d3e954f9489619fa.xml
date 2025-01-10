@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>list_owned_certificates</name>
+        <new_lines_to_html>true</new_lines_to_html>
+        <script><![CDATA[template.print('<p></p>Certificates<br />');
+
+var tableName = 'x_unugr_certificat_digital_certificate';
+
+var queryString = 'u_owned_by=|OWNERID|^u_active=true';
+
+queryString = queryString.replace('|OWNERID|',current.sys_id);
+var ownedCertificates = new GlideRecord('x_unugr_certificat_digital_certificate');
+ownedCertificates.addEncodedQuery(queryString);
+
+ownedCertificates.query();
+
+while(ownedCertificates.next()){
+	var attachLink = '<a href="' + gs.getProperty('glide.servlet.uri') + '/nav_to.do?uri=' + ownedCertificates.getTableName() + '.do?sys_id=' + ownedCertificates.sys_id + '">' + ownedCertificates.number +'</a>';
+	template.print(attachLink +  "<br />");
+	
+}
+template.print("<hr/>");
+]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-06-05 20:32:06</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>ffcd962adb797704d3e954f9489619fa</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>list_owned_certificates</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sys_script_email_ffcd962adb797704d3e954f9489619fa</sys_update_name>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-06-06 19:19:51</sys_updated_on>
+    </sys_script_email>
+</record_update>

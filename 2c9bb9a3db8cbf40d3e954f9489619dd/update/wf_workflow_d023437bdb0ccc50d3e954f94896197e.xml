@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="wf_workflow_version">
+    <wf_workflow_version action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <activity_stages>{"ends":["5fc407bfdb0ccc50d3e954f94896195c"],"subflows":[],"stages":{},"activities":{}}</activity_stages>
+        <after_business_rules>false</after_business_rules>
+        <checked_out/>
+        <checked_out_by/>
+        <column_renderer display_value="Workflow-driven">a56213111b030100adca1e094f0713ac</column_renderer>
+        <condition/>
+        <condition_type>run_match</condition_type>
+        <description/>
+        <expected_sequences>5fc407bfdb0ccc50d3e954f94896195b,57c407bfdb0ccc50d3e954f94896195a,5fc407bfdb0ccc50d3e954f94896195c</expected_sequences>
+        <expected_time>1970-01-01 14:00:00</expected_time>
+        <expected_time_type/>
+        <full_sequences>5fc407bfdb0ccc50d3e954f94896195b,57c407bfdb0ccc50d3e954f94896195a,5fc407bfdb0ccc50d3e954f94896195c</full_sequences>
+        <journal/>
+        <max_activity_count>100</max_activity_count>
+        <name>wf_SetActiveFlags</name>
+        <not_cacheable>false</not_cacheable>
+        <on_cancel><![CDATA[// This script executes if the workflow is cancelled.// The global variable context_sys_id contains the sys_id of the cancelled workflow context.]]></on_cancel>
+        <order>100</order>
+        <pin_type>set_by_activity</pin_type>
+        <published>true</published>
+        <relative_duration display_value="2 business days by 4pm">3bf802c20a0a0b52008e2859cd8abcf2</relative_duration>
+        <requires_ert>true</requires_ert>
+        <run_multiple>false</run_multiple>
+        <schedule/>
+        <stage_field/>
+        <stage_order>computed</stage_order>
+        <start display_value="Begin">5fc407bfdb0ccc50d3e954f94896195b</start>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-09-29 16:55:30</sys_created_on>
+        <sys_id>dfc48b7fdb0ccc50d3e954f948961917</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-09-29 16:55:58</sys_updated_on>
+        <table>global</table>
+        <timezone/>
+        <validated>false</validated>
+        <workflow display_value="wf_SetActiveFlags">d023437bdb0ccc50d3e954f94896197e</workflow>
+    </wf_workflow_version>
+    <wf_workflow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <description/>
+        <name>wf_SetActiveFlags</name>
+        <preview/>
+        <sys_class_name>wf_workflow</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-09-29 16:48:12</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>d023437bdb0ccc50d3e954f94896197e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>wf_SetActiveFlags</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>wf_workflow_d023437bdb0ccc50d3e954f94896197e</sys_update_name>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-09-29 16:48:12</sys_updated_on>
+        <table>global</table>
+        <template>false</template>
+        <vars/>
+    </wf_workflow>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Begin">c7a5e32c0a0a0b3a002377c24ed8ea76</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>1</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Begin</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-09-29 16:55:30</sys_created_on>
+        <sys_id>5fc407bfdb0ccc50d3e954f94896195b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-09-29 16:55:30</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="14 Hours">dfc48b7fdb0ccc50d3e954f948961917</workflow_version>
+        <x>20</x>
+        <y>20</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=5fc407bfdb0ccc50d3e954f94896195b"/>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Begin">5fc407bfdb0ccc50d3e954f94896195b</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-09-29 16:55:30</sys_created_on>
+        <sys_id>d7c407bfdb0ccc50d3e954f94896195c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-09-29 16:55:30</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>2</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>End</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-09-29 16:55:30</sys_created_on>
+        <sys_id>5fc407bfdb0ccc50d3e954f94896195c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-09-29 16:55:30</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="14 Hours">dfc48b7fdb0ccc50d3e954f948961917</workflow_version>
+        <x>400</x>
+        <y>150</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=5fc407bfdb0ccc50d3e954f94896195c"/>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>3</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Set Active Flag</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-09-29 16:55:30</sys_created_on>
+        <sys_id>57c407bfdb0ccc50d3e954f94896195a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-09-29 16:55:30</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="14 Hours">dfc48b7fdb0ccc50d3e954f948961917</workflow_version>
+        <x>162</x>
+        <y>162</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=57c407bfdb0ccc50d3e954f94896195a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>57c407bfdb0ccc50d3e954f94896195a</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-09-29 16:55:30</sys_created_on>
+        <sys_id>dbc407bfdb0ccc50d3e954f94896195a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-09-29 16:55:30</sys_updated_on>
+        <value>var digitalCertRec = new GlideRecord('x_unugr_certificat_digital_certificate');&#13;
+digitalCertRec.addQuery();&#13;
+digitalCertRec.query();&#13;
+&#13;
+while(digitalCertRec.next()){&#13;
+	digitalCertRec.u_active = setActiveFlag(digitalCertRec.u_expires.getDisplayValue());&#13;
+	digitalCertRec.update();&#13;
+}&#13;
+	&#13;
+function setActiveFlag(expirationDate){&#13;
+	var certificateActive = false;&#13;
+	var certExpirationDate = new GlideDate();&#13;
+	certExpirationDate.setDisplayValue(expirationDate);&#13;
+	var currentDate = new GlideDate();&#13;
+	&#13;
+	if(certExpirationDate &lt;= currentDate){&#13;
+		certificateActive = false;&#13;
+	} else {&#13;
+		certificateActive = true;&#13;
+	}&#13;
+	&#13;
+	return certificateActive;	&#13;
+}&#13;
+	</value>
+        <variable display_value="Script">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>57c407bfdb0ccc50d3e954f94896195a</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-09-29 16:55:30</sys_created_on>
+        <sys_id>dbc407bfdb0ccc50d3e954f94896195a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-09-29 16:55:30</sys_updated_on>
+        <value>var digitalCertRec = new GlideRecord('x_unugr_certificat_digital_certificate');&#13;
+digitalCertRec.addQuery();&#13;
+digitalCertRec.query();&#13;
+&#13;
+while(digitalCertRec.next()){&#13;
+	digitalCertRec.u_active = setActiveFlag(digitalCertRec.u_expires.getDisplayValue());&#13;
+	digitalCertRec.update();&#13;
+}&#13;
+	&#13;
+function setActiveFlag(expirationDate){&#13;
+	var certificateActive = false;&#13;
+	var certExpirationDate = new GlideDate();&#13;
+	certExpirationDate.setDisplayValue(expirationDate);&#13;
+	var currentDate = new GlideDate();&#13;
+	&#13;
+	if(certExpirationDate &lt;= currentDate){&#13;
+		certificateActive = false;&#13;
+	} else {&#13;
+		certificateActive = true;&#13;
+	}&#13;
+	&#13;
+	return certificateActive;	&#13;
+}&#13;
+	</value>
+        <variable display_value="Script">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Set Active Flag">57c407bfdb0ccc50d3e954f94896195a</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-09-29 16:55:30</sys_created_on>
+        <sys_id>d7c407bfdb0ccc50d3e954f94896195b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-09-29 16:55:30</sys_updated_on>
+    </wf_condition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">d7c407bfdb0ccc50d3e954f94896195c</condition>
+        <from display_value="Begin">5fc407bfdb0ccc50d3e954f94896195b</from>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-09-29 16:55:30</sys_created_on>
+        <sys_id>1fc407bfdb0ccc50d3e954f94896195e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-09-29 16:55:30</sys_updated_on>
+        <to display_value="Set Active Flag">57c407bfdb0ccc50d3e954f94896195a</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">d7c407bfdb0ccc50d3e954f94896195b</condition>
+        <from display_value="Set Active Flag">57c407bfdb0ccc50d3e954f94896195a</from>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-09-29 16:55:30</sys_created_on>
+        <sys_id>d7c407bfdb0ccc50d3e954f94896195e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-09-29 16:55:30</sys_updated_on>
+        <to display_value="End">5fc407bfdb0ccc50d3e954f94896195c</to>
+    </wf_transition>
+    <wf_estimated_runtime_config action="INSERT_OR_UPDATE">
+        <estimated_run_time/>
+        <no_of_data_points>1</no_of_data_points>
+        <percentage_threshold_ert>20</percentage_threshold_ert>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-09-29 16:55:30</sys_created_on>
+        <sys_id>d3c48b7fdb0ccc50d3e954f948961918</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-09-29 16:55:30</sys_updated_on>
+        <workflow_version display_value="14 Hours">dfc48b7fdb0ccc50d3e954f948961917</workflow_version>
+    </wf_estimated_runtime_config>
+    <wf_workflow_version action="update_multiple" query="workflow=d023437bdb0ccc50d3e954f94896197e^sys_id!=dfc48b7fdb0ccc50d3e954f948961917">
+        <published>false</published>
+    </wf_workflow_version>
+</record_update>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item/>
+        <catalog_variable>IO:82a10da7dbfd7f044ff2c553059619d1</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>true</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-06-08 16:58:56</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>3dd9c5e7db31bf044ff2c553059619ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>select_exsiting_certificate</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_3dd9c5e7db31bf044ff2c553059619ac</sys_update_name>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-06-08 16:58:56</sys_updated_on>
+        <table/>
+        <ui_policy display_value="If Request is for Existing Force Select of Existing">82f68563db31bf044ff2c55305961922</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <variable>select_exsiting_certificate</variable>
+        <variable_set display_value="Certificate Request">afcc3037dbd5bf484ff2c553059619c1</variable_set>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+</record_update>

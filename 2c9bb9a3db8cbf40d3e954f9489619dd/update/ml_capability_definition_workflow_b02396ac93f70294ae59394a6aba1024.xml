@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="ml_capability_definition_workflow">
+    <ml_capability_definition_workflow action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <capability display_value="Workflow">d12a03f173212010c0bbb63854f6a7b9</capability>
+        <current_solution_version>1</current_solution_version>
+        <dataset_language>en</dataset_language>
+        <description>ADA Coverage Report Solution</description>
+        <fields/>
+        <filter/>
+        <pretrained>false</pretrained>
+        <request_source>api</request_source>
+        <solution_label>discovery_python_classification</solution_label>
+        <solution_name>ml_x_unugr_x_unugr_certificat_global_discovery_python_classification</solution_name>
+        <solution_parameters/>
+        <solution_properties>{"description":"ADA Coverage Report Solution","label":"discovery_python_classification","name":"ml_x_unugr_x_unugr_certificat_global_discovery_python_classification","predictPipeline":{},"schedulingInfo":{"useCase":"Automation Discovery Solution"},"tags":"Automation Discovery,workflow,coverage report","trainingPipeline":{"pipelineName":"discovery_v3","pipelineOutput":{"models":{"report.json":"::reportGenerator.outputModel","_taxonomy.json":"::reportGenerator.outputTaxonomy"}},"pipelineInput":{"config":{"authoring_model":{"schemaVersion":"NY-1","name":"discovery_python_classification","language":"en","version":"2.02","intents":[],"entities":[]},"Coverage-Text-Field":"description","classification":"true","clustering":"false","cluster_lang":"ml","include_message_duplicates":true,"bot_id":"atlas_itsm","enable_sampling":false,"sample_size":1,"min_required_for_sampling":25000,"sampling_strategy":"random","open_time_column":"sys_created_on","close_time_column":"sys_updated_on","expected_pipeline_artifacts":{"report.json":"::reportGenerator.outputModel","_taxonomy.json":"::reportGenerator.outputTaxonomy"},"pipeline_name":"discovery_v3","report":"3c2396ac93f70294ae59394a6aba101b","join_tables":false,"primary_table_column_name":"sys_id","secondary_table_column_name":"record_id","fields":["description"]},"datasets":{"message_content":{"tableName":"em_event","fieldNames":["state","sys_updated_on","description","sys_updated_on","sys_created_on"],"name":"message_content","fetchDisplayValue":false},"incidents":{"tableName":"em_event","fieldNames":["state","sys_updated_on","description","sys_updated_on","sys_created_on"],"name":"incidents","fetchDisplayValue":false}}}},"workflowConfiguration":{"trainingFrequency":"run_once"}}</solution_properties>
+        <stopwords>a6282a25533333008c5bddeeff7b12c3</stopwords>
+        <sys_class_name>ml_capability_definition_workflow</sys_class_name>
+        <sys_created_by>DEZ20</sys_created_by>
+        <sys_created_on>2024-07-31 14:22:58</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>b02396ac93f70294ae59394a6aba1024</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>ADA Coverage Report Solution</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>ml_capability_definition_workflow_b02396ac93f70294ae59394a6aba1024</sys_update_name>
+        <sys_updated_by>DEZ20</sys_updated_by>
+        <sys_updated_on>2024-07-31 14:22:58</sys_updated_on>
+        <table/>
+        <tags>Automation Discovery,workflow,coverage report</tags>
+        <training_frequency>run_once</training_frequency>
+        <triggered_source>API</triggered_source>
+        <word_vector_corpus/>
+    </ml_capability_definition_workflow>
+</record_update>

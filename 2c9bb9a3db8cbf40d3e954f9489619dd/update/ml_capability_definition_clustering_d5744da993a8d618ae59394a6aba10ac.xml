@@ -6,7 +6,7 @@
         <cluster_concept_fields/>
         <cluster_concept_type/>
         <create_ci_table>true</create_ci_table>
-        <current_solution_version/>
+        <current_solution_version>3</current_solution_version>
         <dataset_language>en</dataset_language>
         <fields>short_description,assignment_group</fields>
         <filter/>

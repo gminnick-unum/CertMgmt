@@ -17,6 +17,7 @@
         <messages/>
         <name>Make fields read only</name>
         <order/>
+        <published_ref/>
         <script><![CDATA[function onLoad() {
    //Type appropriate comment here, and begin script below
    
@@ -44,6 +45,7 @@
         <table/>
         <type>onLoad</type>
         <ui_type>10</ui_type>
+        <va_supported>true</va_supported>
         <variable_set/>
         <view/>
     </catalog_script_client>

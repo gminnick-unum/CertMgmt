@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {  /* widget controller */  var c = this;}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>certificate_management</id>
+        <internal>false</internal>
+        <link/>
+        <name>Certificate Management</name>
+        <option_schema>[{"hint":"The title that appears above the record count","name":"title","section":"other","label":"Title","type":"string"},{"displayValue":"Table","name":"table_to_query","section":"other","label":"Table to query","type":"reference","value":"sys_db_object","ed":{"reference":"sys_db_object"}},{"hint":"An encoded Query String, use the normal ServiceNow interface to filter the table, then right-click on the filter and select “Copy Query”","name":"encoded_query_string","section":"other","default_value":"active=true","label":"Encoded Query String","type":"string"}]</option_schema>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+  // Get the table name
+  if(options.table_to_query){
+    var table = new GlideRecord("sys_db_object"); // 'sys_db_object' is the table that holds the definitions for all other tables
+    table.get(options.table_to_query); // 'options.table_to_query' holds the sys_id of the table the user selects
+    var table_name = table.name.toString(); // set a variable to the table name, e.g. incident
+  
+    var gr = new GlideRecord(table_name); // query the now known table name
+    gr.addEncodedQuery(options.encoded_query_string); //query the table with the user's encoded query string
+    gr.query();
+    data.record_count = gr.getRowCount(); // we are setting the data.record_count to the number of records returned in the GlideRecord query
+  }
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-06-20 22:51:19</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a6ad40abdb42bb80d3e954f94896194f</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Certificate Management</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sp_widget_a6ad40abdb42bb80d3e954f94896194f</sys_update_name>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-06-20 23:04:58</sys_updated_on>
+        <template><![CDATA[<div class="panel">
+   <div class="text-center" ng-if="options.table_to_query">
+      <!-- Our Widget Content Here -->
+      <h4>{{ options.title }}</h4>
+      <h4>{{ data.record_count }}</h4>
+   </div>
+   <div class="text-center" ng-if="!options.table_to_query">
+      <h4>Select a table from the widget options to continue</h4>
+   </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

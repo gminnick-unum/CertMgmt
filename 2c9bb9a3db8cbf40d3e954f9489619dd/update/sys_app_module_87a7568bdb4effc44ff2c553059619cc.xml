@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Enterprise Certificate Management">deaf75ebdb8cbf40d3e954f9489619bc</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter table="x_unugr_certificat_certificate_request">stateNOT IN3,4,7,-1^u_certificate_request_typeINexternal_new,external_update^EQ<item display_value="3,4,7,-1" endquery="false" field="state" goto="false" newquery="false" operator="NOT IN" or="false" value="3,4,7,-1"/>
+            <item display_value="external_new,external_update" endquery="false" field="u_certificate_request_type" goto="false" newquery="false" operator="IN" or="false" value="external_new,external_update"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>External Pending Requests</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_unugr_certificat_certificate_request</name>
+        <order>1060</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <require_confirmation>true</require_confirmation>
+        <roles/>
+        <survey/>
+        <survey_overwrite>true</survey_overwrite>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-06-19 19:39:35</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>87a7568bdb4effc44ff2c553059619cc</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>External Pending Requests</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sys_app_module_87a7568bdb4effc44ff2c553059619cc</sys_update_name>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-10-14 14:55:38</sys_updated_on>
+        <timeline_page/>
+        <title>External Pending Requests</title>
+        <uncancelable>false</uncancelable>
+        <view_name>Internal Pending</view_name>
+        <window_name/>
+    </sys_app_module>
+</record_update>

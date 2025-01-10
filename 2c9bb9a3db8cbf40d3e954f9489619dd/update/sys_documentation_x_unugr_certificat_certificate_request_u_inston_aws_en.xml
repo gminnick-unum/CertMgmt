@@ -12,7 +12,6 @@
             <sys_created_by>CNI06</sys_created_by>
             <sys_created_on>2021-05-25 18:28:38</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
-            <sys_id>606a35d6db103810f75daca2ca961971</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>AWS</sys_name>
             <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>

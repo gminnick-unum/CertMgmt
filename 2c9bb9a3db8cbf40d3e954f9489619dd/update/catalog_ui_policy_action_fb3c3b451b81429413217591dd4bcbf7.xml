@@ -5,6 +5,8 @@
         <cleared>false</cleared>
         <disabled>ignore</disabled>
         <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
         <mandatory>true</mandatory>
         <order>100</order>
         <sys_class_name>catalog_ui_policy_action</sys_class_name>
@@ -23,6 +25,8 @@
         <sys_updated_on>2024-03-18 18:26:50</sys_updated_on>
         <table/>
         <ui_policy display_value="Display If Certificate Environment AWS">f51c7f051b81429413217591dd4bcbbd</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
         <variable>if_certificate_environment_aws</variable>
         <variable_set display_value="Certificate Request">afcc3037dbd5bf484ff2c553059619c1</variable_set>
         <visible>true</visible>

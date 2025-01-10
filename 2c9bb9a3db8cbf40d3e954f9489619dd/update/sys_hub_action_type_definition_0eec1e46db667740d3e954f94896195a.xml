@@ -1,0 +1,1172 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <attributes/>
+        <authored_on_release_version/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Use to get installation targets selected for certificates in installation order</description>
+        <flow_priority/>
+        <ih_action>false</ih_action>
+        <internal_name>get_certificate_installation_targets</internal_name>
+        <label_cache>[{"name":"{{action.certificaterequest}}","label":"action➛certificateRequest","type":"action","ref":"x_unugr_certificat_certificate_request"},{"name":"{{step[cf6256a1-0f04-49fd-b4e6-f6e5779732f9].installationTargets}}","label":"step➛Script step➛installationTargets","type":"step","ref":"x_unugr_certificat_installation_targets"}]</label_cache>
+        <master_snapshot>446a9c9adbeab740d3e954f9489619fe</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Get Certificate Installation Targets</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-07-11 13:57:40</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>0eec1e46db667740d3e954f94896195a</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Get Certificate Installation Targets</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_0eec1e46db667740d3e954f94896195a</sys_update_name>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-07-11 23:05:53</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_variable_value action="delete_multiple" query="document_key=0eec1e46db667740d3e954f94896195a"/>
+    <sys_element_mapping action="delete_multiple" query="id=0eec1e46db667740d3e954f94896195a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>installationtargets</field>
+        <id>0eec1e46db667740d3e954f94896195a</id>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-07-11 15:35:14</sys_created_on>
+        <sys_id>9f33ba82db6a7740d3e954f94896190e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-07-11 15:35:14</sys_updated_on>
+        <table>var__m_sys_hub_action_output_0eec1e46db667740d3e954f94896195a</table>
+        <value>{{step[cf6256a1-0f04-49fd-b4e6-f6e5779732f9].installationTargets}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=0eec1e46db667740d3e954f94896195a^sys_idNOT INd8adde86db667740d3e954f94896198e"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Certificate Installation Targets">0eec1e46db667740d3e954f94896195a</action>
+        <cid>cf6256a1-0f04-49fd-b4e6-f6e5779732f9</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_class_name>sys_hub_step_instance</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-07-11 14:00:50</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d8adde86db667740d3e954f94896198e</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>Script step</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sys_hub_step_instance_d8adde86db667740d3e954f94896198e</sys_update_name>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-07-11 22:32:22</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d8adde86db667740d3e954f94896198e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d8adde86db667740d3e954f94896198e</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-07-11 14:00:50</sys_created_on>
+        <sys_id>2cadde86db667740d3e954f9489619af</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-07-11 22:32:23</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+  	var certificateRequest = inputs.certificateRequest;
+  
+    var installOnArray = (certificateRequest.u_install_on.toString()).split(',');
+  
+  	var installTargets = new GlideRecord('x_unugr_certificat_installation_targets');
+  	installTargets.addQuery('sys_id','IN',installOnArray);
+  	installTargets.orderBy('u_install_order');
+   	installTargets.query();
+  
+  	if(installTargets.getRowCount() != 0){
+     	outputs.installationTargets = installTargets;
+    }
+})(inputs, outputs);
+</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d8adde86db667740d3e954f94896198e</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-07-11 14:00:50</sys_created_on>
+        <sys_id>68adde86db667740d3e954f9489619af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-07-11 14:00:50</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=d8adde86db667740d3e954f94896198e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>d8adde86db667740d3e954f94896198e</id>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-07-11 14:00:50</sys_created_on>
+        <sys_id>acadde86db667740d3e954f9489619ae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-07-11 14:00:50</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>certificateRequest</field>
+        <id>d8adde86db667740d3e954f94896198e</id>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-07-11 21:34:09</sys_created_on>
+        <sys_id>b46540d2dbe6b740d3e954f948961932</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-07-11 21:34:09</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_d8adde86db667740d3e954f94896198e</table>
+        <value>{{action.certificaterequest}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>installOn</field>
+        <id>d8adde86db667740d3e954f94896198e</id>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-07-11 14:00:50</sys_created_on>
+        <sys_id>28adde86db667740d3e954f9489619b0</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-07-11 19:03:19</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_d8adde86db667740d3e954f94896198e</table>
+        <value>{{action.certificaterequest}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>d8adde86db667740d3e954f94896198e</id>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-07-11 14:00:50</sys_created_on>
+        <sys_id>e4adde86db667740d3e954f9489619af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-07-11 14:00:50</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_d8adde86db667740d3e954f94896198e^id=d8adde86db667740d3e954f94896198e"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=d8adde86db667740d3e954f94896198e"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=d8adde86db667740d3e954f94896198e^sys_idNOT IN2fe48cdedba6b740d3e954f948961975"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>certificateRequest</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>certificateRequest</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">d8adde86db667740d3e954f94896198e</model>
+        <model_id>d8adde86db667740d3e954f94896198e</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_d8adde86db667740d3e954f94896198e</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-07-11 21:32:09</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>2fe48cdedba6b740d3e954f948961975</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>var__m_sys_hub_step_ext_input_d8adde86db667740d3e954f94896198e</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sys_hub_step_ext_input_2fe48cdedba6b740d3e954f948961975</sys_update_name>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-07-11 21:32:09</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=d8adde86db667740d3e954f94896198e^sys_idNOT IN8b337a82db6a7740d3e954f9489619fa"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>installationTargets</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Records">records</internal_type>
+        <label>installationTargets</label>
+        <mandatory>true</mandatory>
+        <max_length>1024</max_length>
+        <model display_value="Script step">d8adde86db667740d3e954f94896198e</model>
+        <model_id>d8adde86db667740d3e954f94896198e</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_d8adde86db667740d3e954f94896198e</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_unugr_certificat_installation_targets">x_unugr_certificat_installation_targets</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-07-11 15:35:13</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>8b337a82db6a7740d3e954f9489619fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>var__m_sys_hub_step_ext_output_d8adde86db667740d3e954f94896198e</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sys_hub_step_ext_output_8b337a82db6a7740d3e954f9489619fa</sys_update_name>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-07-11 15:35:13</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d8adde86db667740d3e954f94896198e"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_d8adde86db667740d3e954f94896198e"/>
+    <sys_hub_action_input action="delete_multiple" query="model=0eec1e46db667740d3e954f94896195a^sys_idNOT IN5be48cdedba6b740d3e954f948961911"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>certificaterequest</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>certificateRequest</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Get Certificate Installation Targets">0eec1e46db667740d3e954f94896195a</model>
+        <model_id>0eec1e46db667740d3e954f94896195a</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_0eec1e46db667740d3e954f94896195a</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_unugr_certificat_certificate_request">x_unugr_certificat_certificate_request</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-07-11 21:32:08</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>5be48cdedba6b740d3e954f948961911</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>var__m_sys_hub_action_input_0eec1e46db667740d3e954f94896195a</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sys_hub_action_input_5be48cdedba6b740d3e954f948961911</sys_update_name>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-07-11 21:32:08</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=5be48cdedba6b740d3e954f948961911"/>
+    <sys_hub_action_output action="delete_multiple" query="model=0eec1e46db667740d3e954f94896195a^sys_idNOT IN4f33ba82db6a7740d3e954f948961904"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>installationtargets</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="Records">records</internal_type>
+        <label>installationTargets</label>
+        <mandatory>false</mandatory>
+        <max_length>1024</max_length>
+        <model display_value="Get Certificate Installation Targets">0eec1e46db667740d3e954f94896195a</model>
+        <model_id>0eec1e46db667740d3e954f94896195a</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_0eec1e46db667740d3e954f94896195a</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_unugr_certificat_installation_targets">x_unugr_certificat_installation_targets</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-07-11 15:35:13</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>4f33ba82db6a7740d3e954f948961904</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>var__m_sys_hub_action_output_0eec1e46db667740d3e954f94896195a</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sys_hub_action_output_4f33ba82db6a7740d3e954f948961904</sys_update_name>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-07-11 15:35:13</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4f33ba82db6a7740d3e954f948961904"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4f33ba82db6a7740d3e954f948961904"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=0eec1e46db667740d3e954f94896195a"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=0eec1e46db667740d3e954f94896195a"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_0eec1e46db667740d3e954f94896195a^sys_idNOT INd3e48cdedba6b740d3e954f948961917"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>certificaterequest</element>
+        <help/>
+        <hint/>
+        <label>certificateRequest</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_0eec1e46db667740d3e954f94896195a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-07-11 21:32:08</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d3e48cdedba6b740d3e954f948961917</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>certificateRequest</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_0eec1e46db667740d3e954f94896195a_certificaterequest_en</sys_update_name>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-07-11 21:32:08</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_0eec1e46db667740d3e954f94896195a"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_0eec1e46db667740d3e954f94896195a^sys_idNOT IN8f33ba82db6a7740d3e954f94896190a"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>installationtargets</element>
+        <help/>
+        <hint/>
+        <label>installationTargets</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_0eec1e46db667740d3e954f94896195a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-07-11 15:35:13</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>8f33ba82db6a7740d3e954f94896190a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>installationTargets</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_0eec1e46db667740d3e954f94896195a_installationtargets_en</sys_update_name>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-07-11 15:35:13</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_0eec1e46db667740d3e954f94896195a"/>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=0eec1e46db667740d3e954f94896195a"/>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <annotation/>
+        <attributes/>
+        <authored_on_release_version/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Use to get installation targets selected for certificates in installation order</description>
+        <flow_priority/>
+        <internal_name>get_certificate_installation_targets</internal_name>
+        <label_cache>[{"name":"{{action.certificaterequest}}","label":"action➛certificateRequest","type":"action","ref":"x_unugr_certificat_certificate_request"},{"name":"{{step[cf6256a1-0f04-49fd-b4e6-f6e5779732f9].installationTargets}}","label":"step➛Script step➛installationTargets","type":"step","ref":"x_unugr_certificat_installation_targets"}]</label_cache>
+        <master>true</master>
+        <name>Get Certificate Installation Targets</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <parent_action display_value="Get Certificate Installation Targets">0eec1e46db667740d3e954f94896195a</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-07-11 23:05:51</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>446a9c9adbeab740d3e954f9489619fe</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-06-25 07:02:43</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_variable_value action="delete_multiple" query="document_key=446a9c9adbeab740d3e954f9489619fe"/>
+    <sys_element_mapping action="delete_multiple" query="id=446a9c9adbeab740d3e954f9489619fe"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>installationtargets</field>
+        <id>446a9c9adbeab740d3e954f9489619fe</id>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-07-11 23:05:53</sys_created_on>
+        <sys_id>a86adc9adbeab740d3e954f9489619ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-07-11 23:05:53</sys_updated_on>
+        <table>var__m_sys_hub_action_output_446a9c9adbeab740d3e954f9489619fe</table>
+        <value>{{step[cf6256a1-0f04-49fd-b4e6-f6e5779732f9].installationTargets}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=446a9c9adbeab740d3e954f9489619fe^sys_idNOT IN046adc9adbeab740d3e954f94896191b"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Certificate Installation Targets">446a9c9adbeab740d3e954f9489619fe</action>
+        <cid>cf6256a1-0f04-49fd-b4e6-f6e5779732f9</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_class_name>sys_hub_step_instance</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-07-11 23:05:51</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>046adc9adbeab740d3e954f94896191b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Script step</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sys_hub_step_instance_046adc9adbeab740d3e954f94896191b</sys_update_name>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-07-11 23:05:53</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=046adc9adbeab740d3e954f94896191b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>046adc9adbeab740d3e954f94896191b</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-07-11 23:05:53</sys_created_on>
+        <sys_id>a46adc9adbeab740d3e954f9489619bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-07-11 23:05:53</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+  	var certificateRequest = inputs.certificateRequest;
+  
+    var installOnArray = (certificateRequest.u_install_on.toString()).split(',');
+  
+  	var installTargets = new GlideRecord('x_unugr_certificat_installation_targets');
+  	installTargets.addQuery('sys_id','IN',installOnArray);
+  	installTargets.orderBy('u_install_order');
+   	installTargets.query();
+  
+  	if(installTargets.getRowCount() != 0){
+     	outputs.installationTargets = installTargets;
+    }
+})(inputs, outputs);
+</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>046adc9adbeab740d3e954f94896191b</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-07-11 23:05:53</sys_created_on>
+        <sys_id>e06adc9adbeab740d3e954f9489619bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-07-11 23:05:53</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=046adc9adbeab740d3e954f94896191b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>046adc9adbeab740d3e954f94896191b</id>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-07-11 23:05:53</sys_created_on>
+        <sys_id>ac6adc9adbeab740d3e954f9489619ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-07-11 23:05:53</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>certificateRequest</field>
+        <id>046adc9adbeab740d3e954f94896191b</id>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-07-11 23:05:53</sys_created_on>
+        <sys_id>206adc9adbeab740d3e954f9489619bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-07-11 23:05:53</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_046adc9adbeab740d3e954f94896191b</table>
+        <value>{{action.certificaterequest}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>046adc9adbeab740d3e954f94896191b</id>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-07-11 23:05:53</sys_created_on>
+        <sys_id>606adc9adbeab740d3e954f9489619bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-07-11 23:05:53</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_046adc9adbeab740d3e954f94896191b^id=046adc9adbeab740d3e954f94896191b"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=046adc9adbeab740d3e954f94896191b"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=046adc9adbeab740d3e954f94896191b^sys_idNOT IN946adc9adbeab740d3e954f948961969"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>certificateRequest</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>certificateRequest</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">046adc9adbeab740d3e954f94896191b</model>
+        <model_id>046adc9adbeab740d3e954f94896191b</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_046adc9adbeab740d3e954f94896191b</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-07-11 23:05:52</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>946adc9adbeab740d3e954f948961969</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>var__m_sys_hub_step_ext_input_046adc9adbeab740d3e954f94896191b</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sys_hub_step_ext_input_946adc9adbeab740d3e954f948961969</sys_update_name>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-07-11 23:05:52</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=046adc9adbeab740d3e954f94896191b^sys_idNOT INa86adc9adbeab740d3e954f9489619b1"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>installationTargets</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Records">records</internal_type>
+        <label>installationTargets</label>
+        <mandatory>true</mandatory>
+        <max_length>1024</max_length>
+        <model display_value="Script step">046adc9adbeab740d3e954f94896191b</model>
+        <model_id>046adc9adbeab740d3e954f94896191b</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_046adc9adbeab740d3e954f94896191b</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_unugr_certificat_installation_targets">x_unugr_certificat_installation_targets</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-07-11 23:05:53</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a86adc9adbeab740d3e954f9489619b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>var__m_sys_hub_step_ext_output_046adc9adbeab740d3e954f94896191b</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sys_hub_step_ext_output_a86adc9adbeab740d3e954f9489619b1</sys_update_name>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-07-11 23:05:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=046adc9adbeab740d3e954f94896191b"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_046adc9adbeab740d3e954f94896191b"/>
+    <sys_hub_action_input action="delete_multiple" query="model=446a9c9adbeab740d3e954f9489619fe^sys_idNOT INcc6adc9adbeab740d3e954f948961900"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>certificaterequest</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>certificateRequest</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Get Certificate Installation Targets">446a9c9adbeab740d3e954f9489619fe</model>
+        <model_id>446a9c9adbeab740d3e954f9489619fe</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_446a9c9adbeab740d3e954f9489619fe</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_unugr_certificat_certificate_request">x_unugr_certificat_certificate_request</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-07-11 23:05:51</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>cc6adc9adbeab740d3e954f948961900</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>var__m_sys_hub_action_input_446a9c9adbeab740d3e954f9489619fe</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sys_hub_action_input_cc6adc9adbeab740d3e954f948961900</sys_update_name>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-07-11 23:05:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=cc6adc9adbeab740d3e954f948961900"/>
+    <sys_hub_action_output action="delete_multiple" query="model=446a9c9adbeab740d3e954f9489619fe^sys_idNOT INec6adc9adbeab740d3e954f9489619c1"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>installationtargets</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="Records">records</internal_type>
+        <label>installationTargets</label>
+        <mandatory>false</mandatory>
+        <max_length>1024</max_length>
+        <model display_value="Get Certificate Installation Targets">446a9c9adbeab740d3e954f9489619fe</model>
+        <model_id>446a9c9adbeab740d3e954f9489619fe</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_446a9c9adbeab740d3e954f9489619fe</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_unugr_certificat_installation_targets">x_unugr_certificat_installation_targets</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-07-11 23:05:53</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>ec6adc9adbeab740d3e954f9489619c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>var__m_sys_hub_action_output_446a9c9adbeab740d3e954f9489619fe</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sys_hub_action_output_ec6adc9adbeab740d3e954f9489619c1</sys_update_name>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-07-11 23:05:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ec6adc9adbeab740d3e954f9489619c1"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ec6adc9adbeab740d3e954f9489619c1"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=446a9c9adbeab740d3e954f9489619fe"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=446a9c9adbeab740d3e954f9489619fe"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_446a9c9adbeab740d3e954f9489619fe^sys_idNOT IN0c6adc9adbeab740d3e954f948961906"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>certificaterequest</element>
+        <help/>
+        <hint/>
+        <label>certificateRequest</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_446a9c9adbeab740d3e954f9489619fe</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-07-11 23:05:51</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>0c6adc9adbeab740d3e954f948961906</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>certificateRequest</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_446a9c9adbeab740d3e954f9489619fe_certificaterequest_en</sys_update_name>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-07-11 23:05:51</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_446a9c9adbeab740d3e954f9489619fe"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_446a9c9adbeab740d3e954f9489619fe^sys_idNOT IN686adc9adbeab740d3e954f9489619c7"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>installationtargets</element>
+        <help/>
+        <hint/>
+        <label>installationTargets</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_446a9c9adbeab740d3e954f9489619fe</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-07-11 23:05:53</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>686adc9adbeab740d3e954f9489619c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>installationTargets</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_446a9c9adbeab740d3e954f9489619fe_installationtargets_en</sys_update_name>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-07-11 23:05:53</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_446a9c9adbeab740d3e954f9489619fe"/>
+    <sys_hub_action_type_definition action="UPDATE">
+        <sys_id>0eec1e46db667740d3e954f94896195a</sys_id>
+        <latest_snapshot>446a9c9adbeab740d3e954f9489619fe</latest_snapshot>
+        <compiler_build/>
+    </sys_hub_action_type_definition>
+</record_update>

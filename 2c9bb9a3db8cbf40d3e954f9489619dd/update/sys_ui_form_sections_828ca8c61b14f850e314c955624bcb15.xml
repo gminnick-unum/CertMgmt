@@ -16,28 +16,15 @@
         <sys_ui_form_section action="INSERT_OR_UPDATE">
             <position>1</position>
             <sys_created_by>CNI06</sys_created_by>
-            <sys_created_on>2021-05-25 18:37:12</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_id>8a5cf5dedb103810f75daca2ca961963</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_overrides/>
-            <sys_ui_form display_value="x_unugr_certificat_certificate_request" name="x_unugr_certificat_certificate_request" sys_domain="global" view="Default view">828ca8c61b14f850e314c955624bcb15</sys_ui_form>
-            <sys_ui_section caption="Installed On" display_value="Installed On" name="x_unugr_certificat_certificate_request" sys_domain="global" view="Default view">0a5cf5dedb103810f75daca2ca961960</sys_ui_section>
-            <sys_updated_by>CNI06</sys_updated_by>
-            <sys_updated_on>2021-05-25 18:37:12</sys_updated_on>
-        </sys_ui_form_section>
-        <sys_ui_form_section action="INSERT_OR_UPDATE">
-            <position>2</position>
-            <sys_created_by>CNI06</sys_created_by>
             <sys_created_on>2021-05-25 18:37:44</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_id>f97cb112db503810f75daca2ca961911</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>1</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="x_unugr_certificat_certificate_request" name="x_unugr_certificat_certificate_request" sys_domain="global" view="Default view">828ca8c61b14f850e314c955624bcb15</sys_ui_form>
             <sys_ui_section caption="Other Information" display_value="Other Information" name="x_unugr_certificat_certificate_request" sys_domain="global" view="Default view">757cb112db503810f75daca2ca96190e</sys_ui_section>
-            <sys_updated_by>CNI06</sys_updated_by>
-            <sys_updated_on>2021-05-25 18:37:44</sys_updated_on>
+            <sys_updated_by>DDK18</sys_updated_by>
+            <sys_updated_on>2021-06-10 00:02:26</sys_updated_on>
         </sys_ui_form_section>
         <sys_ui_form action="INSERT_OR_UPDATE">
             <name>x_unugr_certificat_certificate_request</name>

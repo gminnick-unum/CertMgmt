@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register">
+    <sysevent_register action="INSERT_OR_UPDATE">
+        <caller_access>1</caller_access>
+        <derived_priority>100</derived_priority>
+        <description>used to send notifications of certificate owner department change or status change</description>
+        <event_name>x_unugr_certificat.owner.changenotify</event_name>
+        <fired_by>Scheduled Job</fired_by>
+        <priority>100</priority>
+        <queue/>
+        <suffix>owner.changenotify</suffix>
+        <sys_class_name>sysevent_register</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-05-23 12:16:34</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>67dfe59edb2173004ff2c553059619bd</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>x_unugr_certificat.owner.changenotify</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sysevent_register_67dfe59edb2173004ff2c553059619bd</sys_update_name>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-06-07 13:11:50</sys_updated_on>
+        <table>sys_user</table>
+    </sysevent_register>
+</record_update>

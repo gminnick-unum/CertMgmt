@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_style">
+    <sys_ui_style action="INSERT_OR_UPDATE">
+        <alt/>
+        <element>number</element>
+        <name>x_unugr_certificat_digital_certificate</name>
+        <style>color:red;&#13;
+font-weight:bold</style>
+        <sys_class_name>sys_ui_style</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-06-21 14:34:17</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a77527e3db46b7084ff2c55305961976</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>x_unugr_certificat_digital_certificate</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sys_ui_style_a77527e3db46b7084ff2c55305961976</sys_update_name>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-06-21 14:59:34</sys_updated_on>
+        <themed_style/>
+        <value>javascript: parseInt(current.getValue('u_expires_in_days')) &lt;=  parseInt(gs.getProperty('x_unugr_certificat.cert.expire.notifications.screenHighlight'))  &amp;&amp;  current.getValue('u_active') == true</value>
+    </sys_ui_style>
+</record_update>

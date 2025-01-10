@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="ecc_agent_script_file">
+    <ecc_agent_script_file action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <checksum>t4WOaE34JgpVWqHYd3pQgQ==</checksum>
+        <description>Check the report processing status of the tenable report launched in previous step</description>
+        <directory>false</directory>
+        <name>getTenableReportStatus.ps1</name>
+        <parent display_value="PowerShell">ef89e4fc372001006b882d465abe5d60</parent>
+        <script>#region input variables&#13;
+if (Test-Path env:\SNC_tenableServer) {&#13;
+	[string]$tenableServer = $env:SNC_tenableServer&#13;
+	$tenableReportId = $env:SNC_tenableReportId&#13;
+	$tenableUserName = $env:SNC_tenableUserName&#13;
+	$tenablePassword = $env:SNC_tenablePassword&#13;
+	}        &#13;
+	&#13;
+	&#13;
+#endregion input variables&#13;
+&#13;
+try &#13;
+	{&#13;
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12&#13;
+add-type @"&#13;
+    using System.Net;&#13;
+    using System.Security.Cryptography.X509Certificates;&#13;
+    public class TrustAllCertsPolicy : ICertificatePolicy {&#13;
+        public bool CheckValidationResult(&#13;
+            ServicePoint srvPoint, X509Certificate certificate,&#13;
+            WebRequest request, int certificateProblem) {&#13;
+            return true;&#13;
+        }&#13;
+    }&#13;
+"@&#13;
+[System.Net.ServicePointManager]::CertificatePolicy = New-Object TrustAllCertsPolicy&#13;
+&#13;
+	$baseUrl = "https://" + $tenableServer.trim() + "/rest"&#13;
+&#13;
+	#First lets get a token from tenable&#13;
+	$tokenUrl = $baseUrl + '/token'&#13;
+	$loginCredentials = New-Object PSObject&#13;
+	$loginCredentials | Add-Member -MemberType NoteProperty -Name username -Value $tenableUserName &#13;
+	$loginCredentials | Add-member -MemberType Noteproperty -Name password -Value $tenablePassword&#13;
+&#13;
+	$bodyData = (ConvertTo-Json -compress $loginCredentials)&#13;
+&#13;
+	$returnData = Invoke-RestMethod -Uri $tokenUrl -Method Post -Body $bodyData -UseBasicParsing -SessionVariable sv&#13;
+	&#13;
+	#get the token from the returned data&#13;
+	$token = $returnData.response.token &#13;
+&#13;
+	$reportStatusUrl = $baseUrl + "/report?filter=manageable&amp;id=" + $tenableReportId.trim()&#13;
+	$headerData = @{'X-SecurityCenter'="$token"}&#13;
+	$returnData = Invoke-RestMethod -Uri $reportStatusUrl -Method Get -Headers $headerData -UseBasicParsing -Websession $sv&#13;
+&#13;
+	#get the status&#13;
+	$reportId = $returnData.response.id	&#13;
+	$status = $returnData.response.status	&#13;
+&#13;
+	$reportResult = New-Object -TypeName PSCustomObject&#13;
+	$reportResult | Add-Member -MemberType NoteProperty -Name "Status" -Value $Status -Force&#13;
+	$reportResult | Add-Member -MemberType NoteProperty -Name "ReportId" -Value $reportId -Force&#13;
+&#13;
+	$reportStatusResults = New-Object PSCustomObject &#13;
+	$reportStatusResults | Add-Member -type NoteProperty -Name launchResult -Value $reportResult&#13;
+&#13;
+	$jsonReportStatus = $reportStatusResults | ConvertTo-Json 	&#13;
+	&#13;
+}&#13;
+catch [System.Management.Automation.ActionPreferenceStopException]&#13;
+{&#13;
+	$errorOccured = $true;&#13;
+	$errorString = $error[0].Exception.Message;&#13;
+	$errorCode = -1&#13;
+}&#13;
+catch [System.Exception]&#13;
+{&#13;
+	$errorOccured = $true;&#13;
+	$errorString = $error[0].Exception.Message;&#13;
+	$errorCode = -1&#13;
+&#13;
+}&#13;
+finally &#13;
+{&#13;
+	#cleanup the token if it existis&#13;
+	if($token){&#13;
+&#13;
+		#code to clean up token when done&#13;
+		$deleteTokenUrl = $baseUrl + '/token'&#13;
+&#13;
+		$headerData = @{'X-SecurityCenter'="$token"}&#13;
+&#13;
+		$returnData = Invoke-RestMethod -URI $deleteTokenUrl -Method Delete -Headers $headerData -UseBasicParsing -Websession $sv &#13;
+	}&#13;
+	&#13;
+	if ($errorOccured -eq $true)&#13;
+	{&#13;
+		SNCLog-DebugInfo "`t Failed to QualysReport : $error"&#13;
+		[Console]::Error.WriteLine("The operation failed: " + $errorString);&#13;
+		Write-Host $errorString&#13;
+	}&#13;
+	else&#13;
+	{&#13;
+		Write-Host $jsonReportStatus&#13;
+	}&#13;
+	&#13;
+}		</script>
+        <script_attachment/>
+        <source/>
+        <sys_class_name>ecc_agent_script_file</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2020-01-16 17:22:01</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>ac8fdc0bdb564c104ff2c55305961986</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>getTenableReportStatus.ps1</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>ecc_agent_script_file_ac8fdc0bdb564c104ff2c55305961986</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-06-03 04:37:13</sys_updated_on>
+        <use_attachment>false</use_attachment>
+        <version/>
+    </ecc_agent_script_file>
+</record_update>

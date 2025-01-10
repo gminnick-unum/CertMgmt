@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_email_action">
+    <sysevent_email_action action="INSERT_OR_UPDATE">
+        <action_insert>false</action_insert>
+        <action_update>false</action_update>
+        <active>true</active>
+        <advanced_condition/>
+        <affected_field_on_event/>
+        <category display_value="Uncategorized" name="Uncategorized">c97d83137f4432005f58108c3ffa917a</category>
+        <collection>sys_user</collection>
+        <condition/>
+        <content_type>text/html</content_type>
+        <default_interval/>
+        <description/>
+        <digest_from/>
+        <digest_html/>
+        <digest_reply_to/>
+        <digest_separator_html><![CDATA[<p>&nbsp;</p>
+<hr />
+<p>&nbsp;</p>]]></digest_separator_html>
+        <digest_separator_text><![CDATA[\n--------------------------------------------------------------------------------\n]]></digest_separator_text>
+        <digest_subject/>
+        <digest_template/>
+        <digest_text/>
+        <digestable>false</digestable>
+        <enable_dynamic_translation>false</enable_dynamic_translation>
+        <event_name>x_unugr_certificat.owner.terminate.escal</event_name>
+        <event_parm_1>false</event_parm_1>
+        <event_parm_2>false</event_parm_2>
+        <exclude_delegates>false</exclude_delegates>
+        <force_delivery>false</force_delivery>
+        <from/>
+        <generation_type>event</generation_type>
+        <importance/>
+        <include_attachments>false</include_attachments>
+        <item>event.parm1</item>
+        <item_table/>
+        <mandatory>false</mandatory>
+        <message/>
+        <message_html><![CDATA[<p>The certificates listed below are owned by employees you manage that have been either terminated or have been transferred to another department.&nbsp; Certificate Owners are responsible for the renewal of the certificate.&nbsp; Ownership of the certificates needs to be transferred to an active employee to make sure the certificates get renewed on a timely basis and do not cause interruption to business due to certificate expiration.</p>
+<p>Current Certificate Owner: ${first_name} ${last_name}</p>
+<p><strong>You are receiving this notification due to no action being taken on the certificate.</strong></p>
+<p>${mail_script:list_owned_certificates}</p>
+<p>To change ownership please click on the certificate number and set the "Owned by" value to an active employee designated to manage the certificate.</p>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>Cert Owner Terminated Escalation</name>
+        <omit_watermark>false</omit_watermark>
+        <order>100</order>
+        <push_message_only>false</push_message_only>
+        <recipient_fields>manager.manager</recipient_fields>
+        <recipient_groups name="Certificate Management">4d7b042f4f48174cbcc0dbb5f110c752</recipient_groups>
+        <recipient_users/>
+        <reply_to/>
+        <send_self>true</send_self>
+        <sms_alternate/>
+        <style/>
+        <subject>Certificate Owner Termination - ${first_name} ${last_name} - Escalation</subject>
+        <subscribable>false</subscribable>
+        <sys_class_name>sysevent_email_action</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-06-07 13:24:22</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>73ce8b43db79fb04d3e954f94896197d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Cert Owner Terminated Escalation</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sysevent_email_action_73ce8b43db79fb04d3e954f94896197d</sys_update_name>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-06-18 16:45:38</sys_updated_on>
+        <sys_version>2</sys_version>
+        <template display_value="unum.it.ess">132590c40f3a9780fc3baf58b1050e7d</template>
+        <type>email</type>
+        <weight>0</weight>
+    </sysevent_email_action>
+</record_update>

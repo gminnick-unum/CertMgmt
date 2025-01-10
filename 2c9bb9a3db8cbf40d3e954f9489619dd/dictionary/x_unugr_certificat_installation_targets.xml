@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="5e52e7321b577b408591524d0d4bcbc4" label="Installation Targets" max_length="40" name="x_unugr_certificat_installation_targets" type="collection">
+        <element label="External Assignment Group" max_length="32" name="u_assignment_group" reference="sys_user_group" reference_qual="typeLIKE7b032f360f36f500fc3baf58b1050ef1^EQ" reference_qual_condition="typeLIKE7b032f360f36f500fc3baf58b1050ef1^EQ" type="reference"/>
+        <element label="Install Order" max_length="40" name="u_install_order" type="integer"/>
+        <element label="Internal Assignment Group" max_length="32" name="u_internal_assignment_group" reference="sys_user_group" reference_qual="typeLIKE7b032f360f36f500fc3baf58b1050ef1^EQ" reference_qual_condition="typeLIKE7b032f360f36f500fc3baf58b1050ef1^EQ" type="reference"/>
+        <element display="true" label="Target Device" max_length="50" name="u_target_device" type="string"/>
+        <element label="Target Value" max_length="50" name="u_target_value" type="string"/>
+        <index name="index">
+            <element name="u_assignment_group"/>
+        </index>
+        <index name="index2">
+            <element name="u_internal_assignment_group"/>
+        </index>
+    </element>
+</database>

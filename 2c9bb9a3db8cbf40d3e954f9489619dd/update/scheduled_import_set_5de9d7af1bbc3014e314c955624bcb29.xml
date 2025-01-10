@@ -9,6 +9,7 @@
         <data_source display_value="CSC API Digital Certs">cf7c566f1bb8fcd0e314c955624bcb81</data_source>
         <entered_time/>
         <map/>
+        <max_drift/>
         <name>Pull CSC Digital Certs</name>
         <offset/>
         <offset_type>0</offset_type>

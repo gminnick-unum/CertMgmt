@@ -18,6 +18,7 @@
         <override_menu_roles>false</override_menu_roles>
         <query>$pa_dashboard.do?sysparm_dashboard=3b237e78dbe8bc50f75daca2ca9619df</query>
         <report/>
+        <require_confirmation>true</require_confirmation>
         <roles/>
         <survey/>
         <survey_overwrite>true</survey_overwrite>

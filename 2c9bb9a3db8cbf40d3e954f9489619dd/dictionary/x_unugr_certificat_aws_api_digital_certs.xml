@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="b559a2cbdbb5f450f75daca2ca9619b6" extends="sys_import_set_row" label="AWS API Digital Certs" max_length="40" name="x_unugr_certificat_aws_api_digital_certs" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=expires_on" label="expires_on" max_length="40" name="u_expires_on" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=SerialNumber" label="SerialNumber" max_length="100" name="u_serialnumber" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=DomainName" label="DomainName" max_length="40" name="u_domainname" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=issued_on" label="issued_on" max_length="40" name="u_issued_on" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=DomainNameAlternatives" label="DomainNameAlternatives" max_length="2000" name="u_domainnamealternatives" type="string"/>
+    </element>
+</database>

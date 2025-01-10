@@ -5,6 +5,7 @@
         <condition/>
         <conditional>true</conditional>
         <entered_time/>
+        <max_drift/>
         <name>Update Missing Environment Indicator</name>
         <offset/>
         <offset_type>0</offset_type>

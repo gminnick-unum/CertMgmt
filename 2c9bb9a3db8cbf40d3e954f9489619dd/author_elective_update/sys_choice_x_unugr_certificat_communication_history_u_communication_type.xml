@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_communication_type" table="x_unugr_certificat_communication_history" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_communication_type</element>
+            <name>x_unugr_certificat_communication_history</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2019-08-20 09:43:46</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_communication_type</sys_name>
+            <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+            <sys_update_name>sys_choice_x_unugr_certificat_communication_history_u_communication_type</sys_update_name>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2019-08-20 09:43:46</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_communication_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>First Notification</label>
+            <language>en</language>
+            <name>x_unugr_certificat_communication_history</name>
+            <sequence>100</sequence>
+            <synonyms/>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2019-08-20 09:43:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2019-08-20 09:43:46</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_communication_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Second Notification</label>
+            <language>en</language>
+            <name>x_unugr_certificat_communication_history</name>
+            <sequence>200</sequence>
+            <synonyms/>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2019-08-20 09:43:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2019-08-20 09:43:46</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_communication_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Third Notification</label>
+            <language>en</language>
+            <name>x_unugr_certificat_communication_history</name>
+            <sequence>300</sequence>
+            <synonyms/>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2019-08-20 09:43:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2019-08-20 09:43:46</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_communication_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Daily Notification</label>
+            <language>en</language>
+            <name>x_unugr_certificat_communication_history</name>
+            <sequence>400</sequence>
+            <synonyms/>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2019-08-20 09:43:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2019-08-20 09:43:46</sys_updated_on>
+            <value>4</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_communication_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Cert Expire Manager Escalation</label>
+            <language>en</language>
+            <name>x_unugr_certificat_communication_history</name>
+            <sequence>500</sequence>
+            <synonyms/>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2019-08-20 09:43:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2019-08-20 09:43:46</sys_updated_on>
+            <value>5</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_communication_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Owner Terminated</label>
+            <language>en</language>
+            <name>x_unugr_certificat_communication_history</name>
+            <sequence>600</sequence>
+            <synonyms/>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2019-08-20 09:43:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2019-08-20 09:43:46</sys_updated_on>
+            <value>6</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_communication_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Owner Terminated Daily</label>
+            <language>en</language>
+            <name>x_unugr_certificat_communication_history</name>
+            <sequence>700</sequence>
+            <synonyms/>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2019-08-20 09:43:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2019-08-20 09:43:46</sys_updated_on>
+            <value>7</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_communication_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Owner Terminated Escalation</label>
+            <language>en</language>
+            <name>x_unugr_certificat_communication_history</name>
+            <sequence>800</sequence>
+            <synonyms/>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2019-08-20 09:43:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2019-08-20 09:43:46</sys_updated_on>
+            <value>8</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_communication_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Owner Department Change</label>
+            <language>en</language>
+            <name>x_unugr_certificat_communication_history</name>
+            <sequence>900</sequence>
+            <synonyms/>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2019-08-20 09:43:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2019-08-20 09:43:46</sys_updated_on>
+            <value>9</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

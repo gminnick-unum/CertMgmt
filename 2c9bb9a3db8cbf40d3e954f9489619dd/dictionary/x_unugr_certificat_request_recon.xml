@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="c562e7721b577b408591524d0d4bcb64" label="Request Recon" max_length="40" name="x_unugr_certificat_request_recon" type="collection">
+        <element label="First Found" max_length="40" name="u_first_found" type="glide_date_time"/>
+        <element label="Last Found" max_length="40" name="u_last_found" type="glide_date_time"/>
+        <element label="Reconciliation Notes" max_length="4000" name="u_reconciliation_notes" type="string"/>
+        <element label="Certificate Match" max_length="32" name="u_certificate_match" reference="x_unugr_certificat_digital_certificate" type="reference"/>
+        <element label="Certificate Request" max_length="32" name="u_certificate_request" reference="x_unugr_certificat_certificate_request" type="reference"/>
+        <index name="index">
+            <element name="u_certificate_match"/>
+        </index>
+        <index name="index2">
+            <element name="u_certificate_request"/>
+        </index>
+    </element>
+</database>

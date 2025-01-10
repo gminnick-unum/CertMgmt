@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="be526b321b577b408591524d0d4bcbb9" label="Authority Servers" max_length="40" name="x_unugr_certificat_authority_servers" type="collection">
+        <element label="Notes" max_length="500" name="u_notes" type="string"/>
+        <element label="Server Domain" max_length="20" name="u_server_domain" type="string"/>
+        <element display="true" label="Server Name" max_length="100" name="u_server_name" type="string"/>
+        <element label="Active" max_length="40" name="u_active" type="boolean"/>
+        <element label="Certificate Authority Name" max_length="50" name="u_certificate_authority_name" type="string"/>
+        <element label="Credential" max_length="32" name="u_credential" reference="discovery_credentials" type="reference"/>
+        <element choice="1" label="Environment" max_length="20" name="u_environment" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Acceptance" sequence="200" value="UP.ACPT.UPC"/>
+                <element inactive_on_update="false" label="Production" sequence="300" value="UP.CORP.UPC"/>
+                <element inactive_on_update="false" label="Development" sequence="100" value="UP.DEV.UPC"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="u_credential"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="wf_element_activity">
+    <wf_element_activity action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <attributes/>
+        <base_provider display_value="Powershell">59155499eb512100b2f88a7af106feae</base_provider>
+        <category/>
+        <checked_out_by/>
+        <default_height/>
+        <default_width/>
+        <description/>
+        <image>images/heisenberg_icons/workflow_ie8/provider_powershell.png</image>
+        <input_meta>{"name":"Input","type":"DATA_OBJECT","properties":[{"name":"qualysServer","type":"STRING","mandatory":true},{"name":"qualysReportId","type":"STRING","mandatory":true},{"name":"outputDirectory","type":"STRING","mandatory":true},{"name":"qualysUserName","type":"STRING","mandatory":true},{"name":"qualysPassword","type":"ENCRYPTED","attributes":{"use_mid":true},"mandatory":true},{"name":"userName","type":"STRING","mandatory":true},{"name":"userDomain","type":"STRING","mandatory":true},{"name":"userPass","type":"ENCRYPTED","attributes":{"use_mid":true},"mandatory":true}]}</input_meta>
+        <input_process_script/>
+        <input_transform>{"source":"127.0.0.1","script_type":"file","command":"","midScriptFile":"c5d01d1edbf1fbc04ff2c55305961901","powershellVariables":"[{\"name\":\"qualysServer\",\"type\":\"plain\",\"value\":\"${activityInput.qualysServer}\"},{\"name\":\"qualysReportId\",\"type\":\"plain\",\"value\":\"${activityInput.qualysReportId}\"},{\"name\":\"outputDirectory\",\"type\":\"plain\",\"value\":\"${activityInput.outputDirectory}\"},{\"name\":\"qualysUserName\",\"type\":\"plain\",\"value\":\"${activityInput.qualysUserName}\"},{\"name\":\"qualysPassword\",\"type\":\"encrypted\",\"value\":\"${activityInput.qualysPassword}\"},{\"name\":\"userName\",\"type\":\"plain\",\"value\":\"${activityInput.userName}\"},{\"name\":\"userDomain\",\"type\":\"plain\",\"value\":\"${activityInput.userDomain}\"},{\"name\":\"userPass\",\"type\":\"encrypted\",\"value\":\"${activityInput.userPass}\"}]","use_mid_service_account":"true","credential_tag":"","midCapabilities":"427709a60a0006bc7d2904e99132532d"}</input_transform>
+        <local_variables/>
+        <name>cm_downloadQualysReport</name>
+        <output_meta>{"name":"Output","type":"DATA_OBJECT","properties":[{"name":"launchResult","type":"DATA_OBJECT","properties":[{"name":"status","type":"STRING"},{"name":"reportId","type":"STRING"},{"name":"reportFullPath","type":"STRING"}]},{"name":"result","type":"STRING"},{"name":"errorMessage","type":"STRING"}]}</output_meta>
+        <output_process_script><![CDATA[if(!gs.nil(executionResult.errorMessages)) {
+    activityOutput.result = "failure";
+    activityOutput.errorMessage = executionResult.errorMessages;
+} else {
+    activityOutput.result = "success";
+}]]></output_process_script>
+        <output_transform>[{"toLink":"activityOutput.launchResult.status","description":"","to":"launchResult.status","toType":"string","toDestination":"activityOutput","sourceLabel":"executionResult.output","from":"${executionResult.output}","fromSource":"executionResult","type":"JSON","children":"[]","translation":"$.launchResult.Status"},{"toLink":"activityOutput.launchResult.reportId","description":"","to":"launchResult.reportId","toType":"string","toDestination":"activityOutput","sourceLabel":"executionResult.output","from":"${executionResult.output}","fromSource":"executionResult","type":"JSON","children":"[]","translation":"$.launchResult.ReportId"},{"toLink":"activityOutput.launchResult.reportFullPath","description":"","to":"launchResult.reportFullPath","toType":"string","toDestination":"activityOutput","sourceLabel":"executionResult.output","from":"${executionResult.output}","fromSource":"executionResult","type":"JSON","children":"[]","translation":"$.launchResult.ReportFullPath"},{"toLink":"activityOutput.result","description":"","to":"result","toType":"string","toDestination":"activityOutput","sourceLabel":"executionResult.hresult","from":"${executionResult.hresult}","fromSource":"executionResult","type":"Direct","children":"[]","translation":""},{"toLink":"activityOutput.errorMessage","description":"","to":"errorMessage","toType":"string","toDestination":"activityOutput","sourceLabel":"executionResult.errorMessages","from":"${executionResult.errorMessages}","fromSource":"executionResult","type":"Direct","children":"[]","translation":""}]</output_transform>
+        <processing_script/>
+        <sample_payloads>{"executionResult.hresult":{"payload":"null","type":"direct"},"executionResult.output":{"payload":"\n{\n\"launchResult\":  {\n\"Status\":  \"Report deleted\",\n\"ReportId\":  \"20605930\",\n\"ReportFullPath\":  \"\\\\\\\\RDBMS5D1SQL10\\\\TADDMFiles\\\\QualysScanReport_06-04-2019.csv\"\n}\n}\n","type":"json"},"executionResult.errorMessages":{"payload":"null","type":"direct"},"executionResult.debugMessages":{"payload":"2019-06-04 18:57:36 Executing command: C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -executionpolicy unrestricted -noninteractive -nologo -noprofile -command \"&amp; {&amp; 'scripts\\PowerShell\\PSScript.ps1' -computer '127.0.0.1' -script 'C:\\ServiceNow\\dev\\agent\\scripts\\PowerShell\\fetchQualysReport.ps1' 'use_mid_service_account' $true -useCred $false -ismid $true -isDiscovery $false -debug $true -logInfo $true -skipTest $false; exit $LASTEXITCODE}\"\r\n2019-06-04 18:57:36 Credential: MID service account\r\n2019-06-04 18:57:37 PowerShell Version: 5.0.10586.117\r\n2019-06-04 18:57:37 Env vars:\t$env:SNC_outputDirectory:\\\\RDBMS5D1SQL10\\TADDMFiles\\\t$env:SNC_qualysPassword:Guru@03071952\t$env:SNC_qualysReportId:20605930\t$env:SNC_qualysServer:qualysapi.qualys.com\t$env:SNC_qualysUserName:unum_gf\t$env:SNC_userDomain:UP\t$env:SNC_userName:PPA68YL7\t$env:SNC_userPass:PN5qw5\n\r\n2019-06-04 18:57:38 Executing PSScript.ps1 127.0.0.1 C:\\ServiceNow\\dev\\agent\\scripts\\PowerShell\\fetchQualysReport.ps1 False True False\r\n2019-06-04 18:57:38 \t$credType is undefined, defaulting to WMI\r\n2019-06-04 18:57:38 Running testNoCredentialAccessWMI\r\n2019-06-04 18:57:38 \tVars:\t$computer : 127.0.0.1\t$debug : True\t$isDiscovery : False\t$isMid : True\t$script : C:\\ServiceNow\\dev\\agent\\scripts\\PowerShell\\fetchQualysReport.ps1\t$skipTest : False\t$useCred : False\n\r\n\r\n","type":"direct"},"executionResult.credentialDebugInfo":{"payload":"2019-06-04 18:57:36 Tried credential: MID service account, status=success\r\n","type":"direct"},"executionResult.eccSysId":{"payload":"ecb539d6db39fbc04ff2c55305961979","type":"direct"},"executionResult.tags":{"payload":"{\"__text__\":\"\\n{\\n\\\"launchResult\\\":  {\\n\\\"Status\\\":  \\\"Report deleted\\\",\\n\\\"ReportId\\\":  \\\"20605930\\\",\\n\\\"ReportFullPath\\\":  \\\"\\\\\\\\\\\\\\\\RDBMS5D1SQL10\\\\\\\\TADDMFiles\\\\\\\\QualysScanReport_06-04-2019.csv\\\"\\n}\\n}\\n\"}","type":"direct"}}</sample_payloads>
+        <short_description/>
+        <style/>
+        <sys_class_name>wf_element_activity</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-06-04 20:15:41</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>f370911edbf1fbc04ff2c553059619f4</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>cm_downloadQualysReport</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>wf_element_activity_f370911edbf1fbc04ff2c553059619f4</sys_update_name>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-06-05 13:11:13</sys_updated_on>
+        <version_container_id>ba9099d6dbf1fbc04ff2c5530596196a</version_container_id>
+    </wf_element_activity>
+    <wf_versionable action="INSERT_OR_UPDATE">
+        <checked_out/>
+        <checked_out_by/>
+        <published>false</published>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-06-04 20:15:41</sys_created_on>
+        <sys_id>7a9099d6dbf1fbc04ff2c5530596196b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-06-05 13:11:12</sys_updated_on>
+        <valid_from>2019-06-04 23:01:16</valid_from>
+        <valid_to/>
+        <version>1</version>
+        <version_container_id>ba9099d6dbf1fbc04ff2c5530596196a</version_container_id>
+        <wf_element_definition display_value="cm_downloadQualysReport">f370911edbf1fbc04ff2c553059619f4</wf_element_definition>
+    </wf_versionable>
+    <wf_condition_default action="INSERT_OR_UPDATE">
+        <activity_definition display_value="">f370911edbf1fbc04ff2c553059619f4</activity_definition>
+        <condition/>
+        <derived_definition/>
+        <else_flag>true</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <name>Failure</name>
+        <order>200</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-06-04 23:01:06</sys_created_on>
+        <sys_id>9746bd96db39fbc04ff2c5530596194c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-06-04 23:01:06</sys_updated_on>
+    </wf_condition_default>
+    <wf_condition_default action="INSERT_OR_UPDATE">
+        <activity_definition display_value="">f370911edbf1fbc04ff2c553059619f4</activity_definition>
+        <condition>activityOutput.result == "success"</condition>
+        <derived_definition/>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <name>Success</name>
+        <order>100</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-06-04 23:01:06</sys_created_on>
+        <sys_id>cdf43d56db39fbc04ff2c5530596198e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-06-04 23:01:06</sys_updated_on>
+    </wf_condition_default>
+</record_update>

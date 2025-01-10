@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_restricted_caller_access">
     <sys_restricted_caller_access action="INSERT_OR_UPDATE">
+        <description/>
         <operation>read</operation>
+        <rca_type/>
         <source>dbdafc85530203002b76da86a11c081d</source>
         <source_scope display_value="Human Resources: Core">d4ac3fff5b311200a4656ede91f91af2</source_scope>
         <source_table>sys_security_acl</source_table>

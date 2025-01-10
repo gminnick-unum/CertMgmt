@@ -4,25 +4,25 @@
         <description>use this setting to control the output path of the QualysScan Report</description>
         <ignore_cache>false</ignore_cache>
         <is_private>false</is_private>
-        <name>x_unugr_certificat.importscan.qualysOutPutPath</name>
+        <name>x_unugr_certificat.importscan.tenableOutPutPath</name>
         <read_roles/>
-        <suffix>importscan.qualysOutPutPath</suffix>
+        <suffix>importscan.tenableOutPutPath</suffix>
         <sys_class_name>sys_properties</sys_class_name>
         <sys_created_by>CHF03</sys_created_by>
         <sys_created_on>2019-05-31 12:08:27</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>fe6afa78db3db7804ff2c553059619a1</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>x_unugr_certificat.importscan.qualysOutPutPath</sys_name>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>x_unugr_certificat.importscan.tenableOutPutPath</sys_name>
         <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
         <sys_update_name>sys_properties_fe6afa78db3db7804ff2c553059619a1</sys_update_name>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2019-10-10 09:48:35</sys_updated_on>
+        <sys_updated_on>2022-02-15 14:01:31</sys_updated_on>
         <type>string</type>
-        <value>\\RDBMS5PRSQL10\ServiceNow\</value>
+        <value>\\SNOWF0WVBPR001\ServiceNow\</value>
         <write_roles>x_unugr_certificat.management.admin</write_roles>
     </sys_properties>
     <sys_translated_text action="delete_multiple" query="documentkey=fe6afa78db3db7804ff2c553059619a1"/>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report">
     <sys_report action="INSERT_OR_UPDATE">
+        <active>true</active>
         <additional_groupby/>
         <aggregate>COUNT</aggregate>
         <aggregation_source>no_override</aggregation_source>
@@ -8,6 +9,7 @@
         <axis_max_color display_value="UI14 Blue Light">b0d449b3d7332100fa6c0c12ce610383</axis_max_color>
         <axis_min_color display_value="White">65b303c7a9fe3dba00629aff95ee3597</axis_min_color>
         <bar_unstack>false</bar_unstack>
+        <calendar/>
         <chart_background_color display_value="White">65b303c7a9fe3dba00629aff95ee3597</chart_background_color>
         <chart_border_color display_value="LightGrey">65b30308a9fe3dba01ebaa03e87e7cd3</chart_border_color>
         <chart_border_radius>0</chart_border_radius>
@@ -45,12 +47,12 @@
         <end_time/>
         <exp_report_attrs>true</exp_report_attrs>
         <field/>
-        <field_list>u_source,u_environment,u_expires_in_days,u_owned_by,u_issuer,u_common_name,u_sans,u_certificate_template,u_expires,u_certificate_effective_date,u_signature_algorithm</field_list>
-        <filter table="x_unugr_certificat_digital_certificate">u_active=true^u_expires&gt;javascript:gs.endOfYesterday()^EQ^ORDERBYu_expires_in_days<item endquery="false" field="u_active" goto="false" newquery="false" operator="=" or="false" value="true"/>
-            <item endquery="false" field="u_expires" goto="false" newquery="false" operator="&gt;" or="false" value="javascript:gs.endOfYesterday()"/>
+        <field_list>u_source,number,u_expires_in_days,u_owned_by,u_issuer,u_common_name,u_sans,u_certificate_template,u_expires,u_certificate_effective_date,u_signature_algorithm</field_list>
+        <filter table="x_unugr_certificat_digital_certificate">u_active=true^EQ^ORDERBYu_expires_in_days<item endquery="false" field="u_active" goto="false" newquery="false" operator="=" or="false" value="true"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
             <item endquery="false" field="" goto="false" newquery="false" operator="ORDERBY" or="false" value="u_expires_in_days"/>
         </filter>
+        <formatting_configuration>{"table":"x_unugr_certificat_digital_certificate","stringFormattingProperties":{},"durationFormattingProperties":{},"dateFormattingProperties":{},"numberFormattingProperties":{}}</formatting_configuration>
         <from/>
         <funnel_neck_percent>30</funnel_neck_percent>
         <gauge_autoscale>true</gauge_autoscale>
@@ -73,6 +75,7 @@
         <lower_limit/>
         <map display_value="World">93b8a3a2d7101200bd4a4ebfae61033a</map>
         <map_source/>
+        <no_bulk_migration>false</no_bulk_migration>
         <orderby_list/>
         <other_threshold>-2</other_threshold>
         <others>true</others>
@@ -80,7 +83,7 @@
         <pivot_expanded>true</pivot_expanded>
         <report_drilldown/>
         <report_source/>
-        <roles/>
+        <roles>snc_internal</roles>
         <row>u_active</row>
         <sc_groupby_item_id/>
         <sc_groupby_variable_id/>
@@ -109,7 +112,7 @@
         <sys_created_on>2019-04-12 16:15:28</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>035d9b81db787740d3e954f94896192e</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>Active Certificates</sys_name>
         <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
         <sys_policy/>
@@ -117,7 +120,7 @@
         <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
         <sys_update_name>sys_report_035d9b81db787740d3e954f94896192e</sys_update_name>
         <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-04-09 14:17:23</sys_updated_on>
+        <sys_updated_on>2023-04-03 19:25:01</sys_updated_on>
         <table>x_unugr_certificat_digital_certificate</table>
         <title>Active Certificates</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>

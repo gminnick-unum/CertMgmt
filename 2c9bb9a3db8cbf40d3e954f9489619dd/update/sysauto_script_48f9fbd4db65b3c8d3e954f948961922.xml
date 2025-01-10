@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <max_drift/>
+        <name>Expiring Certification Notification</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2019-05-17 17:11:58</run_start>
+        <run_time>1970-01-01 08:00:00</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[//Constants for Communication Type
+var FirstNotify = 1;
+var SecondNotify = 2;
+var ThirdNotify = 3;
+var DailyNotify = 4;
+var CertEscalate = 5;
+
+var errorOccured = false;
+
+var firstNotificationDays = parseInt(gs.getProperty('x_unugr_certificat.cert.expire.notifications.firstNotify'));
+var secondNotificationDays = parseInt(gs.getProperty('x_unugr_certificat.cert.expire.notifications.secondNotify'));
+var thirdNotificationDays = parseInt(gs.getProperty('x_unugr_certificat.cert.expire.notifications.thirdNotify'));
+var dailyNotificationsDays = parseInt(gs.getProperty('x_unugr_certificat.cert.expire.notifications.startDaily'));
+var escalateOccurrence = parseInt(gs.getProperty('x_unugr_certificat.cert.expire.notifications.startEscalated'));
+
+
+try {
+	gs.info('Starting Expiring Certification Notification');
+	var queryString = 'u_active=true^u_expiration_notification=true^u_expiresRELATIVELE@dayofweek@ahead@|FIRSTNOTIFYDAYS|^u_expires>javascript:gs.endOfYesterday()^ORDERBYDESCu_expires_in_days';
+
+	queryString = queryString.replace('|FIRSTNOTIFYDAYS|',firstNotificationDays);
+	// gs.info(queryString);
+	var certificateRecord = new GlideRecord('x_unugr_certificat_digital_certificate');
+	certificateRecord.addEncodedQuery(queryString);
+	certificateRecord.query();
+
+
+	while(certificateRecord.next()){
+
+		//get the days until expire from the record and figure out which communication we need to send
+		var daysUntilExpire = parseInt(certificateRecord.u_expires_in_days);
+		var communicationDescription = '';
+		if(!certificateRecord.u_owned_by){
+			communicationDescription = "NO OWNER - ";
+		}
+		if(daysUntilExpire >= (secondNotificationDays + 1) && daysUntilExpire <= firstNotificationDays) {
+			if(sendNotification(certificateRecord.sys_id,FirstNotify)){
+				gs.eventQueue('x_unugr_certificat.expire.firstnotify',certificateRecord,firstNotificationDays);
+				communicationDescription += 'Expiring Certificate Notification to owner.  Days to Expire ' + certificateRecord.u_expires_in_days;
+				addCommunicationHistory(certificateRecord.sys_id,FirstNotify,certificateRecord.u_owned_by.sys_id,communicationDescription);
+			}
+		} else if (daysUntilExpire >= (thirdNotificationDays + 1) && daysUntilExpire <= secondNotificationDays){
+			if(sendNotification(certificateRecord.sys_id,SecondNotify)){
+				gs.eventQueue('x_unugr_certificat.expire.secondnotify',certificateRecord,secondNotificationDays);
+				communicationDescription += 'Expiring Certificate Notification to owner.  Days to Expire ' + certificateRecord.u_expires_in_days;
+				addCommunicationHistory(certificateRecord.sys_id,SecondNotify,certificateRecord.u_owned_by.sys_id,communicationDescription);
+		} 
+		} else if (daysUntilExpire >= (dailyNotificationsDays + 1) && daysUntilExpire <= thirdNotificationDays){
+			if(sendNotification(certificateRecord.sys_id,ThirdNotify)){
+				gs.eventQueue('x_unugr_certificat.expire.thirdnotify',certificateRecord,thirdNotificationDays);
+				communicationDescription += 'Expiring Certificate Notification to owner.  Days to Expire ' + certificateRecord.u_expires_in_days;
+				addCommunicationHistory(certificateRecord.sys_id,ThirdNotify,certificateRecord.u_owned_by.sys_id,communicationDescription);
+			}
+		} else if (daysUntilExpire >= 0 && daysUntilExpire <= dailyNotificationsDays){
+			gs.eventQueue('x_unugr_certificat.expire.dailynotify',certificateRecord,daysUntilExpire);
+			gs.eventQueue('x_unugr_certificat.expire.dailynotify_ow',certificateRecord,daysUntilExpire);
+			communicationDescription += 'Expiring Certificate Daily Notification to owner.  Days to Expire ' + certificateRecord.u_expires_in_days;
+			addCommunicationHistory(certificateRecord.sys_id,DailyNotify,certificateRecord.u_owned_by.sys_id,communicationDescription);
+			if(sendEscalation(certificateRecord.sys_id,DailyNotify,escalateOccurrence)){
+				gs.eventQueue('x_unugr_certificat.expire.escalation',certificateRecord,daysUntilExpire);
+				communicationDescription += 'Expiring Certificate Escalated Notification to owners manager.  Days to Expire ' + certificateRecord.u_expires_in_days;
+				addCommunicationHistory(certificateRecord.sys_id,CertEscalate,certificateRecord.u_owned_by.manager.sys_id,communicationDescription);
+			}
+
+		}
+
+	}
+
+} catch(e){
+	errorOccured = true;
+	var errorMessage = 'Error occured in Expiring Cert Notification: ' + e;
+	gs.info(errorMessage);
+} finally{
+	if(errorOccured) {
+		gs.info('Expiring Certification Notification finished with Errors');
+	} else{
+		gs.info('Expiring Certification Notification finished without Errors');
+	}
+}
+// function figures out which communication to send based on daysUntilExpire and
+// what previous communications have been sent.
+function sendNotification(certificateSysId, communicationType){
+	var sendNotify = false;
+	
+	var queryString = 'u_certificate.sys_id=|CERTIFICATE|^u_communication_type=|COMMUNICATIONTYPE|';
+	queryString = queryString.replace('|CERTIFICATE|',certificateSysId);
+	queryString = queryString.replace('|COMMUNICATIONTYPE|', communicationType);
+	var previousCommunicationRecord = new GlideRecord('x_unugr_certificat_communication_history');
+	previousCommunicationRecord.addEncodedQuery(queryString);
+	previousCommunicationRecord.query();
+	
+	if(previousCommunicationRecord.getRowCount() == 0) {
+		sendNotify = true;
+	}
+	
+	return sendNotify;
+	
+}
+
+function addCommunicationHistory(certificateSysId, communicationType,ownerSysId,communicationDescription){
+	
+	var communicationHistoryRecord = new GlideRecord('x_unugr_certificat_communication_history');
+	communicationHistoryRecord.initialize();
+	communicationHistoryRecord.u_certificate = certificateSysId;
+	communicationHistoryRecord.u_communication_type = communicationType.toString();
+	communicationHistoryRecord.u_notification_user = ownerSysId;
+	communicationHistoryRecord.u_communication_description = communicationDescription;
+	communicationHistoryRecord.insert();
+		
+}
+
+function sendEscalation(certificateSysId,communicationType,escalateOccurrence){
+	var sendNotify = false;
+	
+	var queryString = 'u_certificate.sys_id=|CERTIFICATE|^u_communication_type=|COMMUNICATIONTYPE|';
+	queryString = queryString.replace('|CERTIFICATE|',certificateSysId);
+	queryString = queryString.replace('|COMMUNICATIONTYPE|', communicationType);
+	var previousCommunicationRecord = new GlideRecord('x_unugr_certificat_communication_history');
+	previousCommunicationRecord.addEncodedQuery(queryString);
+	previousCommunicationRecord.query();
+	
+	if(previousCommunicationRecord.getRowCount() > escalateOccurrence) {
+		sendNotify = true;
+	}
+	
+	return sendNotify;	
+}]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-05-17 17:12:57</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>48f9fbd4db65b3c8d3e954f948961922</sys_id>
+        <sys_mod_count>57</sys_mod_count>
+        <sys_name>Expiring Certification Notification</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sysauto_script_48f9fbd4db65b3c8d3e954f948961922</sys_update_name>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-09-24 18:55:15</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

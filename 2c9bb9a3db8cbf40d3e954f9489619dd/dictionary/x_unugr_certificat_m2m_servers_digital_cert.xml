@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="hasLabels=true" db_object_id="ee522b321b577b408591524d0d4bcb9c" label="Certificat M2m Servers Digital Cert" max_length="40" name="x_unugr_certificat_m2m_servers_digital_cert" type="collection">
+        <element label="Digital Certificate" max_length="32" name="digital_certificate" reference="x_unugr_certificat_digital_certificate" reference_floats="true" type="reference"/>
+        <element label="Server" max_length="32" name="server" reference="cmdb_ci_server" type="reference"/>
+        <element label="First Found" max_length="40" name="u_first_found" type="glide_date_time"/>
+        <element label="Last Found" max_length="40" name="u_last_found" type="glide_date_time"/>
+        <index name="index">
+            <element name="digital_certificate"/>
+        </index>
+        <index name="index2">
+            <element name="server"/>
+        </index>
+    </element>
+</database>

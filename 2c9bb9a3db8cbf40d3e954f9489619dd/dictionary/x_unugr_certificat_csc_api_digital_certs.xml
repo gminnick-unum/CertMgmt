@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="599d9ae31bf8fcd0e314c955624bcb86" extends="sys_import_set_row" label="CSC API Digital Certs" max_length="40" name="x_unugr_certificat_csc_api_digital_certs" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=customFields" label="customFields" max_length="40" name="u_customfields" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=isRenewed" label="isRenewed" max_length="40" name="u_isrenewed" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=commonName" label="commonName" max_length="100" name="u_commonname" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=uuid" label="uuid" max_length="50" name="u_uuid" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=certificateType" label="certificateType" max_length="40" name="u_certificatetype" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=businessUnit" label="businessUnit" max_length="40" name="u_businessunit" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=orderDate" label="orderDate" max_length="40" name="u_orderdate" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=status" label="status" max_length="40" name="u_status" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=orderedBy" label="orderedBy" max_length="40" name="u_orderedby" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=additionalNames" label="additionalNames" max_length="2000" name="u_additionalnames" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=expirationDate" label="expirationDate" max_length="40" name="u_expirationdate" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=serverSoftware" label="serverSoftware" max_length="40" name="u_serversoftware" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=certificate" label="certificate" max_length="18000" name="u_certificate" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=effectiveDate" label="effectiveDate" max_length="40" name="u_effectivedate" type="string"/>
+    </element>
+</database>

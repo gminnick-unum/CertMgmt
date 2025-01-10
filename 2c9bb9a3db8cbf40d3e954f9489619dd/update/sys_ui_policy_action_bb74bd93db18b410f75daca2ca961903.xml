@@ -3,6 +3,8 @@
         <cleared>false</cleared>
         <disabled>ignore</disabled>
         <field>aws_account_number</field>
+        <field_message/>
+        <field_message_type>none</field_message_type>
         <mandatory>true</mandatory>
         <sys_class_name>sys_ui_policy_action</sys_class_name>
         <sys_created_by>DDK18</sys_created_by>
@@ -20,6 +22,8 @@
         <sys_updated_on>2021-05-28 20:36:51</sys_updated_on>
         <table>x_unugr_certificat_certificate_request</table>
         <ui_policy display_value="Display AWS Account Name and Number">04343117db18b410f75daca2ca96198e</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
         <visible>true</visible>
     </sys_ui_policy_action>
 </record_update>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="ab52eb321b577b408591524d0d4bcbc7" label="Scan CI Not Found" max_length="40" name="x_unugr_certificat_scan_ci_not_found" type="collection">
+        <element label="CI NetBios" max_length="50" name="ci_netbios" type="string"/>
+        <element label="Digital certificate" max_length="32" name="digital_certificate" reference="x_unugr_certificat_digital_certificate" type="reference"/>
+        <element label="CI IP Address" max_length="40" name="ci_ip_address" type="string"/>
+        <element label="CI Name" max_length="40" name="ci_name" type="string"/>
+        <index name="index">
+            <element name="digital_certificate"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
+    <sys_script_fix action="INSERT_OR_UPDATE">
+        <before>false</before>
+        <description/>
+        <name>Update missing environments</name>
+        <record_for_rollback>false</record_for_rollback>
+        <script><![CDATA[var missingEnvironmentRecord = new GlideRecord('x_unugr_certificat_digital_certificate');
+var strQuery = 'u_environment=NULL^ORDERBYDESCu_environment';
+missingEnvironmentRecord.addEncodedQuery(strQuery);
+missingEnvironmentRecord.query();
+
+gs.info('Record Count ' + missingEnvironmentRecord.getRowCount());
+
+while(missingEnvironmentRecord.next()){
+	var SANs = '';
+	var subjectCommonName = '';
+
+	if(missingEnvironmentRecord.u_common_name){
+		subjectCommonName = missingEnvironmentRecord.u_common_name;
+	}
+
+	if(missingEnvironmentRecord.u_sans){
+		SANs = missingEnvironmentRecord.u_sans;
+	}
+
+	var environment = findEnvironmentByCommonNameOrSans(subjectCommonName,SANs);
+
+	if(environment && environment.length > 0){
+		missingEnvironmentRecord.u_environment = environment;
+		missingEnvironmentRecord.update();
+	}
+
+}
+
+
+function findEnvironmentByCommonNameOrSans(subjectCommonName,SANs){
+	var environment;
+	var commonName = subjectCommonName.toUpperCase();
+	var alternateName = (SANs.toString()).toUpperCase();
+	var acceptance = 'ACPT';
+	var development = 'DEV';
+	var production = 'CORP';
+	var xcorpProduction = 'XCORP';
+	var ukProduction = 'UK.PROD.UPE';
+	var ukTest = 'TEST.PROD.UPE';
+	var ukcoProduction = 'CO.UK';
+	var itsLab = 'UP.ITS';
+	var starMount = 'STARMOUNT';
+	var prodUnumPl = 'PROD.UNUM.PL';
+	
+	if(commonName.includes('.' + development) || alternateName.includes('.' + development)  || 
+	  commonName.includes(' ' + development + ' ') || alternateName.includes(' ' + development + ' ') ){
+		environment = 'UP.DEV.UPC';
+	} else if(commonName.includes('.' + acceptance) || alternateName.includes('.' + acceptance)  || 
+	  commonName.includes(' ' + acceptance + ' ') || alternateName.includes(' ' + acceptance + ' ') ){
+		environment = 'UP.ACPT.UPC';
+	} else if(commonName.includes('.' + production) || alternateName.includes('.' + production)  || 
+	  commonName.includes(' ' + production + ' ') || alternateName.includes(' ' + production + ' ') ){
+		environment = 'UP.CORP.UPC';
+	} else if(commonName.includes('.' + ukProduction) || alternateName.includes('.' + ukProduction)  || 
+		commonName.includes(' ' + ukProduction + ' ') || alternateName.includes(' ' + ukProduction + ' ') ){
+	  	environment = 'UK.PROD.UPE';
+	} else if(commonName.includes('.' + ukTest) || alternateName.includes('.' + ukTest)  || 
+		commonName.includes(' ' + ukTest + ' ') || alternateName.includes(' ' + ukTest + ' ') ){
+  		environment = 'TEST.PROD.UPE';
+	} else if(commonName.includes('.' + xcorpProduction) || alternateName.includes('.' + xcorpProduction)  || 
+		commonName.includes(' ' + xcorpProduction + ' ') || alternateName.includes(' ' + xcorpProduction + ' ') ){
+		  environment = 'UP.CORP.UPC';  
+	} else if(commonName.includes('.' + itsLab) || alternateName.includes('.' + itsLab)  || 
+		commonName.includes(' ' + itsLab + ' ') || alternateName.includes(' ' + itsLab + ' ') ){
+		environment = 'UP.ITS.UPC';  
+	} else if(commonName.includes('.' + ukcoProduction) || alternateName.includes('.' + ukcoProduction)  || 
+		commonName.includes(' ' + ukcoProduction + ' ') || alternateName.includes(' ' + ukcoProduction + ' ') ){
+	  	environment = 'UK.PROD.UPE';
+	} else if(commonName.includes('.' + starMount) || alternateName.includes('.' + starMount)  || 
+		commonName.includes(' ' + starMount + ' ') || alternateName.includes(' ' + starMount + ' ') ){
+	  environment = 'STARMOUNT';
+	} else if(commonName.includes('.' + prodUnumPl) || alternateName.includes('.' + prodUnumPl)  || 
+		commonName.includes(' ' + prodUnumPl + ' ') || alternateName.includes(' ' + prodUnumPl + ' ') ){
+	  environment = 'UP.CORP.UPC';  
+} else{
+		environment = '';
+	}
+	
+// 	gs.info('findEnvironmentByCommonNameOrSans' + environment);
+	return environment;
+}
+]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-07-24 22:11:07</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>556acb56dbfe7700d3e954f948961957</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Update missing environments</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sys_script_fix_556acb56dbfe7700d3e954f948961957</sys_update_name>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-07-25 00:27:56</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+</record_update>

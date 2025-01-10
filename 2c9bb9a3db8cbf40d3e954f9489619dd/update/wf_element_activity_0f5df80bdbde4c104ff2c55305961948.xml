@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="wf_element_activity">
+    <wf_element_activity action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <attributes/>
+        <base_provider display_value="Powershell">59155499eb512100b2f88a7af106feae</base_provider>
+        <category/>
+        <checked_out_by/>
+        <default_height/>
+        <default_width/>
+        <description/>
+        <image>images/heisenberg_icons/workflow_ie8/provider_powershell.png</image>
+        <input_meta>{"name":"Input","type":"DATA_OBJECT","properties":[{"name":"tenableServer","type":"STRING","mandatory":false},{"name":"tenableTemplateId","type":"STRING","mandatory":false},{"name":"userName","type":"STRING","mandatory":false},{"name":"password","type":"ENCRYPTED","attributes":{"use_mid":true},"mandatory":false}]}</input_meta>
+        <input_process_script/>
+        <input_transform>{"source":"127.0.0.1","script_type":"file","command":"","midScriptFile":"54aa5ccfdbd24c104ff2c55305961918","powershellVariables":"[{\"name\":\"tenableServer\",\"type\":\"plain\",\"value\":\"${activityInput.tenableServer}\"},{\"name\":\"tenableTemplateId\",\"type\":\"plain\",\"value\":\"${activityInput.tenableTemplateId}\"},{\"name\":\"userName\",\"type\":\"plain\",\"value\":\"${activityInput.userName}\"},{\"name\":\"password\",\"type\":\"encrypted\",\"value\":\"${activityInput.password}\"}]","use_mid_service_account":"${activityInput.userName}","credential_tag":"","midCapabilities":"427709a60a0006bc7d2904e99132532d"}</input_transform>
+        <local_variables/>
+        <name>cm_launchTenableReport</name>
+        <output_meta>{"name":"Output","type":"DATA_OBJECT","properties":[{"name":"launchResult","type":"DATA_OBJECT","properties":[{"name":"status","type":"STRING"},{"name":"reportId","type":"STRING"}]},{"name":"result","type":"STRING"},{"name":"errorMessage","type":"STRING"}]}</output_meta>
+        <output_process_script><![CDATA[if(!gs.nil(executionResult.errorMessages)) {
+    activityOutput.result = "failure";
+    activityOutput.errorMessage = executionResult.errorMessages;
+} else {
+    activityOutput.result = "success";
+}]]></output_process_script>
+        <output_transform>[{"toLink":"activityOutput.launchResult.status","description":"","to":"launchResult.status","toType":"string","toDestination":"activityOutput","sourceLabel":"executionResult.output","from":"${executionResult.output}","fromSource":"executionResult","type":"JSON","children":"[]","translation":"$.launchResult.Status"},{"toLink":"activityOutput.launchResult.reportId","description":"","to":"launchResult.reportId","toType":"string","toDestination":"activityOutput","sourceLabel":"executionResult.output","from":"${executionResult.output}","fromSource":"executionResult","type":"JSON","children":"[]","translation":"$.launchResult.ReportId"},{"toLink":"activityOutput.errorMessage","description":"","to":"errorMessage","toType":"string","toDestination":"activityOutput","sourceLabel":"executionResult.errorMessages","from":"${executionResult.errorMessages}","fromSource":"executionResult","type":"Direct","children":"[]","translation":""}]</output_transform>
+        <processing_script/>
+        <sample_payloads>{"executionResult.hresult":{"payload":"null","type":"direct"},"executionResult.output":{"payload":"\n{\n\"launchResult\":  {\n\"Status\":  \"Queued\",\n\"ReportId\":  \"89\"\n}\n}\n","type":"json"},"executionResult.errorMessages":{"payload":"null","type":"direct"},"executionResult.debugMessages":{"payload":"null","type":"direct"},"executionResult.credentialDebugInfo":{"payload":"2020-01-16 14:44:32 Tried Credential: name=UPA USB Exception, affinity: yes, status=success, sysid=0f79c5cfdb4ebfc44ff2c553059619dd, username=UPA\\AAF28RN4, type=Windows, order=99\r\n","type":"direct"},"executionResult.eccSysId":{"payload":"d7c04dcfdb128c104ff2c553059619de","type":"direct"},"executionResult.tags":{"payload":"{\"__text__\":\"\\n{\\n\\\"launchResult\\\":  {\\n\\\"Status\\\":  \\\"Queued\\\",\\n\\\"ReportId\\\":  \\\"89\\\"\\n}\\n}\\n\"}","type":"direct"}}</sample_payloads>
+        <short_description/>
+        <style/>
+        <sys_class_name>wf_element_activity</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2020-01-16 19:34:16</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>0f5df80bdbde4c104ff2c55305961948</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>cm_launchTenableReport</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>wf_element_activity_0f5df80bdbde4c104ff2c55305961948</sys_update_name>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2020-01-21 17:20:25</sys_updated_on>
+        <version_container_id>f36eb80bdbde4c104ff2c553059619d1</version_container_id>
+    </wf_element_activity>
+    <wf_versionable action="INSERT_OR_UPDATE">
+        <checked_out/>
+        <checked_out_by/>
+        <published>false</published>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2020-01-16 19:34:16</sys_created_on>
+        <sys_id>b76eb80bdbde4c104ff2c553059619d3</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2020-01-21 17:20:25</sys_updated_on>
+        <valid_from>2020-01-21 16:31:24</valid_from>
+        <valid_to/>
+        <version>1</version>
+        <version_container_id>f36eb80bdbde4c104ff2c553059619d1</version_container_id>
+        <wf_element_definition display_value="cm_launchTenableReport">0f5df80bdbde4c104ff2c55305961948</wf_element_definition>
+    </wf_versionable>
+    <wf_condition_default action="INSERT_OR_UPDATE">
+        <activity_definition display_value="">0f5df80bdbde4c104ff2c55305961948</activity_definition>
+        <condition/>
+        <derived_definition/>
+        <else_flag>true</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <name>Failure</name>
+        <order>200</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2020-01-16 19:48:21</sys_created_on>
+        <sys_id>b48145c3db528c104ff2c55305961990</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2020-01-16 19:48:21</sys_updated_on>
+    </wf_condition_default>
+    <wf_condition_default action="INSERT_OR_UPDATE">
+        <activity_definition display_value="">0f5df80bdbde4c104ff2c55305961948</activity_definition>
+        <condition>if(!gs.nil(executionResult.errorMessages)) {     activityOutput.result = "failure";     activityOutput.errorMessage = executionResult.errorMessages; } else {     activityOutput.result = "success"; }</condition>
+        <derived_definition/>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <name>Success</name>
+        <order>100</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2020-01-16 19:48:21</sys_created_on>
+        <sys_id>cab001cfdb128c104ff2c5530596196e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2020-01-16 19:48:21</sys_updated_on>
+    </wf_condition_default>
+</record_update>

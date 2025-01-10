@@ -17,6 +17,7 @@
         <messages/>
         <name>Set Domian read only</name>
         <order/>
+        <published_ref/>
         <script><![CDATA[function onLoad() {
  g_form.setReadOnly('domain',true);
 }]]></script>
@@ -39,6 +40,7 @@
         <table/>
         <type>onLoad</type>
         <ui_type>10</ui_type>
+        <va_supported>true</va_supported>
         <variable_set/>
         <view/>
     </catalog_script_client>

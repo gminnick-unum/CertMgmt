@@ -22,6 +22,7 @@
         <ignore_price>true</ignore_price>
         <image/>
         <location/>
+        <make_item_non_conversational>false</make_item_non_conversational>
         <mandatory_attachment>false</mandatory_attachment>
         <meta>certificate, certificate owner, certificate update, SSL, Certificate Management, Digital Certificate</meta>
         <mobile_hide_price>false</mobile_hide_price>
@@ -38,6 +39,7 @@
         <no_proceed_checkout>false</no_proceed_checkout>
         <no_quantity>false</no_quantity>
         <no_quantity_v2>true</no_quantity_v2>
+        <no_save_as_draft>false</no_save_as_draft>
         <no_search>false</no_search>
         <no_wishlist_v2>false</no_wishlist_v2>
         <omit_price>false</omit_price>
@@ -65,15 +67,15 @@
         <sys_created_on>2021-05-07 16:04:57</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>7e7c6c641b04f050e314c955624bcb98</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>Certificate Owner Update</sys_name>
         <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
         <sys_update_name>sc_cat_item_7e7c6c641b04f050e314c955624bcb98</sys_update_name>
-        <sys_updated_by>RAF19</sys_updated_by>
-        <sys_updated_on>2023-06-09 14:47:03</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-04-21 10:32:50</sys_updated_on>
         <taxonomy_topic/>
         <template/>
         <template_manager_roles/>
@@ -99,6 +101,7 @@
         <u_catalog_item_id/>
         <u_configuration_item/>
         <u_contains_pii>false</u_contains_pii>
+        <u_device_info>false</u_device_info>
         <u_dynamic_task_description/>
         <u_email_content/>
         <u_email_footer/>
@@ -115,13 +118,15 @@
         <u_secure_access_group/>
         <u_service_contacts>840c6c13db7faf4c66697a8eaf9619cc</u_service_contacts>
         <u_service_owner display_value="Debbie Thornbury">3ba1cc600fcab100fc3baf58b1050ef2</u_service_owner>
+        <u_software_deploy>false</u_software_deploy>
         <u_subject_matter_expert_s>72bf30c40f36b500fc3baf58b1050e98</u_subject_matter_expert_s>
         <u_thank_you_message/>
-        <u_usage_count>45</u_usage_count>
+        <u_usage_count>70</u_usage_count>
         <u_uses_integration>false</u_uses_integration>
         <u_uses_integration_new>no</u_uses_integration_new>
         <use_sc_layout>true</use_sc_layout>
         <vendor/>
+        <version>45</version>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>
         <visible_standalone>true</visible_standalone>

@@ -9,6 +9,7 @@
         <data_source display_value="AWS API Digital Certs">4f26ee0bdb35f450f75daca2ca961900</data_source>
         <entered_time/>
         <map/>
+        <max_drift/>
         <name>Pull AWS Digital Certs</name>
         <offset/>
         <offset_type>0</offset_type>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="read_only=true" db_object_id="2600e920dbac3850f75daca2ca9619ae" label="Digital Certificates Installed On" max_length="40" name="x_unugr_certificat_st_digital_certificates_installed_on" type="collection">
+        <element label="installed_on" max_length="100" name="installed_on" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Certificate Type" max_length="40" name="certificate_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Internal" value="Internal"/>
+                <element inactive_on_update="false" label="External" value="External"/>
+            </choice>
+        </element>
+    </element>
+</database>

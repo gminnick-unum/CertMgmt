@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="f06263721b577b408591524d0d4bcbc3" label="Certificat M2m Load Balance Digital Cert" max_length="40" name="x_unugr_certificat_m2m_load_balance_digital_cert" type="collection">
+        <element label="First Found" max_length="40" name="u_first_found" type="glide_date_time"/>
+        <element label="Last Found" max_length="40" name="u_last_found" type="glide_date_time"/>
+        <element label="Digital Certificate" max_length="32" name="digital_certificate" reference="x_unugr_certificat_digital_certificate" type="reference"/>
+        <element label="Load Balancer" max_length="32" name="load_balancer" reference="cmdb_ci_lb" type="reference"/>
+        <index name="index">
+            <element name="digital_certificate"/>
+        </index>
+        <index name="index2">
+            <element name="load_balancer"/>
+        </index>
+    </element>
+</database>

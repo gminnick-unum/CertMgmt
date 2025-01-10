@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="ecc_agent_script_file">
+    <ecc_agent_script_file action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <checksum>ShnJs18Ridv1MD73TI0r5g==</checksum>
+        <description/>
+        <directory>false</directory>
+        <name>getQualysReportStatus.ps1</name>
+        <parent display_value="PowerShell">ef89e4fc372001006b882d465abe5d60</parent>
+        <script>	#region input variables&#13;
+	if (Test-Path env:\SNC_qualysServer) {&#13;
+		$qualysServer = $env:SNC_qualysServer&#13;
+		$qualysReportId = $env:SNC_qualysReportId&#13;
+		$qualysUserName = $env:SNC_qualysUserName&#13;
+		$qualysPassword = $env:SNC_qualysPassword&#13;
+		}        &#13;
+    #endregion input variables&#13;
+&#13;
+	try &#13;
+	{&#13;
+&#13;
+		[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12&#13;
+&#13;
+		$authInfo = [System.Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes("$qualysUserName`:$qualysPassword"))&#13;
+&#13;
+		$headers = @{"X-Requested-With"="powershell";"Authorization"="Basic $authInfo"}&#13;
+&#13;
+&#13;
+		$uriGetReportStatus = "https://$qualysServer/api/2.0/fo/report/?action=list&amp;id=$qualysReportId"&#13;
+&#13;
+		$response = Invoke-RestMethod -Headers $headers -Uri $uriGetReportStatus -Method get &#13;
+&#13;
+		$Status = $response.REPORT_LIST_OUTPUT.RESPONSE.REPORT_LIST.REPORT.STATUS.STATE&#13;
+		$reportID = $response.REPORT_LIST_OUTPUT.RESPONSE.REPORT_LIST.REPORT.ID&#13;
+&#13;
+&#13;
+		$reportResult = New-Object -TypeName PSCustomObject&#13;
+		$reportResult | Add-Member -MemberType NoteProperty -Name "Status" -Value $Status -Force&#13;
+		$reportResult | Add-Member -MemberType NoteProperty -Name "ReportId" -Value $reportID -Force&#13;
+&#13;
+		$launchReportResults = New-Object PSCustomObject &#13;
+		$launchReportResults | Add-Member -type NoteProperty -Name launchResult -Value $reportResult&#13;
+&#13;
+		$jsonLaunchReport = $launchReportResults | ConvertTo-Json &#13;
+	}&#13;
+	catch [System.Management.Automation.ActionPreferenceStopException]&#13;
+	{&#13;
+		$errorOccured = $true;&#13;
+		$errorString = $error[0].Exception.Message;&#13;
+		$errorCode = -1&#13;
+	}&#13;
+	catch [System.Exception]&#13;
+	{&#13;
+		$errorOccured = $true;&#13;
+		$errorString = $error[0].Exception.Message;&#13;
+		$errorCode = -1&#13;
+&#13;
+	}&#13;
+	finally &#13;
+	{&#13;
+		if ($errorOccured -eq $true)&#13;
+		{&#13;
+    		SNCLog-DebugInfo "`t Failed to QualysReport : $error"&#13;
+    		[Console]::Error.WriteLine("The operation failed: " + $errorString);&#13;
+			Write-Host $errorString&#13;
+		}&#13;
+		else&#13;
+		{&#13;
+			Write-Host $jsonLaunchReport&#13;
+		}&#13;
+		&#13;
+	}	</script>
+        <script_attachment/>
+        <source/>
+        <sys_class_name>ecc_agent_script_file</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-06-05 14:28:16</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>e67a89aedbb93704d3e954f9489619e6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>getQualysReportStatus.ps1</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>ecc_agent_script_file_e67a89aedbb93704d3e954f9489619e6</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-06-03 04:37:16</sys_updated_on>
+        <use_attachment>false</use_attachment>
+        <version/>
+    </ecc_agent_script_file>
+</record_update>

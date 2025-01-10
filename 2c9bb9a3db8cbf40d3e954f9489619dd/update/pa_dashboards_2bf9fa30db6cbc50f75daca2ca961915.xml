@@ -10,7 +10,11 @@
         <managed_breakdown/>
         <managed_publisher/>
         <name>External Certificate Dashboard</name>
+        <no_bulk_migration>false</no_bulk_migration>
         <no_tabs>false</no_tabs>
+        <notification_link_label/>
+        <notification_link_url/>
+        <notification_text/>
         <order/>
         <owner display_value="Gary Minnick">5a9e514b0f300e006d5c0f8ce1050e50</owner>
         <restrict_to_roles/>

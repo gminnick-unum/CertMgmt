@@ -13,6 +13,7 @@
         <exclusion_choice_list/>
         <look_up_name>Associated Applications</look_up_name>
         <name>Associated Applications</name>
+        <no_bulk_migration>false</no_bulk_migration>
         <reference_conditions table="cmdb_ci_business_app">^RLQUERYx_unugr_certificat_m2m_unum_applica_digital_cert.unum_application,&gt;=1,m2m^ENDRLQUERY</reference_conditions>
         <reference_table>cmdb_ci_business_app</reference_table>
         <remove_all_option>false</remove_all_option>

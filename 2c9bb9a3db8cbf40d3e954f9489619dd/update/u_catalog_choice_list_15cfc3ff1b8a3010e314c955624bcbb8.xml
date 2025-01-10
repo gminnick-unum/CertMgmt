@@ -14,11 +14,12 @@
         <sys_update_name>u_catalog_choice_list_15cfc3ff1b8a3010e314c955624bcbb8</sys_update_name>
         <sys_updated_by>BB420</sys_updated_by>
         <sys_updated_on>2021-08-27 11:40:24</sys_updated_on>
+        <u_active>true</u_active>
         <u_help_text/>
         <u_included_in_items>e989bc37db95bf484ff2c55305961903</u_included_in_items>
         <u_list_name>Environment New</u_list_name>
         <u_order>700</u_order>
-        <u_parent display_value="up">9612a8a01b123050e314c955624bcb9c</u_parent>
+        <u_parent display_value="u_up">9612a8a01b123050e314c955624bcb9c</u_parent>
         <u_value>TRAINING</u_value>
     </u_catalog_choice_list>
 </record_update>

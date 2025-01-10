@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="4462af321b577b408591524d0d4bcb5d" label="Certificate Scan Log" max_length="40" name="x_unugr_certificat_certificate_scan_log" type="collection">
+        <element calculation="(function calculatedFieldValue(current) {&#10;&#10;&#9;if(current.u_scan_ended) {&#10;&#9;&#9;var beginDate = new GlideDateTime(current.u_scan_started);&#10;&#9;&#9;var endDate =  new GlideDateTime(current.u_scan_ended); &#10;&#10;&#10;&#9;&#9;var duration = GlideDateTime.subtract(beginDate, endDate);&#10;&#10;&#9;&#9;return duration;  &#10;&#9;}&#10;})(current);" label="Scan Duration" max_length="40" name="u_scan_duration" type="glide_duration" virtual="true"/>
+        <element label="Scan Ended" max_length="40" name="u_scan_ended" type="glide_date_time"/>
+        <element label="Scan Started" max_length="40" name="u_scan_started" type="glide_date_time"/>
+        <element choice="1" label="Status" max_length="40" name="u_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Processing" sequence="200" value="Processing"/>
+                <element inactive_on_update="false" label="Failure" sequence="300" value="Failure"/>
+                <element inactive_on_update="false" label="Partial Failure" value="Partial Failure"/>
+                <element inactive_on_update="false" label="Success" sequence="100" value="Success"/>
+            </choice>
+        </element>
+        <element label="Status Description" max_length="500" name="u_status_description" type="string"/>
+    </element>
+</database>

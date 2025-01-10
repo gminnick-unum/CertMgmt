@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="gsw_change_log">
+    <gsw_change_log action="INSERT_OR_UPDATE">
+        <change_date>2024-09-05 13:37:02</change_date>
+        <changed_by display_value="Curtis Rowell">c7ef2662dbb29010f7b22fe51b961900</changed_by>
+        <content display_value="Run user criteria diagnostics">5bd6e6a17301230034921c86fbf6a73f</content>
+        <related_change_log_entry/>
+        <related_task_entry/>
+        <sys_class_name>gsw_change_log</sys_class_name>
+        <sys_created_by>DEZ20</sys_created_by>
+        <sys_created_on>2024-09-05 13:37:02</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>4fd16784932416949251fa6f3bba105e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>2024-09-05 13:37:02</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>gsw_change_log_4fd16784932416949251fa6f3bba105e</sys_update_name>
+        <sys_updated_by>DEZ20</sys_updated_by>
+        <sys_updated_on>2024-09-05 13:37:02</sys_updated_on>
+        <type>7</type>
+    </gsw_change_log>
+</record_update>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_unugr_certificat_certificate_request" version="2" view="moduleview">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>number</element>
+            <list_id display_value="x_unugr_certificat_certificate_request" element="NULL" name="x_unugr_certificat_certificate_request" parent="NULL" relationship="NULL" sys_domain="global" view="f38047a4db7533c0d3e954f94896191b">4f52a8e9db4afb844ff2c553059619ae</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-06-14 19:13:53</sys_created_on>
+            <sys_id>8752a8e9db4afb844ff2c553059619af</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-06-14 19:13:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>u_certificate_request_type</element>
+            <list_id display_value="x_unugr_certificat_certificate_request" element="NULL" name="x_unugr_certificat_certificate_request" parent="NULL" relationship="NULL" sys_domain="global" view="f38047a4db7533c0d3e954f94896191b">4f52a8e9db4afb844ff2c553059619ae</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-06-14 19:13:53</sys_created_on>
+            <sys_id>0b52a8e9db4afb844ff2c553059619af</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-06-14 19:13:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_class_name</element>
+            <list_id display_value="x_unugr_certificat_certificate_request" element="NULL" name="x_unugr_certificat_certificate_request" parent="NULL" relationship="NULL" sys_domain="global" view="f38047a4db7533c0d3e954f94896191b">4f52a8e9db4afb844ff2c553059619ae</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-06-14 19:13:53</sys_created_on>
+            <sys_id>8b52a8e9db4afb844ff2c553059619af</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-06-14 19:13:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>stage</element>
+            <list_id display_value="x_unugr_certificat_certificate_request" element="NULL" name="x_unugr_certificat_certificate_request" parent="NULL" relationship="NULL" sys_domain="global" view="f38047a4db7533c0d3e954f94896191b">4f52a8e9db4afb844ff2c553059619ae</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-06-14 19:13:53</sys_created_on>
+            <sys_id>0f52a8e9db4afb844ff2c553059619af</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-06-14 19:13:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>short_description</element>
+            <list_id display_value="x_unugr_certificat_certificate_request" element="NULL" name="x_unugr_certificat_certificate_request" parent="NULL" relationship="NULL" sys_domain="global" view="f38047a4db7533c0d3e954f94896191b">4f52a8e9db4afb844ff2c553059619ae</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-06-14 19:13:53</sys_created_on>
+            <sys_id>8f52a8e9db4afb844ff2c553059619af</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-06-14 19:13:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>assignment_group</element>
+            <list_id display_value="x_unugr_certificat_certificate_request" element="NULL" name="x_unugr_certificat_certificate_request" parent="NULL" relationship="NULL" sys_domain="global" view="f38047a4db7533c0d3e954f94896191b">4f52a8e9db4afb844ff2c553059619ae</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-06-14 19:13:53</sys_created_on>
+            <sys_id>0352a8e9db4afb844ff2c553059619b0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-06-14 19:13:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>assigned_to</element>
+            <list_id display_value="x_unugr_certificat_certificate_request" element="NULL" name="x_unugr_certificat_certificate_request" parent="NULL" relationship="NULL" sys_domain="global" view="f38047a4db7533c0d3e954f94896191b">4f52a8e9db4afb844ff2c553059619ae</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-06-14 19:13:53</sys_created_on>
+            <sys_id>8352a8e9db4afb844ff2c553059619b0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-06-14 19:13:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>approval</element>
+            <list_id display_value="x_unugr_certificat_certificate_request" element="NULL" name="x_unugr_certificat_certificate_request" parent="NULL" relationship="NULL" sys_domain="global" view="f38047a4db7533c0d3e954f94896191b">4f52a8e9db4afb844ff2c553059619ae</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-06-14 19:13:53</sys_created_on>
+            <sys_id>0752a8e9db4afb844ff2c553059619b0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-06-14 19:13:53</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_unugr_certificat_certificate_request</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-06-14 19:13:53</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_id>4f52a8e9db4afb844ff2c553059619ae</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_unugr_certificat_certificate_request</sys_name>
+            <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+            <sys_update_name>sys_ui_list_x_unugr_certificat_certificate_request_moduleview</sys_update_name>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-06-14 19:13:53</sys_updated_on>
+            <sys_user/>
+            <view display_value="ModuleView" name="moduleview">f38047a4db7533c0d3e954f94896191b</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

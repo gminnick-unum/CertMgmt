@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_users_groups">
+    <sys_report_users_groups action="INSERT_OR_UPDATE">
+        <group_id/>
+        <report_id display_value="">174e0741dbb47740d3e954f94896191f</report_id>
+        <sys_class_name>sys_report_users_groups</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-01-14 15:20:52</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>f827a28cdb7160104513e7b51b961960</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>174e0741dbb47740d3e954f94896191f</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sys_report_users_groups_f827a28cdb7160104513e7b51b961960</sys_update_name>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-01-14 15:20:52</sys_updated_on>
+        <user_id display_value="Gnanaarulmozhi Loganathan">8ae62af6db8dbf00add96ac2ca9619c2</user_id>
+    </sys_report_users_groups>
+</record_update>

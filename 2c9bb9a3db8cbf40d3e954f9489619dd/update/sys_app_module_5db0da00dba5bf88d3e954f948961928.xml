@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Enterprise Certificate Management">deaf75ebdb8cbf40d3e954f9489619bc</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter table="x_unugr_certificat_digital_certificate">u_certificate_type=Internal^u_source!=Qualys^u_active=true^EQ<item display_value="Internal" endquery="false" field="u_certificate_type" goto="false" newquery="false" operator="=" or="false" value="Internal"/>
+            <item endquery="false" field="u_source" goto="false" newquery="false" operator="!=" or="false" value="Qualys"/>
+            <item endquery="false" field="u_active" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Internal Digital Certificates</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_unugr_certificat_digital_certificate</name>
+        <order>2100</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <require_confirmation>true</require_confirmation>
+        <roles/>
+        <survey/>
+        <survey_overwrite>true</survey_overwrite>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-05-16 14:55:31</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>5db0da00dba5bf88d3e954f948961928</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Internal Digital Certificates</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sys_app_module_5db0da00dba5bf88d3e954f948961928</sys_update_name>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-08-23 16:36:35</sys_updated_on>
+        <timeline_page/>
+        <title>Internal Digital Certificates</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>

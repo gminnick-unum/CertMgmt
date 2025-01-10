@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="hasLabels=true" audit="true" db_object_id="8f52ab321b577b408591524d0d4bcbac" extends="task" label="Certificate Request" max_length="40" name="x_unugr_certificat_certificate_request" text_index="true" type="collection">
+        <element label="AWS Account Number" max_length="100" name="aws_account_number" type="string"/>
+        <element label="Non Standard Installation" max_length="50" name="non_standard_installation" type="string"/>
+        <element label="Certificate purpose" max_length="1000" name="u_certificate_purpose" type="string"/>
+        <element label="External Website" max_length="40" name="u_external_website" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Certificate Purpose" max_length="100" name="certificate_purpose" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Application Authentication (Client and Server)" sequence="300" value="Application Authentication (Client and Server)"/>
+                <element inactive_on_update="false" label="Web Server Authentication (default)" sequence="100" value="Web Server Authentication (default)"/>
+                <element inactive_on_update="false" label="Code-signing Authentication" sequence="200" value="Code-signing Authentication"/>
+            </choice>
+        </element>
+        <element label="On behalf of" max_length="32" name="u_requested_for" reference="sys_user" type="reference"/>
+        <element active="false" attributes="edge_encryption_enabled=true" label="F5" max_length="40" name="u_inston_f5" type="boolean"/>
+        <element label="AWS Account Name" max_length="100" name="aws_account_name" type="string"/>
+        <element active="false" attributes="edge_encryption_enabled=true" label="AWS" max_length="40" name="u_inston_aws" type="boolean"/>
+        <element choice="1" default="requested" label="Stage" max_length="80" name="stage" read_only="true" type="workflow">
+            <choice>
+                <element inactive_on_update="false" label="Requested" sequence="0" value="requested"/>
+                <element inactive_on_update="false" label="Waiting Vendor Email" sequence="4" value="vendor_email"/>
+                <element inactive_on_update="false" label="Closed Complete" sequence="8" value="closed_complete"/>
+                <element inactive_on_update="false" label="Approval" sequence="1" value="approval"/>
+                <element inactive_on_update="false" label="Generate CNAME" sequence="5" value="cname"/>
+                <element inactive_on_update="false" label="Closed Incomplete" sequence="9" value="closed_incomplete"/>
+                <element inactive_on_update="false" label="Obtain CSR" sequence="2" value="csr"/>
+                <element inactive="true" inactive_on_update="true" label="Waiting  on SSL" sequence="6" value="ssl_wait"/>
+                <element inactive_on_update="false" label="Generate Certificate" sequence="3" value="generate_certificate"/>
+                <element inactive_on_update="false" label="Installation" sequence="7" value="installation"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Current Certificate" max_length="32" name="u_certificate" reference="x_unugr_certificat_digital_certificate" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Certificate Request Type" max_length="100" name="u_certificate_request_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Internal Certificate - Update Existing" sequence="400" value="internal_update"/>
+                <element inactive_on_update="false" label="AWS Generated Certificate – New" sequence="900" value="AWS Generated Certificate – New"/>
+                <element inactive_on_update="false" label="AWS Certificate Deletion" sequence="1300" value="AWS Certificate Deletion"/>
+                <element inactive_on_update="false" label="External Certificate - New" sequence="100" value="external_new"/>
+                <element inactive_on_update="false" label="AWS Internal Certificate – New" sequence="600" value="AWS Internal Certificate – New"/>
+                <element inactive_on_update="false" label="AWS Internal Certificate – Renew Existing" sequence="650" value="AWS Internal Certificate – Renew Existing"/>
+                <element inactive_on_update="false" label="AWS Generated Certificate – Renew Existing" sequence="1000" value="AWS Generated Certificate – Renew Existing"/>
+                <element inactive_on_update="false" label="Certificate Cancellation" sequence="500" value="cancel_certificate"/>
+                <element inactive_on_update="false" label="External Certificate - Update Existing" sequence="200" value="external_update"/>
+                <element inactive_on_update="false" label="AWS External Certificate – New" sequence="700" value="AWS External Certificate – New"/>
+                <element inactive_on_update="false" label="Internal Certificate - New" sequence="300" value="internal_new"/>
+                <element inactive_on_update="false" label="AWS External Certificate – Renew Existing" sequence="800" value="AWS External Certificate – Renew Existing"/>
+            </choice>
+        </element>
+        <element label="CSR Required" max_length="40" name="u_csr_required" type="boolean"/>
+        <element label="Installation Help" max_length="40" name="u_installation_help" type="boolean"/>
+        <element active="false" attributes="edge_encryption_enabled=true" label="IIS" max_length="40" name="u_inston_iis" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="CSR Attachment" max_length="40" name="csr_attachment" type="file_attachment"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Certificate Installation Region" max_length="40" name="certificate_installation_region" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="US West (Oregon) - us-west-2" sequence="400" value="US West (Oregon) - us-west-2"/>
+                <element inactive_on_update="false" label="US East (Ohio)- us-east-2" sequence="100" value="US East (Ohio)- us-east-2"/>
+                <element inactive_on_update="false" label="US West (N. California) - us-west-1" sequence="300" value="US West (N. California) - us-west-1"/>
+                <element inactive_on_update="false" label="US East (N. Virginia) - us-east-1" sequence="200" value="US East (N. Virginia) - us-east-1"/>
+            </choice>
+        </element>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Associated Servers" max_length="4000" name="u_associated_servers" reference="cmdb_ci_server" type="glide_list"/>
+        <element label="Certificate Expiration Date" max_length="40" name="u_certificate_expiration_date" type="glide_date"/>
+        <element active="false" attributes="edge_encryption_enabled=true" label="API Gateway" max_length="40" name="u_inston_api_gateway" type="boolean"/>
+        <element label="CSR Attached" max_length="40" name="u_csr_attached" type="boolean"/>
+        <element label="DNS Names" max_length="1000" name="u_dns_names" type="string"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Certificate to be renewed" max_length="32" name="certificate_to_be_renewed" reference="x_unugr_certificat_digital_certificate" type="reference"/>
+        <element label="Install on" max_length="1024" name="u_install_on" reference="x_unugr_certificat_installation_targets" type="glide_list"/>
+        <element active="false" attributes="edge_encryption_enabled=true" label="Vendor Server" max_length="40" name="u_inston_vendor_server" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true,no_sort=true,slushbucket_ref_no_expand=true" choice="1" label="Environment new" max_length="4000" name="u_environment_new" reference="u_catalog_choice_list" reference_qual="u_list_name=Environment New^u_included_in_itemsLIKEe989bc37db95bf484ff2c55305961903^EQ" reference_qual_condition="u_list_name=Environment New^u_included_in_itemsLIKEe989bc37db95bf484ff2c55305961903^EQ" type="glide_list">
+            <choice>
+                <element inactive="true" inactive_on_update="true" label="STRESS" sequence="500" value="stress"/>
+                <element inactive="true" inactive_on_update="true" label="PFIX" sequence="300" value="pfix"/>
+                <element inactive="true" inactive_on_update="true" label="TEST" sequence="200" value="test_1"/>
+                <element inactive="true" inactive_on_update="true" label="TRAINING" sequence="500" value="training"/>
+                <element inactive="true" inactive_on_update="true" label="DEV" sequence="100" value="dev_1"/>
+                <element inactive="true" inactive_on_update="true" label="PRODUCTION" sequence="400" value="production"/>
+                <element inactive="true" inactive_on_update="true" label="UAT" sequence="600" value="uat"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Domain" max_length="40" name="u_domain" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="UPA" sequence="200" value="u_upa"/>
+                <element inactive_on_update="false" label="UPD" sequence="100" value="u_upd"/>
+                <element inactive_on_update="false" label="UP" sequence="300" value="u_up"/>
+            </choice>
+        </element>
+        <element label="Certificate Name" max_length="50" name="u_certificate_name" type="string"/>
+        <element active="false" attributes="edge_encryption_enabled=true" choice="1" label="Install Environment" max_length="40" name="u_environment" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="PRODUCTION" sequence="700" value="PRODUCTION"/>
+                <element inactive_on_update="false" label="UAT" sequence="300" value="UAT"/>
+                <element inactive_on_update="false" label="STRESS" sequence="400" value="STRESS"/>
+                <element inactive_on_update="false" label="DEV" sequence="100" value="DEV"/>
+                <element inactive_on_update="false" label="PFIX" sequence="500" value="PFIX"/>
+                <element inactive_on_update="false" label="ITEST" sequence="200" value="ITEST"/>
+                <element inactive_on_update="false" label="TRAINING" sequence="600" value="TRAINING"/>
+            </choice>
+        </element>
+        <element label="Multiple DNS Entries" max_length="40" name="u_multiple_dns_entries" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true,no_sort=true,slushbucket_ref_no_expand=true" label="Associated Applications" max_length="4000" name="associated_applications" reference="cmdb_ci_business_app" type="glide_list"/>
+        <element active="false" attributes="edge_encryption_enabled=true" label="Server" max_length="40" name="u_inston_server" type="boolean"/>
+        <index name="index">
+            <element name="certificate_to_be_renewed"/>
+        </index>
+        <index name="index2">
+            <element name="u_certificate"/>
+        </index>
+        <index name="index3">
+            <element name="u_requested_for"/>
+        </index>
+    </element>
+</database>

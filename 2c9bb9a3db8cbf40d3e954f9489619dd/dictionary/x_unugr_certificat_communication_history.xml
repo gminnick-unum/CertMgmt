@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="e06223721b577b408591524d0d4bcb25" label="Communication History" max_length="40" name="x_unugr_certificat_communication_history" type="collection">
+        <element label="Certificate" max_length="32" name="u_certificate" reference="x_unugr_certificat_digital_certificate" type="reference"/>
+        <element label="Communication Description" max_length="1000" name="u_communication_description" type="string"/>
+        <element choice="1" label="Communication Type" max_length="20" name="u_communication_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="First Notification" sequence="100" value="1"/>
+                <element inactive_on_update="false" label="Cert Expire Manager Escalation" sequence="500" value="5"/>
+                <element inactive_on_update="false" label="Owner Department Change" sequence="900" value="9"/>
+                <element inactive_on_update="false" label="Second Notification" sequence="200" value="2"/>
+                <element inactive_on_update="false" label="Owner Terminated" sequence="600" value="6"/>
+                <element inactive_on_update="false" label="Third Notification" sequence="300" value="3"/>
+                <element inactive_on_update="false" label="Owner Terminated Daily" sequence="700" value="7"/>
+                <element inactive_on_update="false" label="Daily Notification" sequence="400" value="4"/>
+                <element inactive_on_update="false" label="Owner Terminated Escalation" sequence="800" value="8"/>
+            </choice>
+        </element>
+        <element label="Notification User" max_length="32" name="u_notification_user" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="u_certificate"/>
+        </index>
+        <index name="index2">
+            <element name="u_notification_user"/>
+        </index>
+    </element>
+</database>

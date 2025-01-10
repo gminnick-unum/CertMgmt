@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="be52ab321b577b408591524d0d4bcb48" label="CertMgmt Options" max_length="40" name="x_unugr_certificat_certmgmt_options" type="collection">
+        <element label="Category" max_length="32" name="category" reference="x_unugr_certificat_certmgmt_options" type="reference"/>
+        <element label="Info Json" max_length="4000" name="info_json" type="string"/>
+        <element display="true" label="Option Name" max_length="250" name="option_name" type="string"/>
+        <element label="Option Value" max_length="50" name="option_value" type="string"/>
+        <element default="True" label="Active" max_length="40" name="active" type="boolean"/>
+        <index name="index">
+            <element name="category"/>
+        </index>
+    </element>
+</database>

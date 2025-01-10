@@ -3,6 +3,8 @@
         <cleared>false</cleared>
         <disabled>ignore</disabled>
         <field>certificate_installation_region</field>
+        <field_message/>
+        <field_message_type>none</field_message_type>
         <mandatory>ignore</mandatory>
         <sys_class_name>sys_ui_policy_action</sys_class_name>
         <sys_created_by>DWU20</sys_created_by>
@@ -20,6 +22,8 @@
         <sys_updated_on>2023-01-25 18:45:15</sys_updated_on>
         <table>x_unugr_certificat_certificate_request</table>
         <ui_policy display_value="display certificate region only when aws type">cab79bea1b28edd0e314c955624bcb79</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
         <visible>true</visible>
     </sys_ui_policy_action>
 </record_update>

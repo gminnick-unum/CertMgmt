@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="wf_element_activity">
+    <wf_element_activity action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <attributes/>
+        <base_provider display_value="Powershell">59155499eb512100b2f88a7af106feae</base_provider>
+        <category/>
+        <checked_out_by/>
+        <default_height/>
+        <default_width/>
+        <description/>
+        <image>images/heisenberg_icons/workflow_ie8/provider_powershell.png</image>
+        <input_meta>{"name":"Input","type":"DATA_OBJECT","properties":[{"name":"reportId","type":"STRING","mandatory":true},{"name":"qualysUserName","type":"STRING","mandatory":true},{"name":"qualysPassword","type":"ENCRYPTED","attributes":{"use_mid":true},"mandatory":true},{"name":"qualysServer","type":"STRING","mandatory":true}]}</input_meta>
+        <input_process_script/>
+        <input_transform>{"source":"127.0.0.1","script_type":"file","command":"","midScriptFile":"e67a89aedbb93704d3e954f9489619e6","powershellVariables":"[{\"name\":\"qualysServer\",\"type\":\"plain\",\"value\":\"${activityInput.qualysServer}\"},{\"name\":\"qualysReportId\",\"type\":\"plain\",\"value\":\"${activityInput.reportId}\"},{\"name\":\"qualysUserName\",\"type\":\"plain\",\"value\":\"${activityInput.qualysUserName}\"},{\"name\":\"qualysPassword\",\"type\":\"encrypted\",\"value\":\"${activityInput.qualysPassword}\"}]","use_mid_service_account":"false","credential_tag":"","midCapabilities":"427709a60a0006bc7d2904e99132532d"}</input_transform>
+        <local_variables/>
+        <name>cm_getQualysReportStatus</name>
+        <output_meta>{"name":"Output","type":"DATA_OBJECT","properties":[{"name":"launchResult","type":"DATA_OBJECT","properties":[{"name":"status","type":"STRING"},{"name":"reportId","type":"STRING"}]},{"name":"result","type":"STRING"},{"name":"errorMessage","type":"STRING"}]}</output_meta>
+        <output_process_script><![CDATA[if(!gs.nil(executionResult.errorMessages)) {
+    activityOutput.result = "failure";
+    activityOutput.errorMessage = executionResult.errorMessages;
+} else {
+    activityOutput.result = "success";
+}]]></output_process_script>
+        <output_transform>[{"toLink":"activityOutput.launchResult.status","description":"","to":"launchResult.status","toType":"string","toDestination":"activityOutput","sourceLabel":"executionResult.output","from":"${executionResult.output}","fromSource":"executionResult","type":"JSON","children":"[]","translation":"$.launchResult.Status"},{"toLink":"activityOutput.launchResult.reportId","description":"","to":"launchResult.reportId","toType":"string","toDestination":"activityOutput","sourceLabel":"executionResult.output","from":"${executionResult.output}","fromSource":"executionResult","type":"JSON","children":"[]","translation":"$.launchResult.ReportId"},{"toLink":"activityOutput.result","description":"","to":"result","toType":"string","toDestination":"activityOutput","sourceLabel":"executionResult.hresult","from":"${executionResult.hresult}","fromSource":"executionResult","type":"Direct","children":"[]","translation":""},{"toLink":"activityOutput.errorMessage","description":"","to":"errorMessage","toType":"string","toDestination":"activityOutput","sourceLabel":"executionResult.errorMessages","from":"${executionResult.errorMessages}","fromSource":"executionResult","type":"Direct","children":"[]","translation":""}]</output_transform>
+        <processing_script/>
+        <sample_payloads>{"executionResult.hresult":{"payload":"null","type":"direct"},"executionResult.output":{"payload":"\n{\n\"launchResult\":  {\n\"Status\":  \"Running\",\n\"ReportId\":  \"20612589\"\n}\n}\n","type":"json"},"executionResult.errorMessages":{"payload":"null","type":"direct"},"executionResult.debugMessages":{"payload":"2019-06-05 10:37:19 Executing command: C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -executionpolicy unrestricted -noninteractive -nologo -noprofile -command \"&amp; {&amp; 'scripts\\PowerShell\\PSScript.ps1' -computer '127.0.0.1' -script 'D:\\SNOW\\Dev\\agent\\scripts\\PowerShell\\getQualysReportStatus.ps1' 'use_mid_service_account' $false -useCred $true -ismid $true -isDiscovery $false -debug $true -logInfo $true -skipTest $false; exit $LASTEXITCODE}\"\r\n2019-06-05 10:37:19 Credential: UP\\PPA68YL7\r\n2019-06-05 10:37:19 PowerShell Version: 5.1.14393.2879\r\n2019-06-05 10:37:20 Env vars:\t$env:SNC_qualysPassword:***\t$env:SNC_qualysReportId:20612589\t$env:SNC_qualysServer:qualysapi.qualys.com\t$env:SNC_qualysUserName:unum_gf\n\r\n2019-06-05 10:37:20 Executing PSScript.ps1 127.0.0.1 D:\\SNOW\\Dev\\agent\\scripts\\PowerShell\\getQualysReportStatus.ps1 True True False\r\n2019-06-05 10:37:20 \t$credType is undefined, defaulting to WMI\r\n2019-06-05 10:37:20 Running testCredentialGetCred\r\n2019-06-05 10:37:20 \tVars:\t$computer : 127.0.0.1\t$debug : True\t$isDiscovery : False\t$isMid : True\t$script : D:\\SNOW\\Dev\\agent\\scripts\\PowerShell\\getQualysReportStatus.ps1\t$skipTest : False\t$useCred : True\n\r\n\r\n","type":"direct"},"executionResult.credentialDebugInfo":{"payload":"2019-06-05 10:37:19 Tried Credential: name=ServiceNow Cert Management, affinity: yes, status=success, sysid=57d319d2db35fbc04ff2c5530596192a, username=UP\\PPA68YL7, type=Windows, order=100\r\n","type":"direct"},"executionResult.eccSysId":{"payload":"35cc8122db75ffc04ff2c55305961986","type":"direct"},"executionResult.tags":{"payload":"{\"__text__\":\"\\n{\\n\\\"launchResult\\\":  {\\n\\\"Status\\\":  \\\"Running\\\",\\n\\\"ReportId\\\":  \\\"20612589\\\"\\n}\\n}\\n\"}","type":"direct"}}</sample_payloads>
+        <short_description/>
+        <style/>
+        <sys_class_name>wf_element_activity</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-06-05 13:46:28</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c2f0456edbb1ffc04ff2c553059619ce</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>cm_getQualysReportStatus</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>wf_element_activity_c2f0456edbb1ffc04ff2c553059619ce</sys_update_name>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-06-05 14:42:02</sys_updated_on>
+        <version_container_id>0f1149eadbb1ffc04ff2c553059619b6</version_container_id>
+    </wf_element_activity>
+    <wf_versionable action="INSERT_OR_UPDATE">
+        <checked_out/>
+        <checked_out_by/>
+        <published>true</published>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-06-05 13:46:28</sys_created_on>
+        <sys_id>8b1149eadbb1ffc04ff2c553059619b7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-06-05 14:42:02</sys_updated_on>
+        <valid_from>2019-06-05 14:42:02</valid_from>
+        <valid_to/>
+        <version>1</version>
+        <version_container_id>0f1149eadbb1ffc04ff2c553059619b6</version_container_id>
+        <wf_element_definition display_value="cm_getQualysReportStatus">c2f0456edbb1ffc04ff2c553059619ce</wf_element_definition>
+    </wf_versionable>
+    <wf_condition_default action="INSERT_OR_UPDATE">
+        <activity_definition display_value="">c2f0456edbb1ffc04ff2c553059619ce</activity_definition>
+        <condition>activityOutput.result == "success"</condition>
+        <derived_definition/>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <name>Success</name>
+        <order>100</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-06-05 14:40:50</sys_created_on>
+        <sys_id>1b7b496edbb93704d3e954f948961917</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-06-05 14:40:50</sys_updated_on>
+    </wf_condition_default>
+    <wf_condition_default action="INSERT_OR_UPDATE">
+        <activity_definition display_value="">c2f0456edbb1ffc04ff2c553059619ce</activity_definition>
+        <condition/>
+        <derived_definition/>
+        <else_flag>true</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <name>Failure</name>
+        <order>200</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-06-05 14:40:50</sys_created_on>
+        <sys_id>756dc9a2dbf93704d3e954f94896197f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-06-05 14:40:50</sys_updated_on>
+    </wf_condition_default>
+</record_update>

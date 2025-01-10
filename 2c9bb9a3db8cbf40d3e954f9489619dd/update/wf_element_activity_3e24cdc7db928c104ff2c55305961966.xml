@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="wf_element_activity">
+    <wf_element_activity action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <attributes/>
+        <base_provider display_value="Powershell">59155499eb512100b2f88a7af106feae</base_provider>
+        <category/>
+        <checked_out_by/>
+        <default_height/>
+        <default_width/>
+        <description/>
+        <image>images/lprio_tsk.gif</image>
+        <input_meta>{"name":"Input","type":"DATA_OBJECT","properties":[{"name":"tenableServer","type":"STRING","mandatory":false},{"name":"tenableReportId","type":"STRING","mandatory":false},{"name":"outputDirectory","type":"STRING","mandatory":false},{"name":"tenableUserName","type":"STRING","mandatory":false},{"name":"tenablePassword","type":"ENCRYPTED","attributes":{"use_mid":true},"mandatory":false},{"name":"userName","type":"STRING","mandatory":false},{"name":"userDomain","type":"STRING","mandatory":false},{"name":"userPassword","type":"ENCRYPTED","attributes":{"use_mid":true},"mandatory":false}]}</input_meta>
+        <input_process_script/>
+        <input_transform>{"source":"127.0.0.1","script_type":"file","command":"","midScriptFile":"2050240fdb564c104ff2c55305961907","powershellVariables":"[{\"name\":\"tenableServer\",\"type\":\"plain\",\"value\":\"${activityInput.tenableServer}\"},{\"name\":\"tenableReportId\",\"type\":\"plain\",\"value\":\"${activityInput.tenableReportId}\"},{\"name\":\"outputDirectory\",\"type\":\"plain\",\"value\":\"${activityInput.outputDirectory}\"},{\"name\":\"tenableUserName\",\"type\":\"plain\",\"value\":\"${activityInput.tenableUserName}\"},{\"name\":\"tenablePassword\",\"type\":\"encrypted\",\"value\":\"${activityInput.tenablePassword}\"},{\"name\":\"userName\",\"type\":\"plain\",\"value\":\"${activityInput.userName}\"},{\"name\":\"userDomain\",\"type\":\"plain\",\"value\":\"${activityInput.userDomain}\"},{\"name\":\"userPass\",\"type\":\"encrypted\",\"value\":\"${activityInput.userPassword}\"}]","use_mid_service_account":"true","credential_tag":"","midCapabilities":"427709a60a0006bc7d2904e99132532d"}</input_transform>
+        <local_variables/>
+        <name>cm_downloadTenableReport</name>
+        <output_meta>{"name":"Output","type":"DATA_OBJECT","properties":[{"name":"launchResult","type":"DATA_OBJECT","properties":[{"name":"status","type":"STRING"},{"name":"reportId","type":"STRING"},{"name":"reportPath","type":"STRING"},{"name":"reportName","type":"STRING"}]},{"name":"result","type":"STRING"},{"name":"errorMessage","type":"STRING"}]}</output_meta>
+        <output_process_script><![CDATA[if(!gs.nil(executionResult.errorMessages)) {
+    activityOutput.result = "failure";
+    activityOutput.errorMessage = executionResult.errorMessages;
+} else {
+    activityOutput.result = "success";
+}]]></output_process_script>
+        <output_transform>[{"toLink":"activityOutput.launchResult.status","description":"","to":"launchResult.status","toType":"string","toDestination":"activityOutput","sourceLabel":"executionResult.output","from":"${executionResult.output}","fromSource":"executionResult","type":"JSON","children":"[]","translation":"$.downloadResult.Status"},{"toLink":"activityOutput.launchResult.reportId","description":"","to":"launchResult.reportId","toType":"string","toDestination":"activityOutput","sourceLabel":"executionResult.output","from":"${executionResult.output}","fromSource":"executionResult","type":"JSON","children":"[]","translation":"$.downloadResult.ReportId"},{"toLink":"activityOutput.launchResult.reportPath","description":"","to":"launchResult.reportPath","toType":"string","toDestination":"activityOutput","sourceLabel":"executionResult.output","from":"${executionResult.output}","fromSource":"executionResult","type":"JSON","children":"[]","translation":"$.downloadResult.ReportPath"},{"toLink":"activityOutput.launchResult.reportName","description":"","to":"launchResult.reportName","toType":"string","toDestination":"activityOutput","sourceLabel":"executionResult.output","from":"${executionResult.output}","fromSource":"executionResult","type":"JSON","children":"[]","translation":"$.downloadResult.ReportName"},{"toLink":"activityOutput.result","description":"","to":"result","toType":"string","toDestination":"activityOutput","sourceLabel":"executionResult.hresult","from":"${executionResult.hresult}","fromSource":"executionResult","type":"Direct","children":"[]","translation":""},{"toLink":"activityOutput.errorMessage","description":"","to":"errorMessage","toType":"string","toDestination":"activityOutput","sourceLabel":"executionResult.errorMessages","from":"${executionResult.errorMessages}","fromSource":"executionResult","type":"Direct","children":"[]","translation":""}]</output_transform>
+        <processing_script/>
+        <sample_payloads>{"executionResult.hresult":{"payload":"null","type":"direct"},"executionResult.output":{"payload":"\n{\n\"downloadResult\":  {\n\"Status\":  \"Report deleted\",\n\"ReportId\":  \"88\",\n\"ReportPath\":  \"\\\\\\\\RDBMS5PRSQL10\\\\ServiceNow\\\\\",\n\"ReportName\":  \"TenableScanReport_01-16-2020.csv\"\n}\n}\n","type":"json"},"executionResult.errorMessages":{"payload":"null","type":"direct"},"executionResult.debugMessages":{"payload":"null","type":"direct"},"executionResult.credentialDebugInfo":{"payload":"2020-01-16 15:13:48 Tried credential: MID service account, status=success\r\n","type":"direct"},"executionResult.eccSysId":{"payload":"a3b70183db568c104ff2c55305961939","type":"direct"},"executionResult.tags":{"payload":"{\"__text__\":\"\\n{\\n\\\"downloadResult\\\":  {\\n\\\"Status\\\":  \\\"Report deleted\\\",\\n\\\"ReportId\\\":  \\\"88\\\",\\n\\\"ReportPath\\\":  \\\"\\\\\\\\\\\\\\\\RDBMS5PRSQL10\\\\\\\\ServiceNow\\\\\\\\\\\",\\n\\\"ReportName\\\":  \\\"TenableScanReport_01-16-2020.csv\\\"\\n}\\n}\\n\"}","type":"direct"}}</sample_payloads>
+        <short_description/>
+        <style/>
+        <sys_class_name>wf_element_activity</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2020-01-16 20:05:04</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>3e24cdc7db928c104ff2c55305961966</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>cm_downloadTenableReport</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>wf_element_activity_3e24cdc7db928c104ff2c55305961966</sys_update_name>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2020-01-22 14:04:18</sys_updated_on>
+        <version_container_id>72750107dbd28c104ff2c553059619b3</version_container_id>
+    </wf_element_activity>
+    <wf_versionable action="INSERT_OR_UPDATE">
+        <checked_out/>
+        <checked_out_by/>
+        <published>true</published>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2020-01-16 20:05:04</sys_created_on>
+        <sys_id>be750107dbd28c104ff2c553059619b4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2020-01-22 14:04:17</sys_updated_on>
+        <valid_from>2020-01-22 14:04:17</valid_from>
+        <valid_to/>
+        <version>1</version>
+        <version_container_id>72750107dbd28c104ff2c553059619b3</version_container_id>
+        <wf_element_definition display_value="cm_downloadTenableReport">3e24cdc7db928c104ff2c55305961966</wf_element_definition>
+    </wf_versionable>
+    <wf_condition_default action="INSERT_OR_UPDATE">
+        <activity_definition display_value="">3e24cdc7db928c104ff2c55305961966</activity_definition>
+        <condition/>
+        <derived_definition/>
+        <else_flag>true</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <name>Failure</name>
+        <order>200</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2020-01-16 20:19:47</sys_created_on>
+        <sys_id>adb8450bdb568c104ff2c5530596199e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2020-01-16 20:19:47</sys_updated_on>
+    </wf_condition_default>
+    <wf_condition_default action="INSERT_OR_UPDATE">
+        <activity_definition display_value="">3e24cdc7db928c104ff2c55305961966</activity_definition>
+        <condition>activityOutput.result == "success"</condition>
+        <derived_definition/>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <name>Success</name>
+        <order>100</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2020-01-16 20:19:47</sys_created_on>
+        <sys_id>ec98c5c7db568c104ff2c55305961955</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2020-01-16 20:19:47</sys_updated_on>
+    </wf_condition_default>
+</record_update>

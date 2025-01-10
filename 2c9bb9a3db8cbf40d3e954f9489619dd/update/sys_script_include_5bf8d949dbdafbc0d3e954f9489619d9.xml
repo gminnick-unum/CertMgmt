@@ -6,7 +6,9 @@
         <caller_access>1</caller_access>
         <client_callable>true</client_callable>
         <description>Functions to retireve and parse cert selection options</description>
+        <mobile_callable>false</mobile_callable>
         <name>AjaxCertClientJSON</name>
+        <sandbox_callable>true</sandbox_callable>
         <script><![CDATA[var AjaxCertClientJSON = Class.create();
 AjaxCertClientJSON.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 

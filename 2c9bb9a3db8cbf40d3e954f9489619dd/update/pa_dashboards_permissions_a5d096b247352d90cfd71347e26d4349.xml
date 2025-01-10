@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="pa_dashboards_permissions">
+    <pa_dashboards_permissions action="INSERT_OR_UPDATE">
+        <dashboard display_value="Certificate Management Dashboard">0ebe726fdb4e77084ff2c55305961951</dashboard>
+        <delete>false</delete>
+        <group/>
+        <identity>b297ef85374eb1001bc2a6d2b3990e99</identity>
+        <read>true</read>
+        <role/>
+        <sys_class_name>pa_dashboards_permissions</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2023-03-29 11:31:20</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a5d096b247352d90cfd71347e26d4349</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>b297ef85374eb1001bc2a6d2b3990e99</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>pa_dashboards_permissions_a5d096b247352d90cfd71347e26d4349</sys_update_name>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2023-03-29 11:31:20</sys_updated_on>
+        <type>3</type>
+        <user display_value="Brandon Wilson">b297ef85374eb1001bc2a6d2b3990e99</user>
+        <write>true</write>
+    </pa_dashboards_permissions>
+</record_update>

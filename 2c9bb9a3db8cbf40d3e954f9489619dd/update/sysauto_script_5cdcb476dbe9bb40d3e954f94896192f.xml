@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <max_drift/>
+        <name>Calculate Certificate Expiration Days</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="CertMgmtAPI User">12adab331b7cb414e314c955624bcb8b</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2019-05-24 21:50:30</run_start>
+        <run_time>1970-01-01 10:00:00</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[var digitalCertRec = new GlideRecord('x_unugr_certificat_digital_certificate');
+digitalCertRec.addQuery();
+digitalCertRec.query();
+
+while(digitalCertRec.next()){
+	digitalCertRec.u_expires_in_days = getDaysToExpire(digitalCertRec.u_expires.getDisplayValue());
+	digitalCertRec.update();
+}
+	
+
+
+function getDaysToExpire(expiredValue){
+	var daysToExpire = 0;
+	var expiredSplit = expiredValue.split(" ");
+	var certExpirationDate = new GlideDateTime();
+	certExpirationDate.setValue(expiredSplit[0] + ' 00:00:00');
+	
+	var currentDate = new GlideDateTime();
+	var currentValue = currentDate.getDisplayValue();
+	var currentSplit = currentValue.split(" ");
+	currentDate.setValue(currentSplit[0] + ' 00:00:00');
+	
+	if(certExpirationDate <= currentDate){
+		daysToExpire = 0;
+	} else {
+		var duration = GlideDate.subtract(currentDate,certExpirationDate);
+		daysToExpire = duration.getRoundedDayPart();
+	}
+	// Add your code here
+	return daysToExpire;  // return the calculated value	
+}]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-05-24 21:51:55</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>5cdcb476dbe9bb40d3e954f94896192f</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Calculate Certificate Expiration Days</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sysauto_script_5cdcb476dbe9bb40d3e954f94896192f</sys_update_name>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-09-02 13:43:20</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

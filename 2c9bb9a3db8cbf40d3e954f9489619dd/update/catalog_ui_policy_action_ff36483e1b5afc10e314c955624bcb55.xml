@@ -5,6 +5,8 @@
         <cleared>false</cleared>
         <disabled>ignore</disabled>
         <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
         <mandatory>ignore</mandatory>
         <order>200</order>
         <sys_class_name>catalog_ui_policy_action</sys_class_name>
@@ -23,6 +25,8 @@
         <sys_updated_on>2022-04-21 18:54:00</sys_updated_on>
         <table/>
         <ui_policy display_value="If Request is for Existing Force Select of Existing">82f68563db31bf044ff2c55305961922</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
         <variable>domain</variable>
         <variable_set display_value="Certificate Request">afcc3037dbd5bf484ff2c553059619c1</variable_set>
         <visible>ignore</visible>

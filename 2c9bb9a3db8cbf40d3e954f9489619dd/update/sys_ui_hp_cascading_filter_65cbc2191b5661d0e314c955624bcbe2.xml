@@ -7,7 +7,7 @@
         <look_up_name/>
         <name>Applications</name>
         <parent/>
-        <publisher_reference display_value="Cert Apps">ffcacd7d1b0e65d8e314c955624bcba4</publisher_reference>
+        <publisher_reference display_value="Certificate Applications">ffcacd7d1b0e65d8e314c955624bcba4</publisher_reference>
         <sys_class_name>sys_ui_hp_cascading_filter</sys_class_name>
         <sys_created_by>ADI13</sys_created_by>
         <sys_created_on>2023-04-18 15:50:23</sys_created_on>

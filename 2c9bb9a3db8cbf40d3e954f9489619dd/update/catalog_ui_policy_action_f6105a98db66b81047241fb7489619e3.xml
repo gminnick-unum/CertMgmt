@@ -5,6 +5,8 @@
         <cleared>false</cleared>
         <disabled>ignore</disabled>
         <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
         <mandatory>false</mandatory>
         <order>500</order>
         <sys_class_name>catalog_ui_policy_action</sys_class_name>
@@ -23,6 +25,8 @@
         <sys_updated_on>2021-09-16 15:04:30</sys_updated_on>
         <table/>
         <ui_policy display_value="Display/Hide Cancel request type variables">277e86dcdb26b81047241fb748961920</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
         <variable>assistance_with_certificate_installation</variable>
         <variable_set display_value="Certificate Request">afcc3037dbd5bf484ff2c553059619c1</variable_set>
         <visible>false</visible>

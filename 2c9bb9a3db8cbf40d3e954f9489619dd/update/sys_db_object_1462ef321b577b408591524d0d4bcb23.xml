@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_db_object">
+    <sys_db_object action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <actions_access>false</actions_access>
+        <alter_access>false</alter_access>
+        <caller_access/>
+        <client_scripts_access>false</client_scripts_access>
+        <configuration_access>false</configuration_access>
+        <create_access>false</create_access>
+        <create_access_controls>true</create_access_controls>
+        <delete_access>true</delete_access>
+        <is_extendable>false</is_extendable>
+        <label>Digital Certificate</label>
+        <live_feed_enabled>false</live_feed_enabled>
+        <name>x_unugr_certificat_digital_certificate</name>
+        <number_ref display_value="CER">4a511410dbbc7b00d3e954f948961902</number_ref>
+        <provider_class/>
+        <read_access>true</read_access>
+        <scriptable_table>false</scriptable_table>
+        <super_class/>
+        <sys_class_name>sys_db_object</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-03-13 21:03:47</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object/>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1462ef321b577b408591524d0d4bcb23</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Digital Certificate</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sys_db_object_1462ef321b577b408591524d0d4bcb23</sys_update_name>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-04-09 17:29:05</sys_updated_on>
+        <update_access>false</update_access>
+        <user_role display_value="x_unugr_certificat.digital_certificate_user" name="x_unugr_certificat.digital_certificate_user">8aaf75ebdb8cbf40d3e954f948961958</user_role>
+        <ws_access>true</ws_access>
+    </sys_db_object>
+</record_update>

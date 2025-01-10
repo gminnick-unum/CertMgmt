@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_related sys_domain="global" table="x_unugr_certificat_certificate_request" version="2" view="moduleview">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Certificate Request - ModuleView" name="x_unugr_certificat_certificate_request" related_list="NULL" sys_domain="global" view="f38047a4db7533c0d3e954f94896191b">480f5f40db023b444ff2c553059619e0</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>x_unugr_certificat_certificate_task.certificate_request</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-06-10 17:07:11</sys_created_on>
+            <sys_id>c80f5f40db023b444ff2c553059619e1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-06-10 17:07:11</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Certificate Request - ModuleView" name="x_unugr_certificat_certificate_request" related_list="NULL" sys_domain="global" view="f38047a4db7533c0d3e954f94896191b">480f5f40db023b444ff2c553059619e0</list_id>
+            <order_by/>
+            <position>1</position>
+            <related_list>sysapproval_approver.sysapproval</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-06-10 17:07:11</sys_created_on>
+            <sys_id>c40f5f40db023b444ff2c553059619e2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-06-10 17:07:11</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>Certificate Request - ModuleView</calculated_name>
+            <filter/>
+            <name>x_unugr_certificat_certificate_request</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-06-10 17:07:11</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_id>480f5f40db023b444ff2c553059619e0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Certificate Request - ModuleView</sys_name>
+            <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+            <sys_update_name>sys_ui_related_x_unugr_certificat_certificate_request_moduleview</sys_update_name>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-06-10 17:07:11</sys_updated_on>
+            <sys_user/>
+            <view display_value="ModuleView" name="moduleview">f38047a4db7533c0d3e954f94896191b</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+</record_update>

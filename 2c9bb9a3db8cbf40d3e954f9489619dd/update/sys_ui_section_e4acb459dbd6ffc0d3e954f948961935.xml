@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="e4acb459dbd6ffc0d3e954f948961935" sys_domain="global" table="x_unugr_certificat_installation_targets" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_target_device</element>
+            <position>0</position>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-06-26 12:46:24</sys_created_on>
+            <sys_id>c0cc7859dbd6ffc0d3e954f94896195d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unugr_certificat_installation_targets" sys_domain="global" view="Default view">e4acb459dbd6ffc0d3e954f948961935</sys_ui_section>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-06-26 12:46:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_target_value</element>
+            <position>1</position>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-06-26 12:46:24</sys_created_on>
+            <sys_id>44cc7859dbd6ffc0d3e954f94896195d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unugr_certificat_installation_targets" sys_domain="global" view="Default view">e4acb459dbd6ffc0d3e954f948961935</sys_ui_section>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-06-26 12:46:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>2</position>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-06-26 12:46:24</sys_created_on>
+            <sys_id>c4cc7859dbd6ffc0d3e954f94896195d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unugr_certificat_installation_targets" sys_domain="global" view="Default view">e4acb459dbd6ffc0d3e954f948961935</sys_ui_section>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-06-26 12:46:24</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_assignment_group</element>
+            <position>3</position>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-06-26 12:46:24</sys_created_on>
+            <sys_id>48cc7859dbd6ffc0d3e954f94896195d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unugr_certificat_installation_targets" sys_domain="global" view="Default view">e4acb459dbd6ffc0d3e954f948961935</sys_ui_section>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-06-26 12:46:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_install_order</element>
+            <position>4</position>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-06-26 12:46:24</sys_created_on>
+            <sys_id>c8cc7859dbd6ffc0d3e954f94896195d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unugr_certificat_installation_targets" sys_domain="global" view="Default view">e4acb459dbd6ffc0d3e954f948961935</sys_ui_section>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-06-26 12:46:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_internal_assignment_group</element>
+            <position>5</position>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-07-12 13:50:22</sys_created_on>
+            <sys_id>30d46716db22bb40d3e954f94896194e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unugr_certificat_installation_targets" sys_domain="global" view="Default view">e4acb459dbd6ffc0d3e954f948961935</sys_ui_section>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-07-12 13:50:22</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_unugr_certificat_installation_targets</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-06-26 12:45:54</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_id>e4acb459dbd6ffc0d3e954f948961935</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_unugr_certificat_installation_targets</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+            <sys_update_name>sys_ui_section_e4acb459dbd6ffc0d3e954f948961935</sys_update_name>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-06-26 12:45:54</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="ecc_agent_ip_range">
+    <ecc_agent_ip_range action="INSERT_OR_UPDATE">
+        <name>Local</name>
+        <range>10.8.18.0</range>
+        <sys_class_name>ecc_agent_ip_range</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2022-01-25 13:57:02</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>c0b922851b914914e314c955624bcb36</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Local</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>ecc_agent_ip_range_c0b922851b914914e314c955624bcb36</sys_update_name>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2022-01-25 13:57:02</sys_updated_on>
+        <type>include</type>
+    </ecc_agent_ip_range>
+</record_update>

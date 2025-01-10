@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-03-13 21:03:48</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d6afb5ebdb8cbf40d3e954f94896190b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_unugr_certificat_digital_certificate.x_unugr_certificat.digital_certificate_user</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_security_acl display_value="x_unugr_certificat_digital_certificate">52afb5ebdb8cbf40d3e954f948961906</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_d6afb5ebdb8cbf40d3e954f94896190b</sys_update_name>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-03-13 21:03:48</sys_updated_on>
+        <sys_user_role display_value="x_unugr_certificat.digital_certificate_user" name="x_unugr_certificat.digital_certificate_user">8aaf75ebdb8cbf40d3e954f948961958</sys_user_role>
+    </sys_security_acl_role>
+</record_update>

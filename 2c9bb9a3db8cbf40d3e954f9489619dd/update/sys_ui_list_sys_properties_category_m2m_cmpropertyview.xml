@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="sys_properties_category_m2m" version="2" view="cmpropertyview">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>category</element>
+            <list_id display_value="sys_properties_category_m2m" element="NULL" name="sys_properties_category_m2m" parent="NULL" relationship="NULL" sys_domain="global" view="7fb09097dbf53f04d3e954f948961934">7f81905bdbf53f04d3e954f948961912</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-06-07 18:14:09</sys_created_on>
+            <sys_id>b781905bdbf53f04d3e954f948961913</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-06-07 18:14:09</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>property.name</element>
+            <list_id display_value="sys_properties_category_m2m" element="NULL" name="sys_properties_category_m2m" parent="NULL" relationship="NULL" sys_domain="global" view="7fb09097dbf53f04d3e954f948961934">7f81905bdbf53f04d3e954f948961912</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-06-07 18:14:09</sys_created_on>
+            <sys_id>3b81905bdbf53f04d3e954f948961913</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-06-07 18:14:09</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>property.value</element>
+            <list_id display_value="sys_properties_category_m2m" element="NULL" name="sys_properties_category_m2m" parent="NULL" relationship="NULL" sys_domain="global" view="7fb09097dbf53f04d3e954f948961934">7f81905bdbf53f04d3e954f948961912</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-06-07 18:14:09</sys_created_on>
+            <sys_id>bb81905bdbf53f04d3e954f948961913</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-06-07 18:14:09</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>property.description</element>
+            <list_id display_value="sys_properties_category_m2m" element="NULL" name="sys_properties_category_m2m" parent="NULL" relationship="NULL" sys_domain="global" view="7fb09097dbf53f04d3e954f948961934">7f81905bdbf53f04d3e954f948961912</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-06-07 18:14:09</sys_created_on>
+            <sys_id>3f81905bdbf53f04d3e954f948961913</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-06-07 18:14:09</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>property.ignore_cache</element>
+            <list_id display_value="sys_properties_category_m2m" element="NULL" name="sys_properties_category_m2m" parent="NULL" relationship="NULL" sys_domain="global" view="7fb09097dbf53f04d3e954f948961934">7f81905bdbf53f04d3e954f948961912</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-06-07 18:14:09</sys_created_on>
+            <sys_id>bf81905bdbf53f04d3e954f948961913</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-06-07 18:14:09</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>property.is_private</element>
+            <list_id display_value="sys_properties_category_m2m" element="NULL" name="sys_properties_category_m2m" parent="NULL" relationship="NULL" sys_domain="global" view="7fb09097dbf53f04d3e954f948961934">7f81905bdbf53f04d3e954f948961912</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-06-07 18:14:09</sys_created_on>
+            <sys_id>3381905bdbf53f04d3e954f948961914</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-06-07 18:14:09</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>property.suffix</element>
+            <list_id display_value="sys_properties_category_m2m" element="NULL" name="sys_properties_category_m2m" parent="NULL" relationship="NULL" sys_domain="global" view="7fb09097dbf53f04d3e954f948961934">7f81905bdbf53f04d3e954f948961912</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-06-07 18:14:09</sys_created_on>
+            <sys_id>b381905bdbf53f04d3e954f948961914</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-06-07 18:14:09</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>property.sys_tags</element>
+            <list_id display_value="sys_properties_category_m2m" element="NULL" name="sys_properties_category_m2m" parent="NULL" relationship="NULL" sys_domain="global" view="7fb09097dbf53f04d3e954f948961934">7f81905bdbf53f04d3e954f948961912</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-06-07 18:14:09</sys_created_on>
+            <sys_id>3781905bdbf53f04d3e954f948961914</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-06-07 18:14:09</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>property.type</element>
+            <list_id display_value="sys_properties_category_m2m" element="NULL" name="sys_properties_category_m2m" parent="NULL" relationship="NULL" sys_domain="global" view="7fb09097dbf53f04d3e954f948961934">7f81905bdbf53f04d3e954f948961912</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-06-07 18:14:09</sys_created_on>
+            <sys_id>b781905bdbf53f04d3e954f948961914</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-06-07 18:14:09</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>property.write_roles</element>
+            <list_id display_value="sys_properties_category_m2m" element="NULL" name="sys_properties_category_m2m" parent="NULL" relationship="NULL" sys_domain="global" view="7fb09097dbf53f04d3e954f948961934">7f81905bdbf53f04d3e954f948961912</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>9</position>
+            <sum>false</sum>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-06-07 18:14:09</sys_created_on>
+            <sys_id>3b81905bdbf53f04d3e954f948961914</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-06-07 18:14:09</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>property.choices</element>
+            <list_id display_value="sys_properties_category_m2m" element="NULL" name="sys_properties_category_m2m" parent="NULL" relationship="NULL" sys_domain="global" view="7fb09097dbf53f04d3e954f948961934">7f81905bdbf53f04d3e954f948961912</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>10</position>
+            <sum>false</sum>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-06-07 18:14:09</sys_created_on>
+            <sys_id>bb81905bdbf53f04d3e954f948961914</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-06-07 18:14:09</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>sys_properties_category_m2m</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-06-07 18:14:09</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_id>7f81905bdbf53f04d3e954f948961912</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sys_properties_category_m2m</sys_name>
+            <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+            <sys_update_name>sys_ui_list_sys_properties_category_m2m_cmpropertyview</sys_update_name>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-06-07 18:14:09</sys_updated_on>
+            <sys_user/>
+            <view display_value="CMPropertyView" name="cmpropertyview">7fb09097dbf53f04d3e954f948961934</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

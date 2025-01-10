@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="6a877fdbdb4e7b80d3e954f948961963" sys_domain="global" table="x_unugr_certificat_certificate_request" version="3" view="internal_pending">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>0</position>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-10-14 14:33:39</sys_created_on>
+            <sys_id>eb24b320db6408504ff2c553059619c1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unugr_certificat_certificate_request" sys_domain="global" view="1bb91603db8effc44ff2c553059619ce">6a877fdbdb4e7b80d3e954f948961963</sys_ui_section>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-10-14 14:33:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assignment_group</element>
+            <position>1</position>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-10-14 14:33:39</sys_created_on>
+            <sys_id>a724b320db6408504ff2c553059619c2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unugr_certificat_certificate_request" sys_domain="global" view="1bb91603db8effc44ff2c553059619ce">6a877fdbdb4e7b80d3e954f948961963</sys_ui_section>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-10-14 14:33:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assigned_to</element>
+            <position>2</position>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-10-14 14:33:39</sys_created_on>
+            <sys_id>2f24b320db6408504ff2c553059619c2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unugr_certificat_certificate_request" sys_domain="global" view="1bb91603db8effc44ff2c553059619ce">6a877fdbdb4e7b80d3e954f948961963</sys_ui_section>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-10-14 14:33:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>active</element>
+            <position>3</position>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-10-14 14:33:39</sys_created_on>
+            <sys_id>a324b320db6408504ff2c553059619c3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unugr_certificat_certificate_request" sys_domain="global" view="1bb91603db8effc44ff2c553059619ce">6a877fdbdb4e7b80d3e954f948961963</sys_ui_section>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-10-14 14:33:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>associated_applications</element>
+            <position>4</position>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-10-14 14:33:39</sys_created_on>
+            <sys_id>2b24b320db6408504ff2c553059619c3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unugr_certificat_certificate_request" sys_domain="global" view="1bb91603db8effc44ff2c553059619ce">6a877fdbdb4e7b80d3e954f948961963</sys_ui_section>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-10-14 14:33:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_certificate_expiration_date</element>
+            <position>5</position>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-10-14 14:33:39</sys_created_on>
+            <sys_id>af24b320db6408504ff2c553059619c3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unugr_certificat_certificate_request" sys_domain="global" view="1bb91603db8effc44ff2c553059619ce">6a877fdbdb4e7b80d3e954f948961963</sys_ui_section>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-10-14 14:33:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_multiple_dns_entries</element>
+            <position>6</position>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-10-14 14:33:39</sys_created_on>
+            <sys_id>2724b320db6408504ff2c553059619c4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unugr_certificat_certificate_request" sys_domain="global" view="1bb91603db8effc44ff2c553059619ce">6a877fdbdb4e7b80d3e954f948961963</sys_ui_section>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-10-14 14:33:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_environment</element>
+            <position>7</position>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-10-14 14:33:39</sys_created_on>
+            <sys_id>ab24b320db6408504ff2c553059619c4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unugr_certificat_certificate_request" sys_domain="global" view="1bb91603db8effc44ff2c553059619ce">6a877fdbdb4e7b80d3e954f948961963</sys_ui_section>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-10-14 14:33:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_install_on</element>
+            <position>8</position>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-10-14 14:33:39</sys_created_on>
+            <sys_id>2324b320db6408504ff2c553059619c5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unugr_certificat_certificate_request" sys_domain="global" view="1bb91603db8effc44ff2c553059619ce">6a877fdbdb4e7b80d3e954f948961963</sys_ui_section>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-10-14 14:33:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>9</position>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-10-14 14:33:39</sys_created_on>
+            <sys_id>a724b320db6408504ff2c553059619c5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unugr_certificat_certificate_request" sys_domain="global" view="1bb91603db8effc44ff2c553059619ce">6a877fdbdb4e7b80d3e954f948961963</sys_ui_section>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-10-14 14:33:39</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>state</element>
+            <position>10</position>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-10-14 14:33:39</sys_created_on>
+            <sys_id>2f24b320db6408504ff2c553059619c5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unugr_certificat_certificate_request" sys_domain="global" view="1bb91603db8effc44ff2c553059619ce">6a877fdbdb4e7b80d3e954f948961963</sys_ui_section>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-10-14 14:33:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>opened_by</element>
+            <position>11</position>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-10-14 14:33:39</sys_created_on>
+            <sys_id>a324b320db6408504ff2c553059619c6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unugr_certificat_certificate_request" sys_domain="global" view="1bb91603db8effc44ff2c553059619ce">6a877fdbdb4e7b80d3e954f948961963</sys_ui_section>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-10-14 14:33:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_requested_for</element>
+            <position>12</position>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-10-14 14:33:39</sys_created_on>
+            <sys_id>2b24b320db6408504ff2c553059619c6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unugr_certificat_certificate_request" sys_domain="global" view="1bb91603db8effc44ff2c553059619ce">6a877fdbdb4e7b80d3e954f948961963</sys_ui_section>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-10-14 14:33:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_associated_servers</element>
+            <position>13</position>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-10-14 14:33:39</sys_created_on>
+            <sys_id>af24b320db6408504ff2c553059619c6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unugr_certificat_certificate_request" sys_domain="global" view="1bb91603db8effc44ff2c553059619ce">6a877fdbdb4e7b80d3e954f948961963</sys_ui_section>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-10-14 14:33:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_certificate_name</element>
+            <position>14</position>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-10-14 14:33:39</sys_created_on>
+            <sys_id>2724b320db6408504ff2c553059619c7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unugr_certificat_certificate_request" sys_domain="global" view="1bb91603db8effc44ff2c553059619ce">6a877fdbdb4e7b80d3e954f948961963</sys_ui_section>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-10-14 14:33:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_certificate</element>
+            <position>15</position>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-10-14 14:33:39</sys_created_on>
+            <sys_id>ab24b320db6408504ff2c553059619c7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unugr_certificat_certificate_request" sys_domain="global" view="1bb91603db8effc44ff2c553059619ce">6a877fdbdb4e7b80d3e954f948961963</sys_ui_section>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-10-14 14:33:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_installation_help</element>
+            <position>16</position>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-10-14 14:33:39</sys_created_on>
+            <sys_id>2324b320db6408504ff2c553059619c8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unugr_certificat_certificate_request" sys_domain="global" view="1bb91603db8effc44ff2c553059619ce">6a877fdbdb4e7b80d3e954f948961963</sys_ui_section>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-10-14 14:33:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_external_website</element>
+            <position>17</position>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-10-14 14:33:39</sys_created_on>
+            <sys_id>a724b320db6408504ff2c553059619c8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unugr_certificat_certificate_request" sys_domain="global" view="1bb91603db8effc44ff2c553059619ce">6a877fdbdb4e7b80d3e954f948961963</sys_ui_section>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-10-14 14:33:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_dns_names</element>
+            <position>18</position>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-10-14 14:33:39</sys_created_on>
+            <sys_id>2f24b320db6408504ff2c553059619c8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unugr_certificat_certificate_request" sys_domain="global" view="1bb91603db8effc44ff2c553059619ce">6a877fdbdb4e7b80d3e954f948961963</sys_ui_section>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-10-14 14:33:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>19</position>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-10-14 14:33:39</sys_created_on>
+            <sys_id>a324b320db6408504ff2c553059619c9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unugr_certificat_certificate_request" sys_domain="global" view="1bb91603db8effc44ff2c553059619ce">6a877fdbdb4e7b80d3e954f948961963</sys_ui_section>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-10-14 14:33:39</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_certificate_purpose</element>
+            <position>20</position>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-10-14 14:33:39</sys_created_on>
+            <sys_id>2b24b320db6408504ff2c553059619c9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unugr_certificat_certificate_request" sys_domain="global" view="1bb91603db8effc44ff2c553059619ce">6a877fdbdb4e7b80d3e954f948961963</sys_ui_section>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-10-14 14:33:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>short_description</element>
+            <position>21</position>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-10-14 14:33:39</sys_created_on>
+            <sys_id>af24b320db6408504ff2c553059619c9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unugr_certificat_certificate_request" sys_domain="global" view="1bb91603db8effc44ff2c553059619ce">6a877fdbdb4e7b80d3e954f948961963</sys_ui_section>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-10-14 14:33:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>description</element>
+            <position>22</position>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-10-14 14:33:39</sys_created_on>
+            <sys_id>2724b320db6408504ff2c553059619ca</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unugr_certificat_certificate_request" sys_domain="global" view="1bb91603db8effc44ff2c553059619ce">6a877fdbdb4e7b80d3e954f948961963</sys_ui_section>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-10-14 14:33:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>close_notes</element>
+            <position>23</position>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-10-14 14:33:39</sys_created_on>
+            <sys_id>ab24b320db6408504ff2c553059619ca</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unugr_certificat_certificate_request" sys_domain="global" view="1bb91603db8effc44ff2c553059619ce">6a877fdbdb4e7b80d3e954f948961963</sys_ui_section>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-10-14 14:33:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>work_notes</element>
+            <position>24</position>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-10-14 14:33:39</sys_created_on>
+            <sys_id>2324b320db6408504ff2c553059619cb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unugr_certificat_certificate_request" sys_domain="global" view="1bb91603db8effc44ff2c553059619ce">6a877fdbdb4e7b80d3e954f948961963</sys_ui_section>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-10-14 14:33:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_initial_contact</element>
+            <position>25</position>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-10-14 14:33:39</sys_created_on>
+            <sys_id>a724b320db6408504ff2c553059619cb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unugr_certificat_certificate_request" sys_domain="global" view="1bb91603db8effc44ff2c553059619ce">6a877fdbdb4e7b80d3e954f948961963</sys_ui_section>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-10-14 14:33:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_csr_attached</element>
+            <position>26</position>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-10-14 14:33:39</sys_created_on>
+            <sys_id>2f24b320db6408504ff2c553059619cb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unugr_certificat_certificate_request" sys_domain="global" view="1bb91603db8effc44ff2c553059619ce">6a877fdbdb4e7b80d3e954f948961963</sys_ui_section>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-10-14 14:33:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_csr_required</element>
+            <position>27</position>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-10-14 14:33:39</sys_created_on>
+            <sys_id>a324b320db6408504ff2c553059619cc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unugr_certificat_certificate_request" sys_domain="global" view="1bb91603db8effc44ff2c553059619ce">6a877fdbdb4e7b80d3e954f948961963</sys_ui_section>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-10-14 14:33:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>stage</element>
+            <position>28</position>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-10-14 14:33:39</sys_created_on>
+            <sys_id>2b24b320db6408504ff2c553059619cc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_unugr_certificat_certificate_request" sys_domain="global" view="1bb91603db8effc44ff2c553059619ce">6a877fdbdb4e7b80d3e954f948961963</sys_ui_section>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-10-14 14:33:39</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>activity.xml</element>
+            <position>29</position>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-10-14 14:33:39</sys_created_on>
+            <sys_id>af24b320db6408504ff2c553059619cc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter display_value="Activities (filtered)">444ea5c6bf310100e628555b3f0739d6</sys_ui_formatter>
+            <sys_ui_section caption="NULL" display_value="" name="x_unugr_certificat_certificate_request" sys_domain="global" view="1bb91603db8effc44ff2c553059619ce">6a877fdbdb4e7b80d3e954f948961963</sys_ui_section>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-10-14 14:33:39</sys_updated_on>
+            <sys_user/>
+            <type>formatter</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>activity.xml</element>
+            <position>30</position>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-10-14 14:33:39</sys_created_on>
+            <sys_id>a724b320db6408504ff2c553059619cd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter display_value="Activities (filtered)">b832d3560a0001c700d781efe21e22f5</sys_ui_formatter>
+            <sys_ui_section caption="NULL" display_value="" name="x_unugr_certificat_certificate_request" sys_domain="global" view="1bb91603db8effc44ff2c553059619ce">6a877fdbdb4e7b80d3e954f948961963</sys_ui_section>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-10-14 14:33:39</sys_updated_on>
+            <sys_user/>
+            <type>formatter</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_unugr_certificat_certificate_request</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-06-20 21:14:39</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_id>6a877fdbdb4e7b80d3e954f948961963</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_unugr_certificat_certificate_request</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+            <sys_update_name>sys_ui_section_6a877fdbdb4e7b80d3e954f948961963</sys_update_name>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-06-20 21:14:39</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Internal Pending" name="internal_pending">1bb91603db8effc44ff2c553059619ce</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

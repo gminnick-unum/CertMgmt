@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="wf_workflow_version">
     <wf_workflow_version action="INSERT_OR_UPDATE">
         <active>true</active>
-        <activity_stages>{"activities":{},"subflows":[],"ends":["d8552e7c1b9dc114e314c955624bcb9e"],"stages":{}}</activity_stages>
+        <activity_stages>{"subflows":[],"activities":{},"stages":{},"ends":["d8552e7c1b9dc114e314c955624bcb9e"]}</activity_stages>
         <after_business_rules>false</after_business_rules>
         <checked_out/>
         <checked_out_by/>
@@ -31,12 +31,12 @@
         <sys_created_by>CHF03</sys_created_by>
         <sys_created_on>2022-01-24 18:59:16</sys_created_on>
         <sys_id>0855ea7c1b9dc114e314c955624bcb84</sys_id>
-        <sys_mod_count>8</sys_mod_count>
-        <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2022-01-25 23:17:22</sys_updated_on>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2022-10-24 14:03:02</sys_updated_on>
         <table>global</table>
         <timezone/>
-        <validated>false</validated>
+        <validated>true</validated>
         <workflow display_value="wf_syncCredentialStore">7c1b10aedb587b00d3e954f948961938</workflow>
     </wf_workflow_version>
     <wf_workflow action="INSERT_OR_UPDATE">

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Binary Certificate" section_id="6e295e75db7d37c04ff2c553059619aa" sys_domain="global" table="x_unugr_certificat_digital_certificate" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_certificate</element>
+            <position>0</position>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-06-03 12:15:44</sys_created_on>
+            <sys_id>22295e75db7d37c04ff2c553059619f6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Binary Certificate" display_value="Binary Certificate" name="x_unugr_certificat_digital_certificate" sys_domain="global" view="Default view">6e295e75db7d37c04ff2c553059619aa</sys_ui_section>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-06-03 12:15:44</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>1</position>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-06-03 12:15:44</sys_created_on>
+            <sys_id>a2295e75db7d37c04ff2c553059619f6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Binary Certificate" display_value="Binary Certificate" name="x_unugr_certificat_digital_certificate" sys_domain="global" view="Default view">6e295e75db7d37c04ff2c553059619aa</sys_ui_section>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-06-03 12:15:44</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Binary Certificate</caption>
+            <header>false</header>
+            <name>x_unugr_certificat_digital_certificate</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-06-03 12:15:44</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_id>6e295e75db7d37c04ff2c553059619aa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_unugr_certificat_digital_certificate</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+            <sys_update_name>sys_ui_section_6e295e75db7d37c04ff2c553059619aa</sys_update_name>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-06-03 12:15:44</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

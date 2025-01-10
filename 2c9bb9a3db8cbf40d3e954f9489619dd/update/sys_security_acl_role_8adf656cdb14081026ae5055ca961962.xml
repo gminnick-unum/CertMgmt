@@ -16,6 +16,5 @@
         <sys_updated_by>CHF03</sys_updated_by>
         <sys_updated_on>2019-10-01 18:39:46</sys_updated_on>
         <sys_user_role display_value="x_unugr_certificat.certificate_request_user" name="x_unugr_certificat.certificate_request_user">f3a22573db8c7380d3e954f94896197e</sys_user_role>
-        <transaction_id/>
     </sys_security_acl_role>
 </record_update>

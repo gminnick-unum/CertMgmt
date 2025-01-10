@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_db_object">
+    <sys_db_object action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <actions_access>false</actions_access>
+        <alter_access>false</alter_access>
+        <caller_access/>
+        <client_scripts_access>false</client_scripts_access>
+        <configuration_access>false</configuration_access>
+        <create_access>false</create_access>
+        <create_access_controls>true</create_access_controls>
+        <delete_access>true</delete_access>
+        <is_extendable>false</is_extendable>
+        <label>Import Log</label>
+        <live_feed_enabled>false</live_feed_enabled>
+        <name>x_unugr_certificat_importlog</name>
+        <number_ref/>
+        <provider_class/>
+        <read_access>true</read_access>
+        <scriptable_table>false</scriptable_table>
+        <super_class/>
+        <sys_class_name>sys_db_object</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-03-26 11:40:51</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object/>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>91622b721b577b408591524d0d4bcb2f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Import Log</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sys_db_object_91622b721b577b408591524d0d4bcb2f</sys_update_name>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-03-28 17:07:41</sys_updated_on>
+        <update_access>false</update_access>
+        <user_role display_value="x_unugr_certificat.importlog_user" name="x_unugr_certificat.importlog_user">667bbeafdb1cb7804ff2c553059619c7</user_role>
+        <ws_access>true</ws_access>
+    </sys_db_object>
+</record_update>

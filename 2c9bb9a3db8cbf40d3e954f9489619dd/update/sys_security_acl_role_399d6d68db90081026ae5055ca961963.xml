@@ -16,6 +16,5 @@
         <sys_updated_by>CHF03</sys_updated_by>
         <sys_updated_on>2019-10-01 18:29:55</sys_updated_on>
         <sys_user_role display_value="x_unugr_certificat.certificate_task_user" name="x_unugr_certificat.certificate_task_user">4d85b8f3db55bf484ff2c55305961991</sys_user_role>
-        <transaction_id/>
     </sys_security_acl_role>
 </record_update>

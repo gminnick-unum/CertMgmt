@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="wf_element_activity">
+    <wf_element_activity action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <attributes/>
+        <base_provider display_value="Powershell">59155499eb512100b2f88a7af106feae</base_provider>
+        <category/>
+        <checked_out_by/>
+        <default_height/>
+        <default_width/>
+        <description/>
+        <image>images/graph_callees.gif</image>
+        <input_meta>{"name":"Input","type":"DATA_OBJECT","properties":[{"name":"fileInputPath","type":"STRING","mandatory":false},{"name":"fileName","type":"STRING","mandatory":false},{"name":"batchSize","type":"STRING","mandatory":false},{"name":"userName","type":"STRING","mandatory":false},{"name":"userPass","type":"ENCRYPTED","attributes":{"use_mid":true},"mandatory":false},{"name":"userDomain","type":"STRING","mandatory":false}]}</input_meta>
+        <input_process_script/>
+        <input_transform>{"source":"127.0.0.1","script_type":"file","command":"","midScriptFile":"0f55e043dbd64c104ff2c55305961939","powershellVariables":"[{\"name\":\"fileInputPath\",\"type\":\"plain\",\"value\":\"${activityInput.fileInputPath}\"},{\"name\":\"fileName\",\"type\":\"plain\",\"value\":\"${activityInput.fileName}\"},{\"name\":\"batchSize\",\"type\":\"plain\",\"value\":\"${activityInput.batchSize}\"},{\"name\":\"userName\",\"type\":\"plain\",\"value\":\"${activityInput.userName}\"},{\"name\":\"userDomain\",\"type\":\"plain\",\"value\":\"${activityInput.userDomain}\"},{\"name\":\"userPass\",\"type\":\"encrypted\",\"value\":\"${activityInput.userPass}\"}]","use_mid_service_account":"true","credential_tag":"","midCapabilities":"427709a60a0006bc7d2904e99132532d"}</input_transform>
+        <local_variables/>
+        <name>cm_splitTenableScan</name>
+        <output_meta>{"name":"Output","type":"DATA_OBJECT","properties":[{"name":"filesCreated","type":"STRING"},{"name":"result","type":"STRING"},{"name":"errorMessage","type":"STRING"}]}</output_meta>
+        <output_process_script><![CDATA[if(!gs.nil(executionResult.errorMessages)) {
+    activityOutput.result = "failure";
+    activityOutput.errorMessage = executionResult.errorMessages;
+} else {
+    activityOutput.result = "success";
+}]]></output_process_script>
+        <output_transform>[{"toLink":"activityOutput.filesCreated","description":"","to":"filesCreated","toType":"string","toDestination":"activityOutput","sourceLabel":"executionResult.output","from":"${executionResult.output}","fromSource":"executionResult","type":"JSON","children":"[]","translation":"$"},{"toLink":"activityOutput.result","description":"","to":"result","toType":"string","toDestination":"activityOutput","sourceLabel":"executionResult.hresult","from":"${executionResult.hresult}","fromSource":"executionResult","type":"Direct","children":"[]","translation":""},{"toLink":"activityOutput.errorMessage","description":"","to":"errorMessage","toType":"string","toDestination":"activityOutput","sourceLabel":"executionResult.errorMessages","from":"${executionResult.errorMessages}","fromSource":"executionResult","type":"Direct","children":"[]","translation":""}]</output_transform>
+        <processing_script/>
+        <sample_payloads>{"executionResult.hresult":{"payload":"null","type":"direct"},"executionResult.output":{"payload":"\n\"{\\r\\n    \\\"scanFilesCreated\\\":  [\\r\\n                             {\\r\\n                                 \\\"FileCreated\\\":  \\\"\\\\\\\\\\\\\\\\RDBMS5PRSQL10\\\\\\\\ServiceNow\\\\\\\\Converted\\\\\\\\TenableReport-01.csv\\\"\\r\\n                             },\\r\\n                             {\\r\\n                                 \\\"FileCreated\\\":  \\\"\\\\\\\\\\\\\\\\RDBMS5PRSQL10\\\\\\\\ServiceNow\\\\\\\\Converted\\\\\\\\TenableReport-02.csv\\\"\\r\\n                             },\\r\\n                             {\\r\\n                                 \\\"FileCreated\\\":  \\\"\\\\\\\\\\\\\\\\RDBMS5PRSQL10\\\\\\\\ServiceNow\\\\\\\\Converted\\\\\\\\TenableReport-03.csv\\\"\\r\\n                             },\\r\\n                             {\\r\\n                                 \\\"FileCreated\\\":  \\\"\\\\\\\\\\\\\\\\RDBMS5PRSQL10\\\\\\\\ServiceNow\\\\\\\\Converted\\\\\\\\TenableReport-04.csv\\\"\\r\\n                             },\\r\\n                             {\\r\\n                                 \\\"FileCreated\\\":  \\\"\\\\\\\\\\\\\\\\RDBMS5PRSQL10\\\\\\\\ServiceNow\\\\\\\\Converted\\\\\\\\TenableReport-05.csv\\\"\\r\\n                             },\\r\\n                             {\\r\\n                                 \\\"FileCreated\\\":  \\\"\\\\\\\\\\\\\\\\RDBMS5PRSQL10\\\\\\\\ServiceNow\\\\\\\\Converted\\\\\\\\TenableReport-06.csv\\\"\\r\\n                             },\\r\\n                             {\\r\\n                                 \\\"FileCreated\\\":  \\\"\\\\\\\\\\\\\\\\RDBMS5PRSQL10\\\\\\\\ServiceNow\\\\\\\\Converted\\\\\\\\TenableReport-07.csv\\\"\\r\\n                             },\\r\\n                             {\\r\\n                                 \\\"FileCreated\\\":  \\\"\\\\\\\\\\\\\\\\RDBMS5PRSQL10\\\\\\\\ServiceNow\\\\\\\\Converted\\\\\\\\TenableReport-08.csv\\\"\\r\\n                             },\\r\\n                             {\\r\\n                                 \\\"FileCreated\\\":  \\\"\\\\\\\\\\\\\\\\RDBMS5PRSQL10\\\\\\\\ServiceNow\\\\\\\\Converted\\\\\\\\TenableReport-09.csv\\\"\\r\\n                             },\\r\\n                             {\\r\\n                                 \\\"FileCreated\\\":  \\\"\\\\\\\\\\\\\\\\RDBMS5PRSQL10\\\\\\\\ServiceNow\\\\\\\\Converted\\\\\\\\TenableReport-10.csv\\\"\\r\\n                             }\\r\\n                         ]\\r\\n}\"\n","type":"json"},"executionResult.errorMessages":{"payload":"null","type":"direct"},"executionResult.debugMessages":{"payload":"null","type":"direct"},"executionResult.credentialDebugInfo":{"payload":"2020-01-16 15:27:29 Tried credential: MID service account, status=success\r\n","type":"direct"},"executionResult.eccSysId":{"payload":"4ccac987db968c104ff2c55305961977","type":"direct"},"executionResult.tags":{"payload":"{\"__text__\":\"\\n\\\"{\\\\r\\\\n    \\\\\\\"scanFilesCreated\\\\\\\":  [\\\\r\\\\n                             {\\\\r\\\\n                                 \\\\\\\"FileCreated\\\\\\\":  \\\\\\\"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\RDBMS5PRSQL10\\\\\\\\\\\\\\\\ServiceNow\\\\\\\\\\\\\\\\Converted\\\\\\\\\\\\\\\\TenableReport-01.csv\\\\\\\"\\\\r\\\\n                             },\\\\r\\\\n                             {\\\\r\\\\n                                 \\\\\\\"FileCreated\\\\\\\":  \\\\\\\"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\RDBMS5PRSQL10\\\\\\\\\\\\\\\\ServiceNow\\\\\\\\\\\\\\\\Converted\\\\\\\\\\\\\\\\TenableReport-02.csv\\\\\\\"\\\\r\\\\n                             },\\\\r\\\\n                             {\\\\r\\\\n                                 \\\\\\\"FileCreated\\\\\\\":  \\\\\\\"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\RDBMS5PRSQL10\\\\\\\\\\\\\\\\ServiceNow\\\\\\\\\\\\\\\\Converted\\\\\\\\\\\\\\\\TenableReport-03.csv\\\\\\\"\\\\r\\\\n                             },\\\\r\\\\n                             {\\\\r\\\\n                                 \\\\\\\"FileCreated\\\\\\\":  \\\\\\\"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\RDBMS5PRSQL10\\\\\\\\\\\\\\\\ServiceNow\\\\\\\\\\\\\\\\Converted\\\\\\\\\\\\\\\\TenableReport-04.csv\\\\\\\"\\\\r\\\\n                             },\\\\r\\\\n                             {\\\\r\\\\n                                 \\\\\\\"FileCreated\\\\\\\":  \\\\\\\"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\RDBMS5PRSQL10\\\\\\\\\\\\\\\\ServiceNow\\\\\\\\\\\\\\\\Converted\\\\\\\\\\\\\\\\TenableReport-05.csv\\\\\\\"\\\\r\\\\n                             },\\\\r\\\\n                             {\\\\r\\\\n                                 \\\\\\\"FileCreated\\\\\\\":  \\\\\\\"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\RDBMS5PRSQL10\\\\\\\\\\\\\\\\ServiceNow\\\\\\\\\\\\\\\\Converted\\\\\\\\\\\\\\\\TenableReport-06.csv\\\\\\\"\\\\r\\\\n                             },\\\\r\\\\n                             {\\\\r\\\\n                                 \\\\\\\"FileCreated\\\\\\\":  \\\\\\\"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\RDBMS5PRSQL10\\\\\\\\\\\\\\\\ServiceNow\\\\\\\\\\\\\\\\Converted\\\\\\\\\\\\\\\\TenableReport-07.csv\\\\\\\"\\\\r\\\\n                             },\\\\r\\\\n                             {\\\\r\\\\n                                 \\\\\\\"FileCreated\\\\\\\":  \\\\\\\"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\RDBMS5PRSQL10\\\\\\\\\\\\\\\\ServiceNow\\\\\\\\\\\\\\\\Converted\\\\\\\\\\\\\\\\TenableReport-08.csv\\\\\\\"\\\\r\\\\n                             },\\\\r\\\\n                             {\\\\r\\\\n                                 \\\\\\\"FileCreated\\\\\\\":  \\\\\\\"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\RDBMS5PRSQL10\\\\\\\\\\\\\\\\ServiceNow\\\\\\\\\\\\\\\\Converted\\\\\\\\\\\\\\\\TenableReport-09.csv\\\\\\\"\\\\r\\\\n                             },\\\\r\\\\n                             {\\\\r\\\\n                                 \\\\\\\"FileCreated\\\\\\\":  \\\\\\\"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\RDBMS5PRSQL10\\\\\\\\\\\\\\\\ServiceNow\\\\\\\\\\\\\\\\Converted\\\\\\\\\\\\\\\\TenableReport-10.csv\\\\\\\"\\\\r\\\\n                             }\\\\r\\\\n                         ]\\\\r\\\\n}\\\"\\n\"}","type":"direct"}}</sample_payloads>
+        <short_description/>
+        <style/>
+        <sys_class_name>wf_element_activity</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2020-01-16 20:20:44</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>aae849c7db568c104ff2c553059619ad</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>cm_splitTenableScan</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>wf_element_activity_aae849c7db568c104ff2c553059619ad</sys_update_name>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2020-01-22 17:09:21</sys_updated_on>
+        <version_container_id>18190d0bdb568c104ff2c55305961944</version_container_id>
+    </wf_element_activity>
+    <wf_versionable action="INSERT_OR_UPDATE">
+        <checked_out/>
+        <checked_out_by/>
+        <published>true</published>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2020-01-16 20:20:44</sys_created_on>
+        <sys_id>d4190d0bdb568c104ff2c55305961945</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2020-01-22 17:09:21</sys_updated_on>
+        <valid_from>2020-01-22 17:09:21</valid_from>
+        <valid_to/>
+        <version>1</version>
+        <version_container_id>18190d0bdb568c104ff2c55305961944</version_container_id>
+        <wf_element_definition display_value="cm_splitTenableScan">aae849c7db568c104ff2c553059619ad</wf_element_definition>
+    </wf_versionable>
+    <wf_condition_default action="INSERT_OR_UPDATE">
+        <activity_definition display_value="">aae849c7db568c104ff2c553059619ad</activity_definition>
+        <condition>activityOutput.result == "success"</condition>
+        <derived_definition/>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <name>Success</name>
+        <order>100</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2020-01-16 20:30:46</sys_created_on>
+        <sys_id>0d6a8d83db968c104ff2c5530596192e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2020-01-16 20:30:46</sys_updated_on>
+    </wf_condition_default>
+    <wf_condition_default action="INSERT_OR_UPDATE">
+        <activity_definition display_value="">aae849c7db568c104ff2c553059619ad</activity_definition>
+        <condition/>
+        <derived_definition/>
+        <else_flag>true</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <name>Failure</name>
+        <order>200</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2020-01-16 20:30:46</sys_created_on>
+        <sys_id>a84b0d4bdb968c104ff2c5530596197f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2020-01-22 17:09:10</sys_updated_on>
+    </wf_condition_default>
+</record_update>

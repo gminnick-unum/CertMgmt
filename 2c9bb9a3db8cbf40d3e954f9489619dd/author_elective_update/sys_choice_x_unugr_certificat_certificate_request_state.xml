@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="state" table="x_unugr_certificat_certificate_request" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>state</element>
+            <name>x_unugr_certificat_certificate_request</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-05-24 17:47:46</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>state</sys_name>
+            <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+            <sys_update_name>sys_choice_x_unugr_certificat_certificate_request_state</sys_update_name>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-05-24 17:47:46</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Pending</label>
+            <language>en</language>
+            <name>x_unugr_certificat_certificate_request</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-05-24 17:47:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-05-24 17:47:46</sys_updated_on>
+            <value>-5</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Open</label>
+            <language>en</language>
+            <name>x_unugr_certificat_certificate_request</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-05-24 17:47:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-05-24 17:47:46</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Work in Progress</label>
+            <language>en</language>
+            <name>x_unugr_certificat_certificate_request</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-05-24 17:47:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-05-24 17:47:46</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Closed Complete</label>
+            <language>en</language>
+            <name>x_unugr_certificat_certificate_request</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-05-24 17:47:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-05-24 17:47:46</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Closed Incomplete</label>
+            <language>en</language>
+            <name>x_unugr_certificat_certificate_request</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-05-24 17:47:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-05-24 17:47:46</sys_updated_on>
+            <value>4</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Closed Skipped</label>
+            <language>en</language>
+            <name>x_unugr_certificat_certificate_request</name>
+            <sequence>6</sequence>
+            <synonyms/>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-05-24 17:47:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-05-24 17:47:46</sys_updated_on>
+            <value>7</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>In progress</label>
+            <language>en</language>
+            <name>x_unugr_certificat_certificate_request</name>
+            <sequence>7</sequence>
+            <synonyms/>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-05-24 17:47:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-05-24 17:47:46</sys_updated_on>
+            <value>6</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Closed Canceled</label>
+            <language>en</language>
+            <name>x_unugr_certificat_certificate_request</name>
+            <sequence>8</sequence>
+            <synonyms/>
+            <sys_created_by>CHF03</sys_created_by>
+            <sys_created_on>2019-10-14 13:19:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>CHF03</sys_updated_by>
+            <sys_updated_on>2019-10-14 13:19:34</sys_updated_on>
+            <value>-1</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

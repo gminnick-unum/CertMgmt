@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas_pane">
+    <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+        <grid_canvas display_value="PA New Tab">66beba6fdb4e77084ff2c553059619a7</grid_canvas>
+        <height>14</height>
+        <portal_widget display_value="Created 2019-06-21 07.44.55 AM">e6beba6fdb4e77084ff2c553059619c2</portal_widget>
+        <posx>6</posx>
+        <posy>7</posy>
+        <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-06-21 11:44:55</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>2ebeba6fdb4e77084ff2c553059619df</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sys_grid_canvas_pane_2ebeba6fdb4e77084ff2c553059619df</sys_update_name>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2023-04-04 13:35:47</sys_updated_on>
+        <width>6</width>
+    </sys_grid_canvas_pane>
+</record_update>

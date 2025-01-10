@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_restricted_caller_access">
     <sys_restricted_caller_access action="INSERT_OR_UPDATE">
+        <description/>
         <operation>read</operation>
+        <rca_type/>
         <source>85357f52cb30020000f8d856634c9c24</source>
         <source_scope display_value="Global">global</source_scope>
         <source_table>sp_widget</source_table>

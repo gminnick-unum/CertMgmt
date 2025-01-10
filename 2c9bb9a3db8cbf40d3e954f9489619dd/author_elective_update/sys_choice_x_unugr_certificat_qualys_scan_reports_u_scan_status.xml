@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_scan_status" table="x_unugr_certificat_qualys_scan_reports" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_scan_status</element>
+            <name>x_unugr_certificat_qualys_scan_reports</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2019-08-20 09:43:47</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_scan_status</sys_name>
+            <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+            <sys_update_name>sys_choice_x_unugr_certificat_qualys_scan_reports_u_scan_status</sys_update_name>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2019-08-20 09:43:47</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_scan_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Launch Request</label>
+            <language>en</language>
+            <name>x_unugr_certificat_qualys_scan_reports</name>
+            <sequence>100</sequence>
+            <synonyms/>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2019-08-20 09:43:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2019-08-20 09:43:47</sys_updated_on>
+            <value>Launch request</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_scan_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>New Report Launched</label>
+            <language>en</language>
+            <name>x_unugr_certificat_qualys_scan_reports</name>
+            <sequence>200</sequence>
+            <synonyms/>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2019-08-20 09:43:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2019-08-20 09:43:47</sys_updated_on>
+            <value>New report launched</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_scan_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Fetch Report</label>
+            <language>en</language>
+            <name>x_unugr_certificat_qualys_scan_reports</name>
+            <sequence>300</sequence>
+            <synonyms/>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2019-08-20 09:43:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2019-08-20 09:43:47</sys_updated_on>
+            <value>Fetch report</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_scan_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Report Deleted</label>
+            <language>en</language>
+            <name>x_unugr_certificat_qualys_scan_reports</name>
+            <sequence>500</sequence>
+            <synonyms/>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2019-08-20 09:43:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2019-08-20 09:43:47</sys_updated_on>
+            <value>Report deleted</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_scan_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Scan Completed</label>
+            <language>en</language>
+            <name>x_unugr_certificat_qualys_scan_reports</name>
+            <sequence>600</sequence>
+            <synonyms/>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2019-08-20 09:43:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2019-08-20 09:43:47</sys_updated_on>
+            <value>Scan completed</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

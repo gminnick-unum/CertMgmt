@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <max_drift/>
+        <name>Launch F5 Certificate Collection</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="Gary Fry">068edd0b0f300e006d5c0f8ce1050e1f</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2019-06-19 12:52:43</run_start>
+        <run_time>1970-01-01 11:00:00</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[var maxRunningProcesses = parseInt(gs.getProperty('x_unugr_certificat.importscan.f5maxrunningprocess'));
+var scanWaitSeconds = parseInt(gs.getProperty('x_unugr_certificat.importscan.f5scanwaitseconds'));
+var currentRunningProcesses = 0;
+var errorOccured = false;
+var scanWaitMilliseconds = scanWaitSeconds * 1000;
+
+var globalUtils = new global.GlobalUtils();
+
+
+try{
+	var loadBalancerRecords = new GlideRecord('cmdb_ci_lb');
+	var queryString = 'hardware_status=installed^install_status=1^nameNOT LIKEbasiuk^nameNOT LIKEdorkuk';
+// 	var queryString = 'nameLIKEdc2d1c-vch3.upc';
+	loadBalancerRecords.addEncodedQuery(queryString);
+	loadBalancerRecords.query();
+
+	var loadBalancerArray = [];
+
+	while(loadBalancerRecords.next()){
+		loadBalancerArray.push((loadBalancerRecords.name).toString());
+	}
+
+
+	if(loadBalancerArray.length > 0){
+		var uniqueLoadBalancers = new global.ArrayUtil().unique(loadBalancerArray);
+	}
+
+	gs.info('Unique LB Array ' + uniqueLoadBalancers.length);
+	//loop through array getting the sysid of the 
+	//lb with the most current update
+	for(i=0;i < uniqueLoadBalancers.length;i++){
+		var queryString = 'hardware_status=installed^install_status=1^name=|LBNAME|^ORDERBYDESCsys_updated_on';
+		queryString = queryString.replace('|LBNAME|', uniqueLoadBalancers[i]);
+
+		var uniqueLBRecord = new GlideRecord('cmdb_ci_lb');
+		uniqueLBRecord.addEncodedQuery(queryString);
+		uniqueLBRecord.setLimit(1);
+		uniqueLBRecord.query();
+
+		while(uniqueLBRecord.next()){
+			gs.info('Load Bal ' + uniqueLBRecord.name + ' sysid ' + uniqueLBRecord.sys_id);
+			var f5ScanLogRecord = new GlideRecord('x_unugr_certificat_f5_scan_log');
+			f5ScanLogRecord.initialize();
+			f5ScanLogRecord.u_f5_host = uniqueLBRecord.sys_id;
+			f5ScanLogRecord.u_status = 'Processing';
+			f5ScanLogRecord.u_scan_started = new GlideDateTime();
+			f5ScanLogRecord.insert();
+
+			globalUtils.sleep(scanWaitMilliseconds);
+
+		}
+
+	}
+} catch(e){
+	errorOccured = true;
+	var errorMessage = 'Error occured in Launch F5 Certificate Collection: ' + e;
+	gs.info(errorMessage);
+	gs.info('Error occured in Launch F5 Certificate Collection error stack: ' + e.stack);
+} finally{
+	if(errorOccured) {
+		gs.info('Launch F5 Certificate Collection finished with Errors');
+	} else{
+		gs.info('Launch F5 Certificate Collection finished without Errors');
+	}
+}
+
+
+]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-06-19 13:52:57</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>dc1b3c0fdb8abfc44ff2c553059619fe</sys_id>
+        <sys_mod_count>25</sys_mod_count>
+        <sys_name>Launch F5 Certificate Collection</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sysauto_script_dc1b3c0fdb8abfc44ff2c553059619fe</sys_update_name>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-09-02 13:44:43</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

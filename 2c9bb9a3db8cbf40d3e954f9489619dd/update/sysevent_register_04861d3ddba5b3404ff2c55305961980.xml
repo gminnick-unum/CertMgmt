@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register">
+    <sysevent_register action="INSERT_OR_UPDATE">
+        <caller_access>1</caller_access>
+        <derived_priority>100</derived_priority>
+        <description>used to send the first certificate expiring notification</description>
+        <event_name>x_unugr_certificat.expire.firstnotify</event_name>
+        <fired_by>Scheduled Job</fired_by>
+        <priority>100</priority>
+        <queue/>
+        <suffix>expire.firstnotify</suffix>
+        <sys_class_name>sysevent_register</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-05-21 21:10:18</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>04861d3ddba5b3404ff2c55305961980</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_unugr_certificat.expire.firstnotify</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sysevent_register_04861d3ddba5b3404ff2c55305961980</sys_update_name>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-05-21 21:10:18</sys_updated_on>
+        <table>x_unugr_certificat_digital_certificate</table>
+    </sysevent_register>
+</record_update>

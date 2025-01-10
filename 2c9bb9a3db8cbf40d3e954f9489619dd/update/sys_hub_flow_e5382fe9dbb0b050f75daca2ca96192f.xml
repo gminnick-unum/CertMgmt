@@ -4,18 +4,24 @@
         <acls/>
         <active>true</active>
         <annotation/>
+        <attributes/>
+        <authored_on_release_version/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
-        <compiler_build>glide-quebec-12-09-2020__patch6-07-08-2021_07-21-2021_1833.zip</compiler_build>
         <copied_from/>
         <copied_from_name/>
         <description>When a digital certificate is matched with its request transfer associations to digital certificate</description>
+        <display_name_after_preview/>
+        <flow_priority/>
+        <generation_source/>
         <internal_name>updatedigcertwhenmatched</internal_name>
         <label_cache>[{"name":"70b15635-9655-43a2-8f22-e32e541d1686.table_name","label":"5➛Digital Certificate Table","reference":"x_unugr_certificat_digital_certificate","reference_display":"Digital Certificate","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"70b15635-9655-43a2-8f22-e32e541d1686.record","label":"5➛Digital Certificate Record","reference":"x_unugr_certificat_digital_certificate","reference_display":"Digital Certificate","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7f3ae65d-2354-4a4d-a7e2-214e9341a6d0.table_name","label":"3➛Digital Certificate Table","reference":"x_unugr_certificat_digital_certificate","reference_display":"Digital Certificate","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7f3ae65d-2354-4a4d-a7e2-214e9341a6d0.record","label":"3➛Digital Certificate Record","reference":"x_unugr_certificat_digital_certificate","reference_display":"Digital Certificate","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6dacd3e4-bcdb-4362-8599-ed2c6aa07169.item","label":"1➛FDChangeDetails","reference_display":"FDChangeDetails","type":"object","base_type":"object","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"6dacd3e4-bcdb-4362-8599-ed2c6aa07169.item.current_value","label":"1➛FDChangeDetails➛Current Value","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"6dacd3e4-bcdb-4362-8599-ed2c6aa07169.item.field_name","label":"1➛FDChangeDetails➛Field Name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"Updated_1.changed_fields","label":"Trigger➛Changed Fields","type":"array.object","base_type":"array.object","attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FDCollection","child_label":"FDChangeDetails","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"array.object","child_type":"object","child_name":"FDChangeDetails"}},{"name":"ad2d8826-b598-40c1-ab31-61e6e6419e7c.table_name","label":"2➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ad2d8826-b598-40c1-ab31-61e6e6419e7c.record","label":"2➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"09c50208-7b33-4800-be08-a37c09b3a2b2.record","label":"1➛Digital Certificate Record","reference":"x_unugr_certificat_digital_certificate","reference_display":"Digital Certificate","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"09c50208-7b33-4800-be08-a37c09b3a2b2.table_name","label":"1➛Digital Certificate Table","reference":"x_unugr_certificat_digital_certificate","reference_display":"Digital Certificate","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Updated_1.current.u_certificate","label":"Trigger➛Certificate Request Record➛Certificate ","reference":"x_unugr_certificat_digital_certificate","reference_display":"Digital Certificate","type":"reference","base_type":"reference","parent_table_name":"x_unugr_certificat_certificate_request","column_name":"u_certificate"},{"name":"Updated_1.current.u_install_on","label":"Trigger➛Certificate Request Record➛Install on","reference":"x_unugr_certificat_installation_targets","reference_display":"Installation Targets","type":"glide_list","base_type":"glide_list","parent_table_name":"x_unugr_certificat_certificate_request","column_name":"u_install_on"},{"name":"Updated_1.current.associated_applications","label":"Trigger➛Certificate Request Record➛Associated Applications","reference":"u_cmdb_ci_unumapp","reference_display":"Unum Application","type":"glide_list","base_type":"glide_list","parent_table_name":"x_unugr_certificat_certificate_request","column_name":"associated_applications"},{"name":"Updated_1.current.u_associated_servers","label":"Trigger➛Certificate Request Record➛Associated Servers","reference":"cmdb_ci_server","reference_display":"Server","type":"glide_list","base_type":"glide_list","parent_table_name":"x_unugr_certificat_certificate_request","column_name":"u_associated_servers"},{"name":"0f1a4b18-1e99-44f6-8891-bf049677cfd0.record","label":"1➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0f1a4b18-1e99-44f6-8891-bf049677cfd0.table_name","label":"1➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0547fb44-a3e3-4db1-b5ff-8b8db2a5e43a.record","label":"1➛Digital Certificate Record","reference":"x_unugr_certificat_digital_certificate","reference_display":"Digital Certificate","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0547fb44-a3e3-4db1-b5ff-8b8db2a5e43a.table_name","label":"1➛Digital Certificate Table","reference":"x_unugr_certificat_digital_certificate","reference_display":"Digital Certificate","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Updated_1.current.u_certificate.u_certificate","label":"Trigger➛Certificate Request Record➛Certificate ➛Certificate","reference":"","reference_display":"Certificate","type":"string","base_type":"string","parent_table_name":"x_unugr_certificat_digital_certificate","column_name":"u_certificate"},{"name":"Updated_1.current.u_certificate.u_environment","label":"Trigger➛Certificate Request Record➛Certificate ➛Environment","reference":"","reference_display":"Environment","type":"choice","base_type":"choice","parent_table_name":"x_unugr_certificat_digital_certificate","column_name":"u_environment"},{"name":"Updated_1.current.u_shared_environment","label":"Trigger➛Certificate Request Record➛Environment","reference":"","reference_display":"Environment","type":"choice","base_type":"choice","parent_table_name":"x_unugr_certificat_certificate_request","column_name":"u_shared_environment"},{"name":"e38f72ff-a14c-4e92-ab65-9fe7cd7fdc52.record","label":"3➛Digital Certificate Record","reference":"x_unugr_certificat_digital_certificate","reference_display":"Digital Certificate","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e38f72ff-a14c-4e92-ab65-9fe7cd7fdc52.table_name","label":"3➛Digital Certificate Table","reference":"x_unugr_certificat_digital_certificate","reference_display":"Digital Certificate","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Updated_1.current.u_environment","label":"Trigger➛Certificate Request Record➛Install Environment","reference":"","reference_display":"Install Environment","type":"choice","base_type":"choice","parent_table_name":"x_unugr_certificat_certificate_request","column_name":"u_environment"},{"name":"Updated_1.current.u_certificate_request_type","label":"Trigger➛Certificate Request Record➛Certificate Request Type","reference":"","reference_display":"Certificate Request Type","type":"choice","base_type":"choice","parent_table_name":"x_unugr_certificat_certificate_request","column_name":"u_certificate_request_type"},{"name":"cc55bf9c-f7e5-40dd-9a60-a354d8bd332b.record","label":"3➛Digital Certificate Record","reference":"x_unugr_certificat_digital_certificate","reference_display":"Digital Certificate","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"cc55bf9c-f7e5-40dd-9a60-a354d8bd332b.table_name","label":"3➛Digital Certificate Table","reference":"x_unugr_certificat_digital_certificate","reference_display":"Digital Certificate","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Updated_1.current.u_environment_new","label":"Trigger➛Certificate Request Record➛Environment new","reference":"u_catalog_choice_list","reference_display":"Catalog Choice List","type":"choice","base_type":"choice","parent_table_name":"x_unugr_certificat_certificate_request","column_name":"u_environment_new"},{"name":"Updated_1.current.u_domain","label":"Trigger➛Certificate Request Record➛Domain (u_domain)","reference":"","reference_display":"Domain (u_domain)","type":"choice","base_type":"choice","parent_table_name":"x_unugr_certificat_certificate_request","column_name":"u_domain"}]</label_cache>
         <master_snapshot>f67d7369dbf4b050f75daca2ca96194e</master_snapshot>
+        <master_snapshot_digest/>
         <name>UpdateDigCertWhenMatched</name>
         <natlang/>
         <outputs/>
+        <pre_compiled>false</pre_compiled>
         <remote_trigger_id>4e809bdcdb267c1047241fb748961978</remote_trigger_id>
         <run_as>user</run_as>
         <run_with_roles/>
@@ -23,13 +29,14 @@
         <show_draft_actions>false</show_draft_actions>
         <show_triggered_flows>false</show_triggered_flows>
         <status>published</status>
+        <substatus/>
         <sys_class_name>sys_hub_flow</sys_class_name>
         <sys_created_by>CHF03</sys_created_by>
         <sys_created_on>2021-06-17 15:04:27</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>e5382fe9dbb0b050f75daca2ca96192f</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>UpdateDigCertWhenMatched</sys_name>
         <sys_overrides/>
         <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
@@ -37,9 +44,10 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
         <sys_update_name>sys_hub_flow_e5382fe9dbb0b050f75daca2ca96192f</sys_update_name>
-        <sys_updated_by>CNI06</sys_updated_by>
-        <sys_updated_on>2021-09-08 15:58:28</sys_updated_on>
+        <sys_updated_by>DDK18</sys_updated_by>
+        <sys_updated_on>2021-09-29 01:48:31</sys_updated_on>
         <type>flow</type>
+        <version>1</version>
     </sys_hub_flow>
     <sys_variable_value action="delete_multiple" query="document_key=e5382fe9dbb0b050f75daca2ca96192f"/>
     <sys_flow_record_trigger action="INSERT_OR_UPDATE">
@@ -102,6 +110,312 @@
         <sys_id>02809bdcdb267c1047241fb74896197a</sys_id>
     </sys_json_chunk>
     <sys_trigger_runner_mapping action="delete_multiple" query="identifier=e5382fe9dbb0b050f75daca2ca96192f^sys_idNOT IN4a809bdcdb267c1047241fb748961979"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=e5382fe9dbb0b050f75daca2ca96192f"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=e5382fe9dbb0b050f75daca2ca96192f^sys_idNOT INe538afe9dbb0b050f75daca2ca9619ac"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>e5382fe9dbb0b050f75daca2ca96192f</id>
+        <name>UpdateDigCertWhenMatched</name>
+        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-06-17 15:04:27</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e538afe9dbb0b050f75daca2ca9619ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-06-17 15:04:27</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=e538afe9dbb0b050f75daca2ca9619ac"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=e5382fe9dbb0b050f75daca2ca96192f^sys_idNOT IN160caf29dbf0b050f75daca2ca961987,620caf29dbf0b050f75daca2ca961999,920caf29dbf0b050f75daca2ca961992"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="UpdateDigCertWhenMatched">e5382fe9dbb0b050f75daca2ca96192f</model>
+        <model_id>e5382fe9dbb0b050f75daca2ca96192f</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_e5382fe9dbb0b050f75daca2ca96192f</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-06-17 15:21:09</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>160caf29dbf0b050f75daca2ca961987</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-08 15:58:27</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=160caf29dbf0b050f75daca2ca961987"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="UpdateDigCertWhenMatched">e5382fe9dbb0b050f75daca2ca96192f</model>
+        <model_id>e5382fe9dbb0b050f75daca2ca96192f</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_e5382fe9dbb0b050f75daca2ca96192f</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-06-17 15:21:10</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>620caf29dbf0b050f75daca2ca961999</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-08 15:58:27</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=620caf29dbf0b050f75daca2ca961999"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD5d805bdc6e267c10b6d94c745752ee92</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>2c9bb9a3db8cbf40d3e954f9489619dd</scope_name>
+        <serialized_content>{"FlowDesigner:FD5d805bdc6e267c10b6d94c745752ee92":{"$COCollectionField":[{"FDChangeDetails":{"previous_display_value":"String","previous_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Display Value\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"previous_value":"String","previous_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Value\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"current_display_value":"String","current_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Display Value\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"current_value":"String","current_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Value\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"field_name":"String","field_name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Field Name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD5d805bdc6e267c10b6d94c745752ee92\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD5d805bdc6e267c10b6d94c745752ee92.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD5d805bdc6e267c10b6d94c745752ee92\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-08 15:58:24</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>11805bdcdb267c1047241fb748961993</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FD5d805bdc6e267c10b6d94c745752ee92</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sys_complex_object_11805bdcdb267c1047241fb748961993</sys_update_name>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-08 15:58:24</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FD5d805bdc6e267c10b6d94c745752ee92,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="UpdateDigCertWhenMatched">e5382fe9dbb0b050f75daca2ca96192f</model>
+        <model_id>e5382fe9dbb0b050f75daca2ca96192f</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_e5382fe9dbb0b050f75daca2ca96192f</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-06-17 15:21:10</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>920caf29dbf0b050f75daca2ca961992</sys_id>
+        <sys_mod_count>36</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-08 15:58:28</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=920caf29dbf0b050f75daca2ca961992"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=e5382fe9dbb0b050f75daca2ca96192f"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e5382fe9dbb0b050f75daca2ca96192f"/>
     <sys_hub_trigger_instance action="delete_multiple" query="flow=e5382fe9dbb0b050f75daca2ca96192f^sys_idNOT INea0caf29dbf0b050f75daca2ca9619ba"/>
     <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
         <comment/>
@@ -185,285 +499,18 @@
         <value>x_unugr_certificat_certificate_request</value>
         <variable display_value="Table">1dda12e0c31322002841b63b12d3aea8</variable>
     </sys_variable_value>
-    <sys_flow_cat_variable_model action="delete_multiple" query="id=e5382fe9dbb0b050f75daca2ca96192f^sys_idNOT INe538afe9dbb0b050f75daca2ca9619ac"/>
-    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
-        <id>e5382fe9dbb0b050f75daca2ca96192f</id>
-        <name>UpdateDigCertWhenMatched</name>
-        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
-        <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-06-17 15:04:27</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
-        <sys_id>e538afe9dbb0b050f75daca2ca9619ac</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
-        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-06-17 15:04:27</sys_updated_on>
-    </sys_flow_cat_variable_model>
-    <sys_hub_flow_input action="delete_multiple" query="model=e5382fe9dbb0b050f75daca2ca96192f^sys_idNOT IN160caf29dbf0b050f75daca2ca961987,620caf29dbf0b050f75daca2ca961999,920caf29dbf0b050f75daca2ca961992"/>
-    <sys_hub_flow_input action="INSERT_OR_UPDATE">
-        <active>true</active>
-        <array>false</array>
-        <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
-        <audit>false</audit>
-        <calculation><![CDATA[(function calculatedFieldValue(current) {
-
-	// Add your code here
-	return '';  // return the calculated value
-
-})(current);]]></calculation>
-        <choice/>
-        <choice_field/>
-        <choice_table/>
-        <column_label/>
-        <comments/>
-        <create_roles/>
-        <default_value/>
-        <defaultsort/>
-        <delete_roles/>
-        <dependent>table_name</dependent>
-        <dependent_on_field>table_name</dependent_on_field>
-        <display>false</display>
-        <dynamic_creation>false</dynamic_creation>
-        <dynamic_creation_script/>
-        <dynamic_default_value/>
-        <dynamic_ref_qual/>
-        <element>current</element>
-        <element_reference>false</element_reference>
-        <foreign_database/>
-        <function_definition/>
-        <function_field>false</function_field>
-        <help/>
-        <hint/>
-        <internal_type display_value="">document_id</internal_type>
-        <label>Record</label>
-        <mandatory>true</mandatory>
-        <max_length>200</max_length>
-        <model display_value="UpdateDigCertWhenMatched">e5382fe9dbb0b050f75daca2ca96192f</model>
-        <model_id>e5382fe9dbb0b050f75daca2ca96192f</model_id>
-        <model_table>sys_hub_flow</model_table>
-        <name>var__m_sys_hub_flow_input_e5382fe9dbb0b050f75daca2ca96192f</name>
-        <next_element/>
-        <order>100</order>
-        <primary>false</primary>
-        <read_only>false</read_only>
-        <read_roles/>
-        <reference/>
-        <reference_cascade_rule/>
-        <reference_floats>false</reference_floats>
-        <reference_key/>
-        <reference_qual/>
-        <reference_qual_condition/>
-        <reference_type/>
-        <sizeclass/>
-        <spell_check>false</spell_check>
-        <staged>false</staged>
-        <sys_class_name>sys_hub_flow_input</sys_class_name>
-        <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-06-17 15:21:09</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
-        <sys_id>160caf29dbf0b050f75daca2ca961987</sys_id>
-        <sys_mod_count>21</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
-        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>CNI06</sys_updated_by>
-        <sys_updated_on>2021-09-08 15:58:27</sys_updated_on>
-        <table_reference>false</table_reference>
-        <text_index>false</text_index>
-        <unique>false</unique>
-        <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
-        <virtual>false</virtual>
-        <widget/>
-        <write_roles/>
-        <xml_view>false</xml_view>
-    </sys_hub_flow_input>
-    <sys_hub_flow_input action="INSERT_OR_UPDATE">
-        <active>true</active>
-        <array>false</array>
-        <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
-        <audit>false</audit>
-        <calculation><![CDATA[(function calculatedFieldValue(current) {
-
-	// Add your code here
-	return '';  // return the calculated value
-
-})(current);]]></calculation>
-        <choice/>
-        <choice_field/>
-        <choice_table/>
-        <column_label/>
-        <comments/>
-        <create_roles/>
-        <default_value/>
-        <defaultsort/>
-        <delete_roles/>
-        <dependent/>
-        <dependent_on_field/>
-        <display>false</display>
-        <dynamic_creation>false</dynamic_creation>
-        <dynamic_creation_script/>
-        <dynamic_default_value/>
-        <dynamic_ref_qual/>
-        <element>table_name</element>
-        <element_reference>false</element_reference>
-        <foreign_database/>
-        <function_definition/>
-        <function_field>false</function_field>
-        <help/>
-        <hint/>
-        <internal_type display_value="">table_name</internal_type>
-        <label>Table Name</label>
-        <mandatory>false</mandatory>
-        <max_length>200</max_length>
-        <model display_value="UpdateDigCertWhenMatched">e5382fe9dbb0b050f75daca2ca96192f</model>
-        <model_id>e5382fe9dbb0b050f75daca2ca96192f</model_id>
-        <model_table>sys_hub_flow</model_table>
-        <name>var__m_sys_hub_flow_input_e5382fe9dbb0b050f75daca2ca96192f</name>
-        <next_element/>
-        <order>101</order>
-        <primary>false</primary>
-        <read_only>false</read_only>
-        <read_roles/>
-        <reference/>
-        <reference_cascade_rule/>
-        <reference_floats>false</reference_floats>
-        <reference_key/>
-        <reference_qual/>
-        <reference_qual_condition/>
-        <reference_type/>
-        <sizeclass/>
-        <spell_check>false</spell_check>
-        <staged>false</staged>
-        <sys_class_name>sys_hub_flow_input</sys_class_name>
-        <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-06-17 15:21:10</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
-        <sys_id>620caf29dbf0b050f75daca2ca961999</sys_id>
-        <sys_mod_count>21</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
-        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>CNI06</sys_updated_by>
-        <sys_updated_on>2021-09-08 15:58:27</sys_updated_on>
-        <table_reference>false</table_reference>
-        <text_index>false</text_index>
-        <unique>false</unique>
-        <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
-        <virtual>false</virtual>
-        <widget/>
-        <write_roles/>
-        <xml_view>false</xml_view>
-    </sys_hub_flow_input>
-    <sys_hub_flow_input action="INSERT_OR_UPDATE">
-        <active>true</active>
-        <array>false</array>
-        <array_denormalized>false</array_denormalized>
-        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FD5d805bdc6e267c10b6d94c745752ee92,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
-        <audit>false</audit>
-        <calculation><![CDATA[(function calculatedFieldValue(current) {
-
-	// Add your code here
-	return '';  // return the calculated value
-
-})(current);]]></calculation>
-        <choice/>
-        <choice_field/>
-        <choice_table/>
-        <column_label/>
-        <comments/>
-        <create_roles/>
-        <default_value/>
-        <defaultsort/>
-        <delete_roles/>
-        <dependent/>
-        <dependent_on_field/>
-        <display>false</display>
-        <dynamic_creation>false</dynamic_creation>
-        <dynamic_creation_script/>
-        <dynamic_default_value/>
-        <dynamic_ref_qual/>
-        <element>changed_fields</element>
-        <element_reference>false</element_reference>
-        <foreign_database/>
-        <function_definition/>
-        <function_field>false</function_field>
-        <help/>
-        <hint/>
-        <internal_type display_value="String">string</internal_type>
-        <label>Changed Fields</label>
-        <mandatory>false</mandatory>
-        <max_length>4000</max_length>
-        <model display_value="UpdateDigCertWhenMatched">e5382fe9dbb0b050f75daca2ca96192f</model>
-        <model_id>e5382fe9dbb0b050f75daca2ca96192f</model_id>
-        <model_table>sys_hub_flow</model_table>
-        <name>var__m_sys_hub_flow_input_e5382fe9dbb0b050f75daca2ca96192f</name>
-        <next_element/>
-        <order>100</order>
-        <primary>false</primary>
-        <read_only>false</read_only>
-        <read_roles/>
-        <reference/>
-        <reference_cascade_rule/>
-        <reference_floats>false</reference_floats>
-        <reference_key/>
-        <reference_qual/>
-        <reference_qual_condition/>
-        <reference_type/>
-        <sizeclass/>
-        <spell_check>false</spell_check>
-        <staged>false</staged>
-        <sys_class_name>sys_hub_flow_input</sys_class_name>
-        <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-06-17 15:21:10</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
-        <sys_id>920caf29dbf0b050f75daca2ca961992</sys_id>
-        <sys_mod_count>36</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
-        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>CNI06</sys_updated_by>
-        <sys_updated_on>2021-09-08 15:58:28</sys_updated_on>
-        <table_reference>false</table_reference>
-        <text_index>false</text_index>
-        <unique>false</unique>
-        <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
-        <virtual>false</virtual>
-        <widget/>
-        <write_roles/>
-        <xml_view>false</xml_view>
-    </sys_hub_flow_input>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_bb695e60c31322002841b63b12d3aea5^id=ea0caf29dbf0b050f75daca2ca9619ba"/>
     <sys_hub_action_instance action="delete_multiple" query="flow=e5382fe9dbb0b050f75daca2ca96192f^sys_idNOT IN127eb36ddbf4b050f75daca2ca96199d"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent/>
+        <attributes/>
         <comment/>
-        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
         <display_text/>
         <flow display_value="UpdateDigCertWhenMatched">e5382fe9dbb0b050f75daca2ca96192f</flow>
+        <generation_source/>
         <order>1</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -471,15 +518,15 @@
         <sys_created_on>2021-06-17 16:41:43</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>127eb36ddbf4b050f75daca2ca96199d</sys_id>
-        <sys_mod_count>84</sys_mod_count>
+        <sys_mod_count>143</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>CNI06</sys_updated_by>
-        <sys_updated_on>2021-09-08 15:58:28</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-06 12:52:59</sys_updated_on>
         <ui_id>0547fb44-a3e3-4db1-b5ff-8b8db2a5e43a</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=127eb36ddbf4b050f75daca2ca96199d"/>
@@ -548,6 +595,91 @@
         <sys_updated_by>CNI06</sys_updated_by>
         <sys_updated_on>2021-09-08 14:22:12</sys_updated_on>
     </sys_hub_input_scripts>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=127eb36ddbf4b050f75daca2ca96199d"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=e5382fe9dbb0b050f75daca2ca96192f^sys_idNOT IN54f01b2b1bf83014e314c955624bcbef"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">54f01b2b1bf83014e314c955624bcbee</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="UpdateDigCertWhenMatched">e5382fe9dbb0b050f75daca2ca96192f</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-06-23 18:30:37</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>54f01b2b1bf83014e314c955624bcbef</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-06-23 18:30:56</sys_updated_on>
+        <ui_id>f60b4023-551b-4a60-b812-b782c6e20107</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=54f01b2b1bf83014e314c955624bcbef"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>54f01b2b1bf83014e314c955624bcbef</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-06-23 18:30:37</sys_created_on>
+        <sys_id>90f01b2b1bf83014e314c955624bcbf4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-06-23 18:30:37</sys_updated_on>
+        <value>if this is an external request transfer the environment also</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=54f01b2b1bf83014e314c955624bcbef"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>54f01b2b1bf83014e314c955624bcbef</id>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-06-23 18:30:37</sys_created_on>
+        <sys_id>10f01b2b1bf83014e314c955624bcbf4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-06-23 18:30:37</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{Updated_1.current.u_certificate_request_type}}=external_new^NQ{{Updated_1.current.u_certificate_request_type}}=external_update</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>54f01b2b1bf83014e314c955624bcbef</id>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-06-23 18:30:37</sys_created_on>
+        <sys_id>58f01b2b1bf83014e314c955624bcbf3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-06-23 18:30:37</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=54f01b2b1bf83014e314c955624bcbef"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=54f01b2b1bf83014e314c955624bcbef"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=e5382fe9dbb0b050f75daca2ca96192f"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=e5382fe9dbb0b050f75daca2ca96192f"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=e5382fe9dbb0b050f75daca2ca96192f"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_e5382fe9dbb0b050f75daca2ca96192f^sys_idNOT IN560caf29dbf0b050f75daca2ca961990,a20caf29dbf0b050f75daca2ca9619b7,aa0caf29dbf0b050f75daca2ca961997"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>current</element>
@@ -563,7 +695,7 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_id>560caf29dbf0b050f75daca2ca961990</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Record</sys_name>
         <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
@@ -588,7 +720,7 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_id>a20caf29dbf0b050f75daca2ca9619b7</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Table Name</sys_name>
         <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
@@ -613,7 +745,7 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_id>aa0caf29dbf0b050f75daca2ca961997</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Changed Fields</sys_name>
         <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
@@ -624,40 +756,22 @@
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=e5382fe9dbb0b050f75daca2ca96192f^sys_idNOT IN237db369dbf4b050f75daca2ca96195c"/>
-    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
-        <binding_strategy>com.snc.process_flow.engine.binding.Every</binding_strategy>
-        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"237db369dbf4b050f75daca2ca96195c","name":"plan"}}</plan>
-        <plan_id>e5382fe9dbb0b050f75daca2ca96192f</plan_id>
-        <snapshot>f67d7369dbf4b050f75daca2ca96194e</snapshot>
-        <sys_class_name>sys_flow_trigger_plan</sys_class_name>
-        <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-06-17 16:37:25</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
-        <sys_domain>global</sys_domain>
-        <sys_id>237db369dbf4b050f75daca2ca96195c</sys_id>
-        <sys_mod_count>10</sys_mod_count>
-        <sys_name/>
-        <sys_overrides/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
-        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>CNI06</sys_updated_by>
-        <sys_updated_on>2021-09-08 15:58:27</sys_updated_on>
-        <trigger display_value="">4e809bdcdb267c1047241fb748961978</trigger>
-    </sys_flow_trigger_plan>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_e5382fe9dbb0b050f75daca2ca96192f"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_e5382fe9dbb0b050f75daca2ca96192f"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_e5382fe9dbb0b050f75daca2ca96192f"/>
     <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
         <acls/>
         <active>true</active>
         <annotation/>
+        <attributes/>
+        <authored_on_release_version/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
         <copied_from_name/>
         <description>When a digital certificate is matched with its request transfer associations to digital certificate</description>
+        <flow_priority/>
         <internal_name>updatedigcertwhenmatched</internal_name>
         <label_cache>[{"name":"70b15635-9655-43a2-8f22-e32e541d1686.table_name","label":"5➛Digital Certificate Table","reference":"x_unugr_certificat_digital_certificate","reference_display":"Digital Certificate","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"70b15635-9655-43a2-8f22-e32e541d1686.record","label":"5➛Digital Certificate Record","reference":"x_unugr_certificat_digital_certificate","reference_display":"Digital Certificate","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7f3ae65d-2354-4a4d-a7e2-214e9341a6d0.table_name","label":"3➛Digital Certificate Table","reference":"x_unugr_certificat_digital_certificate","reference_display":"Digital Certificate","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7f3ae65d-2354-4a4d-a7e2-214e9341a6d0.record","label":"3➛Digital Certificate Record","reference":"x_unugr_certificat_digital_certificate","reference_display":"Digital Certificate","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6dacd3e4-bcdb-4362-8599-ed2c6aa07169.item","label":"1➛FDChangeDetails","reference_display":"FDChangeDetails","type":"object","base_type":"object","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"6dacd3e4-bcdb-4362-8599-ed2c6aa07169.item.current_value","label":"1➛FDChangeDetails➛Current Value","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"6dacd3e4-bcdb-4362-8599-ed2c6aa07169.item.field_name","label":"1➛FDChangeDetails➛Field Name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"Updated_1.changed_fields","label":"Trigger➛Changed Fields","type":"array.object","base_type":"array.object","attributes":{"uiTypeLabel":"Array.Object","co_type_name":"FDCollection","child_label":"FDChangeDetails","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"array.object","child_type":"object","child_name":"FDChangeDetails"}},{"name":"ad2d8826-b598-40c1-ab31-61e6e6419e7c.table_name","label":"2➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ad2d8826-b598-40c1-ab31-61e6e6419e7c.record","label":"2➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"09c50208-7b33-4800-be08-a37c09b3a2b2.record","label":"1➛Digital Certificate Record","reference":"x_unugr_certificat_digital_certificate","reference_display":"Digital Certificate","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"09c50208-7b33-4800-be08-a37c09b3a2b2.table_name","label":"1➛Digital Certificate Table","reference":"x_unugr_certificat_digital_certificate","reference_display":"Digital Certificate","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Updated_1.current.u_certificate","label":"Trigger➛Certificate Request Record➛Certificate ","reference":"x_unugr_certificat_digital_certificate","reference_display":"Digital Certificate","type":"reference","base_type":"reference","parent_table_name":"x_unugr_certificat_certificate_request","column_name":"u_certificate"},{"name":"Updated_1.current.u_install_on","label":"Trigger➛Certificate Request Record➛Install on","reference":"x_unugr_certificat_installation_targets","reference_display":"Installation Targets","type":"glide_list","base_type":"glide_list","parent_table_name":"x_unugr_certificat_certificate_request","column_name":"u_install_on"},{"name":"Updated_1.current.associated_applications","label":"Trigger➛Certificate Request Record➛Associated Applications","reference":"u_cmdb_ci_unumapp","reference_display":"Unum Application","type":"glide_list","base_type":"glide_list","parent_table_name":"x_unugr_certificat_certificate_request","column_name":"associated_applications"},{"name":"Updated_1.current.u_associated_servers","label":"Trigger➛Certificate Request Record➛Associated Servers","reference":"cmdb_ci_server","reference_display":"Server","type":"glide_list","base_type":"glide_list","parent_table_name":"x_unugr_certificat_certificate_request","column_name":"u_associated_servers"},{"name":"0f1a4b18-1e99-44f6-8891-bf049677cfd0.record","label":"1➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0f1a4b18-1e99-44f6-8891-bf049677cfd0.table_name","label":"1➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0547fb44-a3e3-4db1-b5ff-8b8db2a5e43a.record","label":"1➛Digital Certificate Record","reference":"x_unugr_certificat_digital_certificate","reference_display":"Digital Certificate","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0547fb44-a3e3-4db1-b5ff-8b8db2a5e43a.table_name","label":"1➛Digital Certificate Table","reference":"x_unugr_certificat_digital_certificate","reference_display":"Digital Certificate","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Updated_1.current.u_certificate.u_certificate","label":"Trigger➛Certificate Request Record➛Certificate ➛Certificate","reference":"","reference_display":"Certificate","type":"string","base_type":"string","parent_table_name":"x_unugr_certificat_digital_certificate","column_name":"u_certificate"},{"name":"Updated_1.current.u_certificate.u_environment","label":"Trigger➛Certificate Request Record➛Certificate ➛Environment","reference":"","reference_display":"Environment","type":"choice","base_type":"choice","parent_table_name":"x_unugr_certificat_digital_certificate","column_name":"u_environment"},{"name":"Updated_1.current.u_shared_environment","label":"Trigger➛Certificate Request Record➛Environment","reference":"","reference_display":"Environment","type":"choice","base_type":"choice","parent_table_name":"x_unugr_certificat_certificate_request","column_name":"u_shared_environment"},{"name":"e38f72ff-a14c-4e92-ab65-9fe7cd7fdc52.record","label":"3➛Digital Certificate Record","reference":"x_unugr_certificat_digital_certificate","reference_display":"Digital Certificate","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e38f72ff-a14c-4e92-ab65-9fe7cd7fdc52.table_name","label":"3➛Digital Certificate Table","reference":"x_unugr_certificat_digital_certificate","reference_display":"Digital Certificate","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Updated_1.current.u_environment","label":"Trigger➛Certificate Request Record➛Install Environment","reference":"","reference_display":"Install Environment","type":"choice","base_type":"choice","parent_table_name":"x_unugr_certificat_certificate_request","column_name":"u_environment"},{"name":"Updated_1.current.u_certificate_request_type","label":"Trigger➛Certificate Request Record➛Certificate Request Type","reference":"","reference_display":"Certificate Request Type","type":"choice","base_type":"choice","parent_table_name":"x_unugr_certificat_certificate_request","column_name":"u_certificate_request_type"},{"name":"cc55bf9c-f7e5-40dd-9a60-a354d8bd332b.record","label":"3➛Digital Certificate Record","reference":"x_unugr_certificat_digital_certificate","reference_display":"Digital Certificate","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"cc55bf9c-f7e5-40dd-9a60-a354d8bd332b.table_name","label":"3➛Digital Certificate Table","reference":"x_unugr_certificat_digital_certificate","reference_display":"Digital Certificate","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Updated_1.current.u_environment_new","label":"Trigger➛Certificate Request Record➛Environment new","reference":"u_catalog_choice_list","reference_display":"Catalog Choice List","type":"choice","base_type":"choice","parent_table_name":"x_unugr_certificat_certificate_request","column_name":"u_environment_new"},{"name":"Updated_1.current.u_domain","label":"Trigger➛Certificate Request Record➛Domain (u_domain)","reference":"","reference_display":"Domain (u_domain)","type":"choice","base_type":"choice","parent_table_name":"x_unugr_certificat_certificate_request","column_name":"u_domain"}]</label_cache>
         <master>true</master>
@@ -687,8 +801,315 @@
         <sys_updated_by>CNI06</sys_updated_by>
         <sys_updated_on>2021-09-08 15:58:26</sys_updated_on>
         <type>flow</type>
+        <version>1</version>
     </sys_hub_flow_snapshot>
     <sys_variable_value action="delete_multiple" query="document_key=f67d7369dbf4b050f75daca2ca96194e"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=f67d7369dbf4b050f75daca2ca96194e"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=f67d7369dbf4b050f75daca2ca96194e^sys_idNOT IN367d7369dbf4b050f75daca2ca961950"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>f67d7369dbf4b050f75daca2ca96194e</id>
+        <name>UpdateDigCertWhenMatched</name>
+        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-06-17 16:37:23</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>367d7369dbf4b050f75daca2ca961950</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-06-17 16:37:23</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=367d7369dbf4b050f75daca2ca961950"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=f67d7369dbf4b050f75daca2ca96194e^sys_idNOT IN3e7d7369dbf4b050f75daca2ca961953,877d7369dbf4b050f75daca2ca9619ba,c77d7369dbf4b050f75daca2ca9619d2"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="UpdateDigCertWhenMatched">f67d7369dbf4b050f75daca2ca96194e</model>
+        <model_id>f67d7369dbf4b050f75daca2ca96194e</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_f67d7369dbf4b050f75daca2ca96194e</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-06-17 16:37:23</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>3e7d7369dbf4b050f75daca2ca961953</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-08 15:58:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=3e7d7369dbf4b050f75daca2ca961953"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD5d805bdc6e267c10b6d94c745752ee92</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>2c9bb9a3db8cbf40d3e954f9489619dd</scope_name>
+        <serialized_content>{"FlowDesigner:FD5d805bdc6e267c10b6d94c745752ee92":{"$COCollectionField":[{"FDChangeDetails":{"previous_display_value":"String","previous_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Display Value\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"previous_value":"String","previous_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Value\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"current_display_value":"String","current_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Display Value\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"current_value":"String","current_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Value\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"field_name":"String","field_name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Field Name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD5d805bdc6e267c10b6d94c745752ee92\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD5d805bdc6e267c10b6d94c745752ee92.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD5d805bdc6e267c10b6d94c745752ee92\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>CNI06</sys_created_by>
+        <sys_created_on>2021-09-08 15:58:24</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>11805bdcdb267c1047241fb748961993</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FD5d805bdc6e267c10b6d94c745752ee92</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sys_complex_object_11805bdcdb267c1047241fb748961993</sys_update_name>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-08 15:58:24</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FD5d805bdc6e267c10b6d94c745752ee92,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="UpdateDigCertWhenMatched">f67d7369dbf4b050f75daca2ca96194e</model>
+        <model_id>f67d7369dbf4b050f75daca2ca96194e</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_f67d7369dbf4b050f75daca2ca96194e</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-06-17 16:37:23</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>877d7369dbf4b050f75daca2ca9619ba</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-08 15:58:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=877d7369dbf4b050f75daca2ca9619ba"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="UpdateDigCertWhenMatched">f67d7369dbf4b050f75daca2ca96194e</model>
+        <model_id>f67d7369dbf4b050f75daca2ca96194e</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_f67d7369dbf4b050f75daca2ca96194e</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-06-17 16:37:23</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c77d7369dbf4b050f75daca2ca9619d2</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-08 15:58:24</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c77d7369dbf4b050f75daca2ca9619d2"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=f67d7369dbf4b050f75daca2ca96194e"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=f67d7369dbf4b050f75daca2ca96194e"/>
     <sys_hub_trigger_instance action="delete_multiple" query="flow=f67d7369dbf4b050f75daca2ca96194e^sys_idNOT IN177db369dbf4b050f75daca2ca96190a"/>
     <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
         <comment/>
@@ -772,285 +1193,18 @@
         <value>every</value>
         <variable display_value="Run Trigger">c19523d8c31932002841b63b12d3aea1</variable>
     </sys_variable_value>
-    <sys_flow_cat_variable_model action="delete_multiple" query="id=f67d7369dbf4b050f75daca2ca96194e^sys_idNOT IN367d7369dbf4b050f75daca2ca961950"/>
-    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
-        <id>f67d7369dbf4b050f75daca2ca96194e</id>
-        <name>UpdateDigCertWhenMatched</name>
-        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
-        <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-06-17 16:37:23</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
-        <sys_id>367d7369dbf4b050f75daca2ca961950</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
-        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>CHF03</sys_updated_by>
-        <sys_updated_on>2021-06-17 16:37:23</sys_updated_on>
-    </sys_flow_cat_variable_model>
-    <sys_hub_flow_input action="delete_multiple" query="model=f67d7369dbf4b050f75daca2ca96194e^sys_idNOT IN3e7d7369dbf4b050f75daca2ca961953,877d7369dbf4b050f75daca2ca9619ba,c77d7369dbf4b050f75daca2ca9619d2"/>
-    <sys_hub_flow_input action="INSERT_OR_UPDATE">
-        <active>true</active>
-        <array>false</array>
-        <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
-        <audit>false</audit>
-        <calculation><![CDATA[(function calculatedFieldValue(current) {
-
-	// Add your code here
-	return '';  // return the calculated value
-
-})(current);]]></calculation>
-        <choice/>
-        <choice_field/>
-        <choice_table/>
-        <column_label/>
-        <comments/>
-        <create_roles/>
-        <default_value/>
-        <defaultsort/>
-        <delete_roles/>
-        <dependent>table_name</dependent>
-        <dependent_on_field>table_name</dependent_on_field>
-        <display>false</display>
-        <dynamic_creation>false</dynamic_creation>
-        <dynamic_creation_script/>
-        <dynamic_default_value/>
-        <dynamic_ref_qual/>
-        <element>current</element>
-        <element_reference>false</element_reference>
-        <foreign_database/>
-        <function_definition/>
-        <function_field>false</function_field>
-        <help/>
-        <hint/>
-        <internal_type display_value="">document_id</internal_type>
-        <label>Record</label>
-        <mandatory>true</mandatory>
-        <max_length>200</max_length>
-        <model display_value="UpdateDigCertWhenMatched">f67d7369dbf4b050f75daca2ca96194e</model>
-        <model_id>f67d7369dbf4b050f75daca2ca96194e</model_id>
-        <model_table>sys_hub_flow_snapshot</model_table>
-        <name>var__m_sys_hub_flow_input_f67d7369dbf4b050f75daca2ca96194e</name>
-        <next_element/>
-        <order>100</order>
-        <primary>false</primary>
-        <read_only>false</read_only>
-        <read_roles/>
-        <reference/>
-        <reference_cascade_rule/>
-        <reference_floats>false</reference_floats>
-        <reference_key/>
-        <reference_qual/>
-        <reference_qual_condition/>
-        <reference_type/>
-        <sizeclass/>
-        <spell_check>false</spell_check>
-        <staged>false</staged>
-        <sys_class_name>sys_hub_flow_input</sys_class_name>
-        <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-06-17 16:37:23</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
-        <sys_id>3e7d7369dbf4b050f75daca2ca961953</sys_id>
-        <sys_mod_count>20</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
-        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>CNI06</sys_updated_by>
-        <sys_updated_on>2021-09-08 15:58:25</sys_updated_on>
-        <table_reference>false</table_reference>
-        <text_index>false</text_index>
-        <unique>false</unique>
-        <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
-        <virtual>false</virtual>
-        <widget/>
-        <write_roles/>
-        <xml_view>false</xml_view>
-    </sys_hub_flow_input>
-    <sys_hub_flow_input action="INSERT_OR_UPDATE">
-        <active>true</active>
-        <array>false</array>
-        <array_denormalized>false</array_denormalized>
-        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FD5d805bdc6e267c10b6d94c745752ee92,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
-        <audit>false</audit>
-        <calculation><![CDATA[(function calculatedFieldValue(current) {
-
-	// Add your code here
-	return '';  // return the calculated value
-
-})(current);]]></calculation>
-        <choice/>
-        <choice_field/>
-        <choice_table/>
-        <column_label/>
-        <comments/>
-        <create_roles/>
-        <default_value/>
-        <defaultsort/>
-        <delete_roles/>
-        <dependent/>
-        <dependent_on_field/>
-        <display>false</display>
-        <dynamic_creation>false</dynamic_creation>
-        <dynamic_creation_script/>
-        <dynamic_default_value/>
-        <dynamic_ref_qual/>
-        <element>changed_fields</element>
-        <element_reference>false</element_reference>
-        <foreign_database/>
-        <function_definition/>
-        <function_field>false</function_field>
-        <help/>
-        <hint/>
-        <internal_type display_value="String">string</internal_type>
-        <label>Changed Fields</label>
-        <mandatory>false</mandatory>
-        <max_length>4000</max_length>
-        <model display_value="UpdateDigCertWhenMatched">f67d7369dbf4b050f75daca2ca96194e</model>
-        <model_id>f67d7369dbf4b050f75daca2ca96194e</model_id>
-        <model_table>sys_hub_flow_snapshot</model_table>
-        <name>var__m_sys_hub_flow_input_f67d7369dbf4b050f75daca2ca96194e</name>
-        <next_element/>
-        <order>100</order>
-        <primary>false</primary>
-        <read_only>false</read_only>
-        <read_roles/>
-        <reference/>
-        <reference_cascade_rule/>
-        <reference_floats>false</reference_floats>
-        <reference_key/>
-        <reference_qual/>
-        <reference_qual_condition/>
-        <reference_type/>
-        <sizeclass/>
-        <spell_check>false</spell_check>
-        <staged>false</staged>
-        <sys_class_name>sys_hub_flow_input</sys_class_name>
-        <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-06-17 16:37:23</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
-        <sys_id>877d7369dbf4b050f75daca2ca9619ba</sys_id>
-        <sys_mod_count>11</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
-        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>CNI06</sys_updated_by>
-        <sys_updated_on>2021-09-08 15:58:25</sys_updated_on>
-        <table_reference>false</table_reference>
-        <text_index>false</text_index>
-        <unique>false</unique>
-        <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
-        <virtual>false</virtual>
-        <widget/>
-        <write_roles/>
-        <xml_view>false</xml_view>
-    </sys_hub_flow_input>
-    <sys_hub_flow_input action="INSERT_OR_UPDATE">
-        <active>true</active>
-        <array>false</array>
-        <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
-        <audit>false</audit>
-        <calculation><![CDATA[(function calculatedFieldValue(current) {
-
-	// Add your code here
-	return '';  // return the calculated value
-
-})(current);]]></calculation>
-        <choice/>
-        <choice_field/>
-        <choice_table/>
-        <column_label/>
-        <comments/>
-        <create_roles/>
-        <default_value/>
-        <defaultsort/>
-        <delete_roles/>
-        <dependent/>
-        <dependent_on_field/>
-        <display>false</display>
-        <dynamic_creation>false</dynamic_creation>
-        <dynamic_creation_script/>
-        <dynamic_default_value/>
-        <dynamic_ref_qual/>
-        <element>table_name</element>
-        <element_reference>false</element_reference>
-        <foreign_database/>
-        <function_definition/>
-        <function_field>false</function_field>
-        <help/>
-        <hint/>
-        <internal_type display_value="">table_name</internal_type>
-        <label>Table Name</label>
-        <mandatory>false</mandatory>
-        <max_length>200</max_length>
-        <model display_value="UpdateDigCertWhenMatched">f67d7369dbf4b050f75daca2ca96194e</model>
-        <model_id>f67d7369dbf4b050f75daca2ca96194e</model_id>
-        <model_table>sys_hub_flow_snapshot</model_table>
-        <name>var__m_sys_hub_flow_input_f67d7369dbf4b050f75daca2ca96194e</name>
-        <next_element/>
-        <order>101</order>
-        <primary>false</primary>
-        <read_only>false</read_only>
-        <read_roles/>
-        <reference/>
-        <reference_cascade_rule/>
-        <reference_floats>false</reference_floats>
-        <reference_key/>
-        <reference_qual/>
-        <reference_qual_condition/>
-        <reference_type/>
-        <sizeclass/>
-        <spell_check>false</spell_check>
-        <staged>false</staged>
-        <sys_class_name>sys_hub_flow_input</sys_class_name>
-        <sys_created_by>CHF03</sys_created_by>
-        <sys_created_on>2021-06-17 16:37:23</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
-        <sys_id>c77d7369dbf4b050f75daca2ca9619d2</sys_id>
-        <sys_mod_count>19</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
-        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>CNI06</sys_updated_by>
-        <sys_updated_on>2021-09-08 15:58:24</sys_updated_on>
-        <table_reference>false</table_reference>
-        <text_index>false</text_index>
-        <unique>false</unique>
-        <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
-        <virtual>false</virtual>
-        <widget/>
-        <write_roles/>
-        <xml_view>false</xml_view>
-    </sys_hub_flow_input>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_bb695e60c31322002841b63b12d3aea5^id=177db369dbf4b050f75daca2ca96190a"/>
     <sys_hub_action_instance action="delete_multiple" query="flow=f67d7369dbf4b050f75daca2ca96194e^sys_idNOT IN8fcebfaddbf4b050f75daca2ca9619c5"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
         <comment/>
-        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
         <display_text/>
         <flow display_value="UpdateDigCertWhenMatched">f67d7369dbf4b050f75daca2ca96194e</flow>
+        <generation_source/>
         <order>1</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -1135,6 +1289,91 @@
         <sys_updated_by>CNI06</sys_updated_by>
         <sys_updated_on>2021-09-08 14:22:22</sys_updated_on>
     </sys_hub_input_scripts>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8fcebfaddbf4b050f75daca2ca9619c5"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=f67d7369dbf4b050f75daca2ca96194e^sys_idNOT INcc01df2b1bf83014e314c955624bcb7a"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">54f01b2b1bf83014e314c955624bcbee</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="UpdateDigCertWhenMatched">f67d7369dbf4b050f75daca2ca96194e</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-06-23 18:30:52</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>cc01df2b1bf83014e314c955624bcb7a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-06-23 18:30:53</sys_updated_on>
+        <ui_id>f60b4023-551b-4a60-b812-b782c6e20107</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=cc01df2b1bf83014e314c955624bcb7a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>cc01df2b1bf83014e314c955624bcb7a</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-06-23 18:30:52</sys_created_on>
+        <sys_id>4c01df2b1bf83014e314c955624bcb7e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-06-23 18:30:52</sys_updated_on>
+        <value>if this is an external request transfer the environment also</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=cc01df2b1bf83014e314c955624bcb7a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>cc01df2b1bf83014e314c955624bcb7a</id>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-06-23 18:30:52</sys_created_on>
+        <sys_id>c801df2b1bf83014e314c955624bcb7e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-06-23 18:30:52</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{Updated_1.current.u_certificate_request_type}}=external_new^NQ{{Updated_1.current.u_certificate_request_type}}=external_update</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>cc01df2b1bf83014e314c955624bcb7a</id>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-06-23 18:30:52</sys_created_on>
+        <sys_id>0801df2b1bf83014e314c955624bcb7e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2021-06-23 18:30:52</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=cc01df2b1bf83014e314c955624bcb7a"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=cc01df2b1bf83014e314c955624bcb7a"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=f67d7369dbf4b050f75daca2ca96194e"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=f67d7369dbf4b050f75daca2ca96194e"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=f67d7369dbf4b050f75daca2ca96194e"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_f67d7369dbf4b050f75daca2ca96194e^sys_idNOT IN0f7d7369dbf4b050f75daca2ca9619d9,cf7d7369dbf4b050f75daca2ca9619b5,cf7d7369dbf4b050f75daca2ca9619c1"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>table_name</element>
@@ -1150,7 +1389,7 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_id>0f7d7369dbf4b050f75daca2ca9619d9</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Table Name</sys_name>
         <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
@@ -1175,7 +1414,7 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_id>cf7d7369dbf4b050f75daca2ca9619b5</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Record</sys_name>
         <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
@@ -1200,7 +1439,7 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_id>cf7d7369dbf4b050f75daca2ca9619c1</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Changed Fields</sys_name>
         <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
@@ -1211,8 +1450,37 @@
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_hub_flow action="update">
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_f67d7369dbf4b050f75daca2ca96194e"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_f67d7369dbf4b050f75daca2ca96194e"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_f67d7369dbf4b050f75daca2ca96194e"/>
+    <sys_hub_flow action="UPDATE">
         <sys_id>e5382fe9dbb0b050f75daca2ca96192f</sys_id>
         <latest_snapshot>f67d7369dbf4b050f75daca2ca96194e</latest_snapshot>
+        <compiler_build>glide-xanadu-07-02-2024__patch1-hotfix2a-10-05-2024_10-18-2024_1248.zip</compiler_build>
     </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=e5382fe9dbb0b050f75daca2ca96192f^sys_idNOT IN237db369dbf4b050f75daca2ca96195c"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.Every</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"237db369dbf4b050f75daca2ca96195c","name":"plan","plan_signature":null}}</plan>
+        <plan_id>e5382fe9dbb0b050f75daca2ca96192f</plan_id>
+        <snapshot>525aa6801b75129033d2415dee4bcb11</snapshot>
+        <sys_class_name>sys_flow_trigger_plan</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2021-06-17 16:37:25</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>237db369dbf4b050f75daca2ca96195c</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>CNI06</sys_updated_by>
+        <sys_updated_on>2021-09-08 15:58:27</sys_updated_on>
+        <trigger display_value="">4e809bdcdb267c1047241fb748961978</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=e5382fe9dbb0b050f75daca2ca96192f"/>
 </record_update>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="91622b721b577b408591524d0d4bcb2f" label="Import Log" max_length="40" name="x_unugr_certificat_importlog" type="collection">
+        <element choice="1" label="Status" max_length="10" name="u_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Processing" sequence="100" value="Processing"/>
+                <element inactive_on_update="false" label="Success" sequence="200" value="Success"/>
+                <element inactive_on_update="false" label="Failure" sequence="300" value="Failure"/>
+            </choice>
+        </element>
+        <element label="Status Desription" max_length="500" name="u_status_description" type="string"/>
+        <element label="Store Domain" max_length="20" name="u_store_domain" type="string"/>
+        <element label="Store Name" max_length="50" name="u_store_name" type="string"/>
+        <element label="Store Server" max_length="32" name="u_store_server" reference="x_unugr_certificat_authority_servers" type="reference"/>
+        <index name="index">
+            <element name="u_store_server"/>
+        </index>
+    </element>
+</database>

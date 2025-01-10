@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_hp_reference">
+    <sys_ui_hp_reference action="INSERT_OR_UPDATE">
+        <publisher_reference display_value="Certificate Owner">ea56da3247b52d90cfd71347e26d43b3</publisher_reference>
+        <reference_field>u_owned_by</reference_field>
+        <reference_table>x_unugr_certificat_digital_certificate</reference_table>
+        <sys_class_name>sys_ui_hp_reference</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2023-03-29 12:07:09</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>f5c8d67a47f52d90cfd71347e26d430f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ea56da3247b52d90cfd71347e26d43b3</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sys_ui_hp_reference_f5c8d67a47f52d90cfd71347e26d430f</sys_update_name>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2023-03-29 12:07:09</sys_updated_on>
+    </sys_ui_hp_reference>
+</record_update>

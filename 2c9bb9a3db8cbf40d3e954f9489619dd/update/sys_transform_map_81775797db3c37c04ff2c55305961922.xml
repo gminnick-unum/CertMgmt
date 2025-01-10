@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_transform_map">
+    <sys_transform_map action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <copy_empty_fields>false</copy_empty_fields>
+        <create_new_record_on_empty_coalesce_fields>false</create_new_record_on_empty_coalesce_fields>
+        <enforce_mandatory_fields>No</enforce_mandatory_fields>
+        <name>cm_SSLImportTransform</name>
+        <order>100</order>
+        <run_business_rules>true</run_business_rules>
+        <run_script>false</run_script>
+        <script><![CDATA[(function transformRow(source, target, map, log, isUpdate) {
+
+	// Add your code here
+
+})(source, target, map, log, action==="update");]]></script>
+        <source_table>x_unugr_certificat_ssl_portfoliorpt</source_table>
+        <sys_class_name>sys_transform_map</sys_class_name>
+        <sys_created_by>CHF03</sys_created_by>
+        <sys_created_on>2019-04-19 15:37:33</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>81775797db3c37c04ff2c55305961922</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>cm_SSLImportTransform</sys_name>
+        <sys_package display_value="Certificate Management" source="x_unugr_certificat">2c9bb9a3db8cbf40d3e954f9489619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Certificate Management">2c9bb9a3db8cbf40d3e954f9489619dd</sys_scope>
+        <sys_update_name>sys_transform_map_81775797db3c37c04ff2c55305961922</sys_update_name>
+        <sys_updated_by>CHF03</sys_updated_by>
+        <sys_updated_on>2019-04-19 15:37:33</sys_updated_on>
+        <target_table>x_unugr_certificat_digital_certificate</target_table>
+    </sys_transform_map>
+</record_update>
